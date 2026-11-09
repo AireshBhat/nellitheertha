@@ -137,7 +137,7 @@
   const context = canvas.getContext('2d');
   const wide = matchMedia('(min-width: 700px)').matches;
   const folder = wide ? 'walk-wide' : 'walk-tall';
-  const frameCount = wide ? 48 : 60;
+  const frameCount = wide ? 32 : 40;
   const frames = new Array(frameCount);
   let loading = false, scheduled = false, sized = false, lastDrawn = null;
   const ready = (image) => Boolean(image && image.complete && image.naturalWidth);
@@ -198,10 +198,13 @@
       };
       for (let k = 0; k < 4; k++) loadNext();
     };
+    // Frames start downloading on the first scroll, or when the walk is within a screen: nothing is spent on
+    // visitors who only read the top of the page, and the walk still has a head start.
     const forestObserver = new IntersectionObserver((entries) => {
       if (entries.some((e) => e.isIntersecting)) { loadForest(); forestObserver.disconnect(); }
-    }, { rootMargin: '400% 0px' });
+    }, { rootMargin: '100% 0px' });
     forestObserver.observe(forest);
+    addEventListener('scroll', loadForest, { once: true, passive: true });
     addEventListener('scroll', requestDraw, { passive: true });
     addEventListener('resize', sizeCanvas);
   }
