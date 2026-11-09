@@ -1,0 +1,18 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { UPI } from '../lib/brahmakalasha';
+interface Props { bank: CollectionEntry<'invitation'>['data']['bank'] }
+const { bank: b } = Astro.props;
+const lines = [b.account_name, [b.bank, b.branch].filter(Boolean).join(', ')].filter(Boolean) as string[];
+if (b.account_type) lines.push(`Account type: ${b.account_type}`);
+lines.push(`Account number: ${b.account_number}`, `IFSC: ${b.ifsc}`);
+if (b.upi_id) lines.push(`UPI: ${b.upi_id}`);
+---
+<h2 id="contribute">Contribute</h2>
+{b.intro && <p>{b.intro}</p>}
+<div class="bank">
+  <p>{lines.map((l, i) => <>{i > 0 && <br />}{l}</>)}</p>
+  <img class="qr" src="/assets/img/upi-qr.png" alt="UPI QR code for the Sri Somanatheshwara Temple Jeernodhara Samithi account" width="863" height="867" loading="lazy">
+  <p><a class="action primary" href={UPI}>Pay with a UPI app</a></p>
+</div>
+{b.contact_line && <p>{b.contact_line}</p>}

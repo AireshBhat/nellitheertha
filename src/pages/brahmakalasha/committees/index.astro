@@ -1,0 +1,36 @@
+---
+import { getEntry } from 'astro:content';
+import Page from '../../../layouts/Page.astro';
+const groups = (await getEntry('committees', 'committees'))!.data.groups;
+const inv = (await getEntry('invitation', 'invitation'))!.data;
+// A parent heading (h2) appears once, unless a group of that name already appeared; groups under a parent are h3.
+const shown = new Set<string>();
+const blocks = groups.map((g) => {
+  const parent = g.parent && !shown.has(g.parent) ? g.parent : null;
+  if (g.parent) shown.add(g.parent);
+  shown.add(g.title);
+  return { parent, level: g.parent ? 'h3' : 'h2', group: g };
+});
+const sub = (m: { role?: string | null; place?: string | null }) => [m.role, m.place].filter(Boolean).join(', ');
+---
+<Page article slug="brahmakalasha/committees" eyebrow="BRAHMAKALASHA 2026" title="Committees and supporters"
+  description="The committees, Mahadanis and supporters of the Brahmakalasha at Sri Kshetra Nellitheertha."
+  back={{ href: '/brahmakalasha/', label: 'Brahmakalasha 2026' }} next={{ href: '/brahmakalasha/', label: 'Brahmakalasha 2026' }}>
+  {blocks.map(({ parent, level, group }) => (
+    <>
+      {parent && <h2>{parent}</h2>}
+      {level === 'h3' ? <h3>{group.title}</h3> : <h2>{group.title}</h2>}
+      <ul class="names">
+        {group.members.map((m) => <li>{m.name}{sub(m) && <small>{sub(m)}</small>}</li>)}
+      </ul>
+    </>
+  ))}
+  <h2 id="mahadanis">Mahadanis who contributed to the Jeernoddhara</h2>
+  <ul class="names">
+    {inv.mahadanis.map((m) => <li>{m.name}{m.detail && <small>{m.detail}</small>}</li>)}
+  </ul>
+  <h2 id="supporters">Dignitaries and organisations who extended support</h2>
+  <ul class="names">
+    {inv.supporters.map((m) => <li>{m.name}{m.detail && <small>{m.detail}</small>}</li>)}
+  </ul>
+</Page>

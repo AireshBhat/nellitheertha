@@ -1,0 +1,16 @@
+---
+import { getEntry } from 'astro:content';
+import Page from '../../../layouts/Page.astro';
+const L = (await getEntry('invitation', 'invitation'))!.data.letter;
+---
+<Page article slug="brahmakalasha/invitation" eyebrow="BRAHMAKALASHA 2026" title="The invitation"
+  description="The invitation to the Brahmakalasha at Sri Kshetra Nellitheertha, 20 to 30 December 2026."
+  back={{ href: '/brahmakalasha/', label: 'Brahmakalasha 2026' }} next={{ href: '/brahmakalasha/committees/', label: 'Committees and supporters' }}>
+  {L.header_lines.map((x) => <p class="letter-head">{x}</p>)}
+  {L.verse.length > 0 && <p class="mantra verse">{L.verse.map((x, i) => <>{i > 0 && <br />}{x}</>)}</p>}
+  {L.address_lines.length > 0 && <p class="letter-head">{L.address_lines.map((x, i) => <>{i > 0 && <br />}{x}</>)}</p>}
+  {L.salutation && <p>{L.salutation}</p>}
+  {L.blocks.map((b) => (b.type === 'heading' ? <h2>{b.text}</h2> : b.type === 'line' ? <p class="letter-line">{b.text}</p> : <p>{b.text}</p>))}
+  {L.closing_lines.map((x) => <p class="letter-close">{x}</p>)}
+  <p><a href="/assets/docs/brahmakalasha-invitation-english.pdf">The full invitation (PDF, 23 pages)</a></p>
+</Page>

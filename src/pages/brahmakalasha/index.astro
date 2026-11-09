@@ -1,0 +1,30 @@
+---
+import { getEntry } from 'astro:content';
+import Page from '../../layouts/Page.astro';
+import ProgrammeDay from '../../components/ProgrammeDay.astro';
+import BankDetails from '../../components/BankDetails.astro';
+import { EVENT, byDate, programme } from '../../lib/brahmakalasha';
+const groups = byDate(await programme());
+const inv = (await getEntry('invitation', 'invitation'))!.data;
+---
+<Page article slug="brahmakalasha" eyebrow="20 TO 30 DECEMBER 2026" title="Brahmakalasha 2026"
+  lead="Ashtabandha Brahmakalashabhisheka, Sakruth Pavitra Naga Brahma Mandalotsava and Varshavadhi Jatre at Sri Kshetra Nellitheertha."
+  description="The Brahmakalasha at Sri Kshetra Nellitheertha, 20 to 30 December 2026: the programme for every day."
+  jsonLd={EVENT} next={{ href: '/temple/', label: 'The temple' }}>
+  <dl class="keyfacts">
+    <div><dt>Brahmakalashabhisheka</dt><dd>Friday 25 December 2026, 10:20 AM, in Kumbha Lagna</dd></div>
+    <div><dt>Nagabrahma Mandalotsava</dt><dd>The night of Friday 25 December</dd></div>
+    <div><dt>Varshavadhi Jatre</dt><dd>25 to 30 December</dd></div>
+  </dl>
+  <p class="links-row"><a class="more" href="/brahmakalasha/invitation/">The invitation</a><a class="more" href="/brahmakalasha/committees/">Committees and supporters</a><a class="more" href="/assets/docs/brahmakalasha-invitation-english.pdf">The invitation (PDF, 23 pages)</a></p>
+  <h2 id="programme">Programme</h2>
+  <ol class="day-nav" aria-label="Days">
+    {groups.map((g) => <li><a href={`#dec-${g.day}`} class={g.day === 25 ? 'key' : undefined}><span class="dn">{g.day}</span><span class="wd">{g.weekday.slice(0, 3)}</span></a></li>)}
+  </ol>
+  {groups.map((g) => <ProgrammeDay group={g} />)}
+  <h2 id="instructions">Special instructions</h2>
+  <ol>
+    {inv.special_instructions.map((x) => <li>{x}</li>)}
+  </ol>
+  <BankDetails bank={inv.bank} />
+</Page>

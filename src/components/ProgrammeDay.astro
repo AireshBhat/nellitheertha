@@ -1,0 +1,28 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { posters, bi, type Group } from '../lib/brahmakalasha';
+interface Props { group: Group<CollectionEntry<'programme'>['data']> }
+const { group } = Astro.props;
+const files = posters(group.day);
+const id = `dec-${group.day}`;
+---
+<section class="day" id={id} aria-labelledby={`${id}-title`}>
+  <h2 id={`${id}-title`}>{group.weekday}, {group.day} December</h2>
+  {group.blocks.map((block) => (
+    <>
+      {block.heading && <p class="day-heading" {...bi(block.heading, block.kn?.heading)}>{block.heading}</p>}
+      {block.sections.map((sec) => (
+        <>
+          <h3 {...bi(sec.name, sec.kn?.name)}>{sec.name}</h3>
+          <ol class="prog">
+            {sec.items.map((it) => (
+              <li><span class="t" {...bi(it.time, it.kn?.time)}>{it.time}</span><span class="x">{it.kn?.text ? <span {...bi(it.text, it.kn.text)}>{it.text}</span> : it.text}{(it.details ?? []).filter(Boolean).map((d, i) => <span class="d" {...bi(d, it.kn?.details?.[i])}>{d}</span>)}</span></li>
+            ))}
+          </ol>
+        </>
+      ))}
+      {(block.notes ?? []).map((note, i) => <p class="note" {...bi(note, block.kn?.notes?.[i])}>{note}</p>)}
+    </>
+  ))}
+  <p class="poster-links">{files.map((f, i) => <>{i > 0 && ' '}<a href={`/assets/posters/${f}`}>Poster{files.length > 1 ? ` ${i + 1}` : ''}</a></>)}</p>
+</section>
