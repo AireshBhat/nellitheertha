@@ -1,0 +1,10 @@
+# Working files that stay local (Pass 01 preview on nellitheertha.in)
+compare.html
+compare/
+README.md
+_build/
+.DS_Store
+.env*
+.gitignore
+.vercel/
+.github/

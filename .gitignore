@@ -1,0 +1,9 @@
+# Internal working notes and image comparisons stay on the local machine
+/README.md
+/compare.html
+/compare/
+assets/poster-dec25.jpg
+# Vercel CLI link and tokens
+.vercel/
+.env*
+.DS_Store
