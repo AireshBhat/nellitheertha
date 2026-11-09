@@ -1,5 +1,5 @@
 {
- "source": "invitation-digital-english-23pp.pdf pages 19 and 23, transcribed by Claude on 2026-11-09. The letter (page 2), Mahadanis (page 20) and supporters (pages 21-22) are still to be transcribed.",
+ "source": "invitation-digital-english-23pp.pdf pages 2, 19, 20, 21, 22 and 23, transcribed by Claude on 2026-11-09 from 200-220 dpi crops",
  "special_instructions": [
   "Villagers belonging to the Nellitheertha Kudukattu are requested to bring and hand over their Hore Kanike items at 8:00 AM on 20-12-2026, the day of the Ugrana Muhurtha.",
   "Hore Kanike: Those who are offering Hore Kanike to Sri Devaru are requested to bring and hand over the offerings to the temple before evening on 20-12-2026, the day of Ugrana Muhurtha.",
@@ -18,5 +18,372 @@
   "upi_id": "9986376974@kbl",
   "qr_code": "present",
   "contact_line": "Please inform the details of your contribution via email ID vbnellitheertha@yahoo.com or WhatsApp No. +91 8088708914"
- }
+ },
+ "letter": {
+  "header_lines": [
+   "|| Sri Somanatheshwara Prasannah ||"
+  ],
+  "verse": [
+   "dhatriteerthaguheshwaram sukhakaram neerasya madhye sthitam |",
+   "vipraughashrutisamstutam smaraharam doshapaham shreekaram |",
+   "shreejabalimuneendrasevitapadam shreesomanatheshwaram |",
+   "bhaktabheeshtaphalapradam shivamayam kshetradhipam tam bhaje ||"
+  ],
+  "address_lines": [
+   "Sri Somanatheshwara Guhalaya Sri Kshetra Nellitheertha",
+   "Kompadavu Village, Post: Neerude, Mangaluru - 574144 D. K."
+  ],
+  "salutation": "Dear Bhagavad Bhaktas,",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "Starting on Swasti Sri Parabhava Nama Samvatsara Margashirsha Masa Shuddha Ekadashi, dated 20-12-2026, and culminating on Bahula Dwitiya, Friday, dated 25-12-2026, at 10:20 AM in the Kumbha Lagna Sumuhurtha, for Nellitheertha Sri Somanatheshwara Devaru,"
+   },
+   {
+    "type": "heading",
+    "text": "Ashtabandha Brahmakalashabhisheka"
+   },
+   {
+    "type": "paragraph",
+    "text": "With the divine blessings of the Honorary President of the Jeernoddhara Samiti,"
+   },
+   {
+    "type": "line",
+    "text": "Sri Sri Sri Vishwaprasanna Teertha Sripadangalu, Adhokshaja Pejavara Matha, Udupi"
+   },
+   {
+    "type": "paragraph",
+    "text": "will be held under the leadership of the Kshetra’s Paryaya Tantri, Edapadavu Seethambettu Brahmasri Vishnumoorthy Tantri, and in collaboration with all the honorable Edapadavu Tantris."
+   },
+   {
+    "type": "paragraph",
+    "text": "And on the same night, in the divine presence of"
+   },
+   {
+    "type": "line",
+    "text": "Sri Sri Sri Vidyaprasanna Teertha Sripadangalu, Subramanya Matha, Kukke"
+   },
+   {
+    "type": "paragraph",
+    "text": "by Sagri Sri Gopalakrishna Samaga Nagapatri and Sri Krishnaprasad Vaidya, Maddur, Dakke Balaga,"
+   },
+   {
+    "type": "heading",
+    "text": "Sakrutpavitra Nagabrahma Mandalotsava"
+   },
+   {
+    "type": "paragraph",
+    "text": "will be held."
+   },
+   {
+    "type": "paragraph",
+    "text": "Also, the Annual Jatre will be held from 25-12-2026 to 30-12-2026."
+   },
+   {
+    "type": "paragraph",
+    "text": "Therefore, we request you to actively participate in the Dharmika and Samskrutika programs to be held from 20-12-2026 to 30-12-2026, receive the Srimudi Gandhaprasada of the deity, cooperate in all ways possible, and become recipients of the complete grace of Sri Somanatha Devaru."
+   }
+  ],
+  "closing_lines": []
+ },
+ "mahadanis": [
+  {
+   "name": "Dharmadarshi Sri Veerendra Heggade",
+   "detail": "Dharmasthala"
+  },
+  {
+   "name": "Karnataka Bank",
+   "detail": "Head Office, Mangaluru"
+  },
+  {
+   "name": "Sri Dattatreya Guru and family",
+   "detail": "Bengaluru"
+  },
+  {
+   "name": "Kattalsar Pejathaya family",
+   "detail": null
+  },
+  {
+   "name": "Sri Keshava Shibaraya and family",
+   "detail": "Santrabailu"
+  },
+  {
+   "name": "Sri Bevinje Shridhara Kakillaya family",
+   "detail": "Kasaragod Kerala"
+  },
+  {
+   "name": "Sri Rajendra Pinto and relatives",
+   "detail": "Nellitheertha"
+  },
+  {
+   "name": "Sri Raghavendra Acharya and family",
+   "detail": "Bajpe"
+  },
+  {
+   "name": "Sri Shekhara Shetty and relatives",
+   "detail": "Dubai"
+  },
+  {
+   "name": "Sri Niranjana Poojary and family",
+   "detail": "Karambaru"
+  },
+  {
+   "name": "Sri P V R Murthy and family",
+   "detail": "Chennai"
+  },
+  {
+   "name": "Sri P Ramadas and family",
+   "detail": "AMS Bengaluru"
+  },
+  {
+   "name": "S S D M M Trust Jaipur",
+   "detail": null
+  },
+  {
+   "name": "Mahaganapati Trust, Bengaluru",
+   "detail": null
+  }
+ ],
+ "supporters": [
+  {
+   "name": "Vedamoorthi Sri Krishnaraja Tantri, Kudupu",
+   "detail": "(provided guidance for the Jeernoddhara of the temple to shape it beautifully in accordance with Vastu Shastra)"
+  },
+  {
+   "name": "Hon’ble Sri Kota Srinivas Poojary",
+   "detail": "Hon’ble Member of Parliament, Udupi-Chikkamagaluru"
+  },
+  {
+   "name": "Sri A S N Hebbar, Kundapura",
+   "detail": null
+  },
+  {
+   "name": "Sri Vasanth Bhat, Mangaluru.",
+   "detail": null
+  },
+  {
+   "name": "Sri Harish Kalathur, Architect, Kinnigoli",
+   "detail": "(prepared the detailed plan and conducted the technical supervision for all the construction works of the temple)"
+  },
+  {
+   "name": "Somanatheshwara Bhajaka Vrunda, Nellitheertha",
+   "detail": null
+  },
+  {
+   "name": "Mayuri Geleyara Balaga, Santrabailu, Nellitheertha",
+   "detail": null
+  },
+  {
+   "name": "Prajna Streeshakti, Nellitheertha",
+   "detail": null
+  },
+  {
+   "name": "Sarvashakti Yuvakavrunda, Nellitheertha",
+   "detail": null
+  },
+  {
+   "name": "Yuvashakti Nellitheertha",
+   "detail": null
+  },
+  {
+   "name": "Shivashakti Balaga and Shivashakti Svasahaya Sangha, Nellitheertha",
+   "detail": null
+  },
+  {
+   "name": "Villagers of Karambaru",
+   "detail": null
+  },
+  {
+   "name": "Yuvashakti Mahila Tanda, Amtada Padavu",
+   "detail": null
+  },
+  {
+   "name": "Murari Nayaka Vrunda, Kompadavu",
+   "detail": null
+  },
+  {
+   "name": "Navodaya NK Friends, Kompadavu",
+   "detail": null
+  },
+  {
+   "name": "Barke Friends, Kompadavu",
+   "detail": null
+  },
+  {
+   "name": "Omkar Yuvaka Vrunda, Kompadavu",
+   "detail": null
+  },
+  {
+   "name": "Omkar Matru Mandali, Kompadavu",
+   "detail": null
+  },
+  {
+   "name": "Electricity Supply Company MESCOM, Kompadavu",
+   "detail": null
+  },
+  {
+   "name": "Primary Health Centre, Kompadavu",
+   "detail": null
+  },
+  {
+   "name": "Vishnu Somanatheshwara Mahila Mandali, Kompadavu",
+   "detail": null
+  },
+  {
+   "name": "Sri Sarvajanika Ganeshotsava Samiti, Kompadavu",
+   "detail": null
+  },
+  {
+   "name": "Srihari Vishnumoorthi Sports Club (R), Kompadavu",
+   "detail": null
+  },
+  {
+   "name": "Junior Boys, Neerude",
+   "detail": null
+  },
+  {
+   "name": "Shraddha Streeshakti, Neerude",
+   "detail": null
+  },
+  {
+   "name": "Kaveri Svasahaya Sangha, Neerude",
+   "detail": null
+  },
+  {
+   "name": "Sri Sarvajanika Ganeshotsava Samiti, Neerude",
+   "detail": null
+  },
+  {
+   "name": "Vajrakaya Bhajana Mandali, Neerude",
+   "detail": null
+  },
+  {
+   "name": "Yaksha Chiguru, Neerude",
+   "detail": null
+  },
+  {
+   "name": "Yuvakamandala, Neerude",
+   "detail": null
+  },
+  {
+   "name": "Navachetana Friends, Budikadu",
+   "detail": null
+  },
+  {
+   "name": "Pragathi Mahila Mandali, Muchur",
+   "detail": null
+  },
+  {
+   "name": "Pragathi Yuvaka Mandala, Muchur",
+   "detail": null
+  },
+  {
+   "name": "Shridevi Yuvajana Seva Sangha, Muchur",
+   "detail": null
+  },
+  {
+   "name": "Shashwatha Samajaseva Sangha, Udayapura, Muchur",
+   "detail": null
+  },
+  {
+   "name": "Rama Yuvaka Vrunda, Muchur Kana",
+   "detail": null
+  },
+  {
+   "name": "Navajyothi Friends Circle, Kattalsar",
+   "detail": null
+  },
+  {
+   "name": "Friends Kattalsar, Bajpe",
+   "detail": null
+  },
+  {
+   "name": "Trupthi Friends, Golipalle",
+   "detail": null
+  },
+  {
+   "name": "Biruver Kudla, Bajpe Unit",
+   "detail": null
+  },
+  {
+   "name": "Kesari Auto Friends, Bajpe",
+   "detail": null
+  },
+  {
+   "name": "Sathwasaramani, Bangerapadavu",
+   "detail": null
+  },
+  {
+   "name": "Friends Kalladpu",
+   "detail": null
+  },
+  {
+   "name": "Perara Volunteers",
+   "detail": null
+  },
+  {
+   "name": "Kaykunja Yuvaka Mandala (R), Ekkar",
+   "detail": null
+  },
+  {
+   "name": "Vijaya Yuvasangama (R), Ekkar",
+   "detail": null
+  },
+  {
+   "name": "Bhramari Havyasi Yakshagana Mandali, Ekkar",
+   "detail": null
+  },
+  {
+   "name": "Thrinethra Friends, Arjunakodi",
+   "detail": null
+  },
+  {
+   "name": "Krishna Arjuna Cricketers, Arjunakodi",
+   "detail": null
+  },
+  {
+   "name": "Ayyappa Bhajana Mandali, Paduperara",
+   "detail": null
+  },
+  {
+   "name": "Uthsahi Friends Circle, Swamila Padavu",
+   "detail": null
+  },
+  {
+   "name": "Yuvavahini, Bajpe",
+   "detail": null
+  },
+  {
+   "name": "Ayyappa Bhaktha Vrunda, Addabare",
+   "detail": null
+  },
+  {
+   "name": "District Rajyotsava Awardee Sri Nagabrahma Yuvaka Mandala (R), Paduperara",
+   "detail": null
+  },
+  {
+   "name": "Javaner Perara (R), Paduperara",
+   "detail": null
+  },
+  {
+   "name": "ASHA Workers, Bajpe Primary Health Centre",
+   "detail": null
+  },
+  {
+   "name": "Gurukula Balasamskara Kendra Poshakavrunda, Kinnipadavu",
+   "detail": null
+  },
+  {
+   "name": "Police Station, Bajpe, Mangaluru",
+   "detail": null
+  },
+  {
+   "name": "Lovely Sports and Games Club, Kallakumer, Niddodi",
+   "detail": null
+  },
+  {
+   "name": "Sri Bapuji Sports Club, Kundila Padavu, Niddodi",
+   "detail": null
+  }
+ ]
 }

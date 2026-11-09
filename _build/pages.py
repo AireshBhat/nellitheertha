@@ -594,7 +594,7 @@ if programme:
         '        </dl>',
         '        <p class="links-row">'
         + ('<a class="more" href="invitation/">The invitation</a>' if invitation and invitation.get('letter') else '')
-        + ('<a class="more" href="committees/">Committees</a>' if committees else '')
+        + ('<a class="more" href="committees/">Committees and supporters</a>' if committees else '')
         + '<a class="more" href="../assets/docs/brahmakalasha-invitation-english.pdf">The invitation (PDF, 23 pages)</a></p>',
         '        <h2 id="programme">Programme</h2>',
         '        <ol class="day-nav" aria-label="Days">', *nav, '        </ol>',
@@ -607,6 +607,10 @@ if programme:
 if invitation and invitation.get('letter'):
     L = invitation['letter']
     out = [f'        <p class="letter-head">{e(x)}</p>' for x in L.get('header_lines') or []]
+    if L.get('verse'):
+        out.append('        <p class="mantra verse">' + '<br>'.join(e(x) for x in L['verse']) + '</p>')
+    if L.get('address_lines'):
+        out.append('        <p class="letter-head">' + '<br>'.join(e(x) for x in L['address_lines']) + '</p>')
     if L.get('salutation'):
         out.append(f'        <p>{e(L["salutation"])}</p>')
     for blk in L.get('blocks') or []:
@@ -621,7 +625,7 @@ if invitation and invitation.get('letter'):
     out.append('        <p><a href="../../assets/docs/brahmakalasha-invitation-english.pdf">The full invitation (PDF, 23 pages)</a></p>')
     write_page('brahmakalasha/invitation', 'BRAHMAKALASHA 2026', 'The invitation', '', '\n'.join(out),
                'The invitation to the Brahmakalasha at Sri Kshetra Nellitheertha, 20 to 30 December 2026.',
-               depth=2, back=('../', 'Brahmakalasha 2026'), nxt=('brahmakalasha/committees', 'Committees'))
+               depth=2, back=('../', 'Brahmakalasha 2026'), nxt=('brahmakalasha/committees', 'Committees and supporters'))
 
 if committees or invitation:
     out, shown = [], set()
@@ -644,10 +648,12 @@ if committees or invitation:
         out.append(f'        <h2 id="mahadanis">Mahadanis who contributed to the Jeernoddhara</h2>\n'
                    f'        <ul class="names">\n{items}\n        </ul>')
     if invitation and invitation.get('supporters'):
-        items = '\n'.join(f'          <li>{e(m.get("name") or "")}</li>' for m in invitation['supporters'])
+        items = '\n'.join(f'          <li>{e(m.get("name") or "")}'
+                          + (f'<small>{e(m["detail"])}</small>' if m.get('detail') else '') + '</li>'
+                          for m in invitation['supporters'])
         out.append(f'        <h2 id="supporters">Dignitaries and organisations who extended support</h2>\n'
                    f'        <ul class="names">\n{items}\n        </ul>')
-    write_page('brahmakalasha/committees', 'BRAHMAKALASHA 2026', 'Committees', '', '\n'.join(out),
+    write_page('brahmakalasha/committees', 'BRAHMAKALASHA 2026', 'Committees and supporters', '', '\n'.join(out),
                'The committees, Mahadanis and supporters of the Brahmakalasha at Sri Kshetra Nellitheertha.',
                depth=2, back=('../', 'Brahmakalasha 2026'), nxt=BK)
 

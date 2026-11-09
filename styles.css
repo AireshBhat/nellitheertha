@@ -426,6 +426,7 @@ footer a{display:inline-flex;min-height:48px;align-items:center;text-underline-o
 .letter-head{margin:0;font-size:16px;color:var(--ink-2)}
 .letter-line{font:400 21px/1.45 var(--serif)}
 .letter-close{margin:0}
+.verse{font-size:clamp(17px,2.2vw,20px);line-height:1.7;font-style:italic;color:var(--ink-2)}
 @media(max-width:520px){
   .prog li{grid-template-columns:minmax(0,1fr)}
 }
