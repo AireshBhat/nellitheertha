@@ -70,7 +70,8 @@
   const folder = wide ? 'walk-wide' : 'walk-tall';
   const frameCount = wide ? 48 : 60;
   const frames = new Array(frameCount);
-  let loading = false, scheduled = false, lastFrame = -1;
+  let loading = false, scheduled = false, sized = false, lastDrawn = null;
+  const ready = (image) => Boolean(image && image.complete && image.naturalWidth);
 
   const progressOf = (el) => {
     const rect = el.getBoundingClientRect();
@@ -83,10 +84,15 @@
   };
   function drawForest() {
     scheduled = false;
-    const index = Math.min(frameCount - 1, Math.round(progressOf(forest) * (frameCount - 1)));
-    const frame = frames[index];
-    if (index === lastFrame || !frame?.complete || !frame.naturalWidth) return;
-    lastFrame = index;
+    const want = Math.min(frameCount - 1, Math.round(progressOf(forest) * (frameCount - 1)));
+    // The wanted frame, or the nearest one that has arrived, so the walk moves while frames are still downloading.
+    let frame = null;
+    for (let d = 0; d < frameCount && !frame; d++) {
+      if (ready(frames[want - d])) frame = frames[want - d];
+      else if (ready(frames[want + d])) frame = frames[want + d];
+    }
+    if (!frame || frame === lastDrawn) return;
+    lastDrawn = frame;
     context.drawImage(frame, ...cover(frame));
   }
   const requestDraw = () => { if (!scheduled) { scheduled = true; requestAnimationFrame(drawForest); } };
@@ -95,7 +101,8 @@
     const density = Math.min(devicePixelRatio || 1, 2);
     canvas.width = Math.round(rect.width * density);
     canvas.height = Math.round(rect.height * density);
-    lastFrame = -1;
+    sized = true;
+    lastDrawn = null;
     requestDraw();
   }
   if (lean) forest.classList.add('static');
@@ -103,17 +110,22 @@
     const loadForest = () => {
       if (loading) return;
       loading = true;
-      for (let i = 0; i < frameCount; i++) {
+      // Coarse to fine: every 16th frame first, then every 8th, and so on, so the whole walk is covered early.
+      const order = [];
+      for (let step = 16; step >= 1; step /= 2) {
+        for (let i = 0; i < frameCount; i += step) if (!order.includes(i)) order.push(i);
+      }
+      order.forEach((i) => {
         const image = new Image();
         image.decoding = 'async';
-        image.onload = () => { if (i === 0) sizeCanvas(); requestDraw(); };
+        image.onload = () => { if (!sized) sizeCanvas(); requestDraw(); };
         image.src = `assets/${folder}/${String(i).padStart(3, '0')}.webp`;
         frames[i] = image;
-      }
+      });
     };
     const forestObserver = new IntersectionObserver((entries) => {
       if (entries.some((e) => e.isIntersecting)) { loadForest(); forestObserver.disconnect(); }
-    }, { rootMargin: '100% 0px' });
+    }, { rootMargin: '400% 0px' });
     forestObserver.observe(forest);
     addEventListener('scroll', requestDraw, { passive: true });
     addEventListener('resize', sizeCanvas);
