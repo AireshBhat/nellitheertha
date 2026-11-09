@@ -1,8 +1,11 @@
-# Internal working notes and image comparisons stay on the local machine
+# Internal notes stay on the local machine (the repo is public)
+/PRODUCT.md
 /README.md
-/compare.html
-/compare/
-assets/poster-dec25.jpg
+# Build output and dependencies
+node_modules/
+dist/
+.astro/
+tests/out/
 # Vercel CLI link and tokens
 .vercel/
 .env*
