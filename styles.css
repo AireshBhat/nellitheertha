@@ -353,7 +353,6 @@ footer a{display:inline-flex;min-height:48px;align-items:center;text-underline-o
 .footer-contact a{min-height:44px}
 
 /* ---------- content pages ---------- */
-.page-home{display:inline-flex;align-items:center;min-height:48px;font-size:16px;text-underline-offset:6px}
 .page main{padding:clamp(12px,3vw,32px) var(--gutter) clamp(72px,10vw,120px)}
 .article{max-width:1120px;margin:0 auto}
 .back{display:inline-flex;align-items:center;gap:8px;min-height:48px;color:var(--ink-2);font-size:16px;text-underline-offset:6px}
@@ -401,7 +400,6 @@ footer a{display:inline-flex;min-height:48px;align-items:center;text-underline-o
 .next-page .more{font:400 clamp(24px,4vw,30px)/1.3 var(--serif)}
 .page footer{padding-bottom:72px}
 @media(min-width:700px){
-  .page-home{display:none}
   .page-index{grid-template-columns:1fr 1fr}
 }
 @media(min-width:1000px){
@@ -455,3 +453,13 @@ footer a{display:inline-flex;min-height:48px;align-items:center;text-underline-o
   .ink-line{background-size:100% 1px}
   .forest canvas{display:none}
 }
+
+/* ---------- the way back to the top (every page) ---------- */
+.to-top{position:fixed;z-index:50;right:max(16px,env(safe-area-inset-right));bottom:max(18px,env(safe-area-inset-bottom));width:48px;height:48px;display:grid;place-items:center;border-radius:50%;border:1px solid oklch(74% .016 240 / .7);background:oklch(95.5% .008 95 / .8);color:var(--ink-2);opacity:.62;transition:opacity .45s var(--ease-out),translate .5s var(--ease-out),background-color .25s var(--ease-out),color .25s var(--ease-out),border-color .25s var(--ease-out),box-shadow .25s var(--ease-out)}
+.to-top svg{width:19px;height:19px;transition:transform .3s var(--ease-out)}
+.js .to-top:not(.show){opacity:0;visibility:hidden;translate:0 14px;transition:opacity .45s var(--ease-out),translate .5s var(--ease-out),visibility 0s .5s}
+.to-top:hover,.to-top:focus-visible{opacity:1;background:var(--laterite);border-color:var(--laterite);color:var(--camphor);box-shadow:0 6px 20px oklch(20% .02 45 / .22)}
+.to-top:hover svg{transform:translateY(-2px)}
+.to-top.nudge svg{animation:nudge 1.4s var(--ease-soft) 3}
+@keyframes nudge{0%,100%{transform:translateY(0)}40%{transform:translateY(-5px)}70%{transform:translateY(1px)}}
+@media(prefers-reduced-motion:reduce){.to-top,.to-top svg{transition:none}.to-top.nudge svg{animation:none}}

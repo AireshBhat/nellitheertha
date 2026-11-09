@@ -89,7 +89,11 @@ def header(prefix):
       <a href="{prefix}visit/">Visit</a>
       <a href="{prefix}#contribute">Contribute</a>
     </nav>
-    <a class="page-home" href="{prefix or './'}">Home</a>
+    <div class="language" role="group" aria-label="Language">
+      <button type="button" data-language-choice="kn" lang="kn" aria-pressed="false">ಕನ್ನಡ</button>
+      <span aria-hidden="true">·</span>
+      <button type="button" data-language-choice="en" aria-pressed="true">English</button>
+    </div>
   </header>'''
 
 
@@ -149,7 +153,9 @@ def write_page(slug_, eyebrow, title, lead, body, description, depth=1, back=Non
   <link rel="apple-touch-icon" href="{p}assets/icons/apple-touch-icon.png">{head_extra}
   <link rel="preload" href="{p}assets/fonts/TiroKannada-Regular-all.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="{p}assets/fonts/AnekKannada-Variable-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <script>document.documentElement.classList.add('js')</script>
   <link rel="stylesheet" href="{p}styles.css">
+  <script src="{p}site.js" defer></script>
 </head>
 <body class="page" data-language="en">
 {header(p)}
@@ -169,6 +175,7 @@ def write_page(slug_, eyebrow, title, lead, body, description, depth=1, back=Non
   </main>
 
 {footer(p)}
+  <a class="to-top" href="#top" aria-label="Back to the top" title="Back to the top"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 16V4M4.5 9.5 10 4l5.5 5.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 </body>
 </html>
 '''

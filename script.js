@@ -113,20 +113,6 @@
     live('notes').replaceChildren(...day.notes.map((n) => { const p = document.createElement('p'); p.textContent = n; return p; }));
   }
 
-  // Language.
-  function setLanguage(language, remember = true) {
-    body.dataset.language = language;
-    document.querySelectorAll('[data-language-choice]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.languageChoice === language)));
-    document.querySelectorAll('[data-en][data-kn]').forEach((el) => {
-      el.textContent = language === 'kn' ? el.dataset.kn : el.dataset.en;
-      el.lang = language === 'kn' ? 'kn' : 'en';
-    });
-    if (remember) storage.set('nelli-language', language);
-  }
-  document.querySelectorAll('[data-language-choice]').forEach((b) => b.addEventListener('click', () => setLanguage(b.dataset.languageChoice)));
-  const askedLanguage = params.get('lang');
-  const deviceLanguage = (navigator.language || '').toLowerCase().startsWith('kn') ? 'kn' : 'en';
-  setLanguage(['en', 'kn'].includes(askedLanguage) ? askedLanguage : storage.get('nelli-language') || deviceLanguage, false);
   const section = params.get('section');
   if (section) requestAnimationFrame(() => document.getElementById(section)?.scrollIntoView({ behavior: 'instant' }));
 
