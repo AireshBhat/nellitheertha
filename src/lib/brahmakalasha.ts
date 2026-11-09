@@ -41,7 +41,28 @@ export function posters(day: number): string[] {
 // Attributes that let the language switch show the Kannada version, when there is one.
 export const bi = (en?: string | null, kn?: string | null) => (en && kn ? { 'data-en': en, 'data-kn': kn } : {});
 
+// The programme as a whole: every date from 20 to 30 December, in order, each date's blocks together,
+// and each weekday true to its date. The schema checks entries one by one; this checks the set.
+export function checkProgramme(blocks: { date: string; weekday: string }[]): void {
+  const want = Array.from({ length: 11 }, (_, i) => `2026-12-${20 + i}`);
+  const missing = want.filter((d) => !blocks.some((b) => b.date === d));
+  if (missing.length) throw new Error(`programme: no entry for ${missing.join(', ')}`);
+  const seen = new Set<string>();
+  let prev = '';
+  for (const b of blocks) {
+    if (b.date !== prev) {
+      if (seen.has(b.date) || b.date < prev) throw new Error(`programme: ${b.date} is out of order, or its entries are split apart`);
+      seen.add(b.date);
+      prev = b.date;
+    }
+    const weekday = new Date(`${b.date}T00:00:00Z`).toLocaleDateString('en-GB', { weekday: 'long', timeZone: 'UTC' });
+    if (weekday !== b.weekday) throw new Error(`programme: ${b.date} is a ${weekday}, but its weekday says ${b.weekday}`);
+  }
+}
+
 export async function programme() {
   const { getCollection } = await import('astro:content');
-  return (await getCollection('programme')).sort((a, b) => a.id.localeCompare(b.id)).map((e) => e.data);
+  const blocks = (await getCollection('programme')).sort((a, b) => a.id.localeCompare(b.id)).map((e) => e.data);
+  checkProgramme(blocks);
+  return blocks;
 }

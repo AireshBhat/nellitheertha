@@ -8,7 +8,8 @@ for (const page of PAGES) {
   const html = await (await fetch(OLD + page)).text();
   for (const m of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
     const url = new URL(m[1], OLD + page);
-    if (url.origin + '/' === OLD && url.pathname.startsWith('/assets/') && !url.pathname.startsWith('/assets/fonts/')) paths.add(url.pathname.slice(1));
+    // Fonts and the forest-walk frames are loaded by the pages themselves, never shared; they moved on purpose.
+    if (url.origin + '/' === OLD && url.pathname.startsWith('/assets/') && !/^\/assets\/(fonts|walk-)/.test(url.pathname)) paths.add(url.pathname.slice(1));
   }
 }
 const sitemap = await (await fetch(OLD + 'sitemap.xml')).text();

@@ -1,0 +1,1143 @@
+{
+ "source": "a test fixture: 21 December says Sunday",
+ "days": [
+  {
+   "date": "2026-12-20",
+   "weekday": "Sunday",
+   "page": 3,
+   "heading": null,
+   "sections": [
+    {
+     "name": "Dharmic Programs",
+     "items": [
+      {
+       "time": "From 8:00 AM",
+       "text": "Swagata of Acharyadi Ritvijas, Samoohika Devata Prarthana, Torana Muhurta, Ugrana Muhurta, Acharyadi Ritvigvarana, Horekanike Samarpana, Start of Chaturveda Parayana.",
+       "details": [
+        "Ugrana Muhurta Inauguration: Vedamurti Sri Vasudeva Asranna, Hereditary Moktesara and Archaka, Sri Kshetra Kateel; Vedamurti Sri Ananthapadmanabha Asranna, Hereditary Archaka, Sri Kshetra Kateel"
+       ]
+      },
+      {
+       "time": "From 5:00 PM",
+       "text": "Bhoo Shuddhi, Ankuraropana",
+       "details": []
+      }
+     ],
+     "kn": {
+      "name": "ಧಾರ್ಮಿಕ ಕಾರ್ಯಕ್ರಮಗಳು",
+      "items": [
+       {
+        "time": "ಬೆಳಗ್ಗೆ 8:00ರಿಂದ",
+        "text": "ಆಚಾರ್ಯಾದಿ ಋತ್ವಿಜರ ಸ್ವಾಗತ, ಸಾಮೂಹಿಕ ದೇವತಾ ಪ್ರಾರ್ಥನೆ, ತೋರಣ ಮುಹೂರ್ತ, ಉಗ್ರಾಣ ಮುಹೂರ್ತ, ಆಚಾರ್ಯಾದಿ ಋತ್ವಿಗ್ವರಣ, ಹೊರೆಕಾಣಿಕೆ ಸಮರ್ಪಣೆ, ಚತುರ್ವೇದ ಪಾರಾಯಣ ಆರಂಭ.",
+        "details": [
+         "ಉಗ್ರಾಣ ಮುಹೂರ್ತ ಉದ್ಘಾಟನೆ :",
+         "ವೇದಮೂರ್ತಿ ಶ್ರೀ ವಾಸುದೇವ ಆಸ್ರಣ್ಣ",
+         "ಆನುವಂಶಿಕ ಮೊಕ್ತೇಸರರು ಮತ್ತು ಅರ್ಚಕರು, ಶ್ರೀ ಕ್ಷೇತ್ರ ಕಟೀಲು",
+         "ವೇದಮೂರ್ತಿ ಶ್ರೀ ಅನಂತಪದ್ಮನಾಭ ಆಸ್ರಣ್ಣ",
+         "ಆನುವಂಶಿಕ ಅರ್ಚಕರು, ಶ್ರೀ ಕ್ಷೇತ್ರ ಕಟೀಲು"
+        ]
+       },
+       {
+        "time": "ಸಂಜೆ 5:00ರಿಂದ",
+        "text": "ಭೂ ಶುದ್ಧಿ, ಅಂಕುರಾರೋಪಣ",
+        "details": []
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cultural Programs",
+     "items": [
+      {
+       "time": "From 6:30 PM",
+       "text": "“Om Namah Shivaya”",
+       "details": [
+        "Yakshagana Bayalata presented by Sri Ganesha Yaksha Chiguru, Neerude",
+        "Sponsors: Shivashakti Balaga Nellitheertha, Shivashakti Swasahaya Sangha Nellitheertha"
+       ]
+      }
+     ],
+     "kn": {
+      "name": "ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳು",
+      "items": [
+       {
+        "time": "ಸಂಜೆ 6:30ರಿಂದ",
+        "text": "ಓಂ ನಮಃ ಶಿವಾಯ",
+        "details": [
+         "ಶ್ರೀ ಗಣೇಶ ಯಕ್ಷ ಚಿಗುರು, ನೀರುಡೆ - ಇವರು ಪ್ರಸ್ತುತ ಪಡಿಸುವ ಯಕ್ಷಗಾನ ಬಯಲಾಟ",
+         "ಪ್ರಾಯೋಜಕರು",
+         "ಶಿವಶಕ್ತಿ ಬಳಗ ನೆಲ್ಲಿತೀರ್ಥ, ಶಿವಶಕ್ತಿ ಸ್ವಸಹಾಯ ಸಂಘ ನೆಲ್ಲಿತೀರ್ಥ"
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": [
+    "(This day’s Annadana and Sarvaseva Vishesha Sankalpa: Smt. Vanaja Sanjeeva Suvarna and Children, Nellitheertha Barankila)"
+   ],
+   "kn": {
+    "heading": "ದಿನಾಂಕ 20-12-2026ನೇ ಭಾನುವಾರ",
+    "notes": [
+     "ಈ ದಿನದ ಅನ್ನದಾನ ಮತ್ತು ಸರ್ವಸೇವಾ ವಿಶೇಷ ಸಂಕಲ್ಪ",
+     "ಶ್ರೀಮತಿ ವನಜಾ ಸಂಜೀವ ಸುವರ್ಣ ಮತ್ತು ಮಕ್ಕಳು, ನೆಲ್ಲಿತೀರ್ಥ ಬರಂಕಿಲ"
+    ]
+   }
+  },
+  {
+   "date": "2026-12-21",
+   "weekday": "Sunday",
+   "page": 4,
+   "heading": null,
+   "sections": [
+    {
+     "name": "Dharmic Programs",
+     "items": [
+      {
+       "time": "From 7:00 AM",
+       "text": "Nandimukha Punyahavachana, Brahmakurcha Homa, Arani Mathana, Adya Ganayaga, Navagraha Shanti",
+       "details": []
+      },
+      {
+       "time": "From 5:00 PM",
+       "text": "Prasada Shuddhi, Rakshoghna Homa, Vastu Pooja, Vastu Bali, Vastu Homa, Prakara Bali",
+       "details": []
+      }
+     ],
+     "kn": {
+      "name": "ಧಾರ್ಮಿಕ ಕಾರ್ಯಕ್ರಮಗಳು",
+      "items": [
+       {
+        "time": "ಬೆಳಗ್ಗೆ 7:00ರಿಂದ",
+        "text": "ನಾಂದಿಮುಖ ಪುಣ್ಯಾಹವಾಚನ, ಬ್ರಹ್ಮಕೂರ್ಚ ಹೋಮ, ಅರಣಿ ಮಥನ, ಆದ್ಯ ಗಣಯಾಗ, ನವಗ್ರಹ ಶಾಂತಿ",
+        "details": []
+       },
+       {
+        "time": "ಸಂಜೆ 5:00ರಿಂದ",
+        "text": "ಪ್ರಾಸಾದ ಶುದ್ಧಿ, ರಾಕ್ಷೋಘ್ನ ಹೋಮ, ವಾಸ್ತು ಪೂಜೆ, ವಾಸ್ತು ಬಲಿ, ವಾಸ್ತು ಹೋಮ, ಪ್ರಾಕಾರ ಬಲಿ",
+        "details": []
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cultural Programs",
+     "items": [
+      {
+       "time": "From 4:00 PM",
+       "text": "Carnatic Classical Music Concert",
+       "details": [
+        "Dr. Vidushi Suchitra Holla Puttur",
+        "Sponsors: Shanthi Kala Kendra Bajpe"
+       ]
+      },
+      {
+       "time": "From 6:30 PM",
+       "text": "“Bittilda Ullaldi Appe Bhagavathi”",
+       "details": [
+        "Sri Durga Kalavidaru, Hoyige Gudde Sasihithlu",
+        "Performing Tulu Grand Mythological Drama",
+        "Writing-Dialogue-Direction: Naresh Kumar, Sasihithlu",
+        "Sponsors: Devotees and well-wishers of the Temple"
+       ]
+      }
+     ],
+     "kn": {
+      "name": "ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳು",
+      "items": [
+       {
+        "time": "ಸಂಜೆ 4:00ರಿಂದ",
+        "text": "ಕರ್ನಾಟಕ ಶಾಸ್ತ್ರೀಯ ಸಂಗೀತ ಕಚೇರಿ",
+        "details": [
+         "ಡಾ. ವಿದುಷಿ ಸುಚಿತ್ರಾ ಹೊಳ್ಳ ಪುತ್ತೂರು - ಇವರಿಂದ",
+         "ಪ್ರಾಯೋಜಕರು : ಶಾಂತಿ ಕಲಾ ಕೇಂದ್ರ, ಬಜಪೆ"
+        ]
+       },
+       {
+        "time": "ಸಂಜೆ 6:30ರಿಂದ",
+        "text": "ಬಿತ್ತ್‌ಲ್ದ ಉಳ್ಳಾಲ್ದಿ ಅಪ್ಪೆ ಭಗವತಿ",
+        "details": [
+         "ಶ್ರೀ ದುರ್ಗಾ ಕಲಾವಿದರು, ಹೊಯಿಗೆಗುಡ್ಡೆ ಸಸಿಹಿತ್ಲು",
+         "ಅಭಿನಯಿಸುವ ತುಳು ಅದ್ದೂರಿ ಪೌರಾಣಿಕ ನಾಟಕ",
+         "ರಚನೆ-ಸಂಭಾಷಣೆ-ನಿರ್ದೇಶನ : ನರೇಶ್ ಕುಮಾರ್, ಸಸಿಹಿತ್ಲು",
+         "ಪ್ರಾಯೋಜಕರು : ದೇವಾಲಯದ ಭಕ್ತಾಭಿಮಾನಿಗಳು"
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": [
+    "(This day’s Annadana and Sarvaseva Vishesha Sankalpa: Smt. Sumitra and Sri Purandara Shetty, Santrabail, and Smt. Pratima Rai and children)"
+   ],
+   "kn": {
+    "heading": "ದಿನಾಂಕ 21-12-2026ನೇ ಸೋಮವಾರ",
+    "notes": [
+     "ಈ ದಿನದ ಅನ್ನದಾನ ಮತ್ತು ಸರ್ವಸೇವಾ ವಿಶೇಷ ಸಂಕಲ್ಪ",
+     "ಶ್ರೀಮತಿ ಸುಮಿತ್ರ, ಶ್ರೀ ಪುರಂದರ ಶೆಟ್ಟಿ, ಸಾಂತ್ರಬೈಲು ಮತ್ತು ಶ್ರೀಮತಿ ಪ್ರತಿಮಾ ರೈ ಹಾಗೂ ಮಕ್ಕಳು"
+    ]
+   }
+  },
+  {
+   "date": "2026-12-22",
+   "weekday": "Tuesday",
+   "page": 5,
+   "heading": null,
+   "sections": [
+    {
+     "name": "Dharmic Programs",
+     "items": [
+      {
+       "time": "From 7:00 AM",
+       "text": "Rigveda Samhita Parayana Purassara Bimbashuddhi Samanya Prayaschitta Homa, Shankaraaprokta Prayaschitta Homa, Mrityunjaya Homa.",
+       "details": []
+      },
+      {
+       "time": "From 5:00 PM",
+       "text": "Shakti Homa, Nalashodhane, Prayaschitta Homa for Lord Ganapati, Shanti Homa, Mantapa Samskara.",
+       "details": []
+      }
+     ],
+     "kn": {
+      "name": "ಧಾರ್ಮಿಕ ಕಾರ್ಯಕ್ರಮಗಳು",
+      "items": [
+       {
+        "time": "ಬೆಳಗ್ಗೆ 7:00ರಿಂದ",
+        "text": "ಋಗ್ವೇದ ಸಂಹಿತಾ ಪಾರಾಯಣ ಪುರಸ್ಸರ ಬಿಂಬಶುದ್ಧಿ, ಸಾಮಾನ್ಯ ಪ್ರಾಯಶ್ಚಿತ್ತ ಹೋಮ, ಶಂಕರಪ್ರೋಕ್ತ ಪ್ರಾಯಶ್ಚಿತ್ತ ಹೋಮ, ಮೃತ್ಯುಂಜಯ ಹೋಮ",
+        "details": []
+       },
+       {
+        "time": "ಸಂಜೆ 5:00ರಿಂದ",
+        "text": "ಶಕ್ತಿ ಹೋಮ, ನಾಳಶೋಧನೆ, ಗಣಪತಿ ದೇವರಿಗೆ ಪ್ರಾಯಶ್ಚಿತ್ತ ಹೋಮ, ಶಾಂತಿ ಹೋಮ, ಮಂಟಪ ಸಂಸ್ಕಾರ",
+        "details": []
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cultural Programs",
+     "items": [
+      {
+       "time": "From 4:00 PM",
+       "text": "Bharatanatyam Dance Performance",
+       "details": [
+        "By Kumari Sathvi Shastri, Konchady, Derebail, Mangaluru"
+       ]
+      },
+      {
+       "time": "From 6:30 PM",
+       "text": "“Yanori Baroliya”",
+       "details": [
+        "Super hit Tulu comedy drama written, acted, and directed by Dr. Lion Devadas Kapikad, which created history and saw record-breaking performances in the theater, performed by Chaparka Kalavidaru",
+        "Sponsors: Mayuri Geleyara Balaga, Santrabail Nellitheertha and all the villagers of Santrabail Nellitheertha"
+       ]
+      }
+     ],
+     "kn": {
+      "name": "ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳು",
+      "items": [
+       {
+        "time": "ಸಂಜೆ 4:00ರಿಂದ",
+        "text": "ಭರತನಾಟ್ಯ ನೃತ್ಯ ಪ್ರದರ್ಶನ",
+        "details": [
+         "ಕುಮಾರಿ ಸಾಧ್ವೀ ಶಾಸ್ತ್ರಿ, ಕೊಂಚಾಡಿ, ದೇರೇಬೈಲ್, ಮಂಗಳೂರು - ಇವರಿಂದ"
+        ]
+       },
+       {
+        "time": "ಸಂಜೆ 6:30ರಿಂದ",
+        "text": "ಯಾನೊರಿ ಬರೊಲಿಯಾ",
+        "details": [
+         "ಚಾಪರ್ಕ ಕಲಾವಿದರು ಅಭಿನಯಿಸುವ ರಂಗಭೂಮಿಯಲ್ಲಿ ಇತಿಹಾಸ ಸೃಷ್ಟಿಸಿ ದಾಖಲೆ ಪ್ರದರ್ಶನ ಕಂಡ ಡಾ. ಲಯನ್ ದೇವದಾಸ್ ಕಾಪಿಕಾಡ್ ರಚಿಸಿ, ನಟಿಸಿ, ನಿರ್ದೇಶಿಸಿರುವ",
+         "ಸೂಪರ್ ಹಿಟ್ ತುಳು ಹಾಸ್ಯಮಯ ನಾಟಕ",
+         "ಪ್ರಾಯೋಜಕರು : ಮಯೂರಿ ಗೆಳೆಯರ ಬಳಗ, ಸಾಂತ್ರಬೈಲು ನೆಲ್ಲಿತೀರ್ಥ ಹಾಗೂ ಊರ ಸಮಸ್ತರು ಸಾಂತ್ರಬೈಲು ನೆಲ್ಲಿತೀರ್ಥ"
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": [
+    "(This day’s Annadana and Sarvaseva Visesha Sankalpa: Sri Shekhar Shetty and relatives, Dubai)"
+   ],
+   "kn": {
+    "heading": "ದಿನಾಂಕ 22-12-2026ನೇ ಮಂಗಳವಾರ",
+    "notes": [
+     "ಈ ದಿನದ ಅನ್ನದಾನ ಮತ್ತು ಸರ್ವಸೇವಾ ವಿಶೇಷ ಸಂಕಲ್ಪ",
+     "ಶ್ರೀ ಶೇಖರ ಶೆಟ್ಟಿ ಮತ್ತು ಬಂಧುಗಳು, ದುಬೈ"
+    ]
+   }
+  },
+  {
+   "date": "2026-12-23",
+   "weekday": "Wednesday",
+   "page": 6,
+   "heading": null,
+   "sections": [
+    {
+     "name": "Dharmic Programs",
+     "items": [
+      {
+       "time": "From 7:00 AM",
+       "text": "Shiva Shanti, Chora Shanti, Dagdha Shanti, Adbhuta Shanti Homas, at 10:25 AM in Kumbha Lagna Sumuhurtha Ashtabondha Lepana to Sri Devaru, Pratishanga Bali, Ashlesha Bali and Kalashabhisheka to Nagadevaru, Pavamana Homa, Mahapooja to Sri Devaru.",
+       "details": []
+      },
+      {
+       "time": "From 5:00 PM",
+       "text": "Disha Homa, Mahabalipeetha Pratishte, Bhadraka Mandala Pooja, Kalashabhisheka to Daivas, Kalashadhivasa with 108 Kalashas to Ganapati Devaru.",
+       "details": []
+      }
+     ],
+     "kn": {
+      "name": "ಧಾರ್ಮಿಕ ಕಾರ್ಯಕ್ರಮಗಳು",
+      "items": [
+       {
+        "time": "ಬೆಳಗ್ಗೆ 7:00ರಿಂದ",
+        "text": "ಶಿವ ಶಾಂತಿ, ಚೋರ ಶಾಂತಿ, ದಗ್ಧ ಶಾಂತಿ, ಅದ್ಭುತ ಶಾಂತಿ ಹೋಮಗಳು, ಗಂಟೆ 10:25ಕ್ಕೆ ಕುಂಭ ಲಗ್ನ ಸುಮುಹೂರ್ತದಲ್ಲಿ ಶ್ರೀ ದೇವರಿಗೆ ಅಷ್ಟಬಂಧ ಲೇಪನ, ಪ್ರತಿಷ್ಠಾಂಗ ಬಲಿ, ನಾಗದೇವರಿಗೆ ಆಶ್ಲೇಷ ಬಲಿ ಮತ್ತು ಕಲಶಾಭಿಷೇಕ, ಪವಮಾನ ಹೋಮ, ಶ್ರೀ ದೇವರಿಗೆ ಮಹಾಪೂಜೆ.",
+        "details": []
+       },
+       {
+        "time": "ಸಂಜೆ 5:00ರಿಂದ",
+        "text": "ದಿಶಾ ಹೋಮ, ಮಹಾಬಲಿಪೀಠ ಪ್ರತಿಷ್ಠೆ, ಭದ್ರಕ ಮಂಡಲ ಪೂಜೆ, ದೈವಗಳಿಗೆ ಕಲಶಾಭಿಷೇಕ, ಗಣಪತಿ ದೇವರಿಗೆ 108 ಕಲಶ ಸಹಿತ ಕಲಶಾಧಿವಾಸ.",
+        "details": []
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cultural Programs",
+     "items": [
+      {
+       "time": "From 4:00 PM",
+       "text": "Yakshagana Talamaddale.",
+       "details": [
+        "By Vishala Yakshakala Balaga Nandalike, Karkala Taluk, Udupi District",
+        "Sponsors: Vishala Yakshakala Balaga Nandalike"
+       ]
+      },
+      {
+       "time": "From 7:00 PM",
+       "text": "Panchavadya Musical Program by Panchavadyam, Rajatapeethapuram, Udupi",
+       "details": [
+        "Sponsors: In memory of Late Jalajakshi Subraya Bhat by Prasanna Bhat Nellitheertha"
+       ]
+      }
+     ],
+     "kn": {
+      "name": "ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳು",
+      "items": [
+       {
+        "time": "ಸಂಜೆ 4:00ರಿಂದ",
+        "text": "ಯಕ್ಷಗಾನ ತಾಳಮದ್ದಳೆ",
+        "details": [
+         "ವಿಶಾಲ ಯಕ್ಷಕಲಾ ಬಳಗ ನಂದಳಿಕೆ ಕಾರ್ಕಳ ತಾಲೂಕು, ಉಡುಪಿ ಜಿಲ್ಲೆ - ಇವರಿಂದ"
+        ]
+       },
+       {
+        "time": "ಸಂಜೆ 7:00ರಿಂದ",
+        "text": "ಪಂಚವಾದ್ಯಂ",
+        "details": [
+         "ರಜತಪೀಠಪುರಂ ಉಡುಪಿ ತಂಡದವರಿಂದ",
+         "ಪ್ರಾಯೋಜಕರು",
+         "ದಿ। ಜಲಜಾಕ್ಷಿ ಸುಬ್ರಾಯ ಭಟ್ ಇವರ ಸ್ಮರಣಾರ್ಥ ಪ್ರಸನ್ನ ಭಟ್ ನೆಲ್ಲಿತೀರ್ಥ"
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": [
+    "(This day’s Annadana and Sarvaseva Visesha Sankalpa: Sri Abhishek Bhandari and family, Boodigadu Ekkaru, Neerude)"
+   ],
+   "kn": {
+    "heading": "ದಿನಾಂಕ 23-12-2026ನೇ ಬುಧವಾರ",
+    "notes": [
+     "ಈ ದಿನದ ಅನ್ನದಾನ ಮತ್ತು ಸರ್ವಸೇವಾ ವಿಶೇಷ ಸಂಕಲ್ಪ",
+     "ಶ್ರೀ ಅಭಿಷೇಕ್ ಭಂಡಾರಿ ಮತ್ತು ಕುಟುಂಬದವರು, ಬುಡಿಗಾಡು ಎಕ್ಕಾರು, ನೀರುಡೆ"
+    ]
+   }
+  },
+  {
+   "date": "2026-12-24",
+   "weekday": "Thursday",
+   "page": 7,
+   "heading": null,
+   "sections": [
+    {
+     "name": "Dharmic Programs",
+     "items": [
+      {
+       "time": "From 7:00 AM",
+       "text": "Tattva Homa, Tattva Kalashabhisheka, Rudra Homa, Creation of Kalasha Mandala, Kalashabhisheka to Sri Jabali Maharshi, Brahmakalashabhisheka with 108 Kalashas to Lord Ganapati.",
+       "details": []
+      },
+      {
+       "time": "From 5:00 PM",
+       "text": "Brahmakalashadhivasa with 504 Parikalashas combined with 85 Dravyas to Lord Sri Somanatheshwara, Adhivasa Homas.",
+       "details": []
+      }
+     ],
+     "kn": {
+      "name": "ಧಾರ್ಮಿಕ ಕಾರ್ಯಕ್ರಮಗಳು",
+      "items": [
+       {
+        "time": "ಬೆಳಗ್ಗೆ 7:00ರಿಂದ",
+        "text": "ತತ್ತ್ವ ಹೋಮ, ತತ್ತ್ವ ಕಲಶಾಭಿಷೇಕ, ರುದ್ರ ಹೋಮ, ಕಲಶ ಮಂಡಲ ರಚನೆ, ಜಾಬಾಲಿ ಮಹರ್ಷಿಗಳಿಗೆ ಕಲಶಾಭಿಷೇಕ, ಗಣಪತಿ ದೇವರಿಗೆ 108 ಕಲಶ ಸಹಿತ ಬ್ರಹ್ಮಕಲಶಾಭಿಷೇಕ.",
+        "details": []
+       },
+       {
+        "time": "ಸಂಜೆ 5:00ರಿಂದ",
+        "text": "ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರ ದೇವರಿಗೆ 85 ದ್ರವ್ಯ ಮೀಳಿತ 504 ಪರಿಕಲಶ ಸಹಿತ ಬ್ರಹ್ಮಕಲಶಾಧಿವಾಸ ಅಧಿವಾಸ ಹೋಮಗಳು.",
+        "details": []
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cultural Programs",
+     "items": [
+      {
+       "time": "From 6:30 PM",
+       "text": "Dasavani Program",
+       "details": [
+        "By Vidwan Mysore Ramachandra Achar",
+        "Sponsors: Devotees and well-wishers of the temple"
+       ]
+      }
+     ],
+     "kn": {
+      "name": "ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳು",
+      "items": [
+       {
+        "time": "ಸಂಜೆ 6:30ರಿಂದ",
+        "text": "ದಾಸವಾಣಿ ಕಾರ್ಯಕ್ರಮ",
+        "details": [
+         "ವಿದ್ವಾನ್ ಮೈಸೂರ್ ರಾಮಚಂದ್ರ ಆಚಾರ್ - ಇವರಿಂದ",
+         "ಪ್ರಾಯೋಜಕರು : ದೇವಾಲಯದ ಭಕ್ತಾಭಿಮಾನಿಗಳು"
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": [
+    "(Annadana and Sarvaseva Vishesha Sankalpa for this day: Smt. Sujaya and Sri Divakara Suvarna, Ekkaru)"
+   ],
+   "kn": {
+    "heading": "ದಿನಾಂಕ 24-12-2026ನೇ ಗುರುವಾರ",
+    "notes": [
+     "ಈ ದಿನದ ಅನ್ನದಾನ ಮತ್ತು ಸರ್ವಸೇವಾ ವಿಶೇಷ ಸಂಕಲ್ಪ",
+     "ಶ್ರೀಮತಿ ಸುಜಯ ಮತ್ತು ಶ್ರೀ ದಿವಾಕರ ಸುವರ್ಣ, ಎಕ್ಕಾರು"
+    ]
+   }
+  },
+  {
+   "date": "2026-12-24",
+   "weekday": "Thursday",
+   "page": 8,
+   "heading": null,
+   "sections": [
+    {
+     "name": "Sabha Karyakrama (Stage Program), from 4:00 PM",
+     "items": [
+      {
+       "time": "Presidency and Ashirvachana",
+       "text": "Sri Sri Sri Vishwaprasanna Tirtha Sripadangalu",
+       "details": [
+        "Adhokshaja Pejavara Matha, Udupi"
+       ]
+      },
+      {
+       "time": "Dharmika Upanyasa",
+       "text": "Vidwan Sri Subramanya Bhat",
+       "details": [
+        "Avadhani and Vastu Expert, Udupi Gundibail"
+       ]
+      },
+      {
+       "time": "Shubhashamsane",
+       "text": "Vedamurthy Sri Lakshmi Narayana Asranna",
+       "details": [
+        "Sri Kshetra Kateel"
+       ]
+      },
+      {
+       "time": "",
+       "text": "Vedamurthy Sri Sriharinarayanadasa Asranna",
+       "details": [
+        "Sri Kshetra Kateel"
+       ]
+      },
+      {
+       "time": "Chief Guests",
+       "text": "Sri U. T. Khader",
+       "details": [
+        "Hon’ble District In-charge Minister and Minister of Health and Family Welfare, Government of Karnataka"
+       ]
+      },
+      {
+       "time": "",
+       "text": "Captain Brijesh Chowta",
+       "details": [
+        "Hon’ble Member of Parliament (Lok Sabha), Dakshina Kannada"
+       ]
+      },
+      {
+       "time": "",
+       "text": "Sri Kota Srinivas Poojary",
+       "details": [
+        "Hon’ble Member of Parliament (Lok Sabha), Udupi-Chikkamagaluru"
+       ]
+      },
+      {
+       "time": "",
+       "text": "Dr Bharath Shetty",
+       "details": [
+        "Hon’ble Member of Legislative Assembly (Vidhana Sabha), Mangaluru North"
+       ]
+      },
+      {
+       "time": "",
+       "text": "Sri Kuladeep M Chowta",
+       "details": [
+        "Chowtara Aramane, Moodabidri"
+       ]
+      },
+      {
+       "time": "",
+       "text": "Sri Raghavendra Bhat",
+       "details": [
+        "CEO and MD, Karnataka Bank"
+       ]
+      },
+      {
+       "time": "",
+       "text": "Dharmadarshi Sri Harikrishna Punaroru",
+       "details": [
+        "Mulki"
+       ]
+      },
+      {
+       "time": "",
+       "text": "Sri Pradeep Kumar Kalkura",
+       "details": [
+        "Kalkura Prathishtana, Mangaluru"
+       ]
+      },
+      {
+       "time": "",
+       "text": "Sri Bhuvanabhirama Udupa",
+       "details": [
+        "Yugapurusha, Kinnigoli"
+       ]
+      },
+      {
+       "time": "",
+       "text": "Sri A S N Hebbar",
+       "details": [
+        "Senior Advocate, Kundapura"
+       ]
+      },
+      {
+       "time": "",
+       "text": "Sri Abhishek Bhandari",
+       "details": [
+        "Budikadu, Ekkaru"
+       ]
+      },
+      {
+       "time": "Program Anchoring",
+       "text": "Sri N V G K Bhat",
+       "details": [
+        "Bengaluru"
+       ]
+      }
+     ],
+     "kn": {
+      "name": "ಸಭಾ ಕಾರ್ಯಕ್ರಮ",
+      "items": [
+       {
+        "time": "ಸಭಾಧ್ಯಕ್ಷತೆ ಮತ್ತು ಆಶೀರ್ವಚನ",
+        "text": "ಶ್ರೀ ಶ್ರೀ ಶ್ರೀ ವಿಶ್ವಪ್ರಸನ್ನ ತೀರ್ಥ ಶ್ರೀಪಾದಂಗಳವರು",
+        "details": [
+         "ಪೇಜಾವರ ಅಧೋಕ್ಷಜ ಮಠ, ಉಡುಪಿ"
+        ]
+       },
+       {
+        "time": "ಧಾರ್ಮಿಕ ಉಪನ್ಯಾಸ",
+        "text": "ವಿದ್ವಾನ್ ಶ್ರೀ ಸುಬಹ್ಮಣ್ಯ ಭಟ್",
+        "details": [
+         "ಅವಧಾನಿಗಳು ಮತ್ತು ವಾಸ್ತು ತಜ್ಞರು, ಉಡುಪಿ ಗುಂಡಿಬೈಲ್"
+        ]
+       },
+       {
+        "time": "ಶುಭಾಶಂಸನೆ",
+        "text": "ವೇದಮೂರ್ತಿ ಶ್ರೀ ಲಕ್ಷ್ಮೀನಾರಾಯಣ ಆಸ್ರಣ್ಣರು",
+        "details": [
+         "ಅನುವಂಶಿಕ ಅರ್ಚಕರು, ಶ್ರೀ ಕ್ಷೇತ್ರ ಕಟೀಲು"
+        ]
+       },
+       {
+        "time": "",
+        "text": "ವೇದಮೂರ್ತಿ ಶ್ರೀ ಶ್ರೀಹರಿನಾರಾಯಣದಾಸ ಆಸ್ರಣ್ಣರು",
+        "details": [
+         "ಅನುವಂಶಿಕ ಅರ್ಚಕರು, ಶ್ರೀ ಕ್ಷೇತ್ರ ಕಟೀಲು"
+        ]
+       },
+       {
+        "time": "ಅತಿಥಿ ಗಣ್ಯರು",
+        "text": "ಶ್ರೀ ಯು. ಟಿ. ಖಾದರ್",
+        "details": [
+         "ಮಾನ್ಯ ಜಿಲ್ಲಾ ಉಸ್ತುವಾರಿ ಸಚಿವರು ಮತ್ತು ಆರೋಗ್ಯ ಮತ್ತು ಕುಟುಂಬ ಕಲ್ಯಾಣ ಸಚಿವರು, ಕರ್ನಾಟಕ ಸರಕಾರ"
+        ]
+       },
+       {
+        "time": "",
+        "text": "ಶ್ರೀ ಕ್ಯಾಪ್ಟನ್ ಬ್ರಿಜೇಶ್ ಚೌಟ",
+        "details": [
+         "ಮಾನ್ಯ ಲೋಕಸಭಾ ಸದಸ್ಯರು, ದಕ್ಷಿಣ ಕನ್ನಡ"
+        ]
+       },
+       {
+        "time": "",
+        "text": "ಶ್ರೀ ಕೋಟ ಶ್ರೀನಿವಾಸ ಪೂಜಾರಿ",
+        "details": [
+         "ಮಾನ್ಯ ಲೋಕಸಭಾ ಸದಸ್ಯರು, ಉಡುಪಿ-ಚಿಕ್ಕಮಗಳೂರು"
+        ]
+       },
+       {
+        "time": "ಅತಿಥಿ ಗಣ್ಯರು",
+        "text": "ಡಾ. ಶ್ರೀ ವೈ. ಭರತ್ ಶೆಟ್ಟಿ",
+        "details": [
+         "ಮಾನ್ಯ ವಿಧಾನಸಭಾ ಸದಸ್ಯರು, ಮಂಗಳೂರು ಉತ್ತರ"
+        ]
+       },
+       {
+        "time": "",
+        "text": "ಶ್ರೀ ಕುಲದೀಪ್ ಎಂ. ಚೌಟ",
+        "details": [
+         "ಚೌಟರ ಅರಮನೆ, ಮೂಡಬಿದಿರೆ"
+        ]
+       },
+       {
+        "time": "",
+        "text": "ಶ್ರೀ ರಾಘವೇಂದ್ರ ಭಟ್",
+        "details": [
+         "CEO ಹಾಗೂ MD, ಕರ್ಣಾಟಕ ಬ್ಯಾಂಕ್"
+        ]
+       },
+       {
+        "time": "",
+        "text": "ಧರ್ಮದರ್ಶಿ ಶ್ರೀ ಹರಿಕೃಷ್ಣ ಪುನರೂರು, ಮುಲ್ಕಿ",
+        "details": []
+       },
+       {
+        "time": "",
+        "text": "ಶ್ರೀ ಪ್ರದೀಪ್ ಕುಮಾರ್ ಕಲ್ಕೂರ",
+        "details": [
+         "ಕಲ್ಕೂರ ಪ್ರತಿಷ್ಠಾನ, ಮಂಗಳೂರು"
+        ]
+       },
+       {
+        "time": "",
+        "text": "ಶ್ರೀ ಭುವನಾಭಿರಾಮ ಉಡುಪ",
+        "details": [
+         "ಯುಗಪುರುಷ, ಕಿನ್ನಿಗೋಳಿ"
+        ]
+       },
+       {
+        "time": "",
+        "text": "ಶ್ರೀ ಎ. ಎಸ್. ಎನ್. ಹೆಬ್ಬಾರ್",
+        "details": [
+         "ಹಿರಿಯ ವಕೀಲರು, ಕುಂದಾಪುರ"
+        ]
+       },
+       {
+        "time": "",
+        "text": "ಶ್ರೀ ಅಭಿಷೇಕ್ ಭಂಡಾರಿ",
+        "details": [
+         "ಬುಡಿಕಾಡು, ಎಕ್ಕಾರು"
+        ]
+       },
+       {
+        "time": "ಕಾರ್ಯಕ್ರಮ ನಿರೂಪಣೆ",
+        "text": "ಶ್ರೀ ಎನ್. ವಿ. ಜಿ. ಕೆ. ಭಟ್, ಬೆಂಗಳೂರು",
+        "details": []
+       }
+      ]
+     }
+    }
+   ],
+   "notes": []
+  },
+  {
+   "date": "2026-12-25",
+   "weekday": "Friday",
+   "page": 9,
+   "heading": null,
+   "sections": [
+    {
+     "name": "Dharmic Programs",
+     "items": [
+      {
+       "time": "From 6:00 AM",
+       "text": "Tailabhyanjana to Sri Devaru, at 10:20 AM during Kumbha Lagna Sumuhurtha Brahmakalashabhisheka to Sri Somanatheshwara Devaru with 504 Parikalasha mixed with 85 Dravyas, Nyasa Pooje, Avasrutha Bali, Dhwajarohana, Mahapooje, Pallapooje, Maha Annasantarpane.",
+       "details": []
+      },
+      {
+       "time": "From 5:00 PM",
+       "text": "Bali Horatu Utsava, Kattepooje, Inauguration of Pejathaya Mantapa, Mahapooje, from 8:00 PM Halittu Seve at the Nagabana of Nagappa Kere, from 10:00 PM Nagabrahma Mandala Seve, Prasada Distribution.",
+       "details": []
+      }
+     ],
+     "kn": {
+      "name": "ಧಾರ್ಮಿಕ ಕಾರ್ಯಕ್ರಮಗಳು",
+      "items": [
+       {
+        "time": "ಬೆಳಗ್ಗೆ 6:00ರಿಂದ",
+        "text": "ಶ್ರೀ ದೇವರಿಗೆ ತೈಲಾಭ್ಯಂಜನ, ಗಂಟೆ 10:20ಕ್ಕೆ ಕುಂಭ ಲಗ್ನ ಸುಮುಹೂರ್ತದಲ್ಲಿ ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರ ದೇವರಿಗೆ 85 ದ್ರವ್ಯ ಮೀಳಿತ 504 ಪರಿಕಲಶ ಸಹಿತ ಬ್ರಹ್ಮಕಲಶಾಭಿಷೇಕ, ನ್ಯಾಸ ಪೂಜೆ, ಅವಸೃತ ಬಲಿ, ಧ್ವಜಾರೋಹಣ, ಮಹಾಪೂಜೆ, ಪಲ್ಲಪೂಜೆ, ಮಹಾಅನ್ನಸಂತರ್ಪಣೆ.",
+        "details": []
+       },
+       {
+        "time": "ಸಂಜೆ 5:00ರಿಂದ",
+        "text": "ಬಲಿ ಹೊರಟು ಉತ್ಸವ, ಪೆಜತ್ತಾಯ ಮಂಟಪ ಉದ್ಘಾಟನಾಂಗ ಕಟ್ಟೆ ಪೂಜೆ, ಮಹಾಪೂಜೆ,",
+        "details": []
+       },
+       {
+        "time": "ರಾತ್ರಿ 8:00ರಿಂದ",
+        "text": "ನಾಗಪ್ಪ ಕೆರೆಯ ನಾಗಬನದಲ್ಲಿ ಹಾಲಿಟ್ಟು ಸೇವೆ,",
+        "details": []
+       },
+       {
+        "time": "ರಾತ್ರಿ 10:00ರಿಂದ",
+        "text": "ನಾಗಬ್ರಹ್ಮ ಮಂಡಲ ಸೇವೆ, ಪ್ರಸಾದ ವಿತರಣೆ.",
+        "details": []
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cultural Programs",
+     "items": [
+      {
+       "time": "From 1:30 PM",
+       "text": "“Yaksharasa Pugartada Kalavider” performing “Baravuda Bile”",
+       "details": [
+        "Yakshagana Hasya Vaibhava",
+        "Featuring renowned district artists who have shined and gained fame in the Yakshagana arena, in a comedy Jugalbandi by Bangadi and CK",
+        "Sponsors: Yakshagana Abhimanigalu (Fans of Yakshagana)"
+       ]
+      },
+      {
+       "time": "From 5:00 PM",
+       "text": "“Ganamrutha Nellitheertha”",
+       "details": [
+        "By Sandhya Prasanna Bhat, Vaishnavi P Bhat",
+        "Bhakti Geethe - Bhava Geethe - Janapada Geethe - Rasamanjari",
+        "Programme by the troupe along with guest artists",
+        "Sponsors: Devotees and well-wishers of the temple"
+       ]
+      }
+     ],
+     "kn": {
+      "name": "ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳು",
+      "items": [
+       {
+        "time": "ಮಧ್ಯಾಹ್ನ 1:30ರಿಂದ",
+        "text": "ಯಕ್ಷಗಾನ ಹಾಸ್ಯ ವೈಭವ",
+        "details": [
+         "ಯಕ್ಷಗಾನ ರಂಗದಲ್ಲಿ ಮಿಂಚಿ ಪ್ರಸಿದ್ಧಿ ಪಡೆದ ಜಿಲ್ಲಾ ಪ್ರಸಿದ್ಧ ಕಲಾವಿದರ ಕೂಡುವಿಕೆಯಲ್ಲಿ ಬಂಗಾಡಿ ಮತ್ತು ಸಿಕೆ ಹಾಸ್ಯದ ಜುಗಲ್ ಬಂದಿಯಲ್ಲಿ -",
+         "’ಯಕ್ಷರಸ ಪುಗಾರ್ತೆದ ಕಲಾವಿದೆರ್’ ಅಭಿನಯದ ‘ಬರವುದ ಬಿಲೆ’",
+         "ಪ್ರಾಯೋಜಕರು : ಯಕ್ಷಗಾನ ಅಭಿಮಾನಿಗಳು"
+        ]
+       },
+       {
+        "time": "ಸಂಜೆ 5:00ರಿಂದ",
+        "text": "ಭಕ್ತಿಗೀತೆ-ಭಾವಗೀತೆ-ಜನಪದಗೀತೆ - ರಸಮಂಜರಿ ಕಾರ್ಯಕ್ರಮ",
+        "details": [
+         "ಸಂಧ್ಯಾ ಪ್ರಸನ್ನ ಭಟ್, ವೈಷ್ಣವಿ ಪಿ. ಭಟ್ ಇವರ ‘ಗಾನಾಮೃತ ನೆಲ್ಲಿತೀರ್ಥ’ ತಂಡದಿಂದ ಅತಿಥಿ ಕಲಾವಿದರ ಕೂಡುವಿಕೆಯಲ್ಲಿ",
+         "ಪ್ರಾಯೋಜಕರು : ದೇವಾಲಯದ ಭಕ್ತಾಭಿಮಾನಿಗಳು"
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": [
+    "(Special assistance for Annadana of this day: Sri Ananda Kava and brothers, Santrabailu)",
+    "(Sakrutpavitra Nagabrahma Mandala Seva Special Sankalpa: Sri Yadava Kotian, Kannika Nilaya, Permude)"
+   ],
+   "kn": {
+    "heading": "ದಿನಾಂಕ 25-12-2026ನೇ ಶುಕ್ರವಾರ",
+    "notes": [
+     "ಈ ದಿನದ ಅನ್ನದಾನ ಸೇವಾ ಸಹಯೋಗ",
+     "ಶ್ರೀ ಆನಂದ ಕಾವ ಮತ್ತು ಸಹೋದರರರು, ಸಾಂತ್ರಬೈಲು",
+     "ಸಕೃತ್ಪವಿತ್ರ ನಾಗಬ್ರಹ್ಮಮಂಡಲ ಸೇವಾ ವಿಶೇಷ ಸಂಕಲ್ಪ",
+     "ಶ್ರೀ ಯಾದವ ಕೋಟ್ಯಾನ್, ‘ಕನ್ನಿಕಾ ನಿಲಯ’, ಪೆರ್ಮುದೆ"
+    ]
+   }
+  },
+  {
+   "date": "2026-12-26",
+   "weekday": "Saturday",
+   "page": 10,
+   "heading": null,
+   "sections": [
+    {
+     "name": "Dharmic Programs",
+     "items": [
+      {
+       "time": "Morning",
+       "text": "Mahapooja, Nitya Bali",
+       "details": []
+      },
+      {
+       "time": "From 6:00 PM",
+       "text": "Utsava Bali, Katte Pooja",
+       "details": []
+      }
+     ],
+     "kn": {
+      "name": "ಧಾರ್ಮಿಕ ಕಾರ್ಯಕ್ರಮಗಳು",
+      "items": [
+       {
+        "time": "ಬೆಳಗ್ಗೆ",
+        "text": "ಮಹಾಗಣಪತಿ ಹೋಮ",
+        "details": []
+       },
+       {
+        "time": "ಬೆಳಗ್ಗೆ",
+        "text": "ಮಹಾಪೂಜೆ, ನಿತ್ಯ ಬಲಿ",
+        "details": []
+       },
+       {
+        "time": "ಸಂಜೆ 6:00ರಿಂದ",
+        "text": "ಉತ್ಸವ ಬಲಿ, ಕಟ್ಟೆ ಪೂಜೆಗಳು",
+        "details": []
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cultural Programs",
+     "items": [
+      {
+       "time": "From 6:30 PM",
+       "text": "“Nritya Vaibhava”",
+       "details": [
+        "Dance programme by local talents and by the Nandagokula artists of Arehole Pratishtana Mangaluru",
+        "Direction: Shwetha Arehole",
+        "Sponsors: Mayuri Geleyara Balaga, Santhrabailu Nellitheertha and all the villagers of Nellitheertha"
+       ]
+      }
+     ],
+     "kn": {
+      "name": "ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳು",
+      "items": [
+       {
+        "time": "ಸಂಜೆ 6:30ರಿಂದ",
+        "text": "ಮಯೂರಿ ಸಂಭ್ರಮ",
+        "details": [
+         "ಊರ ಪ್ರತಿಭೆಗಳಿಂದ ನೃತ್ಯ ಕಾರ್ಯಕ್ರಮ ಹಾಗೂ ಹಾಸ್ಯ ವೈಭವ"
+        ]
+       },
+       {
+        "time": "",
+        "text": "ನೃತ್ಯ ವೈಭವ",
+        "details": [
+         "ಅರೆಹೊಳೆ ಪ್ರತಿಷ್ಠಾನ ಮಂಗಳೂರು ಇದರ ನಂದಗೋಕುಲ ಕಲಾವಿದರಿಂದ",
+         "ನಿರ್ದೇಶನ : ಶ್ವೇತಾ ಅರೆಹೊಳೆ",
+         "ಪ್ರಾಯೋಜಕರು : ಮಯೂರಿ ಗೆಳೆಯರ ಬಳಗ, ಸಾಂತ್ರಬೈಲು ನೆಲ್ಲಿತೀರ್ಥ ಹಾಗೂ ಊರ ಸಮಸ್ತರು, ಸಾಂತ್ರಬೈಲು, ನೆಲ್ಲಿತೀರ್ಥ"
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": [
+    "(This day’s Annadana Sevakartas: Sri Daksha Kotian, Bandasale, Kompadavu)",
+    "(Mahaganapati Homa Sevakarta: Sri Gopikrishnan, MD, Fortious Infra, Bengaluru)"
+   ],
+   "kn": {
+    "heading": "ದಿನಾಂಕ 26-12-2026ನೇ ಶನಿವಾರ",
+    "notes": [
+     "ಈ ದಿನದ ಅನ್ನದಾನ ಸೇವಾಕರ್ತರು",
+     "ಶ್ರೀ ದಕ್ಷ ಕೋಟ್ಯಾನ್, ಬಂಡಸಾಲೆ, ಕೊಂಪದವು",
+     "ಮಹಾಗಣಪತಿ ಹೋಮದ ಸೇವಾಕರ್ತರು",
+     "ಶ್ರೀ ಗೋಪಿಕೃಷ್ಣನ್, ಆಡಳಿತ ನಿದೇರ್ಶಕರು, Fortious Infra, ಬೆಂಗಳೂರು"
+    ]
+   }
+  },
+  {
+   "date": "2026-12-27",
+   "weekday": "Sunday",
+   "page": 11,
+   "heading": null,
+   "sections": [
+    {
+     "name": "Dharmic Programs",
+     "items": [
+      {
+       "time": "From 7:00 AM",
+       "text": "24 Coconut Gana Homa, Apoopa Muhurtha for Moodappa Seva, Mahapooja, Afternoon Rathotsava.",
+       "details": []
+      },
+      {
+       "time": "From 6:00 PM",
+       "text": "Utsava Bali, Apoopa Poorana for Moodappa Seva to Lord Ganapati, Mahapooja, Bhoota Bali, Shayana, Kavata Bandhana.",
+       "details": []
+      }
+     ],
+     "kn": {
+      "name": "ಧಾರ್ಮಿಕ ಕಾರ್ಯಕ್ರಮಗಳು",
+      "items": [
+       {
+        "time": "ಬೆಳಗ್ಗೆ 7:00ರಿಂದ",
+        "text": "24 ಕಾಯಿ ಗಣಹೋಮ, ಗಣಪತಿ ಹೋಮ, ಮೂಡಪ್ಪ ಸೇವೆಗೆ ಅಪೂಪ ಮುಹೂರ್ತ, ಮಹಾಪೂಜೆ, ಹಗಲು ರಥೋತ್ಸವ",
+        "details": []
+       },
+       {
+        "time": "ಸಂಜೆ 6:00ರಿಂದ",
+        "text": "ಉತ್ಸವ ಬಲಿ, ಗಣಪತಿ ದೇವರಿಗೆ ಮೂಡಪ್ಪ ಸೇವೆಗೆ ಅಪೂಪ ಪೂರಣ, ಪಲ್ಲಕ್ಕಿ ಉತ್ಸವ ಮಹಾಪೂಜೆ, ಭೂತಬಲಿ, ಶಯನ, ಕವಾಟ ಬಂಧನ.",
+        "details": []
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cultural Programs",
+     "items": [
+      {
+       "time": "From 6:00 PM",
+       "text": "Bharatanatya by Vidushi Smt Rashmi Naveen, Bengaluru",
+       "details": [
+        "(Student of Vidushi Smt Rupashri Madhusudan)"
+       ]
+      },
+      {
+       "time": "From 8:00 PM",
+       "text": "“Sunnada Bottu”",
+       "details": [
+        "By Chaparka Kalavidaru, Mangaluru",
+        "Dr Devidas Kapikad",
+        "Sponsors: Sarvashakti Yuvaka Vrunda, Nellitheertha"
+       ]
+      }
+     ],
+     "kn": {
+      "name": "ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳು",
+      "items": [
+       {
+        "time": "ಸಂಜೆ 6:00ರಿಂದ",
+        "text": "ಭರತನಾಟ್ಯ",
+        "details": [
+         "ವಿದುಷಿ ಶ್ರೀಮತಿ ರಶ್ಮಿ ನವೀನ್, ಬೆಂಗಳೂರು (ವಿದುಷಿ ಶ್ರೀಮತಿ ರೂಪಶ್ರೀ ಮಧುಸೂದನ್‌ರವರ ಶಿಷ್ಯೆ) - ಇವರಿಂದ"
+        ]
+       },
+       {
+        "time": "ರಾತ್ರಿ 8:00ರಿಂದ",
+        "text": "ಸುಣ್ಣದ ಬೊಟ್ಟು",
+        "details": [
+         "ಚಾಪರ್ಕ ಕಲಾವಿದರು ಮಂಗಳೂರು - ಇವರಿಂದ",
+         "ಲಯನ್ ಡಾ। ದೇವದಾಸ್ ಕಾಪಿಕಾಡ್ ರಚಿಸಿ, ನಟಿಸಿ, ನಿರ್ದೇಶಿಸಿರುವ ಈ ವರ್ಷದ ಸೂಪರ್ ಹಿಟ್ ನಾಟಕ",
+         "ಪ್ರಾಯೋಜಕರು : ಸರ್ವಶಕ್ತಿ ಯುವಕ ವೃಂದ, ನೆಲ್ಲಿತೀರ್ಥ"
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": [
+    "Vishesha Seva Sankalpa for Moodappa Seva: Sri Deep Kiran Salian and family, Karambaru",
+    "Ganapati Homa Sevakarta: Sri Sameesh Abraham and Smt Sridevi, Symetrics Development Pvt Ltd, Bengaluru",
+    "Pallakki Utsava Sevakarta: Smt and Sri Dr Shivananda Nodu, Kasaragodu",
+    "Annadana Sevakartaru for this day: Sri Ramaprasad, Bengaluru"
+   ],
+   "kn": {
+    "heading": "ದಿನಾಂಕ 27-12-2026ನೇ ಭಾನುವಾರ",
+    "notes": [
+     "ಮೂಡಪ್ಪ ಸೇವೆಯ ವಿಶೇಷ ಸೇವಾ ಸಂಕಲ್ಪ : ಶ್ರೀ ದೀಪ್ ಕಿರಣ್ ಸಾಲಿಯಾನ್ ಮತ್ತು ಕುಟುಂಬದವರು, ಕರಂಬಾರು",
+     "ಗಣಪತಿ ಹೋಮದ ಸೇವಾಕರ್ತರು : ಶ್ರೀ ಸಮೀರ್ ಅಬ್ರಾಹಂ ಮತ್ತು ಶ್ರೀಮತಿ ಶ್ರೀದೇವಿ, Symetrics Development Pvt. Ltd., ಬೆಂಗಳೂರು",
+     "ಪಲ್ಲಕ್ಕಿ ಉತ್ಸವದ ಸೇವಾಕರ್ತರು ಶ್ರೀಮತಿ ಮತ್ತು ಶ್ರೀ ಡಾ. ಶಿವಾನಂದ ನೋಡು, ಕಾಸರಗೋಡು",
+     "ಈ ದಿನದ ಅನ್ನದಾನ ಸೇವಾಕರ್ತರು : ಶ್ರೀ ರಾಮಪ್ರಸಾದ್ ಬೆಂಗಳೂರು"
+    ]
+   }
+  },
+  {
+   "date": "2026-12-28",
+   "weekday": "Monday",
+   "page": 12,
+   "heading": null,
+   "sections": [
+    {
+     "name": "Dharmic Programs",
+     "items": [
+      {
+       "time": "From 7:00 AM",
+       "text": "Kavatodghatane, Mukhadarshana of Lord Ganapati in Apoopa Madhya, Mahapooje, Prasada Distribution.",
+       "details": []
+      },
+      {
+       "time": "From 9:00 AM",
+       "text": "Tulabhara Sevas",
+       "details": []
+      },
+      {
+       "time": "From 10:00 AM",
+       "text": "Choornotsava Bali, Daiva Devara Bheti, Battalu Kanike, Palla Pooje, Maha Annasantarpane.",
+       "details": []
+      },
+      {
+       "time": "From 7:30 PM",
+       "text": "Utsava Bali, Ashtavadhana Seve, Okuli, Maharathotsava, Gaggara of Kshetrapala Daiva, Avabhrutha Snana, Kshetrapala Daiva Bheti, Dhvajavarohana.",
+       "details": []
+      }
+     ],
+     "kn": {
+      "name": "ಧಾರ್ಮಿಕ ಕಾರ್ಯಕ್ರಮಗಳು",
+      "items": [
+       {
+        "time": "ಬೆಳಗ್ಗೆ 7:00ರಿಂದ",
+        "text": "ಕವಾಟೋದ್ಘಾಟನೆ, ಅಪೂಪ ಮಧ್ಯದಲ್ಲಿ ಗಣಪತಿ ದೇವರ ಮುಖದರ್ಶನ, ಮಹಾಪೂಜೆ, ಪ್ರಸಾದ ವಿತರಣೆ",
+        "details": []
+       },
+       {
+        "time": "ಬೆಳಗ್ಗೆ 9:00ರಿಂದ",
+        "text": "ತುಲಾಭಾರ ಸೇವೆಗಳು",
+        "details": []
+       },
+       {
+        "time": "ಬೆಳಗ್ಗೆ 10:00ರಿಂದ",
+        "text": "ಚೂರ್ಣೋತ್ಸವ ಬಲಿ, ದೈವ ದೇವರ ಭೇಟಿ, ಬಟ್ಟಲು ಕಾಣಿಕೆ, ಪಲ್ಲ ಪೂಜೆ, ಮಹಾಅನ್ನಸಂತರ್ಪಣೆ.",
+        "details": []
+       },
+       {
+        "time": "ಸಂಜೆ 7 :30ರಿಂದ",
+        "text": "ಉತ್ಸವ ಬಲಿ, ಅಷ್ಟಾವಧಾನ ಸೇವೆ, ಓಕುಳಿ, ಮಹಾರಥೋತ್ಸವ ಕ್ಷೇತ್ರಪಾಲ ದೈವದ ಗಗ್ಗರ, ಅವಭೃತ ಸ್ನಾನ, ಕ್ಷೇತ್ರಪಾಲ ದೈವ ಭೇಟಿ, ಧ್ವಜಾವರೋಹಣ.",
+        "details": []
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cultural Programs",
+     "items": [
+      {
+       "time": "From 5:30 PM",
+       "text": "Goshti Gayana",
+       "details": [
+        "By Students of Sadhana Sangeeta Vidyalaya, Putturu"
+       ]
+      }
+     ],
+     "kn": {
+      "name": "ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳು",
+      "items": [
+       {
+        "time": "ಸಂಜೆ 5:30ರಿಂದ",
+        "text": "ಗೋಷ್ಠಿ ಗಾಯನ",
+        "details": [
+         "ಸಾಧನಾ ಸಂಗೀತ ವಿದ್ಯಾಲಯ ಪುತ್ತೂರು ಇದರ ವಿದ್ಯಾರ್ಥಿಗಳಿಂದ"
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": [
+    "(This day’s Annadana Seva Sponsors: Sri Ravindra S Shetty and family, Sri Shashvathayya Hospitality, Mumbai)"
+   ],
+   "kn": {
+    "heading": "ದಿನಾಂಕ 28-12-2026ನೇ ಸೋಮವಾರ",
+    "notes": [
+     "ಈ ದಿನದ ಅನ್ನದಾನ ಸೇವಾಕರ್ತರು : ಶ್ರೀ ರವೀಂದ್ರ ಸಂಕಪ್ಪ ಶೆಟ್ಟಿ ಮತ್ತು ಕುಟುಂಬದವರು, ಶಾಶ್ವತ್ತಾಯ ಹಾಸ್ಪಿಟಾಲಿಟಿ ಪ್ರೈ. ಲಿ., ಮುಂಬೈ"
+    ]
+   }
+  },
+  {
+   "date": "2026-12-29",
+   "weekday": "Tuesday",
+   "page": 13,
+   "heading": null,
+   "sections": [
+    {
+     "name": "Dharmic Programs",
+     "items": [
+      {
+       "time": "Morning",
+       "text": "Samprokshane, Mantrakshate",
+       "details": []
+      }
+     ],
+     "kn": {
+      "name": "ಧಾರ್ಮಿಕ ಕಾರ್ಯಕ್ರಮಗಳು",
+      "items": [
+       {
+        "time": "ಬೆಳಗ್ಗೆ",
+        "text": "ಸಂಪ್ರೋಕ್ಷಣೆ, ಮಂತ್ರಾಕ್ಷತೆ",
+        "details": []
+       }
+      ]
+     }
+    }
+   ],
+   "notes": [
+    "(This day’s Annasantarpane Seva: Family members of Muchur Kaidumaruguthu)"
+   ],
+   "kn": {
+    "heading": "ದಿನಾಂಕ 29-12-2026ನೇ ಮಂಗಳವಾರ",
+    "notes": [
+     "ಈ ದಿನದ ಅನ್ನಸಂತರ್ಪಣೆ ಸೇವಾದಾರರು : ಮುಚ್ಚೂರು ಕೈದುಮಾರುಗುತ್ತು ಕುಟುಂಬಸ್ಥರು"
+    ]
+   }
+  },
+  {
+   "date": "2026-12-30",
+   "weekday": "Wednesday",
+   "page": 14,
+   "heading": null,
+   "sections": [
+    {
+     "name": "Dharmic Programs",
+     "items": [
+      {
+       "time": "From 8:00 AM",
+       "text": "Chandika Homa",
+       "details": []
+      },
+      {
+       "time": "From 6:00 PM",
+       "text": "Ranga Pooja for Sri Devaru, Nemotsava for Rakteshwari, Sarala Jumadi and Kanteru Jumadi Banta Daivas, Nemotsava for Vyaghra Chamundi-Banta Daivas.",
+       "details": []
+      }
+     ],
+     "kn": {
+      "name": "ಧಾರ್ಮಿಕ ಕಾರ್ಯಕ್ರಮಗಳು",
+      "items": [
+       {
+        "time": "ಬೆಳಗ್ಗೆ 8:00ರಿಂದ",
+        "text": "ಚಂಡಿಕಾ ಹೋಮ, ಪ್ರಸಾದ ವಿತರಣೆ",
+        "details": []
+       },
+       {
+        "time": "ಸಂಜೆ 6:00ರಿಂದ",
+        "text": "ಶ್ರೀ ದೇವರಿಗೆ ರಂಗಪೂಜೆ, ರಕ್ತೇಶ್ವರಿ, ಸರಳ ಜುಮಾದಿ ಮತ್ತು ಕಾಂತೇರಿ ಜುಮಾದಿ-ಬಂಟ ದೈವಗಳಿಗೆ ನೇಮೋತ್ಸವ ವ್ಯಾಘ್ರಚಾಮುಂಡಿ-ಬಂಟ ದೈವಗಳಿಗೆ ನೇಮೋತ್ಸವ.",
+        "details": []
+       }
+      ]
+     }
+    }
+   ],
+   "notes": [
+    "Ranga Pooja Seva: Smt. Prajna and Sri Darshan Bopaiah, Madikeri",
+    "Annadana Seva for this day: Sri N. Venkataraja Bhat and all family members, Nellitheertha"
+   ],
+   "kn": {
+    "heading": "ದಿನಾಂಕ 30-12-2026ನೇ ಬುಧವಾರ",
+    "notes": [
+     "ರಂಗ ಪೂಜೆ ಸೇವಾದಾರರು ಶ್ರೀಮತಿ ಪ್ರಜ್ಞಾ ಮತ್ತು ಶ್ರೀ ದರ್ಶನ್ ಬೋಪಯ್ಯ, ಮಡಿಕೇರಿ",
+     "ಈ ದಿನದ ಅನ್ನದಾನ ಸೇವಾಕರ್ತರು : ಶ್ರೀ ಎನ್. ವೆಂಕಟರಾಜ ಭಟ್ ಮತ್ತು ಸಮಸ್ತ ಕುಟುಂಬದವರು, ನೆಲ್ಲಿತೀರ್ಥ"
+    ]
+   }
+  }
+ ]
+}

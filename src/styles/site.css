@@ -1,11 +1,11 @@
-/* Pass 01 · Claude · forked from Kimi's Moonwater 01. Throwaway exploration. */
+/* Sri Kshetra Nellitheertha: the site's styles. */
 /* Fonts are cut by _build/fonts.py. Anek's Kannada is a separate file, loaded only where Kannada is set in Anek. */
 @font-face{font-family:NelliTiro;src:url("../fonts/TiroKannada-Regular-all.woff2") format("woff2");font-weight:400;font-display:swap}
 @font-face{font-family:NelliAnek;src:url("../fonts/AnekKannada-Variable-latin.woff2") format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0020-007E,U+00A0-00FF,U+0100-017F,U+2010-2027,U+2030-205E,U+20B9,U+2190-2199,U+2212}
 @font-face{font-family:NelliAnek;src:url("../fonts/AnekKannada-Variable-kannada.woff2") format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0964-0965,U+0C80-0CFF,U+1CD0-1CFF,U+200B-200D,U+25CC,U+A830-A839}
 
 :root{
-  /* Moonlit Stone (docs/research/2026-11-09-colour-temples-and-soma.md, palette A) */
+  /* Moonlit Stone palette */
   --camphor:oklch(95.5% .008 95);
   --camphor-2:oklch(93% .010 95);
   --ink:oklch(20.6% .022 45.3);
@@ -27,7 +27,9 @@
   --ease-quint:cubic-bezier(.22,1,.36,1);
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:var(--head);-webkit-text-size-adjust:100%}
+html{scroll-padding-top:var(--head);-webkit-text-size-adjust:100%}
+/* Smooth only after load (layout's inline script): arriving at /#contribute jumps there instead of gliding past the forest walk. */
+html.smooth{scroll-behavior:smooth}
 body{margin:0;background:var(--camphor);color:var(--ink);font:400 18px/1.6 var(--sans);overflow-x:hidden;font-kerning:normal}
 main{overflow-x:clip}
 body[data-language="kn"] [data-kn]{line-height:1.65}
@@ -149,7 +151,7 @@ body[data-tide="ordinary"] .first-drop{--drop-y:30svh}
 .js [data-reveal]>*:nth-child(3){transition-delay:.24s}
 .js [data-reveal]>*:nth-child(4){transition-delay:.36s}
 .js [data-reveal].is-visible>*{opacity:1;filter:none;transform:none}
-/* photographs only fade: never blurred, desaturated or scaled (Asper9 wants them crisp; Kimi, Moonwater 02) */
+/* photographs only fade: never blurred, desaturated or scaled, so they stay crisp */
 .js .emerge[data-reveal]>*{filter:none;transform:none;transition:opacity 1.8s var(--ease-soft)}
 .js .emerge[data-reveal].is-visible>*{opacity:1;filter:none;transform:none}
 
@@ -446,7 +448,7 @@ footer a{display:inline-flex;min-height:48px;align-items:center;text-underline-o
 }
 
 @media(prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
+  html,html.smooth{scroll-behavior:auto}
   *,*::before,*::after{animation:none!important;transition:none!important}
   .js .hero-copy>*,.js .scroll-cue,.js [data-reveal]>*,.js .ganga h2,.js .ganga-line,.js .ganga-story,.js .withheld,.js [data-spread] .kola-photo{opacity:1;filter:none;transform:none}
   .js .canopy{opacity:.92;translate:0 0}
@@ -476,3 +478,6 @@ body:not([data-language="kn"]) .kn-only{display:none!important}
 body[data-language="kn"] .en-only{display:none!important}
 .kn-only ol.prog,.prog[lang="kn"] .x{line-height:1.7}
 [lang="kn"] .verse,.verse:lang(kn){font-style:normal} /* Kannada has no italic; a slanted Kannada is a fake */
+/* The home page's script never ran (layout's inline script): show every word that would have faded in. */
+.reveal-all .hero-copy>*,.reveal-all .scroll-cue,.reveal-all [data-reveal]>*,.reveal-all .ganga h2,.reveal-all .ganga-line,.reveal-all .ganga-story,.reveal-all .withheld,.reveal-all [data-spread] .kola-photo{opacity:1!important;filter:none!important;transform:none!important}
+.reveal-all .canopy{opacity:.92!important;translate:0 0!important}

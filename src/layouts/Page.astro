@@ -59,7 +59,14 @@ const backLink = back ?? { href: '/#pages', label: 'Home' };
   <link rel="preload" href={tiroUrl} as="font" type="font/woff2" crossorigin>
   <link rel="preload" href={anekUrl} as="font" type="font/woff2" crossorigin>
   <slot name="head" />
-  <script is:inline>document.documentElement.classList.add('js')</script>
+  <script is:inline>
+    document.documentElement.classList.add('js');
+    // Words that fade in wait for the home page's script. If it never ran, show them once the page has loaded.
+    addEventListener('load', function () {
+      if (document.querySelector('[data-reveal]') && !document.documentElement.classList.contains('home-ready')) document.documentElement.classList.add('reveal-all');
+      requestAnimationFrame(function () { document.documentElement.classList.add('smooth'); });
+    });
+  </script>
 </head>
 <body class={bodyClass ?? (article ? 'page' : undefined)} {...dataAttrs}>
   <Header home={home} />

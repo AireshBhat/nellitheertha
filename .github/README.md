@@ -1,32 +1,59 @@
 # Sri Kshetra Nellitheertha website
 
-The website of Sri Somanatheshwara Guhalaya (Sri Somanatheshwara Cave Temple), Sri Kshetra Nellitheertha, Kompadavu Village, Mangaluru Taluk, Karnataka.
+The website of Sri Somanatheshwara Guhalaya (Sri Somanatheshwara Cave Temple), Sri Kshetra Nellitheertha, Kompadavu Village, Mangaluru Taluk, Karnataka. It is live at https://nellitheertha.in.
 
-It is live at https://nellitheertha.in.
+It is built with [Astro](https://astro.build) as a static site. Vercel builds and deploys every push to `main`, and every other branch gets a preview.
 
 ## What is here
 
-- `index.html`: the home page.
-- `brahmakalasha/`: the Brahmakalasha, 20 to 30 December 2026. The day-by-day programme, the invitation, and the committees and supporters.
-- `temple/`, `history/`, `story/`, `cave/`, `sevas/`, `jaatre/`, `mantras/`, `gallery/`, `appeal/`, `visit/`: content ported from the earlier nellitheerthatemple.in.
-- `styles.css`, `script.js`: the shared styles and the home page's behaviour. The panel at the top of the home page counts down to the Brahmakalasha and, from 20 to 30 December, shows what is on now and next, in Indian time. Add `?now=2026-12-25T09:00` to the address to see it as it will be at that moment.
-- `assets/`: images, the daily posters, fonts and documents.
-- `_build/pages.py`: writes the content pages, `sitemap.xml`, and the home page's page list, footer and programme data. The Brahmakalasha text is in `_build/data/*.json`, transcribed from the English invitation.
-- `_build/fonts.py`: cuts the fonts in `_build/fonts/` into the WOFF2 files in `assets/fonts/`.
+- `src/pages/`: one file per page. The home page is `index.astro`; `brahmakalasha/` has the programme, the invitation, and the committees and supporters.
+- `src/content/`: the Brahmakalasha data.
+  - `programme.json` is the day-by-day programme; `invitation.json` holds the instructions, bank details, letter, Mahadanis and supporters; `committees.json` holds the committees.
+  - The English comes from the English invitation. The `kn` fields hold the Kannada from the printed patrike, shown when ಕನ್ನಡ is chosen.
+  - `src/content.config.ts` checks this data when the site builds, and `src/lib/brahmakalasha.ts` checks the programme as a whole. A bad edit stops the build, so the live site stays on its last good version.
+- `src/components/`, `src/layouts/`: the shared header, footer, pictures and page layout.
+- `src/scripts/home.ts`: the home page's live panel (a countdown to the Brahmakalasha, then today's programme with now and next, in Indian time) and the forest walk. `src/scripts/site.ts`: the language switch and the arrow back to the top.
+- `src/assets/img/`: the source pictures. The build makes AVIF and WebP copies at several widths.
+- `public/`: files served as they are, at fixed addresses. These are the posters, the PDFs, the share image, the UPI code, the icons and the forest-walk frames.
+- `scripts/`: the tools that made some files.
+  - `fonts.py` cuts the fonts.
+  - `frames.py` cuts the forest-walk frames. A new cut needs new folder names, because phones keep cached frames for weeks.
+  - `merge-kannada.py` brings the verified Kannada into `src/content/`.
+  - `port-pages.py` and `port-home.py` were used once to move the pages over from the earlier static site.
+- `tests/`: checks run in Chrome against a built copy.
 
 ## Changing the site
 
-Edit the text in `_build/pages.py` or `_build/data/*.json`, then run:
-
 ```sh
-python3 _build/pages.py
+pnpm install
+pnpm dev        # a local copy at http://localhost:4321
+pnpm build      # the site, in dist/
+pnpm preview    # serve dist/ at http://localhost:4321
 ```
 
-Commit and push to `main`. Vercel deploys every push to `main`.
+To change the programme, edit `src/content/programme.json` and run `pnpm build`. If the build fails, the message names the entry and the field.
+
+To see the home page's live panel as it will be at a given moment in Indian time, add `?now=2026-12-25T09:00` to the address.
+
+## Checks
+
+Build, run `pnpm preview`, then run the checks you need. Most compare against the earlier site (BASE_OLD) or need only the new one (BASE).
+
+| Check | What it covers |
+|---|---|
+| `tests/build.sh`, `tests/schema.sh` | The site builds, and bad programme data stops the build |
+| `tests/parity.mjs BASE_OLD BASE` | Same words, no overflow, no broken pictures or errors on every page |
+| `tests/head.mjs BASE --compare tests/head.live.json` | Titles, descriptions, share tags and event data |
+| `tests/live.mjs BASE --compare tests/live.live.json` | The live panel at 13 moments, including a phone set to another timezone |
+| `tests/urls.mjs BASE_OLD BASE` | Every earlier address still answers |
+| `tests/nojs.mjs BASE`, `tests/failed-script.mjs BASE` | Every page reads without JavaScript, or when a script fails to arrive |
+| `tests/kannada.mjs BASE`, `tests/glyphs.mjs BASE_OLD BASE` | The Kannada versions, and that Kannada renders the same as before |
+| `tests/weight.mjs BASE`, `tests/slow.mjs BASE`, `tests/anchor.mjs BASE`, `tests/frames.mjs BASE_OLD BASE` | What a phone downloads, the forest walk on a slow link, and cached frames |
+| `tests/axe.mjs BASE [kn]`, `tests/upi.mjs BASE_OLD BASE`, `tests/public.sh` | Accessibility, the UPI link, and no internal notes in this public repository |
 
 ## Sources and credits
 
-- **Text:** the temple's earlier website, the 2024 renovation appeal and the 2026 Brahmakalasha invitation.
+- **Text:** the temple's earlier website, the 2024 renovation appeal, and the 2026 Brahmakalasha invitation and patrike.
 - **Photographs:** the temple's own, from 2023, plus photographs from the first nellitheertha.com website, some marked © K.B. Mallya.
 - **Pictures made with AI:** the forest, the forest walk, the kere and the cave were made with AI from photographs and footage of Nellitheertha. The sanctum picture on the home page is a real video frame restored with AI.
-- **Fonts:** Tiro Kannada and Anek Kannada, under the SIL Open Font License (licence files in `assets/fonts/`).
+- **Fonts:** Tiro Kannada and Anek Kannada, under the SIL Open Font License (`src/fonts/*-OFL.txt`).

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Cuts the typefaces into WOFF2 files for assets/fonts/.
+"""Cuts the typefaces in scripts/fonts/ into the WOFF2 files in src/fonts/.
 
 Every OpenType layout feature is kept, so Kannada conjuncts and vottus shape as in the original fonts.
-A page downloads the Kannada file only when it shows Kannada in that typeface. Run from pass-01/:
-    uv run --with fonttools --with brotli python3 _build/fonts.py
+A page downloads the Kannada file only when it shows Kannada in that typeface. Run from the repository root:
+    uv run --with fonttools --with brotli python3 scripts/fonts.py
 """
 import pathlib
 import subprocess
@@ -19,7 +19,7 @@ JOBS = [('TiroKannada-Regular', 'all', RANGES['latin'] + ',' + RANGES['kannada']
 JOBS += [('AnekKannada-Variable', part, unicodes) for part, unicodes in RANGES.items()]
 for name, part, unicodes in JOBS:
     if True:
-        out = ROOT / 'assets' / 'fonts' / f'{name}-{part}.woff2'
-        subprocess.run(['pyftsubset', str(ROOT / '_build' / 'fonts' / f'{name}.ttf'), f'--unicodes={unicodes}',
+        out = ROOT / 'src' / 'fonts' / f'{name}-{part}.woff2'
+        subprocess.run(['pyftsubset', str(ROOT / 'scripts' / 'fonts' / f'{name}.ttf'), f'--unicodes={unicodes}',
                         '--layout-features=*', '--flavor=woff2', '--no-hinting', f'--output-file={out}'], check=True)
         print(out.relative_to(ROOT), out.stat().st_size)

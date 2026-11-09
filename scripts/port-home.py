@@ -38,8 +38,8 @@ swap(r'<img src="assets/img/kola-silver.webp"[^>]*>',
      lambda m: f'<Photo src={{kolaSilver}} alt={{{alt(m.group(0))}}} sizes="(min-width: 1000px) 26vw, 50vw" widths={{[400, 600, 900, 1200]}} />')
 swap(r'<img src="assets/img/kola-arch-sm.webp"[^>]*>',
      lambda m: f'<Photo src={{kolaArch}} alt={{{alt(m.group(0))}}} sizes="(min-width: 1000px) 26vw, 50vw" widths={{[400, 600, 900, 1200]}} />')
-swap(r'srcset="assets/walk-wide/000.webp"', 'srcset="/assets/walk-wide/000.webp"')
-swap(r'src="assets/walk-tall/000.webp"', 'src="/assets/walk-tall/000.webp"')
+swap(r'srcset="assets/walk-wide/000.webp"', 'srcset="/assets/walk-wide-2/000.webp"')
+swap(r'src="assets/walk-tall/000.webp"', 'src="/assets/walk-tall-2/000.webp"')
 swap(r'    <!-- pages:start -->.*?<!-- pages:end -->\n', '    <PageIndex />\n')
 swap(r'<!-- days:start -->.*?<!-- days:end -->',
      '{groups.map((g) => <li class={g.day === 25 ? "key" : undefined} data-date={g.date}><a href={`brahmakalasha/#dec-${g.day}`}><span>{g.day}</span><small>{g.weekday.slice(0, 3)}</small></a></li>)}')
