@@ -27,8 +27,8 @@ PAGES = [
     ('jaatre', 'The annual jaatre', 'The festival in Dhanur Masa, the Bhoota Kola and the temple calendar'),
     ('mantras', 'Mantras', 'Mantras of Lord Shiva, in Kannada'),
     ('gallery', 'Gallery', 'Photographs from the temple'),
-    ('appeal', 'Appeal for renovation', 'The 2024 appeal, the estimates and the committees'),
     ('visit', 'How to reach', 'Four routes, the address and contact numbers'),
+    ('appeal', 'Renovation appeal, 2024', 'The works are complete. The appeal, the estimates and the committees'),
 ]
 
 
@@ -52,6 +52,7 @@ STORY_FIXES = [
     ('marvelous site', 'marvelous sight'), ('yaganas', 'yagnas'),
     ('Trimurties', 'Trimurtis'), ('goose berry', 'gooseberry'),
     ('Shree ', 'Sri '), ('Shri ', 'Sri '),
+    (' and offered him all the obliterations', ''),
     (' .', '.'), (' ,', ','), ('( ', '('), (' )', ')'),
 ]
 
@@ -178,7 +179,7 @@ write_page('temple', 'ABOUT THE TEMPLE', 'The temple',
         <h3 id="arasule-mancha">Arasule Mancha</h3>
         <p>The \u201cArasule Mancha\u201d or King\u2019s seat is situated near the main entrance of the temple towards the north. Historical evidence suggests that this seat was where the king of the land used to be seated when he visited the temple. It is believed that even today, the spirits of the former rulers visit the place at night and so it is prohibited to sit on the seat after dusk.</p>
         <h3 id="nagappa-kere">Nagappa Kere</h3>
-        <p>The \u201cNagappa Kere\u201d (Snake Pond) is a small pond situated to the north of the temple. This natural pond, along with its religious significance, is also a scenic spot. All devotees who want to enter the cave temple have to clean themselves by taking bath in this pond and only then are they allowed into the cave. The lake is at its best immediately after the monsoons (October to December) when its crystal clear water is a swimmer\u2019s delight. There are plans to build a small herbal park around this pond as also a small deer park.</p>
+        <p>The \u201cNagappa Kere\u201d (Snake Pond) is a small pond situated to the north of the temple. This natural pond, along with its religious significance, is also a scenic spot. All devotees who want to enter the cave temple have to clean themselves by taking bath in this pond and only then are they allowed into the cave. The lake is at its best immediately after the monsoons (October to December) when its crystal clear water is a swimmer\u2019s delight.</p>
         <h3 id="amblattapadavu">Amblattapadavu</h3>
         <p>To the east of the temple\u2019s entrance is the Amblattapadavu hillock. This hillock is about 300 to 500 feet high and offers a splendid scenery from the top. One can spot places such as the Bajpe Airport, Mangalore, Panambur, the MRPL refinery and Surathkal. On a day with clear skies, one can even spot the Arabian Sea. Amblattapadavu offers a wonderful view of sunrise and sunset every day.</p>
         <h2 id="open-to-all">Open to all</h2>
@@ -188,7 +189,7 @@ write_page('temple', 'ABOUT THE TEMPLE', 'The temple',
 
 # ---------------------------------------------------------------- history
 write_page('history', 'ABOUT THE TEMPLE', 'History and origin', '',
-    '''        <p>The holy place Nellitheertha and the temple have a long and glorious history. Although the first recorded material mentioning Nellitheertha dates back to 1487 AD, there is ample evidence available at the place to suggest that the temple existed much before that. At its glorious peak, there used to be daily festivities performed under the aegis of the ruler of Nellitheertha. From that grand state, the temple gradually declined and its existence itself was threatened towards the later part of the twentieth century. Since then, devotees and well wishers have got together to restore the temple to its previous grandeur. With the blessings of Sri Somanatha, the temple renovation work is now on in full swing.</p>
+    '''        <p>The holy place Nellitheertha and the temple have a long and glorious history. Although the first recorded material mentioning Nellitheertha dates back to 1487 AD, there is ample evidence available at the place to suggest that the temple existed much before that. At its glorious peak, there used to be daily festivities performed under the aegis of the ruler of Nellitheertha. From that grand state, the temple gradually declined and its existence itself was threatened towards the later part of the twentieth century. Since then, devotees and well wishers have got together to restore the temple to its previous grandeur.</p>
         <p>In the state of Karnataka and indeed in entire India, the South Kanara district occupies a unique place. The evergreen forests, amazing flora and fauna, the numerous temples and places of worship and monuments all make this district a huge attraction. The lifestyle of the people here exemplifies the concept of unity in diversity. For the people of Dakshina Kannada, art worship is a means of reaching the God and enriching the culture of the land. Naturally, therefore, one can observe the people seeing God in everything they do. Throughout the land, beautiful caves and lakes have become centers of spiritual and religious significance. Also, this land has given a multitude of scholars, artists, kings and other great contributors to the nation.</p>
         <h2 id="chowta">The Chowta family</h2>
         <p>Historically, the Nellitheertha region was under the administration of the Chowta family. The Chowtas are a famous name in Tulu Naadu and it is said that the temple flourished under their administration and was a major center for religious and cultural activities under their reign. Even today, the descendants of the Chowta clan take an active interest in the maintenance and development of the temple.</p>
@@ -229,7 +230,7 @@ write_page('cave', 'THE CAVE TEMPLE', 'The cave',
         <h2 id="october-to-april">October to April</h2>
         <p>Another unique aspect of the cave is that it is closed for nearly 6 months a year. The cave is open only between October and April. Though there are religious reasons associated with this (it is said that the cave is open 6 months a year for humans and is meant for Gods and Rishis the remaining 6 months), the point is that the 6 month break each year helps the cave to \u201crejuvenate\u201d. The water freshens up and the animals inside enjoy the lack of disturbance. Yes, there are plenty of animals inside the cave. Most common among them are snakes (of all varieties), scorpions, porcupines and thousands of bats. These are considered sacred and troubling or hurting the animals in any manner is strictly forbidden.</p>
         <h2 id="jabali">Maharshi Jabali</h2>
-        <p>Legend also has it that Maharshi (Saint) Jabali used this cave as his abode. Hence the name Jabaleshwara for the presiding deity. It is believed that Maharshi Jabali performed Tapas (penance) here to Lord Durgaparameshwari to request her to kill Arunasura (a demon). It is said that Sri Durga acceded to Jabali\u2019s request and destroyed Arunasura at Kateel (another fabulous and famous temple town, very close to Nellitheertha). There is a spot inside the cave which is widely believed to be where Maharshi Jabali performed his Tapas.</p>
+        <p>Legend also has it that Maharshi (Saint) Jabali used this cave as his abode. It is believed that Maharshi Jabali performed Tapas (penance) here to Lord Durgaparameshwari to request her to kill Arunasura (a demon). It is said that Sri Durga acceded to Jabali\u2019s request and destroyed Arunasura at Kateel (another fabulous and famous temple town, very close to Nellitheertha). There is a spot inside the cave which is widely believed to be where Maharshi Jabali performed his Tapas.</p>
         <p>All devotees who want to enter the cave have to bathe in <a href="../temple/#nagappa-kere">Nagappa Kere</a> first. <a href="../gallery/">Photographs</a> of the temple are in the gallery.</p>''',
     'The cave at Nellitheertha: the passage, the lake and natural Linga inside, and why it is open only from October to April.')
 
@@ -265,7 +266,7 @@ write_page('jaatre', 'FESTIVALS', 'The annual jaatre',
     'Every year, around the last week of December, the Nellitheertha temple conducts its annual Jaatre (festival).',
     f'''        <p class="note">In 2026 the temple holds the Brahmakalasha, 20 to 30 December. <a href="../#programme">See the programme</a>.</p>
         {plate('site/procession-2023-01.webp', 'Devotees carrying the decorated deity in a procession', 'January 2023', kind='wide')}
-        <p>This is a grand five day event full of religious and cultural ceremonies. One thing that strikes a visitor to the Jaatre is the sheer number of rituals and ceremonies associated with this event. Though it may appear superstitious to the \u201cnon-believer\u201d, it is a fascinating experience. Simply put, the Jaatre is the instrument the villagers use to express their gratitude and respect to the Gods and Bhootas. They offer their prayers to the Gods and Bhootas and seek their continued protection and pray for good rains and harvests year after year.</p>
+        <p>One thing that strikes a visitor to the Jaatre is the sheer number of rituals and ceremonies associated with this event. Though it may appear superstitious to the \u201cnon-believer\u201d, it is a fascinating experience. Simply put, the Jaatre is the instrument the villagers use to express their gratitude and respect to the Gods and Bhootas. They offer their prayers to the Gods and Bhootas and seek their continued protection and pray for good rains and harvests year after year.</p>
         <p>The festival starts on the 14th day of the Shukla Paksha in Dhanur Maasa. Typically, this falls on the last week of December or the first week of January. The festival begins with a silver flag being hoisted to indicate the beginning of the Jaatre. This is called \u201cKodi\u201d or \u201cDhwajaarohana\u201d ceremony.</p>
         <p>Each of the four days has separate ceremonies like the \u201cBalis\u201d where the idol of the presiding deity is carried around the temple for a procession accompanied by music, the \u201cRudrabhishekas\u201d where the Shiva Lingam is given a grand shower with 101 vessels of water and the \u201cRathotsava\u201d where the deity is taken on a procession on the chariot.</p>
         <h2 id="aarat">The fourth day: Aarat</h2>
@@ -413,9 +414,10 @@ def names(items):
 
 
 hon_html = '\n'.join(f'          <li>{e(n)}<small>{e(r)}</small></li>' for n, r in HON)
-write_page('appeal', 'CONTRIBUTE', 'Appeal towards temple renovation',
+write_page('appeal', 'ARCHIVE', 'Appeal towards temple renovation',
     'From the Renovation Committee and Executive Committee, Sri Somanatheshwara Guhalaya (Hindu Religious Institutions and Charitable Endowments Department, Government of Karnataka).',
-    f'''        <p><a href="../assets/docs/appeal-2024-english.pdf">The appeal as printed, June 2024 (PDF, 2 pages)</a></p>
+    f'''        <p class="archive-note">The renovation works in this appeal are complete. Donations for the Brahmakalasha: <a href="../brahmakalasha/#contribute">Brahmakalasha 2026</a>.</p>
+        <p><a href="../assets/docs/appeal-2024-english.pdf">The appeal as printed, June 2024 (PDF, 2 pages)</a></p>
         <h2 id="appeal">An appeal</h2>
         <p>Dear Devotees,</p>
         <p>Amongst the numerous Tirthakshetras in Bharata, Nellitheertha holds a special and elevated status. Due to the power of the Tapas performed by Rishis and Saints, there exists the presence of Lord Shiva in the form of a Shivalinga inside a cave here. Historical records show that this place has existed under the administration of the Chowta Arasus of Moodabidare and has a recorded history of more than 700 years! An ancient Somanatheshwara temple, along with Lord Ganapati, exists here and is beautifully encroached on one side by mother nature in the form of the entrance to the cave. Till recently, this special jewel amongst the religious and spiritual places of Tulu Nadu was not so well known. However, this has changed recently.</p>
@@ -438,12 +440,6 @@ write_page('appeal', 'CONTRIBUTE', 'Appeal towards temple renovation',
           <li>The Suttu Powlis require approximately 20 stone pillars. The cost of each pillar is approximately Rs 50,000. Devotees are requested to sponsor the cost of one or more of these pillars.</li>
           <li>The cost of the rooms for seva-kartas and staff can be separately borne as well. Devotees are requested to enquire about the same in the temple office.</li>
         </ol>
-        <h2 id="bank">Bank account</h2>
-        <div class="bank">
-          <p>Your contributions may please be credited to the following bank account.</p>
-          <p><strong>Shri Somantheshwara Temple Jeernodhara Samithi</strong><br>Karnataka Bank, Aikala Branch, Dakshina Kannada<br>S.B Account Number: 0122500100786201<br>IFSC Code: KARB0000012</p>
-        </div>
-        <p>Kindly inform details of your contribution via email ID <a href="mailto:vbnellitheertha@yahoo.com">vbnellitheertha@yahoo.com</a> or WhatsApp number <a href="https://wa.me/918088708914">+91 80887 08914</a>.</p>
         <h2 id="guidance">Guidance and Supervision Committee</h2>
         <h3>Hon Presidents</h3>
         <ul class="names">
@@ -472,7 +468,7 @@ write_page('appeal', 'CONTRIBUTE', 'Appeal towards temple renovation',
         <ul class="names">
 {names(SPECIAL)}
         </ul>''',
-    'The 2024 appeal for the renovation of Sri Somanatheshwara Guhalaya, Nellitheertha: estimates, bank details and committees.')
+    'The 2024 appeal for the renovation of Sri Somanatheshwara Guhalaya, Nellitheertha, now complete: estimates and committees.')
 
 # ---------------------------------------------------------------- how to reach
 write_page('visit', 'PLAN YOUR VISIT', 'How to reach',
@@ -573,6 +569,8 @@ if programme:
         b = invitation['bank']
         lines = [x for x in (b.get('account_name'),
                              ', '.join(y for y in (b.get('bank'), b.get('branch')) if y)) if x]
+        if b.get('account_type'):
+            lines.append(f'Account type: {b["account_type"]}')
         lines += [f'Account number: {b.get("account_number")}', f'IFSC: {b.get("ifsc")}']
         if b.get('upi_id'):
             lines.append(f'UPI: {b["upi_id"]}')

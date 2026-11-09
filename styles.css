@@ -254,15 +254,12 @@ body[data-tide="ordinary"] .first-drop{--drop-y:30svh}
 .contribute{position:relative;overflow:hidden;padding:clamp(140px,24vw,240px) var(--gutter) 80px;display:grid;gap:50px;background:var(--camphor-2)}
 .contribute>*:not(.canopy){position:relative;z-index:1}
 .contribute-intro>p:not(.eyebrow){max-width:40ch;color:var(--ink)}
-.work-list>div{display:flex;justify-content:space-between;gap:22px;align-items:baseline;padding:20px 0;border-top:1px solid var(--line)}
-.work-list p{margin:0;max-width:430px}
-.work-list strong{font-size:21px;font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums}
-.work-list small{font-size:14px;font-weight:450;color:var(--ink-2)}
-details{border-top:1px solid var(--line);padding:12px 0}
-summary{cursor:pointer;min-height:48px;display:flex;align-items:center;font-weight:600}
-.bank-details{padding:8px 0 14px}
+.contribute .contribute-intro .more{display:flex;width:fit-content;margin-left:0}
+.bank-details{padding:22px 0 14px;border-top:1px solid var(--line)}
+.bank-details p{margin:0}
+.bank-details .actions{margin-top:22px}
 .bank-details p{font-variant-numeric:tabular-nums;line-height:1.8;font-size:19px}
-.bank-details button{min-height:48px;padding:8px 18px;background:var(--ink);color:var(--camphor);border:0;cursor:pointer}
+.bank-details button.action{background:var(--ink);color:var(--camphor);font-family:inherit;cursor:pointer}
 .bank-details small{display:block;margin-top:12px;color:var(--ink-2);font-size:15px}
 
 /* ---------- footer ---------- */
@@ -361,6 +358,7 @@ footer a{display:inline-flex;min-height:48px;align-items:center;text-underline-o
 .plate.tall img{width:auto;max-width:100%;max-height:78svh}
 .plate figcaption,.gallery figcaption,.old-gallery figcaption{margin-top:10px;font-size:15px;line-height:1.5;color:var(--ink-2)}
 .note{font-size:16px;color:var(--ink-2)}
+.archive-note{padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .contents{list-style:none;margin:0;padding:0}
 .contents li{margin:0}
 .contents a{display:inline-flex;align-items:center;min-height:44px}
