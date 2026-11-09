@@ -1,5 +1,10 @@
 {
+  "redirects": [
+    { "source": "/(.*)", "has": [{ "type": "host", "value": "www.nellitheertha.in" }], "destination": "https://nellitheertha.in/$1", "permanent": true },
+    { "source": "/(.*)", "has": [{ "type": "host", "value": "nellitheertha.vercel.app" }], "destination": "https://nellitheertha.in/$1", "permanent": true }
+  ],
   "headers": [
-    { "source": "/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] }
+    { "source": "/assets/(fonts|walk-tall|walk-wide)/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000, stale-while-revalidate=604800" }] },
+    { "source": "/assets/(img|posters|icons|docs)/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400, stale-while-revalidate=604800" }] }
   ]
 }

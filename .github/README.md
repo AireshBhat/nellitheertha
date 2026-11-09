@@ -2,16 +2,17 @@
 
 The website of Sri Somanatheshwara Guhalaya (Sri Somanatheshwara Cave Temple), Sri Kshetra Nellitheertha, Kompadavu Village, Mangaluru Taluk, Karnataka.
 
-This is a **preview**. It is live at https://nellitheertha.vercel.app (and at nellitheertha.in once the domain is active). Search engines are asked not to index it.
+It is live at https://nellitheertha.in.
 
 ## What is here
 
 - `index.html`: the home page.
 - `brahmakalasha/`: the Brahmakalasha, 20 to 30 December 2026. The day-by-day programme, the invitation, and the committees and supporters.
 - `temple/`, `history/`, `story/`, `cave/`, `sevas/`, `jaatre/`, `mantras/`, `gallery/`, `appeal/`, `visit/`: content ported from the earlier nellitheerthatemple.in.
-- `styles.css`, `script.js`: the shared styles and the home page's behaviour.
+- `styles.css`, `script.js`: the shared styles and the home page's behaviour. The panel at the top of the home page counts down to the Brahmakalasha and, from 20 to 30 December, shows what is on now and next, in Indian time. Add `?now=2026-12-25T09:00` to the address to see it as it will be at that moment.
 - `assets/`: images, the daily posters, fonts and documents.
-- `_build/pages.py`: writes the content pages and the home page's page list and footer. The Brahmakalasha text is in `_build/data/*.json`, transcribed from the English invitation.
+- `_build/pages.py`: writes the content pages, `sitemap.xml`, and the home page's page list, footer and programme data. The Brahmakalasha text is in `_build/data/*.json`, transcribed from the English invitation.
+- `_build/fonts.py`: cuts the fonts in `_build/fonts/` into the WOFF2 files in `assets/fonts/`.
 
 ## Changing the site
 

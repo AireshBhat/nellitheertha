@@ -1,4 +1,4 @@
-// Pass 01 · Claude · forked from Kimi's Moonwater 01. Throwaway exploration.
+// Sri Kshetra Nellitheertha: the home page's behaviour.
 (() => {
   const body = document.body;
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -12,6 +12,7 @@
       try { (session ? sessionStorage : localStorage).setItem(key, value); } catch {}
     }
   };
+  const params = new URLSearchParams(location.search);
 
   // The first drop: once per visit, never on reduced motion.
   const hero = document.querySelector('.hero');
@@ -21,13 +22,98 @@
     if (image.complete) play(); else image.addEventListener('load', play, { once: true });
   }
 
-  // Tide (festival / ordinary) and language.
-  function setTide(tide) {
-    body.dataset.tide = tide;
-    document.querySelectorAll('[data-tide-choice]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.tideChoice === tide)));
-  }
-  document.querySelectorAll('[data-tide-choice]').forEach((b) => b.addEventListener('click', () => setTide(b.dataset.tideChoice)));
+  // The live panel: before, during and after the Brahmakalasha, always in Indian time.
+  // ?now=2026-12-25T09:00 shows the panel as it will be at that moment (Indian time), for checking.
+  const IST = 330 * 60000, DAY = 86400000;
+  const asked = params.get('now');
+  const nowMs = asked && !Number.isNaN(Date.parse(asked + 'Z')) ? Date.parse(asked + 'Z') - IST : Date.now();
+  const clock = new Date(nowMs + IST); // read with getUTC*: the wall clock in India
+  const today = clock.toISOString().slice(0, 10);
+  const minute = clock.getUTCHours() * 60 + clock.getUTCMinutes();
+  const daysFrom = (a, b) => Math.round((Date.parse(b) - Date.parse(a)) / DAY);
+  const KEY = { date: '2026-12-25' };
+  const dataNode = document.getElementById('programme-data');
+  const programme = dataNode ? JSON.parse(dataNode.textContent) : { days: [] };
+  const days = programme.days;
+  const live = (name) => document.querySelector(`[data-live="${name}"]`);
+  const put = (name, text) => { const el = live(name); if (el) el.textContent = text; };
+  const longDate = (date, weekday) => `${weekday} ${Number(date.slice(8))} December`;
+  const clock12 = (m) => { const h = Math.floor(m / 60), mm = String(m % 60).padStart(2, '0'); return [`${(h % 12) || 12}:${mm}`, h < 12 ? 'AM' : 'PM']; };
+  const plural = (n, word) => `${n} ${word}${n === 1 ? '' : 's'}`;
+  let phase = 'before';
+  if (days.length && today > days[days.length - 1].date) phase = 'after';
+  else if (days.length && today >= days[0].date) phase = 'during';
+  body.dataset.phase = phase;
+  body.dataset.tide = phase === 'after' ? 'ordinary' : 'festival';
 
+  // The day strip: days gone, today, and the day of the Brahmakalashabhisheka.
+  document.querySelectorAll('.festival-days li').forEach((li) => {
+    if (li.dataset.date < today) li.classList.add('past');
+    if (li.dataset.date === today) { li.classList.add('today'); li.querySelector('a').setAttribute('aria-current', 'date'); }
+  });
+
+  if (phase === 'before' && days.length) {
+    const toKey = daysFrom(today, KEY.date), toStart = daysFrom(today, days[0].date);
+    put('count', String(toKey));
+    put('unit', toKey === 1 ? 'day' : 'days');
+    live('count').parentElement.classList.add('ready');
+    put('line', toStart === 1 ? 'The programme begins tomorrow, Sunday 20 December.'
+      : `The programme begins on Sunday 20 December, in ${plural(toStart, 'day')}.`);
+  }
+
+  if (phase === 'during') {
+    const index = days.findIndex((d) => d.date === today);
+    const day = days[index], items = day.items.filter((it) => it.m !== null);
+    // "Morning" items have no clock time: they can be next, never now.
+    const at = (it) => (it.m !== null ? it.m : it.t === 'Morning' ? 360 : null);
+    const upcoming = (list) => list.filter((it) => at(it) !== null);
+    put('eyebrow', `BRAHMAKALASHA 2026 · DAY ${index + 1} OF ${days.length}`);
+    put('title', `Today, ${longDate(day.date, day.weekday)}`);
+    const current = [...items].reverse().find((it) => it.m <= minute && minute - it.m < 6 * 60);
+    let next = upcoming(day.items).find((it) => at(it) > minute), nextDay = day;
+    if (!next && days[index + 1]) { nextDay = days[index + 1]; next = upcoming(nextDay.items)[0]; }
+    const nowBox = live('now').parentElement;
+    if (current) {
+      put('now', current.s);
+      put('since', `Since ${clock12(current.m).join(' ')}`);
+    } else nowBox.hidden = true;
+    const nextBox = live('next').parentElement;
+    if (next) {
+      const timeNode = live('next-time');
+      if (next.m === null) { timeNode.textContent = next.t; timeNode.setAttribute('datetime', nextDay.date); }
+      else {
+        const [time, ampm] = clock12(next.m);
+        timeNode.innerHTML = `${time} <small>${ampm}</small>`;
+        timeNode.setAttribute('datetime', `${nextDay.date}T${String(Math.floor(next.m / 60)).padStart(2, '0')}:${String(next.m % 60).padStart(2, '0')}:00+05:30`);
+      }
+      put('next-label', nextDay === day ? 'Next' : `Tomorrow, ${longDate(nextDay.date, nextDay.weekday)}`);
+      put('next', next.s);
+      put('next-detail', next.d || '');
+    } else nextBox.hidden = true;
+    const toKey = daysFrom(today, KEY.date);
+    put('line', toKey > 1 ? `Brahmakalashabhisheka: Friday 25 December, 10:20 AM, in ${plural(toKey, 'day')}.`
+      : toKey === 1 ? 'Brahmakalashabhisheka: tomorrow, Friday 25 December, at 10:20 AM, in Kumbha Lagna.'
+      : 'The Varshavadhi Jatre is from 25 to 30 December.');
+    live('programme-link').href = `brahmakalasha/#dec-${Number(day.date.slice(8))}`;
+
+    // Today's programme, below the panel.
+    put('day-eyebrow', `TODAY · ${longDate(day.date, day.weekday).toUpperCase()}`);
+    const list = live('timeline');
+    list.replaceChildren(...day.items.map((it) => {
+      const li = document.createElement('li');
+      if (it.k) li.className = 'featured';
+      const t = document.createElement('time'); t.textContent = it.t;
+      const p = document.createElement('p'); p.textContent = it.x;
+      if (it.d) { const d = document.createElement('small'); d.textContent = it.d; p.append(d); }
+      li.append(t, p);
+      return li;
+    }));
+    const poster = live('poster');
+    if (day.posters.length) poster.href = `assets/posters/${day.posters[0]}`; else poster.hidden = true;
+    live('notes').replaceChildren(...day.notes.map((n) => { const p = document.createElement('p'); p.textContent = n; return p; }));
+  }
+
+  // Language.
   function setLanguage(language, remember = true) {
     body.dataset.language = language;
     document.querySelectorAll('[data-language-choice]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.languageChoice === language)));
@@ -38,12 +124,9 @@
     if (remember) storage.set('nelli-language', language);
   }
   document.querySelectorAll('[data-language-choice]').forEach((b) => b.addEventListener('click', () => setLanguage(b.dataset.languageChoice)));
-
-  const params = new URLSearchParams(location.search);
   const askedLanguage = params.get('lang');
   const deviceLanguage = (navigator.language || '').toLowerCase().startsWith('kn') ? 'kn' : 'en';
   setLanguage(['en', 'kn'].includes(askedLanguage) ? askedLanguage : storage.get('nelli-language') || deviceLanguage, false);
-  if (['festival', 'ordinary'].includes(params.get('tide'))) setTide(params.get('tide'));
   const section = params.get('section');
   if (section) requestAnimationFrame(() => document.getElementById(section)?.scrollIntoView({ behavior: 'instant' }));
 
@@ -158,13 +241,7 @@
     gangaObserver.observe(ganga);
   }
 
-  // Exploration controls and copy button.
-  const demo = document.querySelector('.demo-controls');
-  const demoToggle = demo.querySelector('.demo-toggle');
-  demoToggle.addEventListener('click', () => {
-    const open = demo.classList.toggle('open');
-    demoToggle.setAttribute('aria-expanded', String(open));
-  });
+  // Copy the account number.
   const copyButton = document.getElementById('copy-account');
   copyButton.addEventListener('click', async () => {
     try { await navigator.clipboard.writeText('0122500100786201'); copyButton.textContent = 'Account number copied'; }

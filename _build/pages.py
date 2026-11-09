@@ -81,7 +81,7 @@ def header(prefix):
   <header class="site-header">
     <a class="brand" href="{prefix or './'}" aria-label="Nellitheertha home">
       <svg viewBox="0 0 18 24" aria-hidden="true"><path d="M9 1C9 1 2 11 2 16a7 7 0 0 0 14 0C16 11 9 1 9 1Z" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
-      <span>Nellitheertha</span><span class="preview-tag">Preview</span>
+      <span>Nellitheertha</span>
     </a>
     <nav class="main-nav" aria-label="Main navigation">
       <a href="{prefix}brahmakalasha/">Brahmakalasha</a>
@@ -115,7 +115,11 @@ def plate(src, alt, caption, kind='tall side', prefix='../'):
             f'loading="lazy">{cap}</figure>')
 
 
-def write_page(slug_, eyebrow, title, lead, body, description, depth=1, back=None, nxt=None):
+SITE = 'https://nellitheertha.in'
+SITEMAP = ['']
+
+
+def write_page(slug_, eyebrow, title, lead, body, description, depth=1, back=None, nxt=None, head_extra=''):
     p = '../' * depth
     if nxt is None:
         index = [s for s, _, _ in PAGES].index(slug_)
@@ -129,12 +133,24 @@ def write_page(slug_, eyebrow, title, lead, body, description, depth=1, back=Non
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#f2f0ea">
   <meta name="description" content="{html.escape(description)}">
-  <meta name="robots" content="noindex, nofollow">
-  <title>{e(title)} · Nellitheertha</title>
+  <title>{e(title)} · Sri Kshetra Nellitheertha</title>
+  <link rel="canonical" href="{SITE}/{slug_}/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sri Kshetra Nellitheertha">
+  <meta property="og:title" content="{html.escape(title)} · Sri Kshetra Nellitheertha">
+  <meta property="og:description" content="{html.escape(description)}">
+  <meta property="og:url" content="{SITE}/{slug_}/">
+  <meta property="og:image" content="{SITE}/assets/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="{ICON}">
+  <link rel="apple-touch-icon" href="{p}assets/icons/apple-touch-icon.png">{head_extra}
+  <link rel="preload" href="{p}assets/fonts/TiroKannada-Regular-all.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{p}assets/fonts/AnekKannada-Variable-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{p}styles.css">
 </head>
-<!-- THROWAWAY EXPLORATION. Pass 01 by Claude. Content ported from the earlier nellitheerthatemple.in by _build/pages.py. -->
 <body class="page" data-language="en">
 {header(p)}
 
@@ -159,6 +175,7 @@ def write_page(slug_, eyebrow, title, lead, body, description, depth=1, back=Non
     out = ROOT / slug_ / 'index.html'
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(doc, encoding='utf-8')
+    SITEMAP.append(slug_ + '/')
     print('wrote', out.relative_to(ROOT))
 
 
@@ -526,6 +543,18 @@ def render_items(items):
 
 
 programme = load('programme')
+EVENT = {'@context': 'https://schema.org', '@type': 'Event',
+         'name': 'Ashtabandha Brahmakalashabhisheka, Sri Kshetra Nellitheertha',
+         'description': 'Ashtabandha Brahmakalashabhisheka, Sakruth Pavitra Naga Brahma Mandalotsava and Varshavadhi Jatre at '
+                        'Sri Kshetra Nellitheertha. The Brahmakalashabhisheka is on Friday 25 December 2026 at 10:20 AM, in Kumbha Lagna.',
+         'startDate': '2026-12-20', 'endDate': '2026-12-30', 'eventStatus': 'https://schema.org/EventScheduled',
+         'eventAttendanceMode': 'https://schema.org/OfflineEventAttendanceMode',
+         'location': {'@type': 'HinduTemple', 'name': 'Sri Somanatheshwara Guhalaya, Sri Kshetra Nellitheertha',
+                      'address': {'@type': 'PostalAddress', 'streetAddress': 'Neerude Post, Kompadavu Village',
+                                  'addressLocality': 'Mangaluru Taluk', 'addressRegion': 'Karnataka',
+                                  'postalCode': '574144', 'addressCountry': 'IN'}},
+         'image': [SITE + '/assets/img/og.jpg'], 'url': SITE + '/brahmakalasha/',
+         'organizer': {'@type': 'Organization', 'name': 'Sri Somanatheshwara Temple Jirnoddhara Samiti', 'url': SITE + '/'}}
 invitation = load('invitation')
 committees = load('committees')
 BK = ('brahmakalasha', 'Brahmakalasha 2026')
@@ -600,7 +629,8 @@ if programme:
     write_page('brahmakalasha', '20 TO 30 DECEMBER 2026', 'Brahmakalasha 2026',
                'Ashtabandha Brahmakalashabhisheka, Sakruth Pavitra Naga Brahma Mandalotsava and Varshavadhi Jatre '
                'at Sri Kshetra Nellitheertha.',
-               body, 'The Brahmakalasha at Sri Kshetra Nellitheertha, 20 to 30 December 2026: the programme for every day.')
+               body, 'The Brahmakalasha at Sri Kshetra Nellitheertha, 20 to 30 December 2026: the programme for every day.',
+               head_extra='\n  <script type="application/ld+json">' + json.dumps(EVENT, ensure_ascii=False) + '</script>')
 
 if invitation and invitation.get('letter'):
     L = invitation['letter']
@@ -679,3 +709,82 @@ text = splice(text, 'pages', pages_section)
 text = splice(text, 'footer', footer('').replace('<li><a href="./">Home</a></li>', '<li><a href="#top">Back to top ↑</a></li>'))
 home.write_text(text, encoding='utf-8')
 print('updated index.html: page list and footer')
+
+
+# ---------------------------------------------------------------- the home page's live panel
+# The panel counts down to the Brahmakalasha and, during it, shows what is on now and next (script.js).
+# Its data is the programme, cut into timed pieces: an item such as "Tailabhyanjana to Sri Devaru, at 10:20 AM
+# during Kumbha Lagna Sumuhurtha Brahmakalashabhisheka ..." becomes two pieces, 6:00 AM and 10:20 AM.
+TIME = re.compile(r'(\d{1,2}):(\d{2}) ?([AP]M)')
+INNER = re.compile(r',\s*(?:at|from) (\d{1,2}:\d{2} ?[AP]M)\s+')
+LAGNA = re.compile(r'^(?:in|during) (Kumbha Lagna Sumuhurtha)\s+')
+STAGE = re.compile(r'^(.*?),\s*from (\d{1,2}:\d{2} ?[AP]M)$')
+KEY_CLASS = ' class="key"'
+
+
+def minutes(label):
+    m = TIME.search(label or '')
+    if not m:
+        return None
+    return (int(m[1]) % 12) * 60 + int(m[2]) + (720 if m[3] == 'PM' else 0)
+
+
+def shown_time(label):
+    label = (label or '').strip()
+    return label[5:] if label.startswith('From ') else label
+
+
+def live_items(groups):
+    out = []
+    for day in groups:
+        for sec in day.get('sections') or []:
+            stage = STAGE.match(sec['name'])
+            if stage:  # the stage programme lists roles instead of times: one entry for the whole of it
+                out.append({'m': minutes(stage[2]), 't': stage[2], 'x': stage[1], 's': stage[1], 'd': '', 'k': False})
+                continue
+            for it in sec.get('items') or []:
+                parts = INNER.split(it.get('text') or '')
+                pieces = [(it.get('time'), parts[0])] + [(parts[i], parts[i + 1]) for i in range(1, len(parts), 2)]
+                for n, (label, text) in enumerate(pieces):
+                    lagna = LAGNA.match(text)
+                    if lagna:
+                        text = text[lagna.end():]
+                    first = (it.get('details') or [''])[0] if n == 0 else ''
+                    detail = lagna[1] if lagna else (first or '').rstrip(',')
+                    short = text.split(' with ')[0].rstrip('.')
+                    if len(short) > 72:
+                        short = short.split(', ')[0]
+                    out.append({'m': minutes(label), 't': shown_time(label), 'x': text, 's': short,
+                                'd': detail, 'k': bool(lagna)})
+    order = lambda r: r['m'] if r['m'] is not None else (360 if r['t'] == 'Morning' else 1440)
+    return sorted(out, key=order)
+
+
+if programme:
+    groups = {}
+    for day in programme['days']:
+        groups.setdefault(day['date'], []).append(day)
+    live = {'days': [{'date': date, 'weekday': g[0]['weekday'], 'items': live_items(g),
+                      'notes': [n.strip('()') for d in g for n in (d.get('notes') or [])],
+                      'posters': poster_files(date)} for date, g in groups.items()]}
+    blob = json.dumps(live, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
+    strip = '\n'.join(
+        f'          <li{KEY_CLASS if date.endswith("-25") else ""} data-date="{date}">'
+        f'<a href="brahmakalasha/#dec-{int(date[-2:])}"><span>{int(date[-2:])}</span><small>{g[0]["weekday"][:3]}</small></a></li>'
+        for date, g in groups.items())
+    text = home.read_text(encoding='utf-8')
+    a, b = '<!-- programme-data:start -->', '<!-- programme-data:end -->'
+    text = (text[:text.index(a) + len(a)] + f'\n  <script type="application/json" id="programme-data">{blob}</script>\n  '
+            + text[text.index(b):])
+    a, b = '<!-- days:start -->', '<!-- days:end -->'
+    text = text[:text.index(a) + len(a)] + '\n' + strip + '\n          ' + text[text.index(b):]
+    home.write_text(text, encoding='utf-8')
+    print('updated index.html: programme data and day strip')
+
+
+# ---------------------------------------------------------------- sitemap
+urls = '\n'.join(f'  <url><loc>{SITE}/{u}</loc></url>' for u in SITEMAP)
+(ROOT / 'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n'
+                                  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urls + '\n</urlset>\n',
+                                  encoding='utf-8')
+print('wrote sitemap.xml with', len(SITEMAP), 'pages')
