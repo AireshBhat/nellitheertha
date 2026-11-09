@@ -115,13 +115,19 @@
       for (let step = 16; step >= 1; step /= 2) {
         for (let i = 0; i < frameCount; i += step) if (!order.includes(i)) order.push(i);
       }
-      order.forEach((i) => {
+      // A few at a time: if all download at once they share the connection and none arrives early.
+      let next = 0;
+      const loadNext = () => {
+        if (next >= order.length) return;
+        const i = order[next++];
         const image = new Image();
         image.decoding = 'async';
-        image.onload = () => { if (!sized) sizeCanvas(); requestDraw(); };
+        image.onload = () => { if (!sized) sizeCanvas(); requestDraw(); loadNext(); };
+        image.onerror = loadNext;
         image.src = `assets/${folder}/${String(i).padStart(3, '0')}.webp`;
         frames[i] = image;
-      });
+      };
+      for (let k = 0; k < 4; k++) loadNext();
     };
     const forestObserver = new IntersectionObserver((entries) => {
       if (entries.some((e) => e.isIntersecting)) { loadForest(); forestObserver.disconnect(); }
