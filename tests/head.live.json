@@ -1,0 +1,429 @@
+{
+ "/": {
+  "status": 200,
+  "title": "Sri Kshetra Nellitheertha · Sri Somanatheshwara Guhalaya",
+  "lang": "en",
+  "description": "Sri Somanatheshwara Guhalaya (cave temple), Sri Kshetra Nellitheertha, Kompadavu Village, Mangaluru Taluk, Karnataka.",
+  "robots": null,
+  "themeColor": "#f2f0ea",
+  "canonical": "https://nellitheertha.in/",
+  "og": {
+   "og:type": "website",
+   "og:site_name": "Sri Kshetra Nellitheertha",
+   "og:title": "Sri Kshetra Nellitheertha · Sri Somanatheshwara Guhalaya",
+   "og:description": "Brahmakalasha 2026, 20 to 30 December. Brahmakalashabhisheka on Friday 25 December at 10:20 AM, in Kumbha Lagna.",
+   "og:url": "https://nellitheertha.in/",
+   "og:image": "https://nellitheertha.in/assets/img/og.jpg",
+   "og:image:width": "1200",
+   "og:image:height": "630",
+   "og:image:alt": "A lamp burning before the garlanded deity in Nellitheertha's sanctum",
+   "og:locale": "en_IN"
+  },
+  "twitter": "summary_large_image",
+  "touchIcon": "/assets/icons/apple-touch-icon.png",
+  "icon": "data:image/svg+xml,%3Csvg xmlns=%27http:",
+  "fontPreloads": 2,
+  "jsonLd": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "HinduTemple",
+      "@id": "https://nellitheertha.in/#temple",
+      "name": "Sri Somanatheshwara Guhalaya, Sri Kshetra Nellitheertha",
+      "alternateName": "Sri Somanatheshwara Cave Temple, Nellitheertha",
+      "url": "https://nellitheertha.in/",
+      "telephone": "+91-8088708914",
+      "email": "vbnellitheertha@yahoo.com",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Neerude Post, Kompadavu Village",
+       "addressLocality": "Mangaluru Taluk",
+       "addressRegion": "Karnataka",
+       "postalCode": "574144",
+       "addressCountry": "IN"
+      }
+     },
+     {
+      "@type": "Event",
+      "name": "Ashtabandha Brahmakalashabhisheka, Sri Kshetra Nellitheertha",
+      "description": "Ashtabandha Brahmakalashabhisheka, Sakruth Pavitra Naga Brahma Mandalotsava and Varshavadhi Jatre at Sri Kshetra Nellitheertha. The Brahmakalashabhisheka is on Friday 25 December 2026 at 10:20 AM, in Kumbha Lagna.",
+      "startDate": "2026-12-20",
+      "endDate": "2026-12-30",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+       "@id": "https://nellitheertha.in/#temple"
+      },
+      "image": [
+       "https://nellitheertha.in/assets/img/og.jpg"
+      ],
+      "url": "https://nellitheertha.in/brahmakalasha/",
+      "organizer": {
+       "@type": "Organization",
+       "name": "Sri Somanatheshwara Temple Jirnoddhara Samiti",
+       "url": "https://nellitheertha.in/"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "/brahmakalasha/": {
+  "status": 200,
+  "title": "Brahmakalasha 2026 · Sri Kshetra Nellitheertha",
+  "lang": "en",
+  "description": "The Brahmakalasha at Sri Kshetra Nellitheertha, 20 to 30 December 2026: the programme for every day.",
+  "robots": null,
+  "themeColor": "#f2f0ea",
+  "canonical": "https://nellitheertha.in/brahmakalasha/",
+  "og": {
+   "og:type": "website",
+   "og:site_name": "Sri Kshetra Nellitheertha",
+   "og:title": "Brahmakalasha 2026 · Sri Kshetra Nellitheertha",
+   "og:description": "The Brahmakalasha at Sri Kshetra Nellitheertha, 20 to 30 December 2026: the programme for every day.",
+   "og:url": "https://nellitheertha.in/brahmakalasha/",
+   "og:image": "https://nellitheertha.in/assets/img/og.jpg",
+   "og:image:width": "1200",
+   "og:image:height": "630",
+   "og:locale": "en_IN"
+  },
+  "twitter": "summary_large_image",
+  "touchIcon": "/assets/icons/apple-touch-icon.png",
+  "icon": "data:image/svg+xml,%3Csvg xmlns=%27http:",
+  "fontPreloads": 2,
+  "jsonLd": [
+   {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Ashtabandha Brahmakalashabhisheka, Sri Kshetra Nellitheertha",
+    "description": "Ashtabandha Brahmakalashabhisheka, Sakruth Pavitra Naga Brahma Mandalotsava and Varshavadhi Jatre at Sri Kshetra Nellitheertha. The Brahmakalashabhisheka is on Friday 25 December 2026 at 10:20 AM, in Kumbha Lagna.",
+    "startDate": "2026-12-20",
+    "endDate": "2026-12-30",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+     "@type": "HinduTemple",
+     "name": "Sri Somanatheshwara Guhalaya, Sri Kshetra Nellitheertha",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Neerude Post, Kompadavu Village",
+      "addressLocality": "Mangaluru Taluk",
+      "addressRegion": "Karnataka",
+      "postalCode": "574144",
+      "addressCountry": "IN"
+     }
+    },
+    "image": [
+     "https://nellitheertha.in/assets/img/og.jpg"
+    ],
+    "url": "https://nellitheertha.in/brahmakalasha/",
+    "organizer": {
+     "@type": "Organization",
+     "name": "Sri Somanatheshwara Temple Jirnoddhara Samiti",
+     "url": "https://nellitheertha.in/"
+    }
+   }
+  ]
+ },
+ "/brahmakalasha/committees/": {
+  "status": 200,
+  "title": "Committees and supporters · Sri Kshetra Nellitheertha",
+  "lang": "en",
+  "description": "The committees, Mahadanis and supporters of the Brahmakalasha at Sri Kshetra Nellitheertha.",
+  "robots": null,
+  "themeColor": "#f2f0ea",
+  "canonical": "https://nellitheertha.in/brahmakalasha/committees/",
+  "og": {
+   "og:type": "website",
+   "og:site_name": "Sri Kshetra Nellitheertha",
+   "og:title": "Committees and supporters · Sri Kshetra Nellitheertha",
+   "og:description": "The committees, Mahadanis and supporters of the Brahmakalasha at Sri Kshetra Nellitheertha.",
+   "og:url": "https://nellitheertha.in/brahmakalasha/committees/",
+   "og:image": "https://nellitheertha.in/assets/img/og.jpg",
+   "og:image:width": "1200",
+   "og:image:height": "630",
+   "og:locale": "en_IN"
+  },
+  "twitter": "summary_large_image",
+  "touchIcon": "/assets/icons/apple-touch-icon.png",
+  "icon": "data:image/svg+xml,%3Csvg xmlns=%27http:",
+  "fontPreloads": 2,
+  "jsonLd": []
+ },
+ "/brahmakalasha/invitation/": {
+  "status": 200,
+  "title": "The invitation · Sri Kshetra Nellitheertha",
+  "lang": "en",
+  "description": "The invitation to the Brahmakalasha at Sri Kshetra Nellitheertha, 20 to 30 December 2026.",
+  "robots": null,
+  "themeColor": "#f2f0ea",
+  "canonical": "https://nellitheertha.in/brahmakalasha/invitation/",
+  "og": {
+   "og:type": "website",
+   "og:site_name": "Sri Kshetra Nellitheertha",
+   "og:title": "The invitation · Sri Kshetra Nellitheertha",
+   "og:description": "The invitation to the Brahmakalasha at Sri Kshetra Nellitheertha, 20 to 30 December 2026.",
+   "og:url": "https://nellitheertha.in/brahmakalasha/invitation/",
+   "og:image": "https://nellitheertha.in/assets/img/og.jpg",
+   "og:image:width": "1200",
+   "og:image:height": "630",
+   "og:locale": "en_IN"
+  },
+  "twitter": "summary_large_image",
+  "touchIcon": "/assets/icons/apple-touch-icon.png",
+  "icon": "data:image/svg+xml,%3Csvg xmlns=%27http:",
+  "fontPreloads": 2,
+  "jsonLd": []
+ },
+ "/temple/": {
+  "status": 200,
+  "title": "The temple · Sri Kshetra Nellitheertha",
+  "lang": "en",
+  "description": "The deities, bhootas and surroundings of Sri Somanatheshwara Guhalaya, Nellitheertha.",
+  "robots": null,
+  "themeColor": "#f2f0ea",
+  "canonical": "https://nellitheertha.in/temple/",
+  "og": {
+   "og:type": "website",
+   "og:site_name": "Sri Kshetra Nellitheertha",
+   "og:title": "The temple · Sri Kshetra Nellitheertha",
+   "og:description": "The deities, bhootas and surroundings of Sri Somanatheshwara Guhalaya, Nellitheertha.",
+   "og:url": "https://nellitheertha.in/temple/",
+   "og:image": "https://nellitheertha.in/assets/img/og.jpg",
+   "og:image:width": "1200",
+   "og:image:height": "630",
+   "og:locale": "en_IN"
+  },
+  "twitter": "summary_large_image",
+  "touchIcon": "/assets/icons/apple-touch-icon.png",
+  "icon": "data:image/svg+xml,%3Csvg xmlns=%27http:",
+  "fontPreloads": 2,
+  "jsonLd": []
+ },
+ "/history/": {
+  "status": 200,
+  "title": "History and origin · Sri Kshetra Nellitheertha",
+  "lang": "en",
+  "description": "The history of Sri Somanatheshwara Guhalaya, Nellitheertha: recorded since 1487 AD.",
+  "robots": null,
+  "themeColor": "#f2f0ea",
+  "canonical": "https://nellitheertha.in/history/",
+  "og": {
+   "og:type": "website",
+   "og:site_name": "Sri Kshetra Nellitheertha",
+   "og:title": "History and origin · Sri Kshetra Nellitheertha",
+   "og:description": "The history of Sri Somanatheshwara Guhalaya, Nellitheertha: recorded since 1487 AD.",
+   "og:url": "https://nellitheertha.in/history/",
+   "og:image": "https://nellitheertha.in/assets/img/og.jpg",
+   "og:image:width": "1200",
+   "og:image:height": "630",
+   "og:locale": "en_IN"
+  },
+  "twitter": "summary_large_image",
+  "touchIcon": "/assets/icons/apple-touch-icon.png",
+  "icon": "data:image/svg+xml,%3Csvg xmlns=%27http:",
+  "fontPreloads": 2,
+  "jsonLd": []
+ },
+ "/story/": {
+  "status": 200,
+  "title": "The birth of Nellitheertha · Sri Kshetra Nellitheertha",
+  "lang": "en",
+  "description": "The story of the birth of Nellitheertha: Sage Jabali, Antar Ganga, the bhootas and Arunasura.",
+  "robots": null,
+  "themeColor": "#f2f0ea",
+  "canonical": "https://nellitheertha.in/story/",
+  "og": {
+   "og:type": "website",
+   "og:site_name": "Sri Kshetra Nellitheertha",
+   "og:title": "The birth of Nellitheertha · Sri Kshetra Nellitheertha",
+   "og:description": "The story of the birth of Nellitheertha: Sage Jabali, Antar Ganga, the bhootas and Arunasura.",
+   "og:url": "https://nellitheertha.in/story/",
+   "og:image": "https://nellitheertha.in/assets/img/og.jpg",
+   "og:image:width": "1200",
+   "og:image:height": "630",
+   "og:locale": "en_IN"
+  },
+  "twitter": "summary_large_image",
+  "touchIcon": "/assets/icons/apple-touch-icon.png",
+  "icon": "data:image/svg+xml,%3Csvg xmlns=%27http:",
+  "fontPreloads": 2,
+  "jsonLd": []
+ },
+ "/cave/": {
+  "status": 200,
+  "title": "The cave · Sri Kshetra Nellitheertha",
+  "lang": "en",
+  "description": "The cave at Nellitheertha: the passage, the lake and natural Linga inside, and why it is open only from October to April.",
+  "robots": null,
+  "themeColor": "#f2f0ea",
+  "canonical": "https://nellitheertha.in/cave/",
+  "og": {
+   "og:type": "website",
+   "og:site_name": "Sri Kshetra Nellitheertha",
+   "og:title": "The cave · Sri Kshetra Nellitheertha",
+   "og:description": "The cave at Nellitheertha: the passage, the lake and natural Linga inside, and why it is open only from October to April.",
+   "og:url": "https://nellitheertha.in/cave/",
+   "og:image": "https://nellitheertha.in/assets/img/og.jpg",
+   "og:image:width": "1200",
+   "og:image:height": "630",
+   "og:locale": "en_IN"
+  },
+  "twitter": "summary_large_image",
+  "touchIcon": "/assets/icons/apple-touch-icon.png",
+  "icon": "data:image/svg+xml,%3Csvg xmlns=%27http:",
+  "fontPreloads": 2,
+  "jsonLd": []
+ },
+ "/sevas/": {
+  "status": 200,
+  "title": "Sevas · Sri Kshetra Nellitheertha",
+  "lang": "en",
+  "description": "The sevas offered at Sri Somanatheshwara Guhalaya, Nellitheertha.",
+  "robots": null,
+  "themeColor": "#f2f0ea",
+  "canonical": "https://nellitheertha.in/sevas/",
+  "og": {
+   "og:type": "website",
+   "og:site_name": "Sri Kshetra Nellitheertha",
+   "og:title": "Sevas · Sri Kshetra Nellitheertha",
+   "og:description": "The sevas offered at Sri Somanatheshwara Guhalaya, Nellitheertha.",
+   "og:url": "https://nellitheertha.in/sevas/",
+   "og:image": "https://nellitheertha.in/assets/img/og.jpg",
+   "og:image:width": "1200",
+   "og:image:height": "630",
+   "og:locale": "en_IN"
+  },
+  "twitter": "summary_large_image",
+  "touchIcon": "/assets/icons/apple-touch-icon.png",
+  "icon": "data:image/svg+xml,%3Csvg xmlns=%27http:",
+  "fontPreloads": 2,
+  "jsonLd": []
+ },
+ "/jaatre/": {
+  "status": 200,
+  "title": "The annual jaatre · Sri Kshetra Nellitheertha",
+  "lang": "en",
+  "description": "The annual jaatre of Nellitheertha, the Bhoota Kola and the temple calendar.",
+  "robots": null,
+  "themeColor": "#f2f0ea",
+  "canonical": "https://nellitheertha.in/jaatre/",
+  "og": {
+   "og:type": "website",
+   "og:site_name": "Sri Kshetra Nellitheertha",
+   "og:title": "The annual jaatre · Sri Kshetra Nellitheertha",
+   "og:description": "The annual jaatre of Nellitheertha, the Bhoota Kola and the temple calendar.",
+   "og:url": "https://nellitheertha.in/jaatre/",
+   "og:image": "https://nellitheertha.in/assets/img/og.jpg",
+   "og:image:width": "1200",
+   "og:image:height": "630",
+   "og:locale": "en_IN"
+  },
+  "twitter": "summary_large_image",
+  "touchIcon": "/assets/icons/apple-touch-icon.png",
+  "icon": "data:image/svg+xml,%3Csvg xmlns=%27http:",
+  "fontPreloads": 2,
+  "jsonLd": []
+ },
+ "/mantras/": {
+  "status": 200,
+  "title": "Mantras · Sri Kshetra Nellitheertha",
+  "lang": "en",
+  "description": "Mantras of Lord Shiva in Kannada, from the Nellitheertha temple website.",
+  "robots": null,
+  "themeColor": "#f2f0ea",
+  "canonical": "https://nellitheertha.in/mantras/",
+  "og": {
+   "og:type": "website",
+   "og:site_name": "Sri Kshetra Nellitheertha",
+   "og:title": "Mantras · Sri Kshetra Nellitheertha",
+   "og:description": "Mantras of Lord Shiva in Kannada, from the Nellitheertha temple website.",
+   "og:url": "https://nellitheertha.in/mantras/",
+   "og:image": "https://nellitheertha.in/assets/img/og.jpg",
+   "og:image:width": "1200",
+   "og:image:height": "630",
+   "og:locale": "en_IN"
+  },
+  "twitter": "summary_large_image",
+  "touchIcon": "/assets/icons/apple-touch-icon.png",
+  "icon": "data:image/svg+xml,%3Csvg xmlns=%27http:",
+  "fontPreloads": 2,
+  "jsonLd": []
+ },
+ "/gallery/": {
+  "status": 200,
+  "title": "Gallery · Sri Kshetra Nellitheertha",
+  "lang": "en",
+  "description": "Photographs of Sri Somanatheshwara Guhalaya, Nellitheertha.",
+  "robots": null,
+  "themeColor": "#f2f0ea",
+  "canonical": "https://nellitheertha.in/gallery/",
+  "og": {
+   "og:type": "website",
+   "og:site_name": "Sri Kshetra Nellitheertha",
+   "og:title": "Gallery · Sri Kshetra Nellitheertha",
+   "og:description": "Photographs of Sri Somanatheshwara Guhalaya, Nellitheertha.",
+   "og:url": "https://nellitheertha.in/gallery/",
+   "og:image": "https://nellitheertha.in/assets/img/og.jpg",
+   "og:image:width": "1200",
+   "og:image:height": "630",
+   "og:locale": "en_IN"
+  },
+  "twitter": "summary_large_image",
+  "touchIcon": "/assets/icons/apple-touch-icon.png",
+  "icon": "data:image/svg+xml,%3Csvg xmlns=%27http:",
+  "fontPreloads": 2,
+  "jsonLd": []
+ },
+ "/appeal/": {
+  "status": 200,
+  "title": "Appeal towards temple renovation · Sri Kshetra Nellitheertha",
+  "lang": "en",
+  "description": "The 2024 appeal for the renovation of Sri Somanatheshwara Guhalaya, Nellitheertha, now complete: estimates and committees.",
+  "robots": null,
+  "themeColor": "#f2f0ea",
+  "canonical": "https://nellitheertha.in/appeal/",
+  "og": {
+   "og:type": "website",
+   "og:site_name": "Sri Kshetra Nellitheertha",
+   "og:title": "Appeal towards temple renovation · Sri Kshetra Nellitheertha",
+   "og:description": "The 2024 appeal for the renovation of Sri Somanatheshwara Guhalaya, Nellitheertha, now complete: estimates and committees.",
+   "og:url": "https://nellitheertha.in/appeal/",
+   "og:image": "https://nellitheertha.in/assets/img/og.jpg",
+   "og:image:width": "1200",
+   "og:image:height": "630",
+   "og:locale": "en_IN"
+  },
+  "twitter": "summary_large_image",
+  "touchIcon": "/assets/icons/apple-touch-icon.png",
+  "icon": "data:image/svg+xml,%3Csvg xmlns=%27http:",
+  "fontPreloads": 2,
+  "jsonLd": []
+ },
+ "/visit/": {
+  "status": 200,
+  "title": "How to reach · Sri Kshetra Nellitheertha",
+  "lang": "en",
+  "description": "How to reach Sri Somanatheshwara Guhalaya, Nellitheertha: four routes, the address and contact numbers.",
+  "robots": null,
+  "themeColor": "#f2f0ea",
+  "canonical": "https://nellitheertha.in/visit/",
+  "og": {
+   "og:type": "website",
+   "og:site_name": "Sri Kshetra Nellitheertha",
+   "og:title": "How to reach · Sri Kshetra Nellitheertha",
+   "og:description": "How to reach Sri Somanatheshwara Guhalaya, Nellitheertha: four routes, the address and contact numbers.",
+   "og:url": "https://nellitheertha.in/visit/",
+   "og:image": "https://nellitheertha.in/assets/img/og.jpg",
+   "og:image:width": "1200",
+   "og:image:height": "630",
+   "og:locale": "en_IN"
+  },
+  "twitter": "summary_large_image",
+  "touchIcon": "/assets/icons/apple-touch-icon.png",
+  "icon": "data:image/svg+xml,%3Csvg xmlns=%27http:",
+  "fontPreloads": 2,
+  "jsonLd": []
+ }
+}

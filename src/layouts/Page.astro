@@ -1,0 +1,87 @@
+---
+import '../styles/site.css';
+import tiroUrl from '../fonts/TiroKannada-Regular-all.woff2?url';
+import anekUrl from '../fonts/AnekKannada-Variable-latin.woff2?url';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ToTop from '../components/ToTop.astro';
+
+interface Link { href: string; label: string }
+interface Props {
+  title: string;              // the page's own title (the h1 on article pages)
+  description: string;
+  slug: string;               // '' for the home page, 'temple', 'brahmakalasha/invitation', ...
+  docTitle?: string;          // the whole <title>, when it is not "<title> · Sri Kshetra Nellitheertha"
+  ogDescription?: string;
+  ogImageAlt?: string;
+  jsonLd?: object;
+  home?: boolean;
+  article?: boolean;
+  eyebrow?: string;
+  lead?: string;
+  back?: Link;
+  next?: Link;
+  bodyClass?: string;
+  bodyData?: Record<string, string>;
+}
+const { title, description, slug, docTitle, ogDescription, ogImageAlt, jsonLd, home = false, article = false,
+  eyebrow, lead, back, next, bodyClass, bodyData = {} } = Astro.props;
+const SITE = 'https://nellitheertha.in';
+const fullTitle = docTitle ?? `${title} · Sri Kshetra Nellitheertha`;
+const url = slug ? `${SITE}/${slug}/` : `${SITE}/`;
+const ICON = "data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 18 24%27%3E%3Cpath d=%27M9 1C9 1 2 11 2 16a7 7 0 0 0 14 0C16 11 9 1 9 1Z%27 fill=%27%23273c1a%27/%3E%3C/svg%3E";
+const dataAttrs = Object.fromEntries(Object.entries({ language: 'en', ...bodyData }).map(([k, v]) => [`data-${k}`, v]));
+const backLink = back ?? { href: '/#pages', label: 'Home' };
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f2f0ea">
+  <meta name="description" content={description}>
+  <title>{fullTitle}</title>
+  <link rel="canonical" href={url}>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sri Kshetra Nellitheertha">
+  <meta property="og:title" content={fullTitle}>
+  <meta property="og:description" content={ogDescription ?? description}>
+  <meta property="og:url" content={url}>
+  <meta property="og:image" content={`${SITE}/assets/img/og.jpg`}>
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  {ogImageAlt && <meta property="og:image:alt" content={ogImageAlt}>}
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href={ICON}>
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+  <link rel="preload" href={tiroUrl} as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href={anekUrl} as="font" type="font/woff2" crossorigin>
+  <slot name="head" />
+  <script is:inline>document.documentElement.classList.add('js')</script>
+</head>
+<body class={bodyClass ?? (article ? 'page' : undefined)} {...dataAttrs}>
+  <Header home={home} />
+  {article ? (
+    <main id="content">
+      <article class="article">
+        <a class="back" href={backLink.href}>{backLink.label}</a>
+        <header class="article-head">
+          {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+          <h1>{title}</h1>
+          {lead && <p class="lead" set:html={lead} />}
+        </header>
+        <div class="prose">
+          <slot />
+        </div>
+        {next && <nav class="next-page" aria-label="Next page"><a class="more" href={next.href}>Next: {next.label}</a></nav>}
+      </article>
+    </main>
+  ) : <slot />}
+  <Footer home={home} />
+  <ToTop />
+  <slot name="end" />
+  <script src="../scripts/site.ts"></script>
+</body>
+</html>

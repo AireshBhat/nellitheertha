@@ -1,0 +1,19 @@
+---
+import LanguageSwitch from './LanguageSwitch.astro';
+interface Props { home?: boolean }
+const { home = false } = Astro.props;
+---
+{home ? <a class="skip" href="#programme">Skip to the Brahmakalasha</a> : <a class="skip" href="#content">Skip to content</a>}
+<header class="site-header">
+  <a class="brand" href={home ? '#top' : '/'} aria-label="Nellitheertha home">
+    <svg viewBox="0 0 18 24" aria-hidden="true"><path d="M9 1C9 1 2 11 2 16a7 7 0 0 0 14 0C16 11 9 1 9 1Z" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+    <span>Nellitheertha</span>
+  </a>
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="/brahmakalasha/">Brahmakalasha</a>
+    <a href={home ? '#pages' : '/#pages'}>About</a>
+    <a href={home ? '#visit' : '/visit/'}>Visit</a>
+    <a href={home ? '#contribute' : '/#contribute'}>Contribute</a>
+  </nav>
+  <LanguageSwitch />
+</header>

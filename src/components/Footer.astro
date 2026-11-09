@@ -1,0 +1,17 @@
+---
+import { PAGES } from '../lib/pages';
+interface Props { home?: boolean }
+const { home = false } = Astro.props;
+---
+<footer>
+  <p class="footer-name" lang="kn">ಶ್ರೀ ಕ್ಷೇತ್ರ ನೆಲ್ಲಿತೀರ್ಥ</p>
+  <p>Sri Somanatheshwara Guhalaya<br>Neerude Post, Kompadavu Village, Mangaluru Taluk, D.K. District, Karnataka 574144</p>
+  <p class="footer-contact"><a href="tel:+918088708914">+91 80887 08914</a> · <a href="tel:+918242299142">0824 2299142</a> · <a href="mailto:vbnellitheertha@yahoo.com">vbnellitheertha@yahoo.com</a></p>
+  <nav class="footer-pages" aria-label="All pages">
+    <ul>
+      {home ? <li><a href="#top">Back to top ↑</a></li> : <li><a href="/">Home</a></li>}
+      {PAGES.map((p) => <li><a href={`/${p.slug}/`}>{p.title}</a></li>)}
+    </ul>
+  </nav>
+  <p class="credit">The forest, the forest walk, the kere and the cave pictures were made with AI from photographs and footage of Nellitheertha. The sanctum picture on the home page is a real video frame restored with AI. All other photographs are real.</p>
+</footer>
