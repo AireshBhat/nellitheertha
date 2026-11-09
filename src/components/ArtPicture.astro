@@ -1,0 +1,25 @@
+---
+// One picture, two crops: tall for phones, wide from 700 px up. Each as AVIF with a WebP fallback, at several widths.
+import type { ImageMetadata } from 'astro';
+import { getImage } from 'astro:assets';
+import { srcset, TALL_WIDTHS, WIDE_WIDTHS } from '../lib/images';
+interface Props {
+  tall: ImageMetadata; wide: ImageMetadata; alt: string; class?: string;
+  wideSizes?: string; eager?: boolean;
+}
+const { tall, wide, alt, class: className, wideSizes = '100vw', eager = false } = Astro.props;
+const [tallAvif, tallWebp, wideAvif, wideWebp, fallback] = await Promise.all([
+  srcset(tall, TALL_WIDTHS, 'avif'), srcset(tall, TALL_WIDTHS, 'webp'),
+  srcset(wide, WIDE_WIDTHS, 'avif'), srcset(wide, WIDE_WIDTHS, 'webp'),
+  getImage({ src: tall, width: Math.min(720, tall.width), format: 'webp' }),
+]);
+---
+<picture class={className}>
+  <source media="(min-width: 700px)" type="image/avif" srcset={wideAvif} sizes={wideSizes} width={wide.width} height={wide.height}>
+  <source media="(min-width: 700px)" type="image/webp" srcset={wideWebp} sizes={wideSizes} width={wide.width} height={wide.height}>
+  <source type="image/avif" srcset={tallAvif} sizes="100vw">
+  <source type="image/webp" srcset={tallWebp} sizes="100vw">
+  {eager
+    ? <img src={fallback.src} alt={alt} width={tall.width} height={tall.height} fetchpriority="high" decoding="async">
+    : <img src={fallback.src} alt={alt} width={tall.width} height={tall.height} loading="lazy" decoding="async">}
+</picture>

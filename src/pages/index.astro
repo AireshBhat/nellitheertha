@@ -1,4 +1,270 @@
 ---
-// Placeholder until Task 5 ports the home page.
+// The home page. Its words and markup come from the static site (scripts/port-home.py); the live panel is src/scripts/home.ts.
+import Page from '../layouts/Page.astro';
+import ArtPicture from '../components/ArtPicture.astro';
+import Photo from '../components/Photo.astro';
+import PageIndex from '../components/PageIndex.astro';
+import { byDate, posters, programme } from '../lib/brahmakalasha';
+import { liveData } from '../lib/live';
+import forestTall from '../assets/img/forest-tall.webp';
+import forestWide from '../assets/img/forest-wide.webp';
+import kereTall from '../assets/img/kere-tall.webp';
+import kereWide from '../assets/img/kere-wide.webp';
+import caveTall from '../assets/img/cave-tall.webp';
+import caveWide from '../assets/img/cave-wide.webp';
+import sanctum from '../assets/img/sanctum.webp';
+import moonGround from '../assets/img/moon-ground.webp';
+import piliTorches from '../assets/img/pili-torches.webp';
+import kolaSilver from '../assets/img/kola-silver.webp';
+import kolaArch from '../assets/img/kola-arch.webp';
+import { srcset, TALL_WIDTHS, WIDE_WIDTHS } from '../lib/images';
+
+const blocks = await programme();
+const groups = byDate(blocks);
+const data = JSON.stringify(liveData(blocks, posters)).replace(/<\//g, '<\\/');
+const JSON_LD = {"@context": "https://schema.org", "@graph": [{"@type": "HinduTemple", "@id": "https://nellitheertha.in/#temple", "name": "Sri Somanatheshwara Guhalaya, Sri Kshetra Nellitheertha", "alternateName": "Sri Somanatheshwara Cave Temple, Nellitheertha", "url": "https://nellitheertha.in/", "telephone": "+91-8088708914", "email": "vbnellitheertha@yahoo.com", "address": {"@type": "PostalAddress", "streetAddress": "Neerude Post, Kompadavu Village", "addressLocality": "Mangaluru Taluk", "addressRegion": "Karnataka", "postalCode": "574144", "addressCountry": "IN"}}, {"@type": "Event", "name": "Ashtabandha Brahmakalashabhisheka, Sri Kshetra Nellitheertha", "description": "Ashtabandha Brahmakalashabhisheka, Sakruth Pavitra Naga Brahma Mandalotsava and Varshavadhi Jatre at Sri Kshetra Nellitheertha. The Brahmakalashabhisheka is on Friday 25 December 2026 at 10:20 AM, in Kumbha Lagna.", "startDate": "2026-12-20", "endDate": "2026-12-30", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@id": "https://nellitheertha.in/#temple"}, "image": ["https://nellitheertha.in/assets/img/og.jpg"], "url": "https://nellitheertha.in/brahmakalasha/", "organizer": {"@type": "Organization", "name": "Sri Somanatheshwara Temple Jirnoddhara Samiti", "url": "https://nellitheertha.in/"}}]};
+const heroTall = await srcset(forestTall, TALL_WIDTHS, 'avif');
+const heroWide = await srcset(forestWide, WIDE_WIDTHS, 'avif');
 ---
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Sri Kshetra Nellitheertha</title></head><body><p>Sri Kshetra Nellitheertha</p></body></html>
+<Page home slug="" title="Sri Kshetra Nellitheertha" docTitle="Sri Kshetra Nellitheertha · Sri Somanatheshwara Guhalaya"
+  description="Sri Somanatheshwara Guhalaya (cave temple), Sri Kshetra Nellitheertha, Kompadavu Village, Mangaluru Taluk, Karnataka."
+  ogDescription="Brahmakalasha 2026, 20 to 30 December. Brahmakalashabhisheka on Friday 25 December at 10:20 AM, in Kumbha Lagna."
+  ogImageAlt="A lamp burning before the garlanded deity in Nellitheertha's sanctum"
+  jsonLd={JSON_LD} bodyData={{ tide: 'festival' }}>
+  <Fragment slot="head">
+    <link rel="preload" as="image" type="image/avif" imagesrcset={heroTall} imagesizes="100vw" media="(max-width: 699px)">
+    <link rel="preload" as="image" type="image/avif" imagesrcset={heroWide} imagesizes="100vw" media="(min-width: 700px)">
+  </Fragment>
+  <main>
+    <div class="arrival" id="top">
+      <section class="hero" aria-labelledby="temple-title">
+        <ArtPicture class="hero-photo" tall={forestTall} wide={forestWide} alt={"A moss-covered laterite path running down through dense, green forest undergrowth to the temple"} eager />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="overline" lang="kn">ಶ್ರೀ ಕ್ಷೇತ್ರ ನೆಲ್ಲಿತೀರ್ಥ</p>
+          <h1 id="temple-title" lang="kn">ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರ ಗುಹಾಲಯ</h1>
+          <p class="english-title">Sri Somanatheshwara Cave Temple</p>
+        </div>
+        <div class="first-drop" aria-hidden="true">
+          <svg viewBox="0 0 18 24"><path d="M9 1C9 1 2 11 2 16a7 7 0 0 0 14 0C16 11 9 1 9 1Z"/></svg>
+          <span></span><span></span>
+        </div>
+        <a class="scroll-cue" href="#story"><svg viewBox="0 0 20 12" aria-hidden="true"><path d="M2 2l8 8 8-8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>Scroll down</a>
+      </section>
+
+      <section class="present" id="programme" aria-labelledby="present-title">
+        <div class="festival-present">
+          <p class="eyebrow" data-live="eyebrow">20 TO 30 DECEMBER 2026</p>
+          <h2 id="present-title" data-live="title">Brahmakalasha 2026</h2>
+          <div class="countdown">
+            <p class="count" aria-live="off"><span class="count-n" data-live="count"></span> <span class="count-unit" data-live="unit">days</span></p>
+            <p class="count-of">to the Brahmakalashabhisheka</p>
+            <p class="count-when"><time datetime="2026-12-25T10:20:00+05:30">Friday 25 December 2026, 10:20 AM</time>, in Kumbha Lagna</p>
+          </div>
+          <div class="now-next">
+            <div class="now">
+              <span class="time-label">Now</span>
+              <p data-live="now"></p>
+              <span class="subtle" data-live="since"></span>
+            </div>
+            <div class="next">
+              <span class="time-label" data-live="next-label">Next</span>
+              <time data-live="next-time"></time>
+              <h3 data-live="next"></h3>
+              <p data-live="next-detail"></p>
+            </div>
+          </div>
+          <p class="state-line" data-live="line">The programme begins on Sunday 20 December.</p>
+          <ol class="festival-days" aria-label="The days of the Brahmakalasha, 20 to 30 December">
+          {groups.map((g) => <li class={g.day === 25 ? "key" : undefined} data-date={g.date}><a href={`brahmakalasha/#dec-${g.day}`}><span>{g.day}</span><small>{g.weekday.slice(0, 3)}</small></a></li>)}
+          </ol>
+          <div class="actions">
+            <a class="action primary" href="brahmakalasha/#programme" data-live="programme-link" data-en="Full programme" data-kn="ಕಾರ್ಯಕ್ರಮಗಳು">Full programme</a>
+            <a class="action" href="https://www.google.com/maps/search/?api=1&amp;query=Sri+Somanatheshwara+Guhalaya+Nellitheertha" target="_blank" rel="noopener">Directions</a>
+            <a class="action" href="tel:+918242299142">Call</a>
+          </div>
+        </div>
+        <div class="ordinary-present">
+          <p class="eyebrow">THE CAVE IS OPEN</p>
+          <h2>The cave is open from October to April.</h2>
+          <p>It opens on Tula Sankramana. It is said that the remaining months are meant for the gods and rishis.</p>
+          <a class="action primary" href="visit/">How to reach</a>
+          <p class="ordinary-bk"><a class="more" href="brahmakalasha/">Brahmakalasha 2026: 20 to 30 December</a></p>
+        </div>
+      </section>
+    </div>
+
+    <section class="full-programme" id="full-programme" aria-labelledby="schedule-title">
+      <div class="canopy canopy-right" aria-hidden="true"></div>
+      <div class="programme-heading" data-reveal>
+        <p class="eyebrow" data-live="day-eyebrow">FRIDAY · 25 DECEMBER</p>
+        <h2 id="schedule-title" data-en="Programme" data-kn="ಕಾರ್ಯಕ್ರಮಗಳು">Programme</h2>
+        <a href="assets/posters/dec25-06.webp" data-live="poster">Poster</a>
+        <a class="more" href="brahmakalasha/#programme">All days, 20 to 30 December</a>
+      </div>
+      <ol class="timeline" data-live="timeline">
+        <li><time>6:00 AM</time><p data-en="Tailabhyanjana to Sri Devaru" data-kn="ಶ್ರೀ ದೇವರಿಗೆ ತೈಲಾಭ್ಯಂಜನ">Tailabhyanjana to Sri Devaru</p></li>
+        <li class="featured"><time>10:20 AM</time><p data-en="Brahmakalashabhisheka in Kumbha Lagna, followed by Nyasa Pooje, Mahapooje and Maha Annasantarpane" data-kn="ಬ್ರಹ್ಮಕಲಶಾಭಿಷೇಕ">Brahmakalashabhisheka in Kumbha Lagna, followed by Nyasa Pooje, Mahapooje and Maha Annasantarpane</p></li>
+        <li><time>1:30 PM</time><p data-en="Yakshagana Hasya Vaibhava: Baravuda Bile" data-kn="ಯಕ್ಷಗಾನ ಹಾಸ್ಯ ವೈಭವ">Yakshagana Hasya Vaibhava: Baravuda Bile</p></li>
+        <li><time>5:00 PM</time><p>Bali Horatu Utsava, Kattepooje, Pejathaya Mantapa inauguration and Mahapooje</p></li>
+        <li><time>5:00 PM</time><p>Ganamrutha Nellitheertha, devotional and folk songs</p></li>
+        <li><time>8:00 PM</time><p>Halittu Seve at the Nagabana of Nagappa Kere</p></li>
+        <li class="night-item"><time>10:00 PM</time><p data-en="Nagabrahma Mandala Seve, then prasada" data-kn="ನಾಗಬ್ರಹ್ಮ ಮಂಡಲ ಸೇವೆ">Nagabrahma Mandala Seve, then prasada</p></li>
+      </ol>
+      <div class="annadana" data-live="notes"><p>Special assistance for Annadana of this day: Sri Ananda Kava and brothers, Santrabailu</p></div>
+    </section>
+
+    <section class="threshold" id="story" aria-labelledby="threshold-title">
+      <div class="canopy canopy-left" aria-hidden="true"></div>
+      <div data-reveal>
+        <p class="eyebrow">ABOUT THE TEMPLE</p>
+        <h2 id="threshold-title">The main deity is Sri Somanatheshwara (Shiva).</h2>
+        <p class="threshold-line">The temple also has Mahaganapati and Jabali Maharshi as deities. The first record mentioning Nellitheertha dates back to 1487 AD.</p>
+        <a class="more" href="temple/">The temple</a><a class="more" href="history/">History</a>
+      </div>
+    </section>
+
+    <section class="forest" id="forest" aria-label="A walk through the forest">
+      <div class="forest-stage">
+        <picture>
+          <source media="(min-width: 700px)" srcset="/assets/walk-wide/000.webp">
+          <img class="forest-still" src="/assets/walk-tall/000.webp" alt="The moss-covered path leading on through lush forest toward the temple" loading="lazy">
+        </picture>
+        <canvas aria-hidden="true"></canvas>
+        <div class="forest-shade" aria-hidden="true"></div>
+      </div>
+      <div class="forest-copy copy-one" data-reveal>
+        <p class="chapter">01 · NAGAVANA</p>
+        <h2>In the temple’s story, this place was Nagavana, the snake forest.</h2>
+      </div>
+      <div class="forest-copy copy-two" data-reveal>
+        <p>Nellitheertha is about 8 km from Kateel.</p>
+        <a class="more" href="story/">The birth of Nellitheertha</a>
+      </div>
+    </section>
+
+    <section class="kere-story" aria-labelledby="kere-title">
+      <figure class="emerge" data-reveal>
+        <ArtPicture tall={kereTall} wide={kereWide} alt={"Nagappa Kere after the monsoon: moss-green stone steps going down into clear, still, blue-green water, with forest all around"} wideSizes="(min-width: 700px) 60vw, 100vw" />
+      </figure>
+      <div class="kere-copy" data-reveal>
+        <p class="chapter">02 · NAGAPPA KERE</p>
+        <h2 id="kere-title">Devotees bathe in Nagappa Kere before entering the cave.</h2>
+        <p>A small natural pond to the north of the temple. Its water is at its best just after the monsoon, from October to December.</p>
+        <a class="more" href="temple/#nagappa-kere">Around the temple</a>
+      </div>
+    </section>
+
+    <section class="earth" id="earth" aria-label="Into the earth">
+      <div class="earth-stage">
+        <ArtPicture tall={caveTall} wide={caveWide} alt={"The great laterite overhang at the cave temple, the dark of the cave beneath it and the white stone shrine of Sage Jabali at its edge"} />
+        <div class="earth-veil" aria-hidden="true"></div>
+      </div>
+      <div class="earth-intro earth-text" data-reveal>
+        <p class="chapter">03 · THE CAVE</p>
+        <h2>The cave is to the left of the temple’s main door.</h2>
+      </div>
+      <div class="earth-middle earth-text" data-reveal>
+        <p>Within a few feet the trail narrows. You bend and crawl, then crawl flat on your stomach.</p>
+      </div>
+      <div class="earth-end earth-text" data-reveal>
+        <p>After about 300 to 400 metres the cave widens again, and there is a lake inside.</p>
+        <a class="more" href="cave/">The cave</a>
+      </div>
+    </section>
+
+    <section class="ganga" id="ganga" aria-labelledby="ganga-title">
+      <div class="second-drop" aria-hidden="true">
+        <svg viewBox="0 0 18 24"><path d="M9 1C9 1 2 11 2 16a7 7 0 0 0 14 0C16 11 9 1 9 1Z"/></svg>
+        <span></span><span></span>
+      </div>
+      <p class="chapter">04 · ANTAR GANGA</p>
+      <h2 id="ganga-title">Antar Ganga</h2>
+      <p class="ganga-line">Ganga, appearing from underground.</p>
+      <p class="ganga-story">In the temple’s story, Ganga told Sage Jabali that South India could not handle the severity of her flow. She promised to appear here as Antar Ganga.</p>
+      <p class="withheld">Drops of water in the shape of nelli (amla) fall from the roof of the cave, and the lake is made up of these drops. Hence the name: Nelli Theertha.<br><a class="more" href="story/">The birth of Nellitheertha</a></p>
+    </section>
+
+    <section class="lamp-return" aria-labelledby="lamp-title">
+      <figure class="emerge" data-reveal>
+        <Photo src={sanctum} alt={"A lamp burning before the garlanded deity in Nellitheertha's sanctum"} sizes="(min-width: 1000px) 60vw, 100vw" widths={[480, 800, 1200, 1600, 2000]} />
+        <figcaption>The sanctum, lit by oil lamps</figcaption>
+      </figure>
+      <div data-reveal>
+        <p class="chapter">05 · THE SANCTUM</p>
+        <h2 id="lamp-title">Sri Somanatheshwara</h2>
+        <p>The Linga is made of pure Saligrama, in the form of Ardhanareeshwara.</p>
+        <a class="more" href="temple/#deities">Deities</a><a class="more" href="sevas/">Sevas</a>
+      </div>
+    </section>
+
+    <section class="kola" id="kola" aria-labelledby="kola-title">
+      <figure class="kola-moon emerge" data-reveal>
+        <Photo src={moonGround} alt={"The moon above the lit jaatre ground at night, the festival chariot standing in silhouette"} sizes="(min-width: 1000px) 60vw, 100vw" widths={[480, 900, 1350, 1800]} />
+        <figcaption>The moon over the jaatre ground, December 2023</figcaption>
+      </figure>
+      <div class="kola-copy" data-reveal>
+        <p class="chapter">06 · THE BHOOTAS</p>
+        <h2 id="kola-title">Bhoota Kola</h2>
+        <p>Bhootas are the ganas of Shiva; they administer the temple and the village. The main bhootas of Nellitheertha are <span class="ink-line">Pili-Chamundi, Kshetrapala, Raktheshwari and Doomavathy</span>. The kola is held the day after the jaatre, from evening until dawn. The grandest is Pili-Chamundi’s.</p>
+        <a class="more" href="jaatre/#kola">The annual jaatre</a>
+      </div>
+      <div class="kola-photos" data-spread>
+        <figure class="kola-photo wide" style="--i:0">
+          <Photo src={piliTorches} alt={"Pili-Chamundi in red and gold with a garlanded crown, torches blazing on either side"} sizes="(min-width: 1000px) 48vw, 100vw" widths={[480, 900, 1350, 1800]} />
+          <figcaption>Pili-Chamundi</figcaption>
+        </figure>
+        <figure class="kola-photo" style="--i:1">
+          <Photo src={kolaSilver} alt={"Late in the night, the daiva before tall silver arches, garlanded, a sword in hand"} sizes="(min-width: 1000px) 26vw, 50vw" widths={[400, 600, 900, 1200]} />
+        </figure>
+        <figure class="kola-photo" style="--i:2">
+          <Photo src={kolaArch} alt={"A daiva seated before a great painted arch, a second daiva standing beside it"} sizes="(min-width: 1000px) 26vw, 50vw" widths={[400, 600, 900, 1200]} />
+        </figure>
+      </div>
+      <p class="kola-note">Photographs from the kola at Nellitheertha, December 2023.</p>
+    </section>
+
+    <section class="practical" id="visit" aria-labelledby="visit-title">
+      <div class="canopy canopy-left" aria-hidden="true"></div>
+      <div class="practical-intro" data-reveal>
+        <p class="eyebrow">PLAN YOUR VISIT</p>
+        <h2 id="visit-title">Visiting Nellitheertha</h2>
+        <p>Sri Somanatheshwara Guhalaya, Neerude Post, Kompadavu Village, Mangaluru Taluk, D.K. District, Karnataka 574144</p>
+        <div class="actions">
+          <a class="action primary" href="https://www.google.com/maps/search/?api=1&query=Sri+Somanatheshwara+Guhalaya+Nellitheertha" target="_blank" rel="noopener">Open in Maps</a>
+          <a class="action" href="tel:+918088708914">+91 80887 08914</a>
+        </div>
+        <a class="more" href="visit/">How to reach: four routes</a>
+      </div>
+      <ol class="visit-facts">
+        <li><span>01</span><p><strong>October to April</strong>The cave is open to people during these months.</p></li>
+        <li><span>02</span><p><strong>Bathe first</strong>Use Nagappa Kere before entering the cave.</p></li>
+        <li><span>03</span><p><strong>Open to all</strong>Anyone over five, of any caste, faith or gender, may enter.</p></li>
+        <li><span>04</span><p><strong>A narrow passage</strong>Expect to bend and crawl on your stomach.</p></li>
+      </ol>
+    </section>
+
+    <section class="contribute" id="contribute" aria-labelledby="contribute-title">
+      <div class="canopy canopy-right" aria-hidden="true"></div>
+      <div class="contribute-intro" data-reveal>
+        <p class="eyebrow">CONTRIBUTE</p>
+        <h2 id="contribute-title">Brahmakalasha 2026</h2>
+        <p>Donations for the Brahmakalasha can be deposited into this bank account, or paid by UPI.</p>
+        <a class="more" href="brahmakalasha/#contribute">The UPI QR code</a>
+        <a class="more" href="appeal/">The completed renovation (2024 appeal)</a>
+      </div>
+      <div class="bank-details" data-reveal>
+        <p>Sri Somanatheshwara Temple Jirnoddhara Samiti<br>Karnataka Bank, Aikala Branch<br>Current account 0122500100786201<br>IFSC KARB0000012<br>UPI 9986376974@kbl</p>
+        <div class="actions">
+          <a class="action primary" href="upi://pay?pa=9986376974@kbl&amp;pn=SRI%20SOMANATHESHWARA%20TEMPLE%20JEERNODHARA%20S&amp;cu=INR&amp;mc=8661&amp;orgid=159052&amp;sign=MEUCIQDHPf/JRbCGXygPlNo2Jh2ickx8b3OqTEgxAOU1wFuo6wIgRal+zz3RJsSpuioIKfI4gtkJgPaFw2jOJkIG2Ji+UvQ=">Pay with a UPI app</a>
+          <button type="button" class="action" id="copy-account">Copy account number</button>
+        </div>
+        <small>Please inform the details of your contribution by email to <a href="mailto:vbnellitheertha@yahoo.com">vbnellitheertha@yahoo.com</a> or on WhatsApp to <a href="https://wa.me/918088708914">+91 80887 08914</a>.</small>
+      </div>
+    </section>
+
+    <PageIndex />
+  </main>
+  <script type="application/json" id="programme-data" is:inline set:html={data} slot="end"></script>
+  <script src="../scripts/home.ts"></script>
+</Page>

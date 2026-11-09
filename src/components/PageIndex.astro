@@ -1,0 +1,10 @@
+---
+import { PAGES } from '../lib/pages';
+---
+<section class="pages" id="pages" aria-labelledby="pages-title">
+  <p class="eyebrow">ABOUT NELLITHEERTHA</p>
+  <h2 id="pages-title">More about the temple</h2>
+  <ul class="page-index">
+    {PAGES.map((p) => <li><a href={`${p.slug}/`}><span class="page-name">{p.title}</span><span class="page-about">{p.about}</span></a></li>)}
+  </ul>
+</section>
