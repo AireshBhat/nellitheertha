@@ -1,0 +1,6 @@
+---
+// English and, when there is one, the patrike's Kannada. The language switch shows one (styles: .en-only, .kn-only).
+interface Props { en: string; kn?: string | null }
+const { en, kn } = Astro.props;
+---
+{kn ? <><span class="en-only">{en}</span><span class="kn-only" lang="kn">{kn}</span></> : en}

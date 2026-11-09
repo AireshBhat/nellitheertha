@@ -3,6 +3,7 @@ import { getEntry } from 'astro:content';
 import Page from '../../layouts/Page.astro';
 import ProgrammeDay from '../../components/ProgrammeDay.astro';
 import BankDetails from '../../components/BankDetails.astro';
+import Both from '../../components/Both.astro';
 import { EVENT, byDate, programme } from '../../lib/brahmakalasha';
 const groups = byDate(await programme());
 const inv = (await getEntry('invitation', 'invitation'))!.data;
@@ -17,14 +18,14 @@ const inv = (await getEntry('invitation', 'invitation'))!.data;
     <div><dt>Varshavadhi Jatre</dt><dd>25 to 30 December</dd></div>
   </dl>
   <p class="links-row"><a class="more" href="/brahmakalasha/invitation/">The invitation</a><a class="more" href="/brahmakalasha/committees/">Committees and supporters</a><a class="more" href="/assets/docs/brahmakalasha-invitation-english.pdf">The invitation (PDF, 23 pages)</a></p>
-  <h2 id="programme">Programme</h2>
+  <h2 id="programme"><Both en="Programme" kn={inv.kn?.programme_title} /></h2>
   <ol class="day-nav" aria-label="Days">
     {groups.map((g) => <li><a href={`#dec-${g.day}`} class={g.day === 25 ? 'key' : undefined}><span class="dn">{g.day}</span><span class="wd">{g.weekday.slice(0, 3)}</span></a></li>)}
   </ol>
   {groups.map((g) => <ProgrammeDay group={g} />)}
-  <h2 id="instructions">Special instructions</h2>
+  <h2 id="instructions"><Both en="Special instructions" kn={inv.kn?.special_instructions_heading} /></h2>
   <ol>
-    {inv.special_instructions.map((x) => <li>{x}</li>)}
+    {inv.special_instructions.map((x, i) => <li><Both en={x} kn={inv.kn?.special_instructions[i]} /></li>)}
   </ol>
-  <BankDetails bank={inv.bank} />
+  <BankDetails bank={inv.bank} kn={inv.kn?.bank} />
 </Page>

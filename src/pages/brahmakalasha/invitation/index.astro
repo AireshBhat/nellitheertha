@@ -1,16 +1,32 @@
 ---
 import { getEntry } from 'astro:content';
 import Page from '../../../layouts/Page.astro';
-const L = (await getEntry('invitation', 'invitation'))!.data.letter;
+const inv = (await getEntry('invitation', 'invitation'))!.data;
+const L = inv.letter;
+// The Kannada letter as printed in the patrike, page 2; shown when ಕನ್ನಡ is chosen.
+const K = inv.kn?.letter;
 ---
 <Page article slug="brahmakalasha/invitation" eyebrow="BRAHMAKALASHA 2026" title="The invitation"
   description="The invitation to the Brahmakalasha at Sri Kshetra Nellitheertha, 20 to 30 December 2026."
   back={{ href: '/brahmakalasha/', label: 'Brahmakalasha 2026' }} next={{ href: '/brahmakalasha/committees/', label: 'Committees and supporters' }}>
+  <div class={K ? "en-only" : undefined}>
   {L.header_lines.map((x) => <p class="letter-head">{x}</p>)}
-  {L.verse.length > 0 && <p class="mantra verse">{L.verse.map((x, i) => <>{i > 0 && <br />}{x}</>)}</p>}
-  {L.address_lines.length > 0 && <p class="letter-head">{L.address_lines.map((x, i) => <>{i > 0 && <br />}{x}</>)}</p>}
-  {L.salutation && <p>{L.salutation}</p>}
-  {L.blocks.map((b) => (b.type === 'heading' ? <h2>{b.text}</h2> : b.type === 'line' ? <p class="letter-line">{b.text}</p> : <p>{b.text}</p>))}
-  {L.closing_lines.map((x) => <p class="letter-close">{x}</p>)}
+    {L.verse.length > 0 && <p class="mantra verse">{L.verse.map((x, i) => <>{i > 0 && <br />}{x}</>)}</p>}
+    {L.address_lines.length > 0 && <p class="letter-head">{L.address_lines.map((x, i) => <>{i > 0 && <br />}{x}</>)}</p>}
+    {L.salutation && <p>{L.salutation}</p>}
+    {L.blocks.map((b) => (b.type === 'heading' ? <h2>{b.text}</h2> : b.type === 'line' ? <p class="letter-line">{b.text}</p> : <p>{b.text}</p>))}
+    {L.closing_lines.map((x) => <p class="letter-close">{x}</p>)}
+  </div>
+  {K && (
+    <div class="kn-only" lang="kn">
+      {K.header_lines.map((x) => <p class="letter-head">{x}</p>)}
+      {K.verse.length > 0 && <p class="mantra verse">{K.verse.map((x, i) => <>{i > 0 && <br />}{x}</>)}</p>}
+      {K.address_lines.length > 0 && <p class="letter-head">{K.address_lines.map((x, i) => <>{i > 0 && <br />}{x}</>)}</p>}
+      {K.salutation && <p>{K.salutation}</p>}
+      {K.blocks.map((b) => (b.type === 'heading' ? <h2>{b.text}</h2> : b.type === 'line' ? <p class="letter-line">{b.text}</p> : <p>{b.text}</p>))}
+      {K.closing_lines.map((x) => <p class="letter-close">{x}</p>)}
+      <ul class="names">{K.signatories.map((x) => <li>{x.name}{x.role && <small>{x.role}</small>}</li>)}</ul>
+    </div>
+  )}
   <p><a href="/assets/docs/brahmakalasha-invitation-english.pdf">The full invitation (PDF, 23 pages)</a></p>
 </Page>

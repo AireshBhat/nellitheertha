@@ -7,13 +7,10 @@ import { z } from 'astro/zod';
 const text = z.string().min(1);
 const maybe = <T extends z.ZodTypeAny>(t: T) => t.nullable().optional();
 
-const item = z.object({
-  time: z.string(),
-  text,
-  details: maybe(z.array(z.string())),
-  kn: z.object({ time: z.string(), text: z.string(), details: z.array(z.string()) }).partial().optional(),
-});
-const section = z.object({ name: text, items: z.array(item), kn: z.object({ name: z.string() }).partial().optional() });
+const item = z.object({ time: z.string(), text, details: maybe(z.array(z.string())) });
+// The patrike's Kannada for a section is its own list in printed order: it splits and joins entries differently.
+const knItem = z.object({ time: z.string(), text, details: z.array(z.string()) });
+const section = z.object({ name: text, items: z.array(item), kn: z.object({ name: text, items: z.array(knItem) }).optional() });
 const day = z.object({
   date: z.string().regex(/^2026-12-(2\d|30)$/, 'date must be 2026-12-20 to 2026-12-30'),
   weekday: z.enum(['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']),
@@ -39,7 +36,15 @@ const invitation = z.object({
   }),
   mahadanis: z.array(person),
   supporters: z.array(person),
-  kn: z.record(z.string(), z.unknown()).optional(),
+  kn: z.object({
+    programme_title: text, special_instructions_heading: text, special_instructions: z.array(text),
+    bank: z.object({ heading: text, intro: text, lines: z.array(text), contact_line: text }),
+    letter: z.object({
+      header_lines: z.array(z.string()), verse: z.array(z.string()), address_lines: z.array(z.string()), salutation: z.string(),
+      blocks: z.array(z.object({ type: z.enum(['paragraph', 'heading', 'line']), text })), closing_lines: z.array(z.string()),
+      signatories: z.array(z.object({ name: text, role: z.string() })),
+    }),
+  }).optional(),
 });
 const committees = z.object({
   source: maybe(z.string()),
