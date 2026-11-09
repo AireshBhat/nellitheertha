@@ -11,8 +11,8 @@ for (const path of PAGES) {
   const r = await p.evaluate(() => {
     const visible = (el) => { if (!el) return false; const s = getComputedStyle(el); const box = el.getBoundingClientRect(); return s.visibility !== 'hidden' && Number(s.opacity) > 0.5 && box.height > 0; };
     const h = document.querySelector('h1');
-    // Text blocks, except the after-the-festival panel, which is hidden until 31 December by design.
-    const blocks = [...document.querySelectorAll('main p, main li')].filter((x) => x.textContent.trim().length > 30 && !x.closest('.ordinary-present'));
+    // Text blocks, except the after-the-festival panel (hidden until 31 December) and the Kannada versions (shown when ಕನ್ನಡ is chosen).
+    const blocks = [...document.querySelectorAll('main p, main li')].filter((x) => x.textContent.trim().length > 30 && !x.closest('.ordinary-present, .kn-only'));
     const hidden = blocks.filter((x) => !visible(x)).map((x) => x.textContent.trim().slice(0, 40));
     // The countdown's number needs the script: without it, no stray "days" may show.
     const count = document.querySelector('.count');
