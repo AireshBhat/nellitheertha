@@ -3,7 +3,9 @@
 import { launch, base as slash } from './chrome.mjs';
 const base = slash(process.argv[2]);
 const MB = 1024 * 1024;
-const LIMITS = { '': [1.5, 3.5], 'gallery/': [1.0, 1.0], 'brahmakalasha/': [0.25, 0.25], 'temple/': [0.8, 0.8] };
+// The pictures are the approved files, unchanged, so a full scroll weighs what the earlier site did (home 8.99 MB, gallery 2.79 MB
+// on 2026-11-11). The saving is in when things load: the walk frames wait until the visitor scrolls towards the walk.
+const LIMITS = { '': [1.5, 9.0], 'gallery/': [2.8, 2.8], 'brahmakalasha/': [0.25, 0.25], 'temple/': [0.8, 0.8] };
 const b = await launch();
 let over = 0;
 for (const [path, [first, full]] of Object.entries(LIMITS)) {

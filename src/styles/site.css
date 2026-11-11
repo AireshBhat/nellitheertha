@@ -471,8 +471,6 @@ footer a{display:inline-flex;min-height:48px;align-items:center;text-underline-o
   @view-transition{navigation:auto}
   ::view-transition-old(root),::view-transition-new(root){animation-duration:.25s;animation-timing-function:var(--ease-soft)}
 }
-/* Photographs are <picture> elements now; the figure styles above size the <img> inside. */
-.plate picture,.gallery picture,.old-gallery picture{display:contents}
 /* ---------- Kannada and English: where both exist, both are in the page and the language switch shows one ---------- */
 body:not([data-language="kn"]) .kn-only{display:none!important}
 body[data-language="kn"] .en-only{display:none!important}

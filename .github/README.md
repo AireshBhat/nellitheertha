@@ -11,15 +11,12 @@ It is built with [Astro](https://astro.build) as a static site. Vercel builds an
   - `programme.json` is the day-by-day programme; `invitation.json` holds the instructions, bank details, letter, Mahadanis and supporters; `committees.json` holds the committees.
   - The English comes from the English invitation. The `kn` fields hold the Kannada from the printed patrike, shown when ಕನ್ನಡ is chosen.
   - `src/content.config.ts` checks this data when the site builds, and `src/lib/brahmakalasha.ts` checks the programme as a whole. A bad edit stops the build, so the live site stays on its last good version.
-- `src/components/`, `src/layouts/`: the shared header, footer, pictures and page layout.
+- `src/components/`, `src/layouts/`: the shared header, footer and page layout.
 - `src/scripts/home.ts`: the home page's live panel (a countdown to the Brahmakalasha, then today's programme with now and next, in Indian time) and the forest walk. `src/scripts/site.ts`: the language switch and the arrow back to the top.
-- `src/assets/img/`: the source pictures. The build makes AVIF and WebP copies at several widths.
-- `public/`: files served as they are, at fixed addresses. These are the posters, the PDFs, the share image, the UPI code, the icons and the forest-walk frames.
+- `public/`: files served as they are, at fixed addresses. These are the pictures, the posters, the PDFs, the share image, the UPI code, the icons and the forest-walk frames. The pictures and the walk frames are the approved files, byte for byte; `tests/walk-parity.mjs` compares them with the earlier site.
 - `scripts/`: the tools that made some files.
   - `fonts.py` cuts the fonts.
-  - `frames.py` cuts the forest-walk frames. A new cut needs new folder names, because phones keep cached frames for weeks.
   - `merge-kannada.py` brings the verified Kannada into `src/content/`.
-  - `port-pages.py` and `port-home.py` were used once to move the pages over from the earlier static site.
 - `tests/`: checks run in Chrome against a built copy.
 
 ## Changing the site
@@ -49,6 +46,7 @@ Build, run `pnpm preview`, then run the checks you need. Most compare against th
 | `tests/nojs.mjs BASE`, `tests/failed-script.mjs BASE` | Every page reads without JavaScript, or when a script fails to arrive |
 | `tests/kannada.mjs BASE`, `tests/glyphs.mjs BASE_OLD BASE` | The Kannada versions, and that Kannada renders the same as before |
 | `tests/weight.mjs BASE`, `tests/slow.mjs BASE`, `tests/anchor.mjs BASE`, `tests/frames.mjs BASE_OLD BASE` | What a phone downloads, the forest walk on a slow link, and cached frames |
+| `tests/walk-parity.mjs BASE_OLD BASE` | The forest walk and every home-page picture look as on the earlier site |
 | `tests/axe.mjs BASE [kn]`, `tests/upi.mjs BASE_OLD BASE`, `tests/public.sh` | Accessibility, the UPI link, and no internal notes in this public repository |
 
 ## Sources and credits

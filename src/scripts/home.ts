@@ -162,9 +162,10 @@
     const canvas = forest.querySelector('canvas');
     const context = canvas.getContext('2d');
     const wide = matchMedia('(min-width: 700px)').matches;
-    // A new cut of the frames gets a new folder: phones keep cached frames under an old address for weeks.
-    const folder = wide ? 'walk-wide-2' : 'walk-tall-2';
-    const frameCount = wide ? 32 : 40;
+    // The approved frames, unchanged: 60 for phones, 48 for wide screens. A new cut must be approved after a side-by-side look, and needs a new folder,
+    // because phones keep cached frames under an old address for weeks.
+    const folder = wide ? 'walk-wide' : 'walk-tall';
+    const frameCount = wide ? 48 : 60;
     const frames = new Array(frameCount);
     let loading = false, scheduled = false, sized = false, lastDrawn = null;
     const ready = (image) => Boolean(image && image.complete && image.naturalWidth);
