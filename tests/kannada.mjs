@@ -30,10 +30,20 @@ for (const lang of ['kn', 'en']) {
   } else {
     check(r.kannadaChars === 0, `en: no Kannada in the page's main text (${r.kannadaChars} Kannada characters)`);
   }
+  if (lang === 'kn') {
+    // Printing slips in the patrike, corrected on the site (2026-11-11): the printed form must not show.
+    const text = await p.evaluate(() => document.querySelector('main').innerText);
+    for (const [slip, right] of [['ಸುಬಹ್ಮಣ್ಯ', 'ಸುಬ್ರಹ್ಮಣ್ಯ'], ['ಸಹೋದರರರು', 'ಸಹೋದರರು'], ['ನಿದೇರ್ಶಕರು', 'ನಿರ್ದೇಶಕರು']])
+      check(!text.includes(slip) && text.includes(right), `kn: ${right} (not the printed ${slip})`);
+  }
   const inv = await ctx.newPage();
   await inv.goto(`${base}brahmakalasha/invitation/?lang=${lang}`, { waitUntil: 'networkidle' });
   const k = await inv.evaluate(() => (document.querySelector('main').innerText.match(/[ಀ-೿]/g) || []).length);
   check(lang === 'kn' ? k > 500 : k === 0, `${lang}: invitation letter ${lang === 'kn' ? 'in Kannada' : 'has no Kannada'} (${k} Kannada characters)`);
+  if (lang === 'kn') {
+    const letter = await inv.evaluate(() => document.querySelector('main').innerText);
+    check(!letter.includes('ವಿಪ್ರೌಫ') && letter.includes('ವಿಪ್ರೌಘ'), 'kn: the shloka reads ವಿಪ್ರೌಘ (not the printed ವಿಪ್ರೌಫ)');
+  }
   await ctx.close();
 }
 await b.close();
