@@ -99,7 +99,13 @@ async function pictures(base) {
 }
 const [A, N] = await Promise.all([pictures(OLD), pictures(NEW)]);
 console.log('-- home-page pictures, 3x phone');
+// Pictures replaced on purpose, with what replaced them. tests/hero.mjs checks the new hero.
+const REPLACED = {
+  'A moss-covered laterite path running down through dense, green forest undergrowth to the temple':
+    'the hero: the Brahmakalasha deity picture (2026-11-13)',
+};
 for (const pic of A.list) {
+  if (REPLACED[pic.alt]) { console.log(`     "${pic.alt.slice(0, 50)}" | replaced on purpose by ${REPLACED[pic.alt]}`); continue; }
   const now = N.list.find((x) => x.alt === pic.alt);
   const label = `"${pic.alt.slice(0, 50)}"`;
   if (!now) { fail++; console.log(`FAIL ${label} | not on the new home page`); continue; }

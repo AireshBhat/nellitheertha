@@ -16,15 +16,17 @@ const JSON_LD = {"@context": "https://schema.org", "@graph": [{"@type": "HinduTe
   ogImageAlt="A lamp burning before the garlanded deity in Nellitheertha's sanctum"
   jsonLd={JSON_LD} bodyData={{ tide: 'festival' }}>
   <Fragment slot="head">
-    <link rel="preload" as="image" href="/assets/img/forest-tall.webp" media="(max-width: 699px)">
-    <link rel="preload" as="image" href="/assets/img/forest-wide.webp" media="(min-width: 700px)">
+    <link rel="preload" as="image" href="/assets/img/deities-tall.webp" media="(max-width: 999px)">
+    <link rel="preload" as="image" href="/assets/img/deities-wide.webp" media="(min-width: 1000px)">
   </Fragment>
   <main>
     <div class="arrival" id="top">
       <section class="hero" aria-labelledby="temple-title">
+        {/* The Brahmakalasha picture: the Linga, the idol and the lettering are the temple's poster's own pixels, never
+            redrawn; only the light around them is made with AI. tests/hero.mjs keeps them whole and uncovered. */}
         <picture class="hero-photo">
-          <source media="(min-width: 700px)" srcset="/assets/img/forest-wide.webp" width="2400" height="1340">
-          <img src="/assets/img/forest-tall.webp" alt="A moss-covered laterite path running down through dense, green forest undergrowth to the temple" width="960" height="1720" fetchpriority="high">
+          <source media="(min-width: 1000px)" srcset="/assets/img/deities-wide.webp" width="1820" height="1024">
+          <img src="/assets/img/deities-tall.webp" alt="The Linga in its golden prabhavali and a small golden idol in a silver frame, both garlanded, behind the gold lettering ನೆಲ್ಲಿತೀರ್ಥ" width="1080" height="1920" fetchpriority="high">
         </picture>
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="hero-copy">

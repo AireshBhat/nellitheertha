@@ -47,11 +47,12 @@ Build, run `pnpm preview`, then run the checks you need. Most compare against th
 | `tests/kannada.mjs BASE`, `tests/glyphs.mjs BASE_OLD BASE` | The Kannada versions, and that Kannada renders the same as before |
 | `tests/weight.mjs BASE`, `tests/slow.mjs BASE`, `tests/anchor.mjs BASE`, `tests/frames.mjs BASE_OLD BASE` | What a phone downloads, the forest walk on a slow link, and cached frames |
 | `tests/walk-parity.mjs BASE_OLD BASE` | The forest walk and every home-page picture look as on the earlier site |
+| `tests/hero.mjs BASE` | The Brahmakalasha picture at the top of the home page shows whole, with nothing over it, on phones, tablets and desktops |
 | `tests/axe.mjs BASE [kn]`, `tests/upi.mjs BASE_OLD BASE`, `tests/public.sh` | Accessibility, the UPI link, and no internal notes in this public repository |
 
 ## Sources and credits
 
 - **Text:** the temple's earlier website, the 2024 renovation appeal, and the 2026 Brahmakalasha invitation and patrike.
 - **Photographs:** the temple's own, from 2023, plus photographs from the first nellitheertha.com website, some marked © K.B. Mallya.
-- **Pictures made with AI:** the forest, the forest walk, the kere and the cave were made with AI from photographs and footage of Nellitheertha. The sanctum picture on the home page is a real video frame restored with AI.
+- **Pictures made with AI:** the forest, the forest walk, the kere and the cave were made with AI from photographs and footage of Nellitheertha. The sanctum picture on the home page is a real video frame restored with AI. In the Brahmakalasha picture at the top of the home page, the Linga, the idol and the ನೆಲ್ಲಿತೀರ್ಥ lettering are from the temple's 2026 Brahmakalasha poster, unchanged; the light around them was made with AI.
 - **Fonts:** Tiro Kannada and Anek Kannada, under the SIL Open Font License (`src/fonts/*-OFL.txt`).

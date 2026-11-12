@@ -6,17 +6,24 @@ const TARGETS = [['', '.hero h1'], ['', '.overline'], ['', '.footer-name'], ['',
   ['temple/', '.footer-name'], ['mantras/', '.prose']];
 const b = await launch();
 const shots = {};
+// The home hero's title is compared at phone width: on desktop it is set smaller beside the Brahmakalasha picture
+// (2026-11-13), on a phone it is the same size as before, so the same fonts and shaping must give the same pixels.
+const PHONE = new Set(['.hero h1', '.overline']);
 for (const [name, host] of [['old', OLD], ['new', NEW]]) {
   const ctx = await b.newContext({ viewport: { width: 1200, height: 900 }, deviceScaleFactor: 2, reducedMotion: 'reduce' });
-  const p = await ctx.newPage();
+  const phone = await b.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, reducedMotion: 'reduce' });
+  const pages = { desk: await ctx.newPage(), phone: await phone.newPage() };
   for (const [path, sel] of TARGETS) {
+    const p = pages[path === '' && PHONE.has(sel) ? 'phone' : 'desk'];
     await p.goto(host + path + (path ? '' : '?now=2026-11-09T23:00'), { waitUntil: 'networkidle' });
     await p.evaluate(() => document.fonts.ready);
     // Text over a photograph: hide the photograph (re-encoded on the new site) so only the letters are compared.
     await p.addStyleTag({ content: '.hero-photo,.hero-shade,.first-drop{visibility:hidden!important} .hero{background:#203020!important} .hero h1,.overline{text-shadow:none!important}' });
+    // The title sits lower on the new hero: pin it to the same place on both, so only the letters differ.
+    if (p === pages.phone) await p.addStyleTag({ content: '.hero-copy{position:fixed!important;top:120px!important;bottom:auto!important}' });
     shots[`${name}|${path}|${sel}`] = await p.locator(sel).first().screenshot({ animations: 'disabled' });
   }
-  await ctx.close();
+  await ctx.close(); await phone.close();
 }
 // Decode both images in the browser and compare pixels: anti-aliasing may differ by a level or two when a
 // layer is composited differently; a changed letter differs by far more.
