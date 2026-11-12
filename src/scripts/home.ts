@@ -1,4 +1,7 @@
 // Sri Kshetra Nellitheertha: the home page's behaviour.
+import 'number-flow';
+import { continuous } from 'number-flow/plugins';
+
 (() => {
   const body = document.body;
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -93,6 +96,23 @@
       const toKey = daysFrom(today, KEY.date), toStart = daysFrom(today, days[0].date);
       put('count', String(toKey));
       put('unit', toKey === 1 ? 'day' : 'days');
+      // The number rolls down to the days left, once, when it comes into view (NumberFlow).
+      // The rolling digits are only for the eye: screen readers read the plain number beside them.
+      const flow = document.createElement('number-flow');
+      flow.className = 'count-flow';
+      flow.setAttribute('aria-hidden', 'true');
+      Object.assign(flow, { locales: 'en-IN', trend: -1, plugins: [continuous], spinTiming: { duration: 1600, easing: 'cubic-bezier(.16,1,.3,1)' } });
+      live('count').before(flow);
+      if (reduce) flow.update(toKey);
+      else {
+        flow.update(10 ** String(toKey).length - 1); // from 99 (or 9) down to the days left
+        const seen = new IntersectionObserver(([entry]) => {
+          if (!entry.isIntersecting) return;
+          seen.disconnect();
+          flow.update(toKey);
+        }, { threshold: 0.6 });
+        seen.observe(flow);
+      }
       live('count').parentElement.classList.add('ready');
       put('line', toStart === 1 ? 'The programme begins tomorrow, Sunday 20 December.'
         : `The programme begins on Sunday 20 December, in ${plural(toStart, 'day')}.`);

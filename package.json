@@ -4,20 +4,26 @@
   "type": "module",
   "description": "The website of Sri Somanatheshwara Guhalaya, Sri Kshetra Nellitheertha",
   "packageManager": "pnpm@10.12.4",
-  "engines": { "node": "24.x" },
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview"
   },
   "dependencies": {
-    "astro": "7.4.7"
+    "astro": "7.4.7",
+    "number-flow": "0.6.2"
   },
   "devDependencies": {
     "axe-core": "4.10.2",
     "playwright-core": "1.65.0"
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["esbuild", "sharp"]
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
   }
 }

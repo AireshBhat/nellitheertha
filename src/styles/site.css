@@ -3,6 +3,9 @@
 @font-face{font-family:NelliTiro;src:url("../fonts/TiroKannada-Regular-all.woff2") format("woff2");font-weight:400;font-display:swap}
 @font-face{font-family:NelliAnek;src:url("../fonts/AnekKannada-Variable-latin.woff2") format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0020-007E,U+00A0-00FF,U+0100-017F,U+2010-2027,U+2030-205E,U+20B9,U+2190-2199,U+2212}
 @font-face{font-family:NelliAnek;src:url("../fonts/AnekKannada-Variable-kannada.woff2") format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0964-0965,U+0C80-0CFF,U+1CD0-1CFF,U+200B-200D,U+25CC,U+A830-A839}
+/* The same Latin file under a Latin-only name, for the countdown digits: NumberFlow adds an invisible zero-width space (U+200B),
+   which NelliAnek would fetch the 304 KB Kannada file for. */
+@font-face{font-family:NelliDigits;src:url("../fonts/AnekKannada-Variable-latin.woff2") format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0020-007E,U+00A0-00FF}
 
 :root{
   /* Moonlit Stone palette */
@@ -104,7 +107,11 @@ body[data-phase="during"] .now-next{display:grid}
 body[data-phase="during"] .countdown{display:none}
 .count{display:flex;align-items:baseline;gap:12px;margin:0}
 .count:not(.ready){display:none} /* the number needs the script; without it the date line below stands alone */
-.count-n{font:650 clamp(76px,21vw,128px)/.88 var(--sans);font-variant-numeric:tabular-nums;letter-spacing:-.045em}
+.count-n,.count-flow{font:650 clamp(76px,21vw,128px)/.88 var(--sans);font-variant-numeric:tabular-nums;letter-spacing:-.045em}
+/* NumberFlow fades its digits at the top and bottom as they roll. Line height 1 keeps the still digits clear of that fade;
+   the margin takes back the fade's room (NumberFlow's own formula) and the extra line height, so the panel keeps its height. */
+.count-flow{font-family:NelliDigits,sans-serif;line-height:1;margin-block:calc(-2 * round(nearest, calc(var(--number-flow-mask-height, .25em) / 2), 1px) - .06em)}
+.count-flow+.count-n{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap} /* read aloud; the rolling digits beside it are what the eye sees */
 .count-unit{font:400 clamp(26px,6.4vw,38px)/1 var(--serif)}
 .count-of{margin:14px 0 0;font:400 clamp(22px,5vw,28px)/1.3 var(--serif)}
 .count-when{margin:4px 0 0;color:var(--ink-2);font-size:17px}

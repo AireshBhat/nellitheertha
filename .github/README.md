@@ -12,7 +12,7 @@ It is built with [Astro](https://astro.build) as a static site. Vercel builds an
   - The English comes from the English invitation. The `kn` fields hold the Kannada from the printed patrike, shown when ಕನ್ನಡ is chosen.
   - `src/content.config.ts` checks this data when the site builds, and `src/lib/brahmakalasha.ts` checks the programme as a whole. A bad edit stops the build, so the live site stays on its last good version.
 - `src/components/`, `src/layouts/`: the shared header, footer and page layout.
-- `src/scripts/home.ts`: the home page's live panel (a countdown to the Brahmakalasha, then today's programme with now and next, in Indian time) and the forest walk. `src/scripts/site.ts`: the language switch and the arrow back to the top.
+- `src/scripts/home.ts`: the home page's live panel (a countdown to the Brahmakalasha whose number rolls in with [NumberFlow](https://github.com/barvian/number-flow), then today's programme with now and next, in Indian time) and the forest walk. `src/scripts/site.ts`: the language switch and the arrow back to the top.
 - `public/`: files served as they are, at fixed addresses. These are the pictures, the posters, the PDFs, the share image, the UPI code, the icons and the forest-walk frames. The pictures and the walk frames are the approved files, byte for byte; `tests/walk-parity.mjs` compares them with the earlier site.
 - `scripts/`: the tools that made some files.
   - `fonts.py` cuts the fonts.
@@ -42,6 +42,7 @@ Build, run `pnpm preview`, then run the checks you need. Most compare against th
 | `tests/parity.mjs BASE_OLD BASE` | Same words, no overflow, no broken pictures or errors on every page |
 | `tests/head.mjs BASE --compare tests/head.live.json` | Titles, descriptions, share tags and event data |
 | `tests/live.mjs BASE --compare tests/live.live.json` | The live panel at 13 moments, including a phone set to another timezone |
+| `tests/countdown.mjs BASE` | The countdown's number rolls down once, when it comes into view, never with reduced motion; screen readers read the true number |
 | `tests/urls.mjs BASE_OLD BASE` | Every earlier address still answers |
 | `tests/nojs.mjs BASE`, `tests/failed-script.mjs BASE` | Every page reads without JavaScript, or when a script fails to arrive |
 | `tests/kannada.mjs BASE`, `tests/glyphs.mjs BASE_OLD BASE` | The Kannada versions, and that Kannada renders the same as before |
