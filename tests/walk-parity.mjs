@@ -51,11 +51,11 @@ async function walk(base, device, points) {
   await p.goto(base, { waitUntil: 'networkidle' });
   const top = await p.evaluate(() => document.getElementById('forest').getBoundingClientRect().top + scrollY);
   for (const y of [top - 2000, top - 1000, top]) { await p.evaluate((t) => scrollTo({ top: t, behavior: 'instant' }), y); await p.waitForTimeout(300); }
-  // Wait until no new frame has arrived for 1.5 s.
+  // Wait until frames are arriving (more than the one still picture) and none has arrived for 1.5 s.
   let count = -1;
   for (let t = 0; t < 60; t++) {
     const now = await p.evaluate(() => performance.getEntriesByType('resource').filter((e) => e.name.includes('/walk')).length);
-    if (now === count && now > 0) break;
+    if (now === count && now > 1) break;
     count = now; await p.waitForTimeout(1500);
   }
   const length = await p.evaluate(() => document.getElementById('forest').offsetHeight - innerHeight);
