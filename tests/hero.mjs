@@ -60,7 +60,7 @@ const compare = (p, x, y, file) => p.evaluate(async ([x, y, mask, art]) => {
   }
   return { deity: deity / nd, worst: Math.round(worst), share: nd / (W * H), bg: bg / nb, size: `${W}x${H}` };
 }, [x.toString('base64'), y.toString('base64'), MASK[file], ART[file]]);
-const BARE = '*{visibility:hidden!important;animation:none!important}.hero-photo,.hero-photo *{visibility:visible!important}.hero-photo{-webkit-mask-image:none!important;mask-image:none!important}';
+const BARE = '*{visibility:hidden!important;animation:none!important}.hero-photo,.hero-photo *{visibility:visible!important}.hero-photo,.hero-photo img{-webkit-mask-image:none!important;mask-image:none!important}';
 
 for (const [name, device, file] of DEVICES) {
   const ctx = await b.newContext(device);
@@ -95,6 +95,47 @@ for (const [name, device, file] of DEVICES) {
   check(untouched.share > 0.3 && untouched.deity <= MAX_DIFF, `${name}: the deities are exactly the picture, with the light on (mean difference ${untouched.deity.toFixed(2)}, worst pixel ${untouched.worst}, over ${(untouched.share * 100).toFixed(0)}% of the box)`);
   console.log(`     ${name}: artwork drawn ${untouched.size} device px from ${ART[file][2] - ART[file][0]} file px (${(Number(untouched.size.split('x')[0]) / (ART[file][2] - ART[file][0])).toFixed(2)}x)`);
   check(errs.length === 0, `${name}: no script errors ${errs.join(' | ')}`);
+  await ctx.close();
+}
+
+// Desktops: the picture and the panel beside it are one dark scene. The temple's name sits in the picture under the
+// lettering, in light type, and nothing along the meeting of the picture and the panel jumps in brightness.
+for (const [name, device] of [['desktop', DESKTOP], ['small laptop', { viewport: { width: 1280, height: 720 }, deviceScaleFactor: 1 }], ['wide desktop', { viewport: { width: 1920, height: 1080 }, deviceScaleFactor: 1 }]]) {
+  const ctx = await b.newContext({ ...device, reducedMotion: 'reduce' });
+  const p = await ctx.newPage();
+  await p.goto(base + '?now=2026-11-13T09:00', { waitUntil: 'networkidle' });
+  await p.waitForTimeout(1200);
+  const info = await measure(p);
+  const layout = await p.evaluate(() => {
+    const h1 = document.querySelector('.hero h1'), panel = document.querySelector('.present'), hero = document.querySelector('.hero');
+    // The colour may come back as oklch(); a canvas turns any CSS colour into sRGB.
+    const g = Object.assign(document.createElement('canvas'), { width: 1, height: 1 }).getContext('2d');
+    g.fillStyle = getComputedStyle(h1).color; g.fillRect(0, 0, 1, 1);
+    const c = g.getImageData(0, 0, 1, 1).data;
+    const lum = (0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2]) / 255;
+    const r = h1.getBoundingClientRect(), q = panel.getBoundingClientRect(), hr = hero.getBoundingClientRect();
+    return { h1: { left: r.left, right: r.right, top: r.top, bottom: r.bottom }, panelLeft: q.left, heroBottom: hr.bottom, lum, vw: innerWidth, vh: innerHeight };
+  });
+  const t = layout.h1;
+  check(t.top >= info.box.bottom && t.right <= layout.panelLeft && t.bottom <= Math.min(layout.heroBottom, layout.vh), `${name}: the temple's name is in the picture, under the lettering (top ${Math.round(t.top)} below ${Math.round(info.box.bottom)}, right ${Math.round(t.right)} before the panel at ${Math.round(layout.panelLeft)})`);
+  check(layout.lum > 0.75, `${name}: the name is in light type (luminance ${layout.lum.toFixed(2)})`);
+  // Brightness along three rows from just past the artwork up to where the panel's words begin: no step larger than a
+  // fade makes. (Letters themselves are steep, so the rows stop short of them.)
+  const shot = await p.screenshot();
+  const step = await p.evaluate(async ([b64, x0, x1, rows]) => {
+    const i = await new Promise((ok) => { const m = new Image(); m.onload = () => ok(m); m.src = 'data:image/png;base64,' + b64; });
+    const c = document.createElement('canvas'); c.width = i.naturalWidth; c.height = i.naturalHeight; const g = c.getContext('2d'); g.drawImage(i, 0, 0);
+    const k = i.naturalWidth / innerWidth; // the shot is in device pixels; the positions are in CSS pixels
+    let worst = 0, at = null;
+    for (const yy of rows) {
+      const y = yy * k;
+      const d = g.getImageData(0, Math.round(y) - 2, c.width, 5).data, W = c.width;
+      const luma = (x) => { let t = 0; for (let k = 0; k < 5; k++) for (let dx = -2; dx <= 2; dx++) { const o = (k * W + x + dx) * 4; t += 0.299 * d[o] + 0.587 * d[o + 1] + 0.114 * d[o + 2]; } return t / 25; };
+      for (let x = Math.round(x0 * k); x < Math.round(x1 * k); x++) { const s = Math.abs(luma(x + 1) - luma(x)) * k; if (s > worst) { worst = s; at = [Math.round(x / k), Math.round(yy)]; } }
+    }
+    return { worst, at };
+  }, [shot.toString('base64'), Math.max(info.box.right + 8, layout.panelLeft - 0.2 * layout.vw), layout.panelLeft + 12, [info.box.top + 20, (info.box.top + info.box.bottom) / 2, Math.min(layout.heroBottom, layout.vh) - 24]]);
+  check(step.worst < 6, `${name}: the picture melts into the panel's side (largest step ${step.worst.toFixed(1)} levels per pixel, at ${step.at})`);
   await ctx.close();
 }
 

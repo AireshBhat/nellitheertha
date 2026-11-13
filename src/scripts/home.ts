@@ -58,12 +58,14 @@ import { continuous } from 'number-flow/plugins';
         g.fillStyle = fade(0.42, 0.12); g.fillRect(0, 0, s, s); // the glow at the source
       };
       const place = () => {
-        const box = layer.getBoundingClientRect(), source = SOURCE[photo.currentSrc.split('/').pop()];
+        // Where the picture's light source falls inside the light's own box, whether the picture covers its box
+        // (phones) or is placed at its own size (desktops).
+        const box = layer.getBoundingClientRect(), r = photo.getBoundingClientRect(), source = SOURCE[photo.currentSrc.split('/').pop()];
         if (!source || !photo.naturalWidth || !box.width) return;
-        const k = Math.max(box.width / photo.naturalWidth, box.height / photo.naturalHeight);
+        const k = Math.max(r.width / photo.naturalWidth, r.height / photo.naturalHeight);
         const [px, py] = getComputedStyle(photo).objectPosition.split(' ').map(parseFloat);
-        layer.style.setProperty('--lx', `${(box.width - photo.naturalWidth * k) * px / 100 + source[0] * k}px`);
-        layer.style.setProperty('--ly', `${(box.height - photo.naturalHeight * k) * py / 100 + source[1] * k}px`);
+        layer.style.setProperty('--lx', `${r.left - box.left + (r.width - photo.naturalWidth * k) * px / 100 + source[0] * k}px`);
+        layer.style.setProperty('--ly', `${r.top - box.top + (r.height - photo.naturalHeight * k) * py / 100 + source[1] * k}px`);
         layer.style.setProperty('--lr', `${1.6 * Math.max(box.width, box.height)}px`);
       };
       const start = () => {
