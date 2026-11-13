@@ -347,34 +347,45 @@ footer a{display:inline-flex;min-height:48px;align-items:center;text-underline-o
 /* ---------- the Brahmakalasha hero: the deity picture, dark, with nothing laid over the deities ---------- */
 /* Phones and tablets: the picture from just above the arch to its foot; the temple's name sits in the dark band
    below the ನೆಲ್ಲಿತೀರ್ಥ lettering. The deities' box in the file is fixed: tests/hero.mjs. */
-.hero{height:auto;min-height:0;aspect-ratio:1080/1540}
-.hero-photo{background:var(--shrine);-webkit-mask-image:linear-gradient(180deg,#000 98.5%,transparent 100%);mask-image:linear-gradient(180deg,#000 98.5%,transparent 100%)} /* a soft edge, not a fade: dark into light reads as a smudge */
+/* The picture fills the first screen (or the picture's own shape, when that is taller), running up behind the floating
+   header; the name and a quiet arrow sit in the dark band, and the dark dissolves into the Brahmakalasha panel. */
+.hero{height:max(100svh, 100vw * 1540 / 1080);min-height:0;background:var(--shrine)}
+.hero-photo{background:var(--shrine);-webkit-mask-image:none;mask-image:none} /* the forest's old fade is off: the dark dissolves below instead */
 .hero-photo img{object-position:50% 100%}
 .hero-shade,.first-drop{display:none}
-.hero-copy{bottom:6%}
-.present{margin-top:0;padding-top:28px}
-@media(min-width:700px){
-  .hero{height:auto}
-  .hero-photo img{object-position:50% 100%}
+.hero-copy{bottom:64px}
+@media(max-height:700px) and (max-width:999px){.hero h1{font-size:32px}} /* short phones: the name fits under the lettering */
+@media(max-width:999px){
+  .scroll-cue{display:flex;bottom:8px;min-width:48px;color:var(--camphor)}
+  .js .scroll-cue{opacity:0;animation:cue-in 1.8s var(--ease-soft) 3.4s forwards}
+  .js .scroll-cue svg{animation:cue-drift 3.6s ease-in-out 5.2s infinite}
+  .present{position:relative;margin-top:0;padding-top:calc(22svh + 32px)}
+  .present::before{content:"";position:absolute;top:-1px;left:0;right:0;height:24svh;background:linear-gradient(180deg,var(--shrine),oklch(9% .02 28 / .55) 40%,oklch(9% .02 28 / 0))}
+  .present>*:not(.canopy){position:relative;z-index:1}
+  .present .canopy{top:12svh}
 }
+@media(max-width:999px) and (prefers-reduced-motion:reduce){.js .hero .scroll-cue{opacity:.55}.js .scroll-cue svg{animation:none}}
+@media(min-width:1000px){.present-canopy{display:none}}
+@keyframes cue-in{to{opacity:.55}}
+@keyframes cue-drift{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
 /* Desktop: one dark scene, like the sanctum further down. The picture dissolves into the shrine's dark on every side;
    the temple's name sits in it under the lettering, as on a phone; today's panel stands beside it in light type.
    The picture is sized so the artwork and the name fit the first screen, the artwork centred in the left column, never
    wider than 84% of it and never past the file's own size. Its place comes from the artwork's box in the file
    (x 27.9-72.2%, y 12.7-87.4%), so the masks below never reach it: tests/hero.mjs. */
 @media(min-width:1000px){
-  .arrival{container-type:inline-size;background:var(--shrine);color:var(--camphor)}
-  .hero{aspect-ratio:auto;background:transparent;
+  .arrival{container-type:inline-size;background:var(--shrine);color:var(--camphor);min-height:100svh}
+  .hero{aspect-ratio:auto;height:auto;background:transparent;
     --col:calc(100cqw - max(420px, 100cqw * 9 / 22));
     --w:min(calc((100svh - var(--head) - 312px) * 2.379), calc(var(--col) * 1.9), 1820px);
     --x:calc(var(--col) / 2 - .5005 * var(--w));
-    --y:calc(32px - .0714 * var(--w));
+    --y:calc(var(--head) + 32px - .0714 * var(--w));
     --melt:linear-gradient(90deg,#000 calc(var(--col) - 9cqw),transparent calc(var(--col) + 1cqw))}
   .hero-photo{inset:0;width:auto;height:auto;background:none;-webkit-mask-image:var(--melt);mask-image:var(--melt)}
   .hero-photo img{position:absolute;left:var(--x);top:var(--y);width:var(--w);height:auto;object-fit:fill;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 8%,#000 90%,transparent 100%),linear-gradient(90deg,transparent 0,#000 12%,#000 88%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(180deg,transparent 0,#000 8%,#000 90%,transparent 100%),linear-gradient(90deg,transparent 0,#000 12%,#000 88%,transparent 100%);mask-composite:intersect}
-  .hero-copy{left:0;right:auto;width:var(--col);top:calc(32px + .4203 * var(--w) + 24px);bottom:auto;max-width:none;padding:0 24px;text-align:center;color:var(--camphor)}
+  .hero-copy{left:0;right:auto;width:var(--col);top:calc(var(--head) + 32px + .4203 * var(--w) + 24px);bottom:auto;max-width:none;padding:0 24px;text-align:center;color:var(--camphor)}
   .hero h1{font-size:clamp(34px,3.2vw,52px)}
-  .present{justify-content:center;padding-top:72px}
+  .present{justify-content:center;padding-top:calc(var(--head) + 40px)}
   /* today's panel, in light type on the dark */
   .arrival .eyebrow,.arrival .count-when,.arrival .subtle,.arrival .next p,.arrival .time-label,.arrival .ordinary-present p{color:var(--line)}
   .arrival .festival-days a{color:var(--line);border-top-color:oklch(74% .016 240 / .4)}
@@ -393,6 +404,16 @@ footer a{display:inline-flex;min-height:48px;align-items:center;text-underline-o
   .arrival+.full-programme::before{content:"";position:absolute;top:-1px;left:0;right:0;height:26svh;z-index:2;background:linear-gradient(180deg,var(--shrine),oklch(9% .02 28 / .55) 40%,oklch(9% .02 28 / 0))}
   .arrival+.full-programme .canopy{top:14svh}
 }
+
+/* ---------- the home page's header: it floats over the dark picture, transparent with light words, and fades to the
+   page's own colour with dark words once you scroll past 20px, as on the Bhojya Kitchen site. Solid without the script. */
+.home-header{position:fixed;left:0;right:0;transition:background-color .3s var(--ease-out),border-color .3s var(--ease-out)}
+.home-header a,.home-header .brand svg,.home-header .language button{transition:color .3s var(--ease-out),text-decoration-color .3s var(--ease-out),text-shadow .3s var(--ease-out)}
+.js .home-header:not(.scrolled){background:transparent;border-bottom-color:transparent;color:var(--camphor);text-shadow:0 1px 10px oklch(9% .02 28 / .7)}
+.js .home-header:not(.scrolled) .brand svg{color:var(--camphor)}
+.js .home-header:not(.scrolled) .language,.js .home-header:not(.scrolled) .language button{color:var(--line)}
+.js .home-header:not(.scrolled) .language button[aria-pressed="true"]{color:var(--camphor);text-decoration-color:var(--lamp)}
+@media(prefers-reduced-motion:reduce){.home-header,.home-header a,.home-header .brand svg,.home-header .language button{transition:none}}
 
 /* ---------- the living light: rays that bloom, breathe and turn behind the deities, never on them ---------- */
 /* Drawn small on a canvas and enlarged by the compositor, so it is soft and cheap. The mask (half size, cut from the

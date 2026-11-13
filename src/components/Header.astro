@@ -4,7 +4,7 @@ interface Props { home?: boolean }
 const { home = false } = Astro.props;
 ---
 {home ? <a class="skip" href="#programme">Skip to the Brahmakalasha</a> : <a class="skip" href="#content">Skip to content</a>}
-<header class="site-header">
+<header class:list={['site-header', { 'home-header': home }]}>
   <a class="brand" href={home ? '#top' : '/'} aria-label="Nellitheertha home">
     <svg viewBox="0 0 18 24" aria-hidden="true"><path d="M9 1C9 1 2 11 2 16a7 7 0 0 0 14 0C16 11 9 1 9 1Z" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
     <span>Nellitheertha</span>
@@ -17,3 +17,8 @@ const { home = false } = Astro.props;
   </nav>
   <LanguageSwitch />
 </header>
+{home && (
+  /* On the home page the header floats over the dark picture until you scroll past 20px (tests/header.mjs). It runs
+     here, before the page is drawn, so the header never flashes; without it the header simply stays solid. */
+  <script is:inline>(function () { var h = document.querySelector('.home-header'); var set = function () { h.classList.toggle('scrolled', scrollY > 20); }; set(); addEventListener('scroll', set, { passive: true }); })();</script>
+)}

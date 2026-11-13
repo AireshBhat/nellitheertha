@@ -21,6 +21,8 @@ for (const [name, host] of [['old', OLD], ['new', NEW]]) {
     await p.addStyleTag({ content: '.hero-photo,.hero-shade,.first-drop{visibility:hidden!important} .hero{background:#203020!important} .hero h1,.overline{text-shadow:none!important}' });
     // The title sits lower on the new hero: pin it to the same place on both, so only the letters differ.
     if (p === pages.phone) await p.addStyleTag({ content: '.hero-copy{position:fixed!important;top:120px!important;bottom:auto!important}' });
+    // The home header floats over the dark picture at the top; compare the language switch with it solid, as before.
+    if (path === '' && sel.startsWith('[data-language-choice')) { await p.mouse.wheel(0, 300); await p.waitForTimeout(300); }
     shots[`${name}|${path}|${sel}`] = await p.locator(sel).first().screenshot({ animations: 'disabled' });
   }
   await ctx.close(); await phone.close();

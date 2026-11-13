@@ -17,6 +17,7 @@ const DESKTOP = { viewport: { width: 1440, height: 900 }, deviceScaleFactor: 2 }
 const DEVICES = [
   ['phone', PHONE, 'deities-tall.webp'],
   ['small phone', { viewport: { width: 360, height: 740 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true }, 'deities-tall.webp'],
+  ['short phone', { viewport: { width: 375, height: 667 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true }, 'deities-tall.webp'],
   ['tablet', { viewport: { width: 820, height: 1180 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true }, 'deities-tall.webp'],
   ['desktop', DESKTOP, 'deities-wide.webp'],
   ['small laptop', { viewport: { width: 1280, height: 720 }, deviceScaleFactor: 1 }, 'deities-wide.webp'],
@@ -114,8 +115,10 @@ for (const [name, device] of [['desktop', DESKTOP], ['small laptop', { viewport:
     const c = g.getImageData(0, 0, 1, 1).data;
     const lum = (0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2]) / 255;
     const r = h1.getBoundingClientRect(), q = panel.getBoundingClientRect(), hr = hero.getBoundingClientRect();
-    return { h1: { left: r.left, right: r.right, top: r.top, bottom: r.bottom }, panelLeft: q.left, heroBottom: hr.bottom, lum, vw: innerWidth, vh: innerHeight };
+    const count = document.querySelector('.countdown').getBoundingClientRect();
+    return { h1: { left: r.left, right: r.right, top: r.top, bottom: r.bottom }, panelLeft: q.left, heroBottom: hr.bottom, lum, vw: innerWidth, vh: innerHeight, count: { top: count.top, bottom: count.bottom } };
   });
+  check(layout.count.top >= 64 && layout.count.bottom <= layout.vh, `${name}: the countdown is beside the picture on the first screen (${Math.round(layout.count.top)} to ${Math.round(layout.count.bottom)} of ${layout.vh})`);
   const t = layout.h1;
   check(t.top >= info.box.bottom && t.right <= layout.panelLeft && t.bottom <= Math.min(layout.heroBottom, layout.vh), `${name}: the temple's name is in the picture, under the lettering (top ${Math.round(t.top)} below ${Math.round(info.box.bottom)}, right ${Math.round(t.right)} before the panel at ${Math.round(layout.panelLeft)})`);
   check(layout.lum > 0.75, `${name}: the name is in light type (luminance ${layout.lum.toFixed(2)})`);
@@ -136,6 +139,44 @@ for (const [name, device] of [['desktop', DESKTOP], ['small laptop', { viewport:
     return { worst, at };
   }, [shot.toString('base64'), Math.max(info.box.right + 8, layout.panelLeft - 0.2 * layout.vw), layout.panelLeft + 12, [info.box.top + 20, (info.box.top + info.box.bottom) / 2, Math.min(layout.heroBottom, layout.vh) - 24]]);
   check(step.worst < 6, `${name}: the picture melts into the panel's side (largest step ${step.worst.toFixed(1)} levels per pixel, at ${step.at})`);
+  await ctx.close();
+}
+
+// Phones: the dark scene fills the first screen, a quiet arrow appears and leads on to the Brahmakalasha panel, and the
+// dark dissolves into the next section (no hard edge), as it does on desktops.
+for (const [name, device] of [['phone', PHONE], ['small phone', { viewport: { width: 360, height: 740 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true }], ['short phone', { viewport: { width: 375, height: 667 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true }]]) {
+  const ctx = await b.newContext(device);
+  const p = await ctx.newPage();
+  await p.goto(base + '?now=2026-11-13T09:00', { waitUntil: 'networkidle' });
+  await p.waitForTimeout(5000);
+  const info = await measure(p);
+  const r = await p.evaluate(() => {
+    const rect = (el) => { const q = el.getBoundingClientRect(); return { left: q.left, top: q.top, right: q.right, bottom: q.bottom }; };
+    const cue = document.querySelector('.hero .scroll-cue'), hero = document.querySelector('.hero');
+    return { hero: rect(hero), cue: cue && rect(cue), cueOpacity: cue ? Number(getComputedStyle(cue).opacity) : 0, cueShown: !!cue && getComputedStyle(cue).display !== 'none',
+      copy: rect(document.querySelector('.hero-copy')), vh: innerHeight, vw: innerWidth };
+  });
+  check(r.hero.top <= 0.5 && r.hero.bottom >= r.vh - 0.5, `${name}: the dark scene fills the first screen (${Math.round(r.hero.top)} to ${Math.round(r.hero.bottom)} of ${r.vh})`);
+  check(r.cueShown && r.cueOpacity > 0.25 && r.cueOpacity < 0.9, `${name}: a quiet arrow has appeared (opacity ${r.cueOpacity.toFixed(2)})`);
+  check(r.cue && r.cue.bottom <= r.hero.bottom && !overlap(r.cue, r.copy) && !overlap(r.cue, info.box), `${name}: the arrow sits clear of the name and the deities`);
+  // The dissolve: brightness down three columns from the dark into the next section, no step larger than a fade makes.
+  const shot = await p.screenshot({ fullPage: true });
+  const step = await p.evaluate(async ([b64, y0, y1, xs]) => {
+    const i = await new Promise((ok) => { const m = new Image(); m.onload = () => ok(m); m.src = 'data:image/png;base64,' + b64; });
+    const c = document.createElement('canvas'); c.width = i.naturalWidth; c.height = i.naturalHeight; const g = c.getContext('2d'); g.drawImage(i, 0, 0);
+    const k = i.naturalWidth / innerWidth; let worst = 0, at = null;
+    for (const xx of xs) {
+      const x = Math.round(xx * k), d = g.getImageData(x - 2, 0, 5, c.height).data;
+      const luma = (y) => { let t = 0; for (let dy = -2; dy <= 2; dy++) for (let dx = 0; dx < 5; dx++) { const o = ((y + dy) * 5 + dx) * 4; t += 0.299 * d[o] + 0.587 * d[o + 1] + 0.114 * d[o + 2]; } return t / 25; };
+      for (let y = Math.round(y0 * k); y < Math.round(y1 * k); y++) { const s = Math.abs(luma(y + 1) - luma(y)) * k; if (s > worst) { worst = s; at = [Math.round(xx), Math.round(y / k)]; } }
+    }
+    return { worst, at };
+  }, [shot.toString('base64'), r.hero.bottom - 40, r.hero.bottom + 0.2 * r.vh, [0.06 * r.vw || 24, 0.94 * (r.vw || 390)]]);
+  check(step.worst < 6, `${name}: the dark dissolves into the next section (largest step ${step.worst.toFixed(1)} levels per pixel, at ${step.at})`);
+  const clicked = await p.locator('.hero .scroll-cue').click({ timeout: 3000 }).then(() => true, () => false);
+  await p.waitForTimeout(1500);
+  const landed = clicked ? await p.evaluate(() => document.getElementById('programme').getBoundingClientRect().top) : NaN;
+  check(landed >= -2 && landed < 140, `${name}: the arrow leads on to the Brahmakalasha panel (it lands ${Math.round(landed)} px from the top)`);
   await ctx.close();
 }
 
