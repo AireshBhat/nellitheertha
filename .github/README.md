@@ -48,7 +48,8 @@ Build, run `pnpm preview`, then run the checks you need. Most compare against th
 | `tests/kannada.mjs BASE`, `tests/glyphs.mjs BASE_OLD BASE` | The Kannada versions, and that Kannada renders the same as before |
 | `tests/weight.mjs BASE`, `tests/slow.mjs BASE`, `tests/anchor.mjs BASE`, `tests/frames.mjs BASE_OLD BASE` | What a phone downloads, the forest walk on a slow link, and cached frames |
 | `tests/walk-parity.mjs BASE_OLD BASE` | The forest walk and every home-page picture look as on the earlier site |
-| `tests/hero.mjs BASE` | The Brahmakalasha picture at the top of the home page shows whole, with nothing over it, on phones, tablets and desktops |
+| `tests/hero.mjs BASE` | The Brahmakalasha picture at the top of the home page shows whole, with nothing over it, on phones, tablets and desktops; its living light moves on the background only, deepens after sunset, rests off screen and is absent with reduced motion |
+| `tests/copy.mjs BASE` | Copy account number puts the number on the clipboard and draws a check; where copying is refused, the number is shown |
 | `tests/axe.mjs BASE [kn]`, `tests/upi.mjs BASE_OLD BASE`, `tests/public.sh` | Accessibility, the UPI link, and no internal notes in this public repository |
 
 ## Sources and credits

@@ -369,6 +369,31 @@ footer a{display:inline-flex;min-height:48px;align-items:center;text-underline-o
   .present{justify-content:flex-start;padding-top:calc(64px + 15.5rem)}
 }
 
+/* ---------- the living light: rays that bloom, breathe and turn behind the deities, never on them ---------- */
+/* Drawn small on a canvas and enlarged by the compositor, so it is soft and cheap. The mask (half size, cut from the
+   deities' outline and widened 6 px) is only fetched once the light is switched on. tests/hero.mjs. */
+.hero-light{position:absolute;inset:0;z-index:1;overflow:hidden;pointer-events:none;opacity:0;mix-blend-mode:screen}
+.hero.alive .hero-light{-webkit-mask:url("/assets/img/deities-tall-light.png") 50% 100%/cover no-repeat;mask:url("/assets/img/deities-tall-light.png") 50% 100%/cover no-repeat;animation:bloom 2.6s var(--ease-out) forwards,breathe 4.2s ease-in-out 2.6s infinite alternate}
+.hero-light canvas{position:absolute;left:var(--lx,50%);top:var(--ly,40%);width:var(--lr,150vmax);height:var(--lr,150vmax);margin:calc(var(--lr,150vmax) / -2) 0 0 calc(var(--lr,150vmax) / -2);animation:turn 240s linear infinite}
+.hero.rest .hero-light,.hero.rest .hero-light canvas{animation-play-state:paused}
+.hero{--peak:.95;--low:.42;--high:.72}
+.hero[data-light="evening"]{--peak:1;--low:.5;--high:.8} /* the evening's light is warmer (its colour is drawn) and a little fuller, not brighter everywhere */
+@keyframes bloom{0%{opacity:0}42%{opacity:var(--peak)}100%{opacity:var(--low)}}
+@keyframes breathe{from{opacity:var(--low)}to{opacity:var(--high)}}
+@keyframes turn{to{transform:rotate(1turn)}}
+@media(min-width:1000px){
+  .hero-light{right:auto;bottom:auto;width:calc(100% - max(420px, 100% * 9 / 22));height:min(100%, calc(100svh - var(--head)))}
+  .hero.alive .hero-light{-webkit-mask:url("/assets/img/deities-wide-light.png") 50% 50%/cover no-repeat;mask:url("/assets/img/deities-wide-light.png") 50% 50%/cover no-repeat}
+}
+
+/* Copy account number: a check is drawn beside the button once the number is copied. */
+.copy{position:relative}
+.copy .tick{position:absolute;left:100%;top:50%;width:22px;height:22px;margin:-11px 0 0 12px;opacity:0;fill:none;stroke:var(--ink);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:opacity .2s var(--ease-out)}
+.copy .tick path{stroke-dasharray:22;stroke-dashoffset:22}
+.copy.copied .tick{opacity:1}
+.copy.copied .tick path{stroke-dashoffset:0;transition:stroke-dashoffset .5s var(--ease-out) .05s}
+@media(prefers-reduced-motion:reduce){.copy .tick,.copy .tick path{transition:none}}
+
 /* ---------- routes to the pages ported from the earlier website ---------- */
 .more{display:inline-flex;align-items:center;gap:10px;min-height:48px;margin-top:14px;font-size:17px;text-underline-offset:6px;text-decoration-thickness:1px}
 .more::after{content:"→";text-decoration:none}

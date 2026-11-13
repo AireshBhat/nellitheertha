@@ -25,6 +25,59 @@ import { continuous } from 'number-flow/plugins';
     if (image.complete) play(); else image.addEventListener('load', play, { once: true });
   }
 
+  // The living light behind the deities: by day gold, after sunset in India (6:30 PM to 6 AM) the deeper light of
+  // evening aarti. ?now= sets the time, as for the live panel. Never with reduced motion, Save-Data or a slow link.
+  try {
+    const IST = 330 * 60000, asked = params.get('now');
+    const nowMs = asked && !Number.isNaN(Date.parse(asked + 'Z')) ? Date.parse(asked + 'Z') - IST : Date.now();
+    const clock = new Date(nowMs + IST), minute = clock.getUTCHours() * 60 + clock.getUTCMinutes();
+    const evening = minute >= 18 * 60 + 30 || minute < 6 * 60;
+    hero.dataset.light = evening ? 'evening' : 'day';
+    const layer = hero.querySelector('.hero-light'), canvas = layer?.querySelector('canvas'), photo = hero.querySelector('.hero-photo img');
+    if (layer && canvas && !lean) {
+      // The light comes from behind the golden arch: its place in each picture, in the file's pixels.
+      const SOURCE = { 'deities-tall.webp': [526, 627], 'deities-wide.webp': [896, 256] };
+      const rays = () => {
+        const g = canvas.getContext('2d'), s = canvas.width, c = s / 2;
+        const [r, gr, bl] = evening ? [255, 182, 104] : [255, 216, 150];
+        g.clearRect(0, 0, s, s);
+        // The light fades out well before the canvas edge, so it gathers round the arch and never reaches the name.
+        const fade = (a0, a1) => { const f = g.createRadialGradient(c, c, 0, c, c, c); f.addColorStop(0, `rgba(${r},${gr},${bl},${a0})`); f.addColorStop(0.18, `rgba(${r},${gr},${bl},${a1})`); f.addColorStop(0.62, `rgba(${r},${gr},${bl},0)`); return f; };
+        if ('filter' in g) g.filter = 'blur(2px)';
+        // Fixed, uneven rays, so the turning is felt rather than seen.
+        let seed = 7; const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
+        for (const [count, reach, alpha, wide] of [[28, 1, 0.3, 2.2], [40, 0.6, 0.2, 1.4]]) {
+          g.fillStyle = fade(alpha, alpha * 0.55);
+          g.beginPath();
+          for (let i = 0; i < count; i++) {
+            const at = (i + rnd() * 0.6) / count * Math.PI * 2, half = (0.4 + rnd() * 0.6) * wide * Math.PI / 180, len = c * reach * (0.7 + rnd() * 0.3);
+            g.moveTo(c, c); g.lineTo(c + Math.cos(at - half) * len, c + Math.sin(at - half) * len); g.lineTo(c + Math.cos(at + half) * len, c + Math.sin(at + half) * len); g.closePath();
+          }
+          g.fill();
+        }
+        g.fillStyle = fade(0.42, 0.12); g.fillRect(0, 0, s, s); // the glow at the source
+      };
+      const place = () => {
+        const box = layer.getBoundingClientRect(), source = SOURCE[photo.currentSrc.split('/').pop()];
+        if (!source || !photo.naturalWidth || !box.width) return;
+        const k = Math.max(box.width / photo.naturalWidth, box.height / photo.naturalHeight);
+        const [px, py] = getComputedStyle(photo).objectPosition.split(' ').map(parseFloat);
+        layer.style.setProperty('--lx', `${(box.width - photo.naturalWidth * k) * px / 100 + source[0] * k}px`);
+        layer.style.setProperty('--ly', `${(box.height - photo.naturalHeight * k) * py / 100 + source[1] * k}px`);
+        layer.style.setProperty('--lr', `${1.6 * Math.max(box.width, box.height)}px`);
+      };
+      const start = () => {
+        rays(); place();
+        hero.classList.add('alive');
+        new ResizeObserver(place).observe(layer);
+        photo.addEventListener('load', place);
+        // Off screen, the light rests.
+        new IntersectionObserver(([entry]) => hero.classList.toggle('rest', !entry.isIntersecting)).observe(hero);
+      };
+      if (photo.complete && photo.naturalWidth) start(); else photo.addEventListener('load', start, { once: true });
+    }
+  } catch (error) { console.error(error); }
+
   // Text first: the reveal and the Antar Ganga drop un-hide words, so they run before anything that could fail.
   // Reveal: text and pictures come out of the scene, once.
   const once = (selector, className, options) => {
@@ -274,7 +327,8 @@ import { continuous } from 'number-flow/plugins';
   // Copy the account number.
   const copyButton = document.getElementById('copy-account');
   copyButton.addEventListener('click', async () => {
-    try { await navigator.clipboard.writeText('0122500100786201'); copyButton.textContent = 'Account number copied'; }
-    catch { copyButton.textContent = 'Select and copy: 0122500100786201'; }
+    const label = copyButton.querySelector('.label') || copyButton;
+    try { await navigator.clipboard.writeText('0122500100786201'); label.textContent = 'Account number copied'; copyButton.classList.add('copied'); }
+    catch { label.textContent = 'Select and copy: 0122500100786201'; }
   });
 })();

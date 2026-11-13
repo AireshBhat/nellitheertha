@@ -1,18 +1,24 @@
 // The home page's hero during the Brahmakalasha: the deity picture (the Linga and the idol from the temple's poster,
 // with its ನೆಲ್ಲಿತೀರ್ಥ lettering) must show whole, unfaded and uncovered, on a phone, a tablet and a desktop.
+// Behind the deities a living light breathes and turns; it may light the background only, never a deity pixel,
+// it rests when the hero is off screen, deepens after sunset in India, and is absent with reduced motion.
 // The artwork's place in each file is fixed (it is the poster's own pixels, placed by the fal-studio script).
 // usage: node tests/hero.mjs BASE
 import { launch, base as slash } from './chrome.mjs';
 const base = slash(process.argv[2]);
 const ALT = 'The Linga in its golden prabhavali and a small golden idol in a silver frame, both garlanded, behind the gold lettering ನೆಲ್ಲಿತೀರ್ಥ';
-// The artwork's box in each file, in the file's pixels: [left, top, right, bottom].
+// The artwork's box in each file, in the file's pixels: [left, top, right, bottom]; and the mask of where light may fall
+// (alpha 0 on the deities, the trishul and the lettering; half the picture's size).
 const ART = { 'deities-tall.webp': [137, 501, 945, 1266], 'deities-wide.webp': [507, 130, 1315, 895] };
-const MAX_DIFF = 0.5; // mean brightness difference, out of 255, between the page and the picture alone
+const MASK = { 'deities-tall.webp': '/assets/img/deities-tall-light.png', 'deities-wide.webp': '/assets/img/deities-wide-light.png' };
+const MAX_DIFF = 0.5; // mean brightness difference, out of 255, on the deities between the page and the picture alone
+const PHONE = { viewport: { width: 390, height: 844 }, deviceScaleFactor: 3, isMobile: true, hasTouch: true };
+const DESKTOP = { viewport: { width: 1440, height: 900 }, deviceScaleFactor: 2 };
 const DEVICES = [
-  ['phone', { viewport: { width: 390, height: 844 }, deviceScaleFactor: 3, isMobile: true, hasTouch: true }, 'deities-tall.webp'],
+  ['phone', PHONE, 'deities-tall.webp'],
   ['small phone', { viewport: { width: 360, height: 740 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true }, 'deities-tall.webp'],
   ['tablet', { viewport: { width: 820, height: 1180 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true }, 'deities-tall.webp'],
-  ['desktop', { viewport: { width: 1440, height: 900 }, deviceScaleFactor: 2 }, 'deities-wide.webp'],
+  ['desktop', DESKTOP, 'deities-wide.webp'],
   ['small laptop', { viewport: { width: 1280, height: 720 }, deviceScaleFactor: 1 }, 'deities-wide.webp'],
 ];
 const b = await launch();
@@ -20,28 +26,49 @@ let fail = 0;
 const check = (ok, label) => { if (!ok) fail++; console.log(`${ok ? 'PASS' : 'FAIL'} ${label}`); };
 const overlap = (a, r) => a.left < r.right && r.left < a.right && a.top < r.bottom && r.top < a.bottom;
 
+const measure = (p) => p.evaluate(({ ART }) => {
+  const img = document.querySelector('.hero-photo img');
+  if (!img) return null;
+  const file = img.currentSrc.split('/').pop();
+  const art = ART[file];
+  const r = img.getBoundingClientRect(), cs = getComputedStyle(img);
+  const nw = img.naturalWidth, nh = img.naturalHeight;
+  const scale = Math.max(r.width / nw, r.height / nh);
+  const [px, py] = cs.objectPosition.split(' ').map((v, i) => (v.endsWith('%') ? parseFloat(v) / 100 * ((i ? r.height : r.width) - (i ? nh : nw) * scale) : parseFloat(v)));
+  const box = art && { left: r.left + px + art[0] * scale, top: r.top + py + art[1] * scale, right: r.left + px + art[2] * scale, bottom: r.top + py + art[3] * scale };
+  const rect = (el) => { const q = el.getBoundingClientRect(); return { left: q.left, top: q.top, right: q.right, bottom: q.bottom, name: el.className || el.tagName }; };
+  const texts = [...document.querySelectorAll('.hero-copy > *, .present > *, header, .scroll-cue')]
+    .filter((el) => el.offsetParent !== null && getComputedStyle(el).visibility !== 'hidden').map(rect);
+  const hero = document.querySelector('.hero'), light = document.querySelector('.hero-light');
+  return { alt: img.alt, file, box, texts, hero: rect(hero), h1: rect(hero.querySelector('h1')), vw: innerWidth, vh: innerHeight,
+    alive: hero.classList.contains('alive'), mode: hero.dataset.light || null, lightOpacity: light ? Number(getComputedStyle(light).opacity) : 0 };
+}, { ART });
+
+// Compares two screenshots of the artwork's box: on the deities (the mask's dark part), and on the lit background.
+const compare = (p, x, y, file) => p.evaluate(async ([x, y, mask, art]) => {
+  const load = (src) => new Promise((ok) => { const i = new Image(); i.onload = () => ok(i); i.src = src; });
+  const [a, c, m] = await Promise.all([load('data:image/png;base64,' + x), load('data:image/png;base64,' + y), load(mask)]);
+  const px = (im) => { const cv = document.createElement('canvas'); cv.width = im.naturalWidth; cv.height = im.naturalHeight; const g = cv.getContext('2d'); g.drawImage(im, 0, 0); return g.getImageData(0, 0, cv.width, cv.height).data; };
+  const da = px(a), dc = px(c), dm = px(m), W = a.naturalWidth, H = a.naturalHeight, mw = m.naturalWidth;
+  let deity = 0, nd = 0, bg = 0, nb = 0, worst = 0;
+  for (let j = 0; j < H; j++) for (let i = 0; i < W; i++) {
+    const fx = art[0] + (i + 0.5) / W * (art[2] - art[0]), fy = art[1] + (j + 0.5) / H * (art[3] - art[1]);
+    const lit = dm[(Math.floor(fy / 2) * mw + Math.floor(fx / 2)) * 4 + 3];
+    const k = (j * W + i) * 4;
+    const d = Math.abs(0.299 * (da[k] - dc[k]) + 0.587 * (da[k + 1] - dc[k + 1]) + 0.114 * (da[k + 2] - dc[k + 2]));
+    if (lit === 0) { deity += d; nd++; if (d > worst) worst = d; } else if (lit === 255) { bg += d; nb++; }
+  }
+  return { deity: deity / nd, worst: Math.round(worst), share: nd / (W * H), bg: bg / nb, size: `${W}x${H}` };
+}, [x.toString('base64'), y.toString('base64'), MASK[file], ART[file]]);
+const BARE = '*{visibility:hidden!important;animation:none!important}.hero-photo,.hero-photo *{visibility:visible!important}.hero-photo{-webkit-mask-image:none!important;mask-image:none!important}';
+
 for (const [name, device, file] of DEVICES) {
   const ctx = await b.newContext(device);
   const p = await ctx.newPage(); const errs = [];
   p.on('pageerror', (e) => errs.push(e.message));
   await p.goto(base + '?now=2026-11-13T09:00', { waitUntil: 'networkidle' });
-  await p.waitForTimeout(3500); // the first drop, if any, has finished
-  const info = await p.evaluate(({ ART }) => {
-    const img = document.querySelector('.hero-photo img');
-    if (!img) return null;
-    const file = img.currentSrc.split('/').pop();
-    const art = ART[file];
-    const r = img.getBoundingClientRect(), cs = getComputedStyle(img);
-    const nw = img.naturalWidth, nh = img.naturalHeight;
-    const scale = Math.max(r.width / nw, r.height / nh);
-    const [px, py] = cs.objectPosition.split(' ').map((v, i) => (v.endsWith('%') ? parseFloat(v) / 100 * ((i ? r.height : r.width) - (i ? nh : nw) * scale) : parseFloat(v)));
-    const box = art && { left: r.left + px + art[0] * scale, top: r.top + py + art[1] * scale, right: r.left + px + art[2] * scale, bottom: r.top + py + art[3] * scale };
-    const rect = (el) => { const q = el.getBoundingClientRect(); return { left: q.left, top: q.top, right: q.right, bottom: q.bottom, name: el.className || el.tagName }; };
-    const texts = [...document.querySelectorAll('.hero-copy > *, .present > *, header, .scroll-cue')]
-      .filter((el) => el.offsetParent !== null && getComputedStyle(el).visibility !== 'hidden').map(rect);
-    const hero = rect(document.querySelector('.hero')), h1 = rect(document.querySelector('.hero h1'));
-    return { alt: img.alt, file, box, texts, hero, h1, scale, fit: cs.objectFit, vw: innerWidth, vh: innerHeight };
-  }, { ART });
+  await p.waitForTimeout(3500); // the light has bloomed and settled into breathing
+  const info = await measure(p);
   if (!info) { check(false, `${name}: no hero picture`); await ctx.close(); continue; }
   check(info.alt === ALT, `${name}: the hero shows the deity picture (alt "${info.alt.slice(0, 40)}…")`);
   check(info.file === file, `${name}: it uses ${file} (got ${info.file})`);
@@ -53,28 +80,64 @@ for (const [name, device, file] of DEVICES) {
   const covering = info.texts.filter((t) => overlap(bx, t));
   check(covering.length === 0, `${name}: no text covers the artwork${covering.length ? ': ' + covering.map((c) => c.name).join(', ') : ''}`);
   check(info.h1.bottom > info.h1.top && info.h1.top < info.vh * 1.2, `${name}: the temple's name is near the top (${Math.round(info.h1.top)} px)`);
-  // Nothing may fade, shade or lie over the artwork: the screen must look the same with everything but the picture
-  // hidden and its fade removed. Both shots go through the same rendering, so any difference is an overlay or a fade.
+  check(info.alive && info.lightOpacity > 0.05 && info.mode === 'day', `${name}: the living light is on, in its day colour (alive ${info.alive}, opacity ${info.lightOpacity.toFixed(2)}, ${info.mode})`);
+  // The light moves on the background, and never on the deities: two shots 1.5 s apart, then the picture alone.
   const clip = { x: bx.left, y: bx.top, width: bx.right - bx.left, height: bx.bottom - bx.top };
-  const shown = await p.screenshot({ clip });
-  await p.addStyleTag({ content: '*{visibility:hidden!important;animation:none!important}.hero-photo,.hero-photo *{visibility:visible!important}.hero-photo{-webkit-mask-image:none!important;mask-image:none!important}' });
+  const first = await p.screenshot({ clip });
+  await p.waitForTimeout(1500);
+  const later = await p.screenshot({ clip });
+  const moving = await compare(p, first, later, file);
+  check(moving.bg > 0.15, `${name}: the light moves behind the deities (background changes by ${moving.bg.toFixed(2)} in 1.5 s)`);
+  await p.addStyleTag({ content: BARE });
   await p.waitForTimeout(100);
   const bare = await p.screenshot({ clip });
-  const diff = await p.evaluate(async ([x, y]) => {
-    const load = (b64) => new Promise((ok) => { const i = new Image(); i.onload = () => ok(i); i.src = 'data:image/png;base64,' + b64; });
-    const [a, b] = await Promise.all([load(x), load(y)]);
-    const px = (im) => { const c = document.createElement('canvas'); c.width = im.naturalWidth; c.height = im.naturalHeight; const g = c.getContext('2d'); g.drawImage(im, 0, 0); return g.getImageData(0, 0, c.width, c.height).data; };
-    const da = px(a), db = px(b);
-    let t = 0, worst = 0;
-    for (let i = 0; i < da.length; i += 4) { const d = Math.abs(0.299 * (da[i] - db[i]) + 0.587 * (da[i + 1] - db[i + 1]) + 0.114 * (da[i + 2] - db[i + 2])); t += d; if (d > worst) worst = d; }
-    return { mean: t / (da.length / 4), worst: Math.round(worst), size: `${a.naturalWidth}x${a.naturalHeight}` };
-  }, [shown.toString('base64'), bare.toString('base64')]);
-  check(diff.mean <= MAX_DIFF, `${name}: nothing fades or covers the artwork (mean difference ${diff.mean.toFixed(2)}, worst pixel ${diff.worst}; max mean ${MAX_DIFF})`);
-  const art = ART[info.file], drawn = Number(diff.size.split('x')[0]);
-  console.log(`     ${name}: artwork drawn ${diff.size} device px from ${art[2] - art[0]} file px (${(drawn / (art[2] - art[0])).toFixed(2)}x)`);
+  const untouched = await compare(p, later, bare, file);
+  check(untouched.share > 0.3 && untouched.deity <= MAX_DIFF, `${name}: the deities are exactly the picture, with the light on (mean difference ${untouched.deity.toFixed(2)}, worst pixel ${untouched.worst}, over ${(untouched.share * 100).toFixed(0)}% of the box)`);
+  console.log(`     ${name}: artwork drawn ${untouched.size} device px from ${ART[file][2] - ART[file][0]} file px (${(Number(untouched.size.split('x')[0]) / (ART[file][2] - ART[file][0])).toFixed(2)}x)`);
   check(errs.length === 0, `${name}: no script errors ${errs.join(' | ')}`);
   await ctx.close();
 }
+
+// Reduced motion: no light at all, and the whole artwork box is exactly the picture.
+for (const [name, device, file] of [['phone, reduced motion', PHONE, 'deities-tall.webp'], ['desktop, reduced motion', DESKTOP, 'deities-wide.webp']]) {
+  const ctx = await b.newContext({ ...device, reducedMotion: 'reduce' });
+  const p = await ctx.newPage();
+  await p.goto(base + '?now=2026-11-13T09:00', { waitUntil: 'networkidle' });
+  await p.waitForTimeout(1500);
+  const info = await measure(p);
+  check(!info.alive && info.lightOpacity === 0, `${name}: no living light (alive ${info.alive}, opacity ${info.lightOpacity})`);
+  const clip = { x: info.box.left, y: info.box.top, width: info.box.right - info.box.left, height: info.box.bottom - info.box.top };
+  const shown = await p.screenshot({ clip });
+  await p.addStyleTag({ content: BARE }); await p.waitForTimeout(100);
+  const r = await compare(p, shown, await p.screenshot({ clip }), file);
+  check(r.deity <= MAX_DIFF && r.bg <= MAX_DIFF, `${name}: the picture is exactly as made (deities ${r.deity.toFixed(2)}, background ${r.bg.toFixed(2)})`);
+  await ctx.close();
+}
+
+// After sunset in India the light is the evening's; by day, the day's.
+{
+  const ctx = await b.newContext(PHONE);
+  const p = await ctx.newPage();
+  for (const [now, want] of [['2026-11-13T20:00', 'evening'], ['2026-11-14T05:30', 'evening'], ['2026-11-13T07:00', 'day'], ['2026-11-13T18:00', 'day']]) {
+    await p.goto(base + `?now=${now}`, { waitUntil: 'domcontentloaded' });
+    await p.waitForTimeout(300);
+    const mode = await p.evaluate(() => document.querySelector('.hero').dataset.light || null);
+    check(mode === want, `light at ${now.slice(11)} in India is ${want} (got ${mode})`);
+  }
+  // Off screen, the light rests.
+  await p.goto(base + '?now=2026-11-13T09:00', { waitUntil: 'networkidle' });
+  await p.waitForTimeout(500);
+  const state = () => p.evaluate(() => { const l = document.querySelector('.hero-light'); return l ? [...l.getAnimations({ subtree: true })].map((a) => a.playState) : []; });
+  const on = await state();
+  await p.evaluate(() => scrollTo({ top: document.body.scrollHeight / 2, behavior: 'instant' })); await p.waitForTimeout(500);
+  const off = await state();
+  await p.evaluate(() => scrollTo({ top: 0, behavior: 'instant' })); await p.waitForTimeout(500);
+  const back = await state();
+  check(on.length > 0 && on.every((s) => s === 'running'), `the light runs while the hero is on screen (${on.join(', ')})`);
+  check(off.length > 0 && off.every((s) => s === 'paused'), `the light rests while the hero is off screen (${off.join(', ')})`);
+  check(back.length > 0 && back.every((s) => s === 'running'), `the light resumes on the way back (${back.join(', ')})`);
+  await ctx.close();
+}
 await b.close();
-console.log(fail ? `FAIL: ${fail} checks` : 'PASS: the deity picture shows whole and uncovered everywhere');
+console.log(fail ? `FAIL: ${fail} checks` : 'PASS: the deity picture shows whole and untouched, with its light behind it');
 process.exit(fail ? 1 : 0);

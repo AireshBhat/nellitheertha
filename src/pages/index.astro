@@ -28,6 +28,9 @@ const JSON_LD = {"@context": "https://schema.org", "@graph": [{"@type": "HinduTe
           <source media="(min-width: 1000px)" srcset="/assets/img/deities-wide.webp" width="1820" height="1024">
           <img src="/assets/img/deities-tall.webp" alt="The Linga in its golden prabhavali and a small golden idol in a silver frame, both garlanded, behind the gold lettering ನೆಲ್ಲಿತೀರ್ಥ" width="1080" height="1920" fetchpriority="high">
         </picture>
+        {/* The living light: rays drawn in the browser, turning slowly behind the deities. Its mask (cut from the deities'
+            own outline) lets it fall on the background only. Off with reduced motion, Save-Data or a slow connection. */}
+        <div class="hero-light" aria-hidden="true"><canvas width="384" height="384"></canvas></div>
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="hero-copy">
           <p class="overline" lang="kn">ಶ್ರೀ ಕ್ಷೇತ್ರ ನೆಲ್ಲಿತೀರ್ಥ</p>
@@ -255,7 +258,7 @@ const JSON_LD = {"@context": "https://schema.org", "@graph": [{"@type": "HinduTe
         <p>Sri Somanatheshwara Temple Jirnoddhara Samiti<br>Karnataka Bank, Aikala Branch<br>Current account 0122500100786201<br>IFSC KARB0000012<br>UPI 9986376974@kbl</p>
         <div class="actions">
           <a class="action primary" href="upi://pay?pa=9986376974@kbl&amp;pn=SRI%20SOMANATHESHWARA%20TEMPLE%20JEERNODHARA%20S&amp;cu=INR&amp;mc=8661&amp;orgid=159052&amp;sign=MEUCIQDHPf/JRbCGXygPlNo2Jh2ickx8b3OqTEgxAOU1wFuo6wIgRal+zz3RJsSpuioIKfI4gtkJgPaFw2jOJkIG2Ji+UvQ=">Pay with a UPI app</a>
-          <button type="button" class="action" id="copy-account">Copy account number</button>
+          <button type="button" class="action copy" id="copy-account"><span class="label" aria-live="polite">Copy account number</span><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button>
         </div>
         <small>Please inform the details of your contribution by email to <a href="mailto:vbnellitheertha@yahoo.com">vbnellitheertha@yahoo.com</a> or on WhatsApp to <a href="https://wa.me/918088708914">+91 80887 08914</a>.</small>
       </div>
