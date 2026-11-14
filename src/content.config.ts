@@ -46,6 +46,8 @@ const invitation = z.object({
     }),
   }).optional(),
 });
+// The patrike prints the committees, Mahadanis and supporters in its own groups and order, so the Kannada is its own list.
+const knMember = z.object({ name: text, place: maybe(z.string()), role: maybe(z.string()) });
 const committees = z.object({
   source: maybe(z.string()),
   notes: maybe(z.array(z.string())),
@@ -53,6 +55,12 @@ const committees = z.object({
     title: text, parent: maybe(z.string()), position: maybe(z.string()), page: maybe(z.number()), numbered: maybe(z.boolean()),
     members: z.array(z.object({ name: text, role: maybe(z.string()), place: maybe(z.string()) })),
   })),
+  kn: z.object({
+    source: text,
+    groups: z.array(z.object({ title: text, members: z.array(knMember) })),
+    mahadanis_heading: text, mahadanis: z.array(knMember),
+    supporters_heading: text, supporters: z.array(knMember),
+  }).optional(),
 });
 
 const whole = (id: string) => (raw: string) => [{ id, ...JSON.parse(raw) }];

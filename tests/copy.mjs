@@ -21,7 +21,7 @@ for (const [name, opts] of [['motion', {}], ['reduced motion', { reducedMotion: 
   await p.waitForTimeout(700);
   const after = await p.evaluate(async () => {
     const btn = document.getElementById('copy-account'), t = btn.querySelector('.tick'), path = t?.querySelector('path');
-    return { label: btn.textContent.replace(/\s+/g, ' ').trim(), copied: btn.classList.contains('copied'), tick: t ? getComputedStyle(t).opacity : null,
+    return { label: btn.innerText.replace(/\s+/g, ' ').trim(), copied: btn.classList.contains('copied'), tick: t ? getComputedStyle(t).opacity : null,
       drawn: path ? Number(getComputedStyle(path).strokeDashoffset.replace('px', '')) : null, clip: await navigator.clipboard.readText() };
   });
   check(after.clip === NUMBER, `${name}: the account number is on the clipboard (${after.clip})`);
@@ -36,7 +36,7 @@ for (const [name, opts] of [['motion', {}], ['reduced motion', { reducedMotion: 
   await p.goto(base, { waitUntil: 'networkidle' });
   await p.locator('#copy-account').click();
   await p.waitForTimeout(300);
-  const label = await p.evaluate(() => document.getElementById('copy-account').textContent.replace(/\s+/g, ' ').trim());
+  const label = await p.evaluate(() => document.getElementById("copy-account").innerText.replace(/\s+/g, ' ').trim());
   check(label === `Select and copy: ${NUMBER}`, `where copying is refused, the button shows the number (${label})`);
   await ctx.close();
 }

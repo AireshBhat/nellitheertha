@@ -2,12 +2,25 @@
 // The home page. Its words and markup come from the static site (scripts/port-home.py); the live panel is src/scripts/home.ts.
 import Page from '../layouts/Page.astro';
 import PageIndex from '../components/PageIndex.astro';
+import Both from '../components/Both.astro';
 import { byDate, posters, programme } from '../lib/brahmakalasha';
 import { liveData } from '../lib/live';
+import { keyOf, type KnDict } from '../lib/kn';
+import { KN, dateKn, timeKn } from '../lib/kn-words';
+import knSite from '../content/kn-site.json';
 
 const blocks = await programme();
 const groups = byDate(blocks);
-const data = JSON.stringify(liveData(blocks, posters)).replace(/<\//g, '<\\/');
+// The live panel's data, with Kannada: the programme pieces from src/content/kn-site.json, the notes from the patrike.
+const dict = (knSite as { entries: KnDict }).entries;
+const k = (en: string | null | undefined) => (en ? dict[keyOf(en)]?.kn ?? null : null);
+const live = liveData(blocks, posters);
+const withKn = { days: live.days.map((d) => ({
+  ...d,
+  nk: blocks.filter((b) => b.date === d.date).flatMap((b) => b.kn?.notes ?? []),
+  items: d.items.map((it) => ({ ...it, xk: k(it.x), sk: k(it.s), dk: k(it.d) })),
+})) };
+const data = JSON.stringify(withKn).replace(/<\//g, '<\\/');
 const JSON_LD = {"@context": "https://schema.org", "@graph": [{"@type": "HinduTemple", "@id": "https://nellitheertha.in/#temple", "name": "Sri Somanatheshwara Guhalaya, Sri Kshetra Nellitheertha", "alternateName": "Sri Somanatheshwara Cave Temple, Nellitheertha", "url": "https://nellitheertha.in/", "telephone": "+91-8088708914", "email": "vbnellitheertha@yahoo.com", "address": {"@type": "PostalAddress", "streetAddress": "Neerude Post, Kompadavu Village", "addressLocality": "Mangaluru Taluk", "addressRegion": "Karnataka", "postalCode": "574144", "addressCountry": "IN"}}, {"@type": "Event", "name": "Ashtabandha Brahmakalashabhisheka, Sri Kshetra Nellitheertha", "description": "Ashtabandha Brahmakalashabhisheka, Sakruth Pavitra Naga Brahma Mandalotsava and Varshavadhi Jatre at Sri Kshetra Nellitheertha. The Brahmakalashabhisheka is on Friday 25 December 2026 at 10:20 AM, in Kumbha Lagna.", "startDate": "2026-12-20", "endDate": "2026-12-30", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@id": "https://nellitheertha.in/#temple"}, "image": ["https://nellitheertha.in/assets/img/og.jpg"], "url": "https://nellitheertha.in/brahmakalasha/", "organizer": {"@type": "Organization", "name": "Sri Somanatheshwara Temple Jirnoddhara Samiti", "url": "https://nellitheertha.in/"}}]};
 ---
 <Page home slug="" title="Sri Kshetra Nellitheertha" docTitle="Sri Kshetra Nellitheertha · Sri Somanatheshwara Guhalaya"
@@ -35,7 +48,7 @@ const JSON_LD = {"@context": "https://schema.org", "@graph": [{"@type": "HinduTe
         <div class="hero-copy">
           <p class="overline" lang="kn">ಶ್ರೀ ಕ್ಷೇತ್ರ ನೆಲ್ಲಿತೀರ್ಥ</p>
           <h1 id="temple-title" lang="kn">ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರ ಗುಹಾಲಯ</h1>
-          <p class="english-title">Sri Somanatheshwara Cave Temple</p>
+          <p class="english-title" data-no-kn>Sri Somanatheshwara Cave Temple</p>
         </div>
         <div class="first-drop" aria-hidden="true">
           <svg viewBox="0 0 18 24"><path d="M9 1C9 1 2 11 2 16a7 7 0 0 0 14 0C16 11 9 1 9 1Z"/></svg>
@@ -47,10 +60,10 @@ const JSON_LD = {"@context": "https://schema.org", "@graph": [{"@type": "HinduTe
       <section class="present" id="programme" aria-labelledby="present-title">
         <div class="canopy canopy-left present-canopy" aria-hidden="true"></div>
         <div class="festival-present">
-          <p class="eyebrow" data-live="eyebrow">20 TO 30 DECEMBER 2026</p>
-          <h2 id="present-title" data-live="title">Brahmakalasha 2026</h2>
+          <p class="eyebrow" data-live="eyebrow"><Both en="20 TO 30 DECEMBER 2026" kn={k('20 TO 30 DECEMBER 2026')} /></p>
+          <h2 id="present-title" data-live="title"><Both en="Brahmakalasha 2026" kn={k('Brahmakalasha 2026')} /></h2>
           <div class="countdown">
-            <p class="count" aria-live="off"><span class="count-n" data-live="count"></span> <span class="count-unit" data-live="unit">days</span></p>
+            <p class="count" aria-live="off"><span class="count-n" data-live="count"></span> <span class="count-unit" data-live="unit"><Both en="days" kn={KN.days} /></span></p>
             <p class="count-of">to the Brahmakalashabhisheka</p>
             <p class="count-when"><time datetime="2026-12-25T10:20:00+05:30">Friday 25 December 2026, 10:20 AM</time>, in Kumbha Lagna</p>
           </div>
@@ -61,13 +74,13 @@ const JSON_LD = {"@context": "https://schema.org", "@graph": [{"@type": "HinduTe
               <span class="subtle" data-live="since"></span>
             </div>
             <div class="next">
-              <span class="time-label" data-live="next-label">Next</span>
+              <span class="time-label" data-live="next-label"><Both en="Next" kn={KN.next} /></span>
               <time data-live="next-time"></time>
               <h3 data-live="next"></h3>
               <p data-live="next-detail"></p>
             </div>
           </div>
-          <p class="state-line" data-live="line">The programme begins on Sunday 20 December.</p>
+          <p class="state-line" data-live="line"><Both en="The programme begins on Sunday 20 December." kn={KN.firstLine} /></p>
           <ol class="festival-days" aria-label="The days of the Brahmakalasha, 20 to 30 December">
           {groups.map((g) => <li class={g.day === 25 ? "key" : undefined} data-date={g.date}><a href={`brahmakalasha/#dec-${g.day}`}><span>{g.day}</span><small>{g.weekday.slice(0, 3)}</small></a></li>)}
           </ol>
@@ -90,21 +103,21 @@ const JSON_LD = {"@context": "https://schema.org", "@graph": [{"@type": "HinduTe
     <section class="full-programme" id="full-programme" aria-labelledby="schedule-title">
       <div class="canopy canopy-right" aria-hidden="true"></div>
       <div class="programme-heading" data-reveal>
-        <p class="eyebrow" data-live="day-eyebrow">FRIDAY · 25 DECEMBER</p>
+        <p class="eyebrow" data-live="day-eyebrow"><Both en="FRIDAY · 25 DECEMBER" kn={dateKn('2026-12-25', 'Friday')} /></p>
         <h2 id="schedule-title" data-en="Programme" data-kn="ಕಾರ್ಯಕ್ರಮಗಳು">Programme</h2>
-        <a href="assets/posters/dec25-06.webp" data-live="poster">Poster</a>
+        <a href="assets/posters/dec25-06.webp" data-live="poster"><Both en="Poster" kn={KN.poster} /></a>
         <a class="more" href="brahmakalasha/#programme">All days, 20 to 30 December</a>
       </div>
       <ol class="timeline" data-live="timeline">
-        <li><time>6:00 AM</time><p data-en="Tailabhyanjana to Sri Devaru" data-kn="ಶ್ರೀ ದೇವರಿಗೆ ತೈಲಾಭ್ಯಂಜನ">Tailabhyanjana to Sri Devaru</p></li>
-        <li class="featured"><time>10:20 AM</time><p data-en="Brahmakalashabhisheka in Kumbha Lagna, followed by Nyasa Pooje, Mahapooje and Maha Annasantarpane" data-kn="ಬ್ರಹ್ಮಕಲಶಾಭಿಷೇಕ">Brahmakalashabhisheka in Kumbha Lagna, followed by Nyasa Pooje, Mahapooje and Maha Annasantarpane</p></li>
-        <li><time>1:30 PM</time><p data-en="Yakshagana Hasya Vaibhava: Baravuda Bile" data-kn="ಯಕ್ಷಗಾನ ಹಾಸ್ಯ ವೈಭವ">Yakshagana Hasya Vaibhava: Baravuda Bile</p></li>
-        <li><time>5:00 PM</time><p>Bali Horatu Utsava, Kattepooje, Pejathaya Mantapa inauguration and Mahapooje</p></li>
-        <li><time>5:00 PM</time><p>Ganamrutha Nellitheertha, devotional and folk songs</p></li>
-        <li><time>8:00 PM</time><p>Halittu Seve at the Nagabana of Nagappa Kere</p></li>
-        <li class="night-item"><time>10:00 PM</time><p data-en="Nagabrahma Mandala Seve, then prasada" data-kn="ನಾಗಬ್ರಹ್ಮ ಮಂಡಲ ಸೇವೆ">Nagabrahma Mandala Seve, then prasada</p></li>
+        <li><time><Both en="6:00 AM" kn={timeKn(360, "")} /></time><p data-en="Tailabhyanjana to Sri Devaru" data-kn="ಶ್ರೀ ದೇವರಿಗೆ ತೈಲಾಭ್ಯಂಜನ">Tailabhyanjana to Sri Devaru</p></li>
+        <li class="featured"><time><Both en="10:20 AM" kn={timeKn(620, "")} /></time><p data-en="Brahmakalashabhisheka in Kumbha Lagna, followed by Nyasa Pooje, Mahapooje and Maha Annasantarpane" data-kn="ಬ್ರಹ್ಮಕಲಶಾಭಿಷೇಕ">Brahmakalashabhisheka in Kumbha Lagna, followed by Nyasa Pooje, Mahapooje and Maha Annasantarpane</p></li>
+        <li><time><Both en="1:30 PM" kn={timeKn(810, "")} /></time><p data-en="Yakshagana Hasya Vaibhava: Baravuda Bile" data-kn="ಯಕ್ಷಗಾನ ಹಾಸ್ಯ ವೈಭವ">Yakshagana Hasya Vaibhava: Baravuda Bile</p></li>
+        <li><time><Both en="5:00 PM" kn={timeKn(1020, "")} /></time><p data-en="Bali Horatu Utsava, Kattepooje, Pejathaya Mantapa inauguration and Mahapooje" data-kn="ಬಲಿ ಹೊರಟು ಉತ್ಸವ, ಪೆಜತ್ತಾಯ ಮಂಟಪ ಉದ್ಘಾಟನಾಂಗ ಕಟ್ಟೆ ಪೂಜೆ, ಮಹಾಪೂಜೆ">Bali Horatu Utsava, Kattepooje, Pejathaya Mantapa inauguration and Mahapooje</p></li>
+        <li><time><Both en="5:00 PM" kn={timeKn(1020, "")} /></time><p data-en="Ganamrutha Nellitheertha, devotional and folk songs" data-kn="ಭಕ್ತಿಗೀತೆ-ಭಾವಗೀತೆ-ಜನಪದಗೀತೆ - ರಸಮಂಜರಿ ಕಾರ್ಯಕ್ರಮ">Ganamrutha Nellitheertha, devotional and folk songs</p></li>
+        <li><time><Both en="8:00 PM" kn={timeKn(1200, "")} /></time><p data-en="Halittu Seve at the Nagabana of Nagappa Kere" data-kn="ನಾಗಪ್ಪ ಕೆರೆಯ ನಾಗಬನದಲ್ಲಿ ಹಾಲಿಟ್ಟು ಸೇವೆ">Halittu Seve at the Nagabana of Nagappa Kere</p></li>
+        <li class="night-item"><time><Both en="10:00 PM" kn={timeKn(1320, "")} /></time><p data-en="Nagabrahma Mandala Seve, then prasada" data-kn="ನಾಗಬ್ರಹ್ಮ ಮಂಡಲ ಸೇವೆ">Nagabrahma Mandala Seve, then prasada</p></li>
       </ol>
-      <div class="annadana" data-live="notes"><p>Special assistance for Annadana of this day: Sri Ananda Kava and brothers, Santrabailu</p></div>
+      <div class="annadana" data-live="notes"><p><Both en="Special assistance for Annadana of this day: Sri Ananda Kava and brothers, Santrabailu" kn="ಈ ದಿನದ ಅನ್ನದಾನ ಸೇವಾ ಸಹಯೋಗ: ಶ್ರೀ ಆನಂದ ಕಾವ ಮತ್ತು ಸಹೋದರರು, ಸಾಂತ್ರಬೈಲು" /></p></div>
     </section>
 
     <section class="threshold" id="story" aria-labelledby="threshold-title">

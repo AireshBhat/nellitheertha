@@ -1,8 +1,13 @@
 ---
 import { getEntry } from 'astro:content';
 import Page from '../../../layouts/Page.astro';
-const groups = (await getEntry('committees', 'committees'))!.data.groups;
+import Both from '../../../components/Both.astro';
+const data = (await getEntry('committees', 'committees'))!.data;
+const groups = data.groups;
 const inv = (await getEntry('invitation', 'invitation'))!.data;
+// The patrike's own Kannada lists, in its own groups and order (pages 9 to 12). In ಕನ್ನಡ they replace the English ones.
+const kn = data.kn;
+const en = (cls: string) => (kn ? `${cls} en-only` : cls);
 // A parent heading (h2) appears once, unless a group of that name already appeared; groups under a parent are h3.
 const shown = new Set<string>();
 const blocks = groups.map((g) => {
@@ -18,19 +23,37 @@ const sub = (m: { role?: string | null; place?: string | null }) => [m.role, m.p
   back={{ href: '/brahmakalasha/', label: 'Brahmakalasha 2026' }} next={{ href: '/brahmakalasha/', label: 'Brahmakalasha 2026' }}>
   {blocks.map(({ parent, level, group }) => (
     <>
-      {parent && <h2>{parent}</h2>}
-      {level === 'h3' ? <h3>{group.title}</h3> : <h2>{group.title}</h2>}
-      <ul class="names">
+      {parent && <h2 class={kn ? 'en-only' : undefined}>{parent}</h2>}
+      {level === 'h3' ? <h3 class={kn ? 'en-only' : undefined}>{group.title}</h3> : <h2 class={kn ? 'en-only' : undefined}>{group.title}</h2>}
+      <ul class={en('names')}>
         {group.members.map((m) => <li>{m.name}{sub(m) && <small>{sub(m)}</small>}</li>)}
       </ul>
     </>
   ))}
-  <h2 id="mahadanis">Mahadanis who contributed to the Jeernoddhara</h2>
-  <ul class="names">
+  {kn?.groups.map((g) => (
+    <>
+      <h2 class="kn-only" lang="kn">{g.title}</h2>
+      <ul class="names kn-only" lang="kn">
+        {g.members.map((m) => <li>{m.name}{sub(m) && <small>{sub(m)}</small>}</li>)}
+      </ul>
+    </>
+  ))}
+  <h2 id="mahadanis"><Both en="Mahadanis who contributed to the Jeernoddhara" kn={kn?.mahadanis_heading} /></h2>
+  <ul class={en('names')}>
     {inv.mahadanis.map((m) => <li>{m.name}{m.detail && <small>{m.detail}</small>}</li>)}
   </ul>
-  <h2 id="supporters">Dignitaries and organisations who extended support</h2>
-  <ul class="names">
+  {kn && (
+    <ul class="names kn-only" lang="kn">
+      {kn.mahadanis.map((m) => <li>{m.name}{sub(m) && <small>{sub(m)}</small>}</li>)}
+    </ul>
+  )}
+  <h2 id="supporters"><Both en="Dignitaries and organisations who extended support" kn={kn?.supporters_heading} /></h2>
+  <ul class={en('names')}>
     {inv.supporters.map((m) => <li>{m.name}{m.detail && <small>{m.detail}</small>}</li>)}
   </ul>
+  {kn && (
+    <ul class="names kn-only" lang="kn">
+      {kn.supporters.map((m) => <li>{m.name}{sub(m) && <small>{sub(m)}</small>}</li>)}
+    </ul>
+  )}
 </Page>

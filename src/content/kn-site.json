@@ -1,0 +1,1973 @@
+{
+ "about": "Kannada for the site's English text that has no Kannada in the patrike. Key: an English unit's inner HTML, whitespace collapsed (src/lib/kn.ts). from: sarvam-105b and sarvam-translate:v1 are Sarvam AI's machine translations (scripts/kn-translate.ts), to be checked by a Kannada reader; 'corrected' notes a fix to one; patrike is the printed Kannada invitation; hand is set by hand from the source named; same is text with nothing to translate. After changing English text, build and run scripts/kn-missing.ts to list what has no Kannada.",
+ "entries": {
+  "Sri Somanatheshwara Guhalaya<br>Neerude Post, Kompadavu Village, Mangaluru Taluk, D.K. District, Karnataka 574144": {
+   "kn": "ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರ ಗುಹಾಲಯ<br>ಕೊಂಪದವು ಗ್ರಾಮ, ಅಂಚೆ: ನೀರುಡೆ, ಮಂಗಳೂರು - 574144, ದ. ಕ.",
+   "from": "patrike"
+  },
+  "Sri Somanatheshwara Temple Jirnoddhara Samiti<br>Karnataka Bank, Aikala Branch<br>Current account 0122500100786201<br>IFSC KARB0000012<br>UPI 9986376974@kbl": {
+   "kn": "ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರ ದೇವಸ್ಥಾನ ಜೀರ್ಣೋದ್ಧಾರ ಸಮಿತಿ<br>ಕರ್ಣಾಟಕ ಬ್ಯಾಂಕ್, ಐಕಳ ಶಾಖೆ<br>ಚಾಲ್ತಿ ಖಾತೆ ನಂ. : 0122500100786201<br>IFSC KARB0000012<br>UPI 9986376974@kbl",
+   "from": "patrike"
+  },
+  "Nellitheertha": {
+   "kn": "ನೆಲ್ಲಿತೀರ್ಥ",
+   "from": "patrike"
+  },
+  "Sun": {
+   "kn": "ಭಾ",
+   "from": "hand: the one-letter weekday names of Kannada calendars (ಭಾ ಸೋ ಮಂ ಬು ಗು ಶು ಶ)"
+  },
+  "Mon": {
+   "kn": "ಸೋ",
+   "from": "hand: the one-letter weekday names of Kannada calendars (ಭಾ ಸೋ ಮಂ ಬು ಗು ಶು ಶ)"
+  },
+  "Tue": {
+   "kn": "ಮಂ",
+   "from": "hand: the one-letter weekday names of Kannada calendars (ಭಾ ಸೋ ಮಂ ಬು ಗು ಶು ಶ)"
+  },
+  "Wed": {
+   "kn": "ಬು",
+   "from": "hand: the one-letter weekday names of Kannada calendars (ಭಾ ಸೋ ಮಂ ಬು ಗು ಶು ಶ)"
+  },
+  "Thu": {
+   "kn": "ಗು",
+   "from": "hand: the one-letter weekday names of Kannada calendars (ಭಾ ಸೋ ಮಂ ಬು ಗು ಶು ಶ)"
+  },
+  "Fri": {
+   "kn": "ಶು",
+   "from": "hand: the one-letter weekday names of Kannada calendars (ಭಾ ಸೋ ಮಂ ಬು ಗು ಶು ಶ)"
+  },
+  "Sat": {
+   "kn": "ಶ",
+   "from": "hand: the one-letter weekday names of Kannada calendars (ಭಾ ಸೋ ಮಂ ಬು ಗು ಶು ಶ)"
+  },
+  "Om Tat Purushaya Vidmahe,<br>Mahadevaya Dheemahi,<br>Tanno Rudra Prachodayaat": {
+   "kn": "ಓಂ ತತ್ಪುರುಷಾಯ ವಿದ್ಮಹೇ,<br>ಮಹಾದೇವಾಯ ಧೀಮಹಿ,<br>ತನ್ನೋ ರುದ್ರಃ ಪ್ರಚೋದಯಾತ್",
+   "from": "hand: the Rudra Gayatri in Kannada script"
+  },
+  "vbnellitheertha@yahoo.com": {
+   "kn": "vbnellitheertha@yahoo.com",
+   "from": "same"
+  },
+  "Skip to content": {
+   "kn": "ವಿಷಯಕ್ಕೆ ಹೋಗಿ",
+   "from": "sarvam-105b"
+  },
+  "Brahmakalasha": {
+   "kn": "ಬ್ರಹ್ಮಕಲಶ",
+   "from": "sarvam-105b"
+  },
+  "About": {
+   "kn": "ನಮ್ಮ ಬಗ್ಗೆ",
+   "from": "sarvam-105b"
+  },
+  "Visit": {
+   "kn": "ಭೇಟಿ ನೀಡಿ",
+   "from": "sarvam-105b"
+  },
+  "Contribute": {
+   "kn": "ಕೊಡುಗೆ ನೀಡಿ",
+   "from": "sarvam-105b"
+  },
+  "Home": {
+   "kn": "ಮುಖಪುಟ",
+   "from": "sarvam-105b"
+  },
+  "Brahmakalasha 2026": {
+   "kn": "ಬ್ರಹ್ಮಕಲಶ 2026",
+   "from": "sarvam-105b"
+  },
+  "The temple": {
+   "kn": "ದೇವಾಲಯ",
+   "from": "sarvam-105b"
+  },
+  "History": {
+   "kn": "ಇತಿಹಾಸ",
+   "from": "sarvam-105b"
+  },
+  "The birth of Nellitheertha": {
+   "kn": "ನೆಲ್ಲಿತೀರ್ಥದ ಜನನ",
+   "from": "sarvam-105b"
+  },
+  "The cave": {
+   "kn": "ಗುಹೆ",
+   "from": "sarvam-105b"
+  },
+  "Sevas": {
+   "kn": "ಸೇವೆಗಳು",
+   "from": "sarvam-105b"
+  },
+  "The annual jaatre": {
+   "kn": "ವಾರ್ಷಿಕ ಜಾತ್ರೆ",
+   "from": "sarvam-105b"
+  },
+  "Mantras": {
+   "kn": "ಮಂತ್ರಗಳು",
+   "from": "sarvam-105b"
+  },
+  "Gallery": {
+   "kn": "ಗ್ಯಾಲರಿ",
+   "from": "sarvam-105b"
+  },
+  "How to reach": {
+   "kn": "ಹೇಗೆ ತಲುಪುವುದು",
+   "from": "sarvam-105b"
+  },
+  "Renovation appeal, 2024": {
+   "kn": "ಜೀರ್ಣೋದ್ಧಾರ ಮನವಿ, 2024",
+   "from": "sarvam-105b"
+  },
+  "The forest, the forest walk, the kere and the cave pictures were made with AI from photographs and footage of Nellitheertha. The sanctum picture on the home page is a real video frame restored with AI. All other photographs are real.": {
+   "kn": "ಕಾಡು, ಕಾಡಿನ ನಡಿಗೆ, ಕೆರೆ ಮತ್ತು ಗುಹೆಯ ಚಿತ್ರಗಳನ್ನು ನೆಲ್ಲಿತೀರ್ಥದ ಛಾಯಾಚಿತ್ರಗಳು ಮತ್ತು ದೃಶ್ಯಾವಳಿಗಳಿಂದ AI ಮೂಲಕ ಮಾಡಲಾಗಿದೆ. ಮುಖಪುಟದಲ್ಲಿರುವ ಗರ್ಭಗುಡಿಯ ಚಿತ್ರವು AI ಮೂಲಕ ಮರುಸ್ಥಾಪಿಸಲಾದ ನೈಜ ವೀಡಿಯೊ ಫ್ರೇಮ್ ಆಗಿದೆ. ಉಳಿದೆಲ್ಲಾ ಛಾಯಾಚಿತ್ರಗಳು ನೈಜವಾಗಿವೆ.",
+   "from": "sarvam-105b"
+  },
+  "SACRED MANTRAS": {
+   "kn": "ಪವಿತ್ರ ಮಂತ್ರಗಳು",
+   "from": "sarvam-105b"
+  },
+  "The following are some of the important mantras related to Lord Shiva. Chanting them daily, or at least on a frequent basis, is a sure way of obtaining Lord Somanatha’s blessings.": {
+   "kn": "ಕೆಳಗೆ ಶಿವನಿಗೆ ಸಂಬಂಧಿಸಿದ ಕೆಲವು ಪ್ರಮುಖ ಮಂತ್ರಗಳಿವೆ. ಇವುಗಳನ್ನು ಪ್ರತಿದಿನ, ಅಥವಾ ಕನಿಷ್ಠ ಪಕ್ಷ ಆಗಾಗ್ಗೆ ಜಪಿಸುವುದರಿಂದ ಶ್ರೀ ಸೋಮನಾಥರ ಆಶೀರ್ವಾದ ಖಂಡಿತವಾಗಿಯೂ ಲಭಿಸುತ್ತದೆ.",
+   "from": "sarvam-105b"
+  },
+  "The following documents are in Kannada and have been reproduced here with the kind permission of Shaivam.org. We acknowledge with thanks the permission of <a href=\"https://www.shaivam.org/\">Shaivam.org</a> in letting us reproduce these documents here. Visit their website for more mantras in a wide variety of languages. The site is also a comprehensive portal for all information related to Lord Shiva.": {
+   "kn": "ಕೆಳಗಿನ ದಾಖಲೆಗಳು ಕನ್ನಡದಲ್ಲಿವೆ ಮತ್ತು Shaivam.org ಅವರ ದಯೆಯಿಂದ ಇಲ್ಲಿ ಪುನರುತ್ಪಾದಿಸಲಾಗಿದೆ. ಈ ದಾಖಲೆಗಳನ್ನು ಇಲ್ಲಿ ಪುನರುತ್ಪಾದಿಸಲು ನಮಗೆ ಅನುಮತಿ ನೀಡಿದ <a href=\"https://www.shaivam.org/\">Shaivam.org</a> ಅವರಿಗೆ ಧನ್ಯವಾದಗಳೊಂದಿಗೆ ನಾವು ಕೃತಜ್ಞರಾಗಿರುತ್ತೇವೆ. ವಿವಿಧ ಭಾಷೆಗಳಲ್ಲಿ ಹೆಚ್ಚಿನ ಮಂತ್ರಗಳಿಗಾಗಿ ಅವರ ವೆಬ್‌ಸೈಟ್‌ಗೆ ಭೇಟಿ ನೀಡಿ. ಈ ಸೈಟ್ ಶಿವನಿಗೆ ಸಂಬಂಧಿಸಿದ ಎಲ್ಲಾ ಮಾಹಿತಿಗಾಗಿ ಸಮಗ್ರ ಪೋರ್ಟಲ್ ಆಗಿದೆ.",
+   "from": "sarvam-translate:v1"
+  },
+  "Sacred mantras in PDF format": {
+   "kn": "PDF ಸ್ವರೂಪದಲ್ಲಿ ಪವಿತ್ರ ಮಂತ್ರಗಳು",
+   "from": "sarvam-105b"
+  },
+  "<a href=\"https://web.archive.org/web/20080509183854/http://nellitheertha.com/docs-shaivam/ska_sk_lagunyasa.pdf\">Laghunyasa</a> (PDF, Kannada)": {
+   "kn": "<a href=\"https://web.archive.org/web/20080509183854/http://nellitheertha.com/docs-shaivam/ska_sk_lagunyasa.pdf\">ಲಘುನ್ಯಾಸ</a> (PDF, ಕನ್ನಡ)",
+   "from": "sarvam-105b"
+  },
+  "<a href=\"https://web.archive.org/web/20080509185243/http://nellitheertha.com/docs-shaivam/ska_sk_namakam.pdf\">Rudra Namakam</a> (PDF, Kannada)": {
+   "kn": "<a href=\"https://web.archive.org/web/20080509185243/http://nellitheertha.com/docs-shaivam/ska_sk_namakam.pdf\">ರುದ್ರ ನಾಮಕ್ಕಂ</a> (PDF, ಕನ್ನಡ)",
+   "from": "sarvam-105b"
+  },
+  "<a href=\"https://web.archive.org/web/20080514131329/http://nellitheertha.com/docs-shaivam/ska_sk_camakam.pdf\">Rudra Chamakam</a> (PDF, Kannada)": {
+   "kn": "<a href=\"https://web.archive.org/web/20080514131329/http://nellitheertha.com/docs-shaivam/ska_sk_camakam.pdf\">ರುದ್ರ ಚಾಮಕ್ಕಂ</a> (PDF, ಕನ್ನಡ)",
+   "from": "sarvam-105b"
+  },
+  "<a href=\"https://web.archive.org/web/20080509183846/http://nellitheertha.com/docs-shaivam/ska_sk_mrityujnjaya.pdf\">Sri Mrutyunjaya Stotra</a> (PDF, Kannada)": {
+   "kn": "<a href=\"https://web.archive.org/web/20080509183846/http://nellitheertha.com/docs-shaivam/ska_sk_mrityujnjaya.pdf\">ಶ್ರೀ ಮೃತ್ಯುಂಜಯ ಸ್ತೋತ್ರ</a> (PDF, ಕನ್ನಡ)",
+   "from": "sarvam-105b"
+  },
+  "Sri Shiva Sahasranama <span class=\"note\">(no longer online)</span>": {
+   "kn": "ಶ್ರೀ ಶಿವ ಸಹಸ್ರನಾಮ <span class=\"note\">(ಇನ್ನು ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಲಭ್ಯವಿಲ್ಲ)</span>",
+   "from": "sarvam-105b"
+  },
+  "Sri Shiva Shadakshara Stotra <span class=\"note\">(no longer online)</span>": {
+   "kn": "ಶ್ರೀ ಶಿವ ಷಡಾಕ್ಷರ ಸ್ತೋತ್ರ <span class=\"note\">(ಇನ್ನು ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಲಭ್ಯವಿಲ್ಲ)</span>",
+   "from": "sarvam-105b"
+  },
+  "These files were on nellitheertha.com, which is no longer online. The four linked here are copies kept by the Internet Archive.": {
+   "kn": "ಈ ಫೈಲ್‌ಗಳು nellitheertha.com ನಲ್ಲಿ ಇದ್ದವು, ಅದು ಇನ್ನು ಮುಂದೆ ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಲಭ್ಯವಿಲ್ಲ. ಇಲ್ಲಿ ಲಿಂಕ್ ಮಾಡಲಾದ ನಾಲ್ಕು ಫೈಲ್‌ಗಳು ಇಂಟರ್ನೆಟ್ ಆರ್ಕೈವ್‌ನಲ್ಲಿ ಇರಿಸಲಾದ ಪ್ರತಿಗಳಾಗಿವೆ.",
+   "from": "sarvam-105b"
+  },
+  "Next: Gallery": {
+   "kn": "ಮುಂದಿನದು: ಗ್ಯಾಲರಿ",
+   "from": "sarvam-105b"
+  },
+  "ARCHIVE": {
+   "kn": "ಆರ್ಕೈವ್",
+   "from": "sarvam-translate:v1"
+  },
+  "Appeal towards temple renovation": {
+   "kn": "ದೇವಾಲಯದ ಜೀರ್ಣೋದ್ಧಾರಕ್ಕೆ ಮನವಿ",
+   "from": "sarvam-105b"
+  },
+  "From the Renovation Committee and Executive Committee, Sri Somanatheshwara Guhalaya (Hindu Religious Institutions and Charitable Endowments Department, Government of Karnataka).": {
+   "kn": "ಜೀರ್ಣೋದ್ಧಾರ ಸಮಿತಿ ಮತ್ತು ಕಾರ್ಯಕಾರಿ ಸಮಿತಿಯಿಂದ, ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರ ಗುಹಾಲಯ (ಹಿಂದೂ ಧಾರ್ಮಿಕ ಸಂಸ್ಥೆಗಳು ಮತ್ತು ಧರ್ಮಾದಾಯ ದತ್ತಿಗಳ ಇಲಾಖೆ, ಕರ್ನಾಟಕ ಸರ್ಕಾರ).",
+   "from": "sarvam-105b"
+  },
+  "The renovation works in this appeal are complete. Donations for the Brahmakalasha: <a href=\"/brahmakalasha/#contribute\">Brahmakalasha 2026</a>.": {
+   "kn": "ಈ ಮನವಿಯಲ್ಲಿ ತಿಳಿಸಿರುವ ಜೀರ್ಣೋದ್ಧಾರ ಕಾರ್ಯಗಳು ಪೂರ್ಣಗೊಂಡಿವೆ. ಬ್ರಹ್ಮಕಲಶಕ್ಕೆ ದೇಣಿಗೆಗಳು: <a href=\"/brahmakalasha/#contribute\">Brahmakalasha 2026</a>.",
+   "from": "sarvam-105b"
+  },
+  "The appeal as printed, June 2024 (PDF, 2 pages)": {
+   "kn": "ಮುದ್ರಿತವಾದ ಮನವಿ, ಜೂನ್ 2024 (PDF, 2 ಪುಟಗಳು)",
+   "from": "sarvam-105b"
+  },
+  "An appeal": {
+   "kn": "ಒಂದು ಮನವಿ",
+   "from": "sarvam-105b"
+  },
+  "Dear Devotees,": {
+   "kn": "ಪ್ರೀತಿಯ ಭಕ್ತಾದಿಗಳೇ,",
+   "from": "sarvam-105b"
+  },
+  "Amongst the numerous Tirthakshetras in Bharata, Nellitheertha holds a special and elevated status. Due to the power of the Tapas performed by Rishis and Saints, there exists the presence of Lord Shiva in the form of a Shivalinga inside a cave here. Historical records show that this place has existed under the administration of the Chowta Arasus of Moodabidare and has a recorded history of more than 700 years! An ancient Somanatheshwara temple, along with Lord Ganapati, exists here and is beautifully encroached on one side by mother nature in the form of the entrance to the cave. Till recently, this special jewel amongst the religious and spiritual places of Tulu Nadu was not so well known. However, this has changed recently.": {
+   "kn": "ಭಾರತದಲ್ಲಿರುವ ಅಸಂಖ್ಯಾತ ತೀರ್ಥಕ್ಷೇತ್ರಗಳಲ್ಲಿ, ನೆಲ್ಲಿತೀರ್ಥವು ವಿಶೇಷ ಮತ್ತು ಉನ್ನತ ಸ್ಥಾನವನ್ನು ಹೊಂದಿದೆ. ಋಷಿ-ಮುನಿಗಳು ಮತ್ತು ಸಂತರ ತಪೋಬಲದಿಂದಾಗಿ, ಇಲ್ಲಿನ ಗುಹೆಯೊಳಗೆ ಶಿವಲಿಂಗದ ರೂಪದಲ್ಲಿ ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರನ (ಶಿವ) ಸನ್ನಿಧಿಯಿದೆ. ಈ ಸ್ಥಳವು ಮೂಡುಬಿದಿರೆಯ ಚೌಟ ಅರಸರ ಆಡಳಿತದಲ್ಲಿತ್ತು ಎಂಬುದಕ್ಕೆ ಐತಿಹಾಸಿಕ ದಾಖಲೆಗಳಿವೆ ಮತ್ತು 700 ವರ್ಷಗಳಿಗೂ ಮೀರಿದ ಇತಿಹಾಸವನ್ನು ಹೊಂದಿದೆ! ಇಲ್ಲಿ ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರ ದೇವಾಲಯದ ಜೊತೆಗೆ ಶ್ರೀ ಗಣಪತಿಯ ಸನ್ನಿಧಿಯೂ ಇದೆ ಮತ್ತು ಗುಹೆಯ ಪ್ರವೇಶದ್ವಾರದ ರೂಪದಲ್ಲಿ ಪ್ರಕೃತಿ ಮಾತೆಯು ಒಂದು ಬದಿಯಲ್ಲಿ ಇದನ್ನು ಸುಂದರವಾಗಿ ಆವರಿಸಿಕೊಂಡಿದ್ದಾಳೆ. ಇತ್ತೀಚಿನವರೆಗೂ, ತುಳುನಾಡಿನ ಧಾರ್ಮಿಕ ಮತ್ತು ಆಧ್ಯಾತ್ಮಿಕ ಸ್ಥಳಗಳಲ್ಲಿನ ಈ ವಿಶೇಷ ರತ್ನವು ಅಷ್ಟಾಗಿ ಪ್ರಸಿದ್ಧವಾಗಿರಲಿಲ್ಲ. ಆದರೆ, ಇತ್ತೀಚೆಗೆ ಇದು ಬದಲಾಗಿದೆ.",
+   "from": "sarvam-105b"
+  },
+  "Inside the cave, at about a distance of 200 metres, there exists a beautiful pond. It is believed that Ganga, flowing via the locks of Lord Shiva, has its presence in this pond. It has been experienced that those who take bath in this pond with devotion get rid of many diseases. The soil available around the pond has medicinal properties too. Devotees take bath in the pond and then offer water on the head of the Shiva Linga that is seated in a natural pedestal. The darshana of Lord Somanatheshwara and Sage Jabali inside the cave is indeed a divine and unforgettable experience. People experience a surge in their spiritual energy when they spend time in this temple.": {
+   "kn": "ಗುಹೆಯ ಒಳಗೆ, ಸುಮಾರು 200 ಮೀಟರ್ ದೂರದಲ್ಲಿ ಒಂದು ಸುಂದರವಾದ ಕೆರೆ ಇದೆ. ಶಿವನ ಜಟೆಯಿಂದ ಹರಿದು ಬಂದ ಗಂಗೆಯು ಈ ಕೆರೆಯಲ್ಲಿ ನೆಲೆಸಿದ್ದಾಳೆ ಎಂದು ನಂಬಲಾಗಿದೆ. ಭಕ್ತಿಯಿಂದ ಈ ಕೆರೆಯಲ್ಲಿ ಸ್ನಾನ ಮಾಡುವುದರಿಂದ ಅನೇಕ ರೋಗಗಳು ದೂರವಾಗುತ್ತವೆ ಎಂದು ಅನುಭವವಾಗಿದೆ. ಕೆರೆಯ ಸುತ್ತಲಿನ ಮಣ್ಣು ಕೂಡ ಔಷಧೀಯ ಗುಣಗಳನ್ನು ಹೊಂದಿದೆ. ಭಕ್ತರು ಕೆರೆಯಲ್ಲಿ ಸ್ನಾನ ಮಾಡಿ, ಆ ನಂತರ ನೈಸರ್ಗಿಕ ಪೀಠದ ಮೇಲಿರುವ ಶಿವಲಿಂಗಕ್ಕೆ ಅಭಿಷೇಕ ಮಾಡುತ್ತಾರೆ. ಗುಹೆಯೊಳಗೆ ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರ ಮತ್ತು ಜಾಬಾಲಿ ಮಹರ್ಷಿಗಳ ದರ್ಶನವು ನಿಜಕ್ಕೂ ದೈವಿಕ ಮತ್ತು ಮರೆಯಲಾಗದ ಅನುಭವ. ಈ ದೇವಾಲಯದಲ್ಲಿ ಸಮಯ ಕಳೆದಾಗ ಭಕ್ತರಿಗೆ ತಮ್ಮ ಆಧ್ಯಾತ್ಮಿಕ ಶಕ್ತಿಯಲ್ಲಿ ಹೆಚ್ಚಳವಾದ ಅನುಭವವಾಗುತ್ತದೆ.",
+   "from": "sarvam-105b"
+  },
+  "In the recent years, due to the contributions and efforts of devotees, the renovation of the Sri Somanatheshwara temple has taken place in the years 1985, 2005 and 2014. Due to this, the inner prakara of the temple is in reasonably good shape. However, the number of devotees who are visiting the temple and taking bath inside the cave is steadily increasing, year after year. Along with this, the number of requests for conducting religious and dharmika events, including shodasha samskaras, in the temple, is going up consistently. Visitors from the district, and from other places, is showing a consistent upward trend.": {
+   "kn": "ಇತ್ತೀಚಿನ ವರ್ಷಗಳಲ್ಲಿ, ಭಕ್ತರ ಕೊಡುಗೆ ಮತ್ತು ಪ್ರಯತ್ನಗಳಿಂದಾಗಿ, 1985, 2005 ಮತ್ತು 2014ರಲ್ಲಿ ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರ ದೇವಾಲಯದ ಜೀರ್ಣೋದ್ಧಾರ ಕಾರ್ಯ ನಡೆದಿದೆ. ಇದರಿಂದಾಗಿ, ದೇವಾಲಯದ ಒಳಗಿನ ಪ್ರಾಕಾರದ ಸ್ಥಿತಿ ಸಾಕಷ್ಟು ಉತ್ತಮವಾಗಿದೆ. ಆದರೆ, ದೇವಾಲಯಕ್ಕೆ ಭೇಟಿ ನೀಡಿ ಗುಹೆಯೊಳಗೆ ಸ್ನಾನ ಮಾಡುವ ಭಕ್ತರ ಸಂಖ್ಯೆ ವರ್ಷದಿಂದ ವರ್ಷಕ್ಕೆ ನಿರಂತರವಾಗಿ ಹೆಚ್ಚುತ್ತಿದೆ. ಇದರ ಜೊತೆಗೆ, ದೇವಾಲಯದಲ್ಲಿ ಶೋಡಶ ಸಂಸ್ಕಾರಗಳು ಸೇರಿದಂತೆ ಧಾರ್ಮಿಕ ಕಾರ್ಯಕ್ರಮಗಳನ್ನು ನಡೆಸುವ ಕೋರಿಕೆಗಳೂ ನಿರಂತರವಾಗಿ ಏರುತ್ತಿವೆ. ಜಿಲ್ಲೆಯಿಂದ ಹಾಗೂ ಇತರ ಕಡೆಗಳಿಂದ ಬರುವ ಭಕ್ತರ ಸಂಖ್ಯೆಯೂ ನಿರಂತರವಾಗಿ ಹೆಚ್ಚಾಗುತ್ತಿದೆ.",
+   "from": "sarvam-105b"
+  },
+  "Due to these reasons, it has become paramount to provide basic facilities and infrastructure for visiting devotees and for the religious events that take place. In order to make these facilities possible, a committee for the repair and renovation of the temple has been constituted. The necessary plans and budget estimates for these works have been prepared and submitted to the Hindu Religious Institutions And Charitable Endowments Department, Government of Karnataka. The approval of the Government authorities have been duly obtained vide order number DVS:MSC:CR 229/2023/292129/F3 dated 21-02-2024. It has been estimated that an amount of Rupees 2.25 Crores shall be required to successfully complete all the planned works. We hope to complete the planned works within the next two years and be able to perform the Brahmakalasha rituals during 2026-2027.": {
+   "kn": "ಈ ಕಾರಣಗಳಿಂದಾಗಿ, ಭೇಟಿ ನೀಡುವ ಭಕ್ತಾದಿಗಳಿಗೆ ಮತ್ತು ನಡೆಯುವ ಧಾರ್ಮಿಕ ಕಾರ್ಯಕ್ರಮಗಳಿಗೆ ಮೂಲಭೂತ ಸೌಲಭ್ಯಗಳು ಮತ್ತು ಮೂಲಸೌಕರ್ಯಗಳನ್ನು ಒದಗಿಸುವುದು ಅತ್ಯಂತ ಅವಶ್ಯಕವಾಗಿದೆ. ಈ ಸೌಲಭ್ಯಗಳನ್ನು ಒದಗಿಸಲು, ದೇವಾಲಯದ ದುರಸ್ತಿ ಮತ್ತು ಜೀರ್ಣೋದ್ಧಾರಕ್ಕಾಗಿ ಒಂದು ಸಮಿತಿಯನ್ನು ರಚಿಸಲಾಗಿದೆ. ಈ ಕಾಮಗಾರಿಗಳಿಗೆ ಅಗತ್ಯವಾದ ಯೋಜನೆಗಳು ಮತ್ತು ಬಜೆಟ್ ಅಂದಾಜುಗಳನ್ನು ಸಿದ್ಧಪಡಿಸಿ ಕರ್ನಾಟಕ ಸರ್ಕಾರದ ಹಿಂದೂ ಧಾರ್ಮಿಕ ಸಂಸ್ಥೆಗಳು ಮತ್ತು ಧರ್ಮಾದಾಯ ದತ್ತಿ ಇಲಾಖೆಗೆ ಸಲ್ಲಿಸಲಾಗಿದೆ. 21-02-2024 ರ DVS:MSC:CR 229/2023/292129/F3 ಆದೇಶದ ಮೂಲಕ ಸರ್ಕಾರಿ ಅಧಿಕಾರಿಗಳ ಅನುಮೋದನೆಯನ್ನು ಪಡೆಯಲಾಗಿದೆ. ಯೋಜಿತ ಎಲ್ಲಾ ಕಾಮಗಾರಿಗಳನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಪೂರ್ಣಗೊಳಿಸಲು 2.25 ಕೋಟಿ ರೂಪಾಯಿಗಳ ಮೊತ್ತದ ಅಗತ್ಯವಿದೆ ಎಂದು ಅಂದಾಜಿಸಲಾಗಿದೆ. ಮುಂದಿನ ಎರಡು ವರ್ಷಗಳಲ್ಲಿ ಯೋಜಿತ ಕಾಮಗಾರಿಗಳನ್ನು ಪೂರ್ಣಗೊಳಿಸಲು ಮತ್ತು 2026-2027 ರ ಅವಧಿಯಲ್ಲಿ ಬ್ರಹ್ಮಕಲಶ ಆಚರಣೆಯನ್ನು ಮಾಡಲು ನಾವು ಆಶಿಸುತ್ತೇವೆ.",
+   "from": "sarvam-105b"
+  },
+  "We request all large-hearted devotees to contribute generously to this noble cause and obtain the blessings of Lord Somanatha and Lord Ganapati.": {
+   "kn": "ಈ ಪುಣ್ಯ ಕಾರ್ಯಕ್ಕೆ ಉದಾರವಾಗಿ ದೇಣಿಗೆ ನೀಡುವ ಮೂಲಕ ಶ್ರೀ ಸೋಮನಾಥ ಮತ್ತು ಶ್ರೀ ಗಣಪತಿಯವರ ಆಶೀರ್ವಾದವನ್ನು ಪಡೆಯುವಂತೆ ಎಲ್ಲಾ ಉದಾರ ಮನಸ್ಸಿನ ಭಕ್ತಾದಿಗಳನ್ನು ವಿನಂತಿಸುತ್ತೇವೆ.",
+   "from": "sarvam-105b"
+  },
+  "Approximate estimations for the temple renovation": {
+   "kn": "ದೇವಾಲಯದ ಜೀರ್ಣೋದ್ಧಾರದ ಅಂದಾಜು ಲೆಕ್ಕಾಚಾರಗಳು",
+   "from": "sarvam-105b"
+  },
+  "Details": {
+   "kn": "ವಿವರಗಳು",
+   "from": "sarvam-105b"
+  },
+  "Approx. (in lakhs)": {
+   "kn": "ಅಂದಾಜು (ಲಕ್ಷಗಳಲ್ಲಿ)",
+   "from": "sarvam-105b"
+  },
+  "New office building (2 floors)": {
+   "kn": "ಹೊಸ ಕಚೇರಿ ಕಟ್ಟಡ (2 ಮಹಡಿಗಳು)",
+   "from": "sarvam-105b"
+  },
+  "Repair of the temple well": {
+   "kn": "ದೇವಾಲಯದ ಬಾವಿಯ ದುರಸ್ತಿ",
+   "from": "sarvam-105b"
+  },
+  "New bathroom": {
+   "kn": "ಹೊಸ ಸ್ನಾನಗೃಹ",
+   "from": "sarvam-105b"
+  },
+  "Renovation of cave entrance": {
+   "kn": "ಗುಹಾಲಯದ ಪ್ರವೇಶದ್ವಾರದ ಜೀರ್ಣೋದ್ಧಾರ",
+   "from": "sarvam-105b"
+  },
+  "New roof for the outer prakara, east side": {
+   "kn": "ಹೊರ ಪ್ರಾಕಾರದ ಹೊಸ ಚಾವಣಿ, ಪೂರ್ವ ಭಾಗ",
+   "from": "sarvam-105b"
+  },
+  "New roof for the outer prakara, west side": {
+   "kn": "ಹೊರ ಪ್ರಾಕಾರದ ಹೊಸ ಚಾವಣಿ, ಪಶ್ಚಿಮ ಭಾಗ",
+   "from": "sarvam-105b"
+  },
+  "New roof for the outer prakara, north side": {
+   "kn": "ಹೊರ ಪ್ರಾಕಾರದ ಹೊಸ ಚಾವಣಿ, ಉತ್ತರ ಭಾಗ",
+   "from": "sarvam-105b"
+  },
+  "New roof for the outer prakara, south side": {
+   "kn": "ಹೊರ ಪ್ರಾಕಾರದ ಹೊಸ ಚಾವಣಿ, ದಕ್ಷಿಣ ಭಾಗ",
+   "from": "sarvam-105b"
+  },
+  "New stairs for the Naga sannidhana": {
+   "kn": "ನಾಗ ಸನ್ನಿಧನಕ್ಕೆ ಹೊಸ ಮೆಟ್ಟಿಲುಗಳು",
+   "from": "sarvam-105b"
+  },
+  "Suttu Pouli for the outer prakara, west side": {
+   "kn": "ಹೊರ ಪ್ರಾಕಾರದ ಸುತ್ತು ಪೌಳಿ, ಪಶ್ಚಿಮ ಭಾಗ",
+   "from": "sarvam-105b"
+  },
+  "Suttu Pouli for the outer prakara, north side": {
+   "kn": "ಹೊರ ಪ್ರಾಕಾರದ ಸುತ್ತು ಪೌಳಿ, ಉತ್ತರ ಭಾಗ",
+   "from": "sarvam-105b"
+  },
+  "New Jabali sannidhana": {
+   "kn": "ಹೊಸ ಜಾಬಾಲಿ ಸನ್ನಿಧನ",
+   "from": "sarvam-105b"
+  },
+  "Storeroom (west side)": {
+   "kn": "ಶೇಖರಣಾ ಕೊಠಡಿ (ಪಶ್ಚಿಮ ಭಾಗ)",
+   "from": "sarvam-105b"
+  },
+  "Toilets (west side)": {
+   "kn": "ಶೌಚಾಲಯಗಳು (ಪಶ್ಚಿಮ ಭಾಗ)",
+   "from": "sarvam-105b"
+  },
+  "New function hall": {
+   "kn": "ಹೊಸ ಕಾರ್ಯಾಲಯ",
+   "from": "sarvam-105b"
+  },
+  "Stairs for the Lord’s abhisheka well": {
+   "kn": "ದೇವರ ಅಭಿಷೇಕ ಬಾವಿಗೆ ಮೆಟ್ಟಿಲುಗಳು",
+   "from": "sarvam-105b"
+  },
+  "New rooms (for seva kartas and temple staff)": {
+   "kn": "ಹೊಸ ಕೊಠಡಿಗಳು (ಸೇವಾ ಕರ್ತರಿಗೆ ಮತ್ತು ದೇವಸ್ಥಾನದ ಸಿಬ್ಬಂದಿಗೆ)",
+   "from": "sarvam-105b"
+  },
+  "Total estimate": {
+   "kn": "ಒಟ್ಟು ಅಂದಾಜು ವೆಚ್ಚ",
+   "from": "sarvam-105b"
+  },
+  "Note": {
+   "kn": "ಸೂಚನೆ",
+   "from": "sarvam-105b"
+  },
+  "Devotees are requested to take up the financial responsibility for any of the above mentioned works in totality.": {
+   "kn": "ಮೇಲೆ ತಿಳಿಸಿದ ಯಾವುದೇ ಕಾಮಗಾರಿಗಳಿಗೆ ಭಕ್ತರು ಸಂಪೂರ್ಣ ಆರ್ಥಿಕ ಜವಾಬ್ದಾರಿಯನ್ನು ವಹಿಸಿಕೊಳ್ಳಬೇಕಾಗಿ ವಿನಂತಿ.",
+   "from": "sarvam-105b"
+  },
+  "It has been decided to enshrine names of people contributing more than 1 lakh on a granite stone board.": {
+   "kn": "1 ಲಕ್ಷಕ್ಕಿಂತ ಹೆಚ್ಚು ಕೊಡುಗೆ ನೀಡುವವರ ಹೆಸರುಗಳನ್ನು ಗ್ರಾನೈಟ್ ಕಲ್ಲಿನ ಫಲಕದ ಮೇಲೆ ಕೆತ್ತಲು ನಿರ್ಧರಿಸಲಾಗಿದೆ.",
+   "from": "sarvam-105b"
+  },
+  "The Suttu Powlis require approximately 20 stone pillars. The cost of each pillar is approximately Rs 50,000. Devotees are requested to sponsor the cost of one or more of these pillars.": {
+   "kn": "ಸುತ್ತು ಪಳಿಯುಗಳಿಗೆ ಸುಮಾರು 20 ಕಲ್ಲಿನ ಕಂಬಗಳು ಬೇಕಾಗುತ್ತವೆ. ಪ್ರತಿ ಕಂಬದ ವೆಚ್ಚ ಸುಮಾರು 50,000 ರೂ. ಈ ಕಂಬಗಳಲ್ಲಿ ಒಂದೆರಡು ಕಂಬಗಳ ವೆಚ್ಚವನ್ನು ಭಕ್ತರು ಪ್ರಾಯೋಜಿಸಬೇಕಾಗಿ ವಿನಂತಿ.",
+   "from": "sarvam-105b"
+  },
+  "The cost of the rooms for seva-kartas and staff can be separately borne as well. Devotees are requested to enquire about the same in the temple office.": {
+   "kn": "ಸೇವಾ-ಕರ್ತರು ಮತ್ತು ಸಿಬ್ಬಂದಿಯ ಕೊಠಡಿಗಳ ವೆಚ್ಚವನ್ನು ಪ್ರತ್ಯೇಕವಾಗಿಯೂ ಭರಿಸಬಹುದು. ಭಕ್ತರು ದೇವಸ್ಥಾನದ ಕಚೇರಿಯಲ್ಲಿ ಈ ಬಗ್ಗೆ ವಿಚಾರಿಸಬೇಕಾಗಿ ವಿನಂತಿ.",
+   "from": "sarvam-105b"
+  },
+  "Guidance and Supervision Committee": {
+   "kn": "ಮಾರ್ಗದರ್ಶನ ಮತ್ತು ಮೇಲ್ವಿಚಾರಣಾ ಸಮಿತಿ",
+   "from": "sarvam-105b"
+  },
+  "Hon Presidents": {
+   "kn": "ಗೌರವಾನ್ವಿತ ಅಧ್ಯಕ್ಷರು",
+   "from": "sarvam-105b"
+  },
+  "Sri Sri Sri Vishwaprasanna Tirtha Swamiji<small>Pejavara Adhokshaja Matha, Udupi</small>": {
+   "kn": "ಶ್ರೀ ಶ್ರೀ ಶ್ರೀ ವಿಶ್ವಪ್ರಸನ್ನ ತೀರ್ಥ ಶ್ರೀಪಾದರು<small>ಪೇಜಾವರ ಅಧೋಕ್ಷಜ ಮಠ, ಉಡುಪಿ</small>",
+   "from": "sarvam-105b"
+  },
+  "Vedamurthi Sri Vasudeva Asranna<small>Hereditary Archaka, Kateel Sri Durgaparameshwari Temple</small>": {
+   "kn": "ವೇದಮೂರ್ತಿ ಶ್ರೀ ವಾಸುದೇವ ಆಸ್ರಣ್ಣ<small>ಆನುವಂಶಿಕ ಅರ್ಚಕರು, ಕಟೀಲು ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ದೇವಸ್ಥಾನ</small>",
+   "from": "sarvam-105b"
+  },
+  "Vedamurthi Sri Lakshmi Narayana Asranna<small>Hereditary Archaka, Kateel Sri Durgaparameshwari Temple</small>": {
+   "kn": "ವೇದಮೂರ್ತಿ ಶ್ರೀ ಲಕ್ಷ್ಮಿ ನಾರಾಯಣ ಆಸ್ರಣ್ಣ<small>ಆನುವಂಶಿಕ ಅರ್ಚಕರು, ಕಟೀಲು ಶ್ರೀ ದುರ್ಗಾಪರಮೇಶ್ವರಿ ದೇವಸ್ಥಾನ</small>",
+   "from": "sarvam-105b"
+  },
+  "Hon Members": {
+   "kn": "ಗೌರವಾನ್ವಿತ ಸದಸ್ಯರು",
+   "from": "sarvam-105b"
+  },
+  "Sri Dr Mohan Alva<small>Alvas Education Foundation, Moodabidare</small>": {
+   "kn": "ಶ್ರೀ ಡಾ. ಮೋಹನ್ ಅಳ್ವ<small>ಅಳ್ವಸ್ ಎಜುಕೇಶನ್ ಫೌಂಡೇಶನ್, ಮೂಡುಬಿದಿರೆ</small>",
+   "from": "sarvam-105b"
+  },
+  "Sri Kuldeep M<small>Hereditary Managing Trustee, Puttige Mahatobhara Somanatheshwara Temple, Moodabidare</small>": {
+   "kn": "ಶ್ರೀ ಕುಲದೀಪ್ ಎಂ<small>ವಂಶಪಾರಂಪರ್ಯ ವ್ಯವಸ್ಥಾಪಕ ಟ್ರಸ್ಟಿ, ಪುತ್ತಿಗೆ ಮಹಾತೋಭಾರ ಸೋಮನಾಥೇಶ್ವರ ದೇವಸ್ಥಾನ, ಮೂಡುಬಿದಿರೆ</small>",
+   "from": "sarvam-105b"
+  },
+  "Dharmadarshi Sri Harikrishna Punarooru<small>Former President, Kannada Sahitya Parishat, Mulki</small>": {
+   "kn": "ಧರ್ಮದರ್ಶಿ ಶ್ರೀ ಹರಿಕೃಷ್ಣ ಪುನರೂರು<small>ಮಾಜಿ ಅಧ್ಯಕ್ಷರು, ಕನ್ನಡ ಸಾಹಿತ್ಯ ಪರಿಷತ್ತು, ಮುಲ್ಕಿ</small>",
+   "from": "sarvam-105b"
+  },
+  "Sri Pradeep Kumar Kalkura<small>Former President, Dakshina Kannada Sahitya Parishat, Kadri, Mangalore</small>": {
+   "kn": "ಶ್ರೀ ಪ್ರದೀಪ್ ಕುಮಾರ್ ಕಲ್ಕೂರ<small>ಮಾಜಿ ಅಧ್ಯಕ್ಷರು, ದಕ್ಷಿಣ ಕನ್ನಡ ಸಾಹಿತ್ಯ ಪರಿಷತ್ತು, ಕದ್ರಿ, ಮಂಗಳೂರು</small>",
+   "from": "sarvam-105b"
+  },
+  "Sri Bhuvanabhirama Udupa<small>Editor, Yugapurusha, Kinnigoli</small>": {
+   "kn": "ಶ್ರೀ ಭುವನಭೀರಮ ಉಡುಪ<small>ಸಂಪಾದಕರು, ಯುಗಪುರುಷ, ಕಿನ್ನಿಗೋಳಿ</small>",
+   "from": "sarvam-105b"
+  },
+  "Sri Raghavendra Achar<small>Hotel Shanti Bhavana, Bajpe</small>": {
+   "kn": "ಶ್ರೀ ರಾಘವೇಂದ್ರ ಆಚಾರ್<small>ಹೋಟೆಲ್ ಶಾಂತಿ ಭವನ, ಬಜಪೆ</small>",
+   "from": "sarvam-105b"
+  },
+  "Sri A S N Hebbar<small>Advocate, Kundapura</small>": {
+   "kn": "ಶ್ರೀ ಎ ಎಸ್ ಎನ್ ಹೆಬ್ಬಾರ್<small>ವಕೀಲರು, ಕುಂದಾಪುರ</small>",
+   "from": "sarvam-105b"
+  },
+  "Sri P Ramadas<small>ACE Manufacturing Systems, Bengaluru</small>": {
+   "kn": "ಶ್ರೀ ಪಿ ರಾಮದಾಸ್<small>ಎಸಿಇ ಮ್ಯಾನುಫ್ಯಾಕ್ಚರಿಂಗ್ ಸಿಸ್ಟಮ್ಸ್, ಬೆಂಗಳೂರು</small>",
+   "from": "sarvam-105b"
+  },
+  "Sri Sripathi Bhat<small>Industrialist, Moodabidare</small>": {
+   "kn": "ಶ್ರೀ ಶ್ರೀಪತಿ ಭಟ್<small>ಕೈಗಾರಿಕೋದ್ಯಮಿ, ಮೂಡುಬಿದಿರೆ</small>",
+   "from": "sarvam-105b"
+  },
+  "Sri Dattatreya Guru<small>Bengaluru</small>": {
+   "kn": "ಶ್ರೀ ದತ್ತಾತ್ರೇಯ ಗುರು<small>ಬೆಂಗಳೂರು</small>",
+   "from": "sarvam-105b"
+  },
+  "Sri Dr B S Kakkillaya<small>Prashanthi Nursing Home, Mandya</small>": {
+   "kn": "ಶ್ರೀ ಡಾ. ಬಿ ಎಸ್ ಕಾಕಿಲ್ಲಾಯ<small>ಶಾಂತಿ ನರ್ಸಿಂಗ್ ಹೋಮ್, ಮಂಡ್ಯ</small>",
+   "from": "sarvam-105b"
+  },
+  "Sri Ramaprasad<small>Hotel Udupi Garden, Kasaragod</small>": {
+   "kn": "ಶ್ರೀ ರಾಮಪ್ರಸಾದ್<small>ಹೋಟೆಲ್ ಉಡುಪಿ ಗಾರ್ಡನ್, ಕಾಸರಗೋಡು</small>",
+   "from": "sarvam-105b"
+  },
+  "Sri Yajna Narayan Kammaje<small>Sona Group, Bengaluru</small>": {
+   "kn": "ಶ್ರೀ ಯಜ್ಞ ನಾರಾಯಣ ಕಾಮ್ಮಜೆ<small>ಸೋನಾ ಗ್ರೂಪ್, ಬೆಂಗಳೂರು</small>",
+   "from": "sarvam-105b"
+  },
+  "Sri Sripathi Rao<small>Social Worker, Bengaluru</small>": {
+   "kn": "ಶ್ರೀ ಶ್ರೀಪತಿ ರಾವ್<small>ಸಮಾಜ ಸೇವಕರು, ಬೆಂಗಳೂರು</small>",
+   "from": "sarvam-105b"
+  },
+  "Sri Vasantha Bhat<small>Mangaluru</small>": {
+   "kn": "ಶ್ರೀ ವಸಂತ ಭಟ್<small>ಮಂಗಳೂರು</small>",
+   "from": "sarvam-105b"
+  },
+  "Sri Vadiraja Bhat<small>Managing Trustee, OSAAT, Bengaluru</small>": {
+   "kn": "ಶ್ರೀ ವಾದಿರಾಜ ಭಟ್<small>ವ್ಯವಸ್ಥಾಪಕ ಟ್ರಸ್ಟಿ, OSAAT, ಬೆಂಗಳೂರು</small>",
+   "from": "sarvam-105b"
+  },
+  "Sri Raghavendra Shastri<small>Sharavu Ganapathi Temple</small>": {
+   "kn": "ಶ್ರೀ ರಾಘವೇಂದ್ರ ಶಾಸ್ತ್ರಿ<small>ಶರವು ಗಣಪತಿ ದೇವಸ್ಥಾನ</small>",
+   "from": "sarvam-105b"
+  },
+  "Renovation Committee": {
+   "kn": "ಜೀರ್ಣೋದ್ಧಾರ ಸಮಿತಿ",
+   "from": "sarvam-105b"
+  },
+  "Sri N Venkataraja Bhat, Nellitheertha<small>Treasurer</small>": {
+   "kn": "ಶ್ರೀ ಎನ್ ವೆಂಕಟರಾಜ ಭಟ್, ನೆಲ್ಲಿತೀರ್ಥ<small>ಖಜಾಂಚಿ</small>",
+   "from": "sarvam-105b"
+  },
+  "Sri Yashwant K, Kapikad<small>Secretary</small>": {
+   "kn": "ಶ್ರೀ ಯಶವಂತ್ ಕೆ, ಕಪಿಪದ<small>ಕಾರ್ಯದರ್ಶಿ</small>",
+   "from": "sarvam-105b"
+  },
+  "Sri Prasanna Bhat Santrabailu": {
+   "kn": "ಶ್ರೀ ಪ್ರಸನ್ನ ಭಟ್ ಸಂತ್ರಾಬೈಲ್",
+   "from": "sarvam-105b"
+  },
+  "Sri Santosh Kumar Neerude": {
+   "kn": "ಶ್ರೀ ಸಂತೋಷ್ ಕುಮಾರ್ ನೀರುಡೆ",
+   "from": "sarvam-105b"
+  },
+  "Sri Ananda Kava Santrabailu": {
+   "kn": "ಶ್ರೀ ಆನಂದ ಕವ ಸಂತ್ರಾಬೈಲ್",
+   "from": "sarvam-105b"
+  },
+  "Srimati Latamma Nellitheertha": {
+   "kn": "ಶ್ರೀಮತಿ ಲತಮ್ಮ ನೆಲ್ಲಿತೀರ್ಥ",
+   "from": "sarvam-105b"
+  },
+  "Sri Deep Kiran Saliyan Karambaru": {
+   "kn": "ಶ್ರೀ ದೀಪ ಕಿರಣ್ ಸಾಲಿಯಾನ್ ಕಂಬಾರೂರು",
+   "from": "sarvam-105b"
+  },
+  "Sri N V Gopala Krishna Bhat Nellitheertha": {
+   "kn": "ಶ್ರೀ ಎನ್ ವಿ ಗೋಪಾಲ ಕೃಷ್ಣ ಭಟ್ ನೆಲ್ಲಿತೀರ್ಥ",
+   "from": "sarvam-105b"
+  },
+  "Sri Hariprasad Nellitheertha": {
+   "kn": "ಶ್ರೀ ಹರಿಪ್ರಸಾದ್ ನೆಲ್ಲಿತೀರ್ಥ",
+   "from": "sarvam-105b"
+  },
+  "Sri Satyaprasad Shibaraya Santrabailu": {
+   "kn": "ಶ್ರೀ ಸತ್ಯಪ್ರಸಾದ್ ಶಿವರಾಯ ಸಂತ್ರಬೈಲು",
+   "from": "sarvam-105b"
+  },
+  "Sri Jayasheela Kotiyan Neerude": {
+   "kn": "ಶ್ರೀ ಜಯಶೀಲಾ ಕೊಟಿyan ನೀರುಡೆ",
+   "from": "sarvam-105b"
+  },
+  "Sri Janardana Gowda Kompadavu": {
+   "kn": "ಶ್ರೀ ಜನಾರ್ದನ ಗೌಡ ಕೊಂಪದವು",
+   "from": "sarvam-105b"
+  },
+  "Sri Hariprakash Nellitheertha": {
+   "kn": "ಶ್ರೀ ಹರಿಪ್ರಕಾಶ್ ನೆಲ್ಲಿತೀರ್ಥ",
+   "from": "sarvam-105b"
+  },
+  "Sri Purandara Shetty Santrabailu": {
+   "kn": "ಶ್ರೀ ಪುರಂದರ ಶೆಟ್ಟಿ ಸಂತ್ರಬೈಲು",
+   "from": "sarvam-105b"
+  },
+  "Sri Bhoja Karkera Nellitheertha": {
+   "kn": "ಶ್ರೀ ಭೋಜ ಕಾರ್ಕೇರ ನೆಲ್ಲಿತೀರ್ಥ",
+   "from": "sarvam-105b"
+  },
+  "Advisory Committee": {
+   "kn": "ಸಲಹಾ ಸಮಿತಿ",
+   "from": "sarvam-105b"
+  },
+  "Sri Santosh Kumar Hegde Muchur": {
+   "kn": "ಶ್ರೀ ಸಂತೋಷ್ ಕುಮಾರ್ ಹೆಗ್ಡೆ ಮುಚೂರು",
+   "from": "sarvam-105b"
+  },
+  "Sri Jagannatha Kotian Kompadavu": {
+   "kn": "ಶ್ರೀ ಜಗನ್ನಾಥ ಕೋಟಿಯನ್ ಕೊಂಪದವು",
+   "from": "sarvam-105b"
+  },
+  "Sri Janardana Gowda Kana Muchur": {
+   "kn": "ಶ್ರೀ ಜನಾರ್ದನ ಗೌಡ ಕಣ ಮುಚೂರು",
+   "from": "sarvam-105b"
+  },
+  "Sri Krishna Prasad Omkara Katte": {
+   "kn": "ಶ್ರೀ ಕೃಷ್ಣ ಪ್ರಸಾದ್ ಓಂಕಾರ್ ಕಟ್ಟೆ",
+   "from": "sarvam-105b"
+  },
+  "Sri Surendra Kava Kompadavu": {
+   "kn": "ಶ್ರೀ ಸುರೇಂದ್ರ ಕಾವ ಕೊಂಪದವು",
+   "from": "sarvam-105b"
+  },
+  "Sri Ramachandra Kava Santrabailu": {
+   "kn": "ಶ್ರೀ ರಾಮಚಂದ್ರ ಕಾವ ಸಂತ್ರಾಬೈಲ್",
+   "from": "sarvam-105b"
+  },
+  "Sri Sadashiva Shetty Mura": {
+   "kn": "ಶ್ರೀ ಸದಾಶಿವ ಶೆಟ್ಟಿ ಮುರ",
+   "from": "sarvam-105b"
+  },
+  "Sri Gangadhara Shetty Santrabailu": {
+   "kn": "ಶ್ರೀ ಗಂಗಾಧರ ಶೆಟ್ಟಿ ಸಂತ್ರಾಬೈಲ್",
+   "from": "sarvam-105b"
+  },
+  "Sri Krishna Amin Perara": {
+   "kn": "ಶ್ರೀ ಕೃಷ್ಣ ಅಮೀನ್ ಪೆರಾರ",
+   "from": "sarvam-105b"
+  },
+  "Sri Satish Bandale": {
+   "kn": "ಶ್ರೀ ಸತೀಶ್ ಬಂದಳೆ",
+   "from": "sarvam-105b"
+  },
+  "Sri Yadava Kotian Permude": {
+   "kn": "ಶ್ರೀ ಯಾದವ ಕೋಟಿಯನ್ ಪರ್ಮೂಡು",
+   "from": "sarvam-105b"
+  },
+  "Sri Ratnakara Shetty Yekkar": {
+   "kn": "ಶ್ರೀ ರತ್ನಾಕರ ಶೆಟ್ಟಿ ಯೆಕ್ಕಾರ್",
+   "from": "sarvam-105b"
+  },
+  "Sri Monappa Shetty Yekkar": {
+   "kn": "ಶ್ರೀ ಮೋನಪ್ಪ ಶೆಟ್ಟಿ ಯೆಕ್ಕಾರ್",
+   "from": "sarvam-105b"
+  },
+  "Sri Nitin Kava Yekkar": {
+   "kn": "ಶ್ರೀ ನಿತಿನ್ ಕಾವ ಯೆಕ್ಕಾರ್",
+   "from": "sarvam-105b"
+  },
+  "Sri Muktananda Shetty Muchur": {
+   "kn": "ಶ್ರೀ ಮುಕ್ತಾನಂದ ಶೆಟ್ಟಿ ಮುಚೂರ್",
+   "from": "sarvam-105b"
+  },
+  "Sri Shyam Shetty Yekkar": {
+   "kn": "ಶ್ರೀ ಶ್ಯಾಮ್ ಶೆಟ್ಟಿ ಯೆಕ್ಕಾರ್",
+   "from": "sarvam-105b"
+  },
+  "Sri Divakara Poojari Yekkar": {
+   "kn": "ಶ್ರೀ ದಿವಾಕರ ಪೂಜಾರಿ ಯೆಕ್ಕಾರ್",
+   "from": "sarvam-105b"
+  },
+  "Sri Narasimha Shetty Muchur": {
+   "kn": "ಶ್ರೀ ನರಸಿಂಹ ಶೆಟ್ಟಿ ಮುಚೂರ್",
+   "from": "sarvam-105b"
+  },
+  "Sri Vidyadhara Hegde Muchur": {
+   "kn": "ಶ್ರೀ ವಿದ್ಯಧರ ಹೆಗಡೆ ಮುಚೂರ್",
+   "from": "sarvam-105b"
+  },
+  "Sri Appu Gowda Gurikara Kompadavu Belli Bettuguttu": {
+   "kn": "ಶ್ರೀ ಅಪ್ಪು ಗೌಡ ಗುರಿಕಾರ ಕೊಂಪದವು ಬೆಳ್ಳಿ ಬೆಟ್ಟುಗುಟ್ಟು",
+   "from": "sarvam-105b"
+  },
+  "Sri Jagannatha Chowta Manja Muchur": {
+   "kn": "ಶ್ರೀ ಜಗನ್ನಾಥ ಚೌಟ ಮಂಜ ಮುಚೂರ್",
+   "from": "sarvam-105b"
+  },
+  "Sri Dayananda Shetty Kaidumaru Guttu Muchur": {
+   "kn": "ಶ್ರೀ ದಯಾನಂದ ಶೆಟ್ಟಿ ಕೈದೂರುಗುಟ್ಟು ಮುಚೂರ್",
+   "from": "sarvam-105b"
+  },
+  "Sri Hemanatha Shetty Kathelsar": {
+   "kn": "ಶ್ರೀ ಹೇಮನಾಥ ಶೆಟ್ಟಿ ಕಟೀಲುಸರ್",
+   "from": "sarvam-105b"
+  },
+  "Special Advisors": {
+   "kn": "ವಿಶೇಷ ಸಲಹೆಗಾರರು",
+   "from": "sarvam-105b"
+  },
+  "Vedamurthi Sri Nellitheertha Srinivasa Bhat": {
+   "kn": "ವೇದಮೂರ್ತಿ ಶ್ರೀ ನೆಲ್ಲಿತೀರ್ಥ ಶ್ರೀನಿವಾಸ ಭಟ್",
+   "from": "sarvam-105b"
+  },
+  "Vedamurthi Sri Vasanta Bhat Nellitheertha": {
+   "kn": "ವೇदमೂರ್ತಿ ಶ್ರೀ ವಸಂತ ಭಟ್ ನೆಲ್ಲಿತೀರ್ಥ",
+   "from": "sarvam-105b"
+  },
+  "Vedamurthi Sri Prashant Aithal, Kompadavu Sri Vishnumurthi Temple": {
+   "kn": "ವೇदमೂರ್ತಿ ಶ್ರೀ ಪ್ರಶಾಂತ್ ಐತಾಳ್, ಕೊಂಪದವು ಶ್ರೀ ವಿಷ್ಣುಮೂರ್ತಿ ದೇವಸ್ಥಾನ",
+   "from": "sarvam-105b"
+  },
+  "Sri Ganapati Bhat, Archakaru, Somanatheshwara Temple, Nellitheertha": {
+   "kn": "ಶ್ರೀ ಗಣಪತಿ ಭಟ್, ಅರ್ಚಕರು, ಸೋಮನಾಥೇಶ್ವರ ದೇವಾಲಯ, ನೆಲ್ಲಿತೀರ್ಥ",
+   "from": "sarvam-105b"
+  },
+  "Sri G Rajendra, Shakti Daily, Madikeri": {
+   "kn": "ಶ್ರೀ ಜಿ ರಾಜೇಂದ್ರ, ಶಕ್ತಿ ಡೈಲಿ, ಮಡಿಕೇರಿ",
+   "from": "sarvam-105b"
+  },
+  "Sri Vaidyanathan, ANZ IT, Bengaluru": {
+   "kn": "ಶ್ರೀ ವೈದ್ಯನಾಥನ್, ANZ IT, ಬೆಂಗಳೂರು",
+   "from": "sarvam-105b"
+  },
+  "Sri N V Sripathi Bhat, Bengaluru": {
+   "kn": "ಶ್ರೀ ಎನ್ ವಿ ಶ್ರೀಪತಿ ಭಟ್, ಬೆಂಗಳೂರು",
+   "from": "sarvam-105b"
+  },
+  "Sri N V Ramesh Bhat, Parupattegararu, Ramanathapura Subramanya Temple": {
+   "kn": "ಶ್ರೀ ಎನ್ ವಿ ರಮೇಶ್ ಭಟ್, ಪರಪಟ್ಟೆಗಾರು, ರಾಮನಾಥಪುರ ಸುಬ್ರಹ್ಮಣ್ಯ ದೇವಾಲಯ",
+   "from": "sarvam-105b"
+  },
+  "Sri N V Umesh Bhat, Bengaluru": {
+   "kn": "ಶ್ರೀ ಎನ್ ವಿ ಉಮೇಶ್ ಭಟ್, ಬೆಂಗಳೂರು",
+   "from": "sarvam-105b"
+  },
+  "Sri N V Krishna Bhat, Bengaluru": {
+   "kn": "ಶ್ರೀ ಎನ್ ವಿ ಕೃಷ್ಣ ಭಟ್, ಬೆಂಗಳೂರು",
+   "from": "sarvam-105b"
+  },
+  "Sri Ranganatha Rao, Bengaluru": {
+   "kn": "ಶ್ರೀ ರಂಗನಾಥ ರಾವ್, ಬೆಂಗಳೂರು",
+   "from": "sarvam-105b"
+  },
+  "Sri Dr N S Vadish Bhat, Mangaluru": {
+   "kn": "ಶ್ರೀ ಡಾ. ಎನ್ ಎಸ್ ವದೀಶ್ ಭಟ್, ಮಂಗಳೂರು",
+   "from": "sarvam-105b"
+  },
+  "Sri N V Guruprasad, Bengaluru": {
+   "kn": "ಶ್ರೀ ಎನ್ ವಿ ಗುರುಪ್ರಸಾದ್, ಬೆಂಗಳೂರು",
+   "from": "sarvam-105b"
+  },
+  "Sri N G Hemanth Nellitheertha, Bengaluru": {
+   "kn": "ಶ್ರೀ ಎನ್. ಜಿ. ಹೇಮಂತ್ ನೆಲ್ಲಿತೀರ್ಥ, ಬೆಂಗಳೂರು",
+   "from": "sarvam-105b"
+  },
+  "Sri N S Vasudev Bhat, Bengaluru": {
+   "kn": "ಶ್ರೀ ಎನ್. ಎಸ್. ವಾಸುದೇವ ಭಟ್, ಬೆಂಗಳೂರು",
+   "from": "sarvam-105b"
+  },
+  "Sri N S Arunkumar Bhat, Bengaluru": {
+   "kn": "ಶ್ರೀ ಎನ್. ಎಸ್. ಅರುಣ್‍ಕುಮಾರ್ ಭಟ್, ಬೆಂಗಳೂರು",
+   "from": "sarvam-105b"
+  },
+  "Sri Airesh Bhat, Bengaluru": {
+   "kn": "ಶ್ರೀ ಐರೇಷ್ ಭಟ್, ಬೆಂಗಳೂರು",
+   "from": "sarvam-105b"
+  },
+  "The Archakas, Tantris and Villagers of Nellitheertha": {
+   "kn": "ನೆಲ್ಲಿತೀರ್ಥದ ಅರ್ಚಕರು, ತಂತ್ರಿಗಳು ಮತ್ತು ಗ್ರಾಮಸ್ಥರು",
+   "from": "sarvam-105b"
+  },
+  "Committee Members": {
+   "kn": "ಸಮಿತಿ ಸದಸ್ಯರು",
+   "from": "sarvam-105b"
+  },
+  "Next: Brahmakalasha 2026": {
+   "kn": "ಮುಂದೆ: ಬ್ರಹ್ಮಕಲಶ 2026",
+   "from": "sarvam-105b"
+  },
+  "BRAHMAKALASHA 2026": {
+   "kn": "ಬ್ರಹ್ಮಕಲಶ 2026",
+   "from": "sarvam-105b"
+  },
+  "Committees and supporters": {
+   "kn": "ಸಮಿತಿ ಮತ್ತು ಬೆಂಬಲಿಗರು",
+   "from": "sarvam-105b"
+  },
+  "The invitation": {
+   "kn": "ಆಮಂತ್ರಣ",
+   "from": "sarvam-105b"
+  },
+  "Pay with a UPI app": {
+   "kn": "ಯುಪಿಐ (UPI) ಆಪ್ ಮೂಲಕ ಪಾವತಿಸಿ",
+   "from": "sarvam-105b"
+  },
+  "The cave is open only between October and April.": {
+   "kn": "ಗುಹೆಯು ಅಕ್ಟೋಬರ್ ಮತ್ತು ಏಪ್ರಿಲ್ ನಡುವೆ ಮಾತ್ರ ತೆರೆದಿರುತ್ತದೆ.",
+   "from": "sarvam-105b"
+  },
+  "Maharshi Jabali": {
+   "kn": "ಮಹರ್ಷಿ ಜಾಬಾಲಿ",
+   "from": "sarvam-105b"
+  },
+  "The Linga in the sanctum, December 2023": {
+   "kn": "ಗರ್ಭಗುಡಿಯ ಲಿಂಗ, ಡಿಸೆಂಬರ್ 2023",
+   "from": "sarvam-105b"
+  },
+  "Mahaganapati, January 2023": {
+   "kn": "ಮಹಾಗಣಪತಿ, ಜನವರಿ 2023",
+   "from": "sarvam-105b"
+  },
+  "Alankara, December 2023": {
+   "kn": "ಅಲಂಕಾರ, ಡಿಸೆಂಬರ್ 2023",
+   "from": "sarvam-105b"
+  },
+  "ABOUT THE TEMPLE": {
+   "kn": "ದೇವಾಲಯದ ಬಗ್ಗೆ",
+   "from": "sarvam-105b"
+  },
+  "Around the temple": {
+   "kn": "ದೇವಾಲಯದ ಸುತ್ತ",
+   "from": "sarvam-105b"
+  },
+  "Deities": {
+   "kn": "ದೇವತೆಗಳು",
+   "from": "sarvam-105b, corrected by hand: it gave ದೈವಗಳು (the bhootas)"
+  },
+  "PLAN YOUR VISIT": {
+   "kn": "ನಿಮ್ಮ ಭೇಟಿಯನ್ನು ಯೋಜಿಸಿ",
+   "from": "sarvam-105b"
+  },
+  "Open in Maps": {
+   "kn": "ಮ್ಯಾಪ್ಸ್‌ನಲ್ಲಿ ತೆರೆಯಿರಿ",
+   "from": "sarvam-105b"
+  },
+  "20 TO 30 DECEMBER 2026": {
+   "kn": "20 ರಿಂದ 30 ಡಿಸೆಂಬರ್ 2026",
+   "from": "sarvam-105b"
+  },
+  "Ashtabandha Brahmakalashabhisheka, Sakruth Pavitra Naga Brahma Mandalotsava and Varshavadhi Jatre at Sri Kshetra Nellitheertha.": {
+   "kn": "ಶ್ರೀ ಕ್ಷೇತ್ರ ನೆಲ್ಲಿತೀರ್ಥದಲ್ಲಿ ಅಷ್ಟಬಂಧ ಬ್ರಹ್ಮಕಲಶಾಭಿಷೇಕ, ಸಕೃತ್ಪವಿತ್ರ ನಾಗಬ್ರಹ್ಮ ಮಂಡಲೋತ್ಸವ ಮತ್ತು ವರ್ಷಾವಧಿ ಜಾತ್ರೆ.",
+   "from": "sarvam-105b"
+  },
+  "Brahmakalashabhisheka": {
+   "kn": "ಬ್ರಹ್ಮಕಲಶಾಭಿಷೇಕ",
+   "from": "sarvam-105b"
+  },
+  "Friday 25 December 2026, 10:20 AM, in Kumbha Lagna": {
+   "kn": "ಶುಕ್ರವಾರ 25 ಡಿಸೆಂಬರ್ 2026, ಬೆಳಗ್ಗೆ 10:20 ಕ್ಕೆ, ಕುಂಭ ಲಗ್ನದಲ್ಲಿ",
+   "from": "sarvam-105b"
+  },
+  "Nagabrahma Mandalotsava": {
+   "kn": "ನಾಗಬ್ರಹ್ಮ ಮಂಡಲೋತ್ಸವ",
+   "from": "sarvam-105b"
+  },
+  "The night of Friday 25 December": {
+   "kn": "ಶುಕ್ರವಾರ 25 ಡಿಸೆಂಬರ್‌ನ ರಾತ್ರಿ",
+   "from": "sarvam-105b"
+  },
+  "Varshavadhi Jatre": {
+   "kn": "ವರ್ಷಾವಧಿ ಜಾತ್ರೆ",
+   "from": "sarvam-105b"
+  },
+  "25 to 30 December": {
+   "kn": "25 ರಿಂದ 30 ಡಿಸೆಂಬರ್",
+   "from": "sarvam-105b"
+  },
+  "The invitation (PDF, 23 pages)": {
+   "kn": "ಆಮಂತ್ರಣ (PDF, 23 ಪುಟಗಳು)",
+   "from": "sarvam-105b"
+  },
+  "Poster": {
+   "kn": "ಪೋಸ್ಟರ್",
+   "from": "sarvam-105b"
+  },
+  "Poster 1": {
+   "kn": "ಪೋಸ್ಟರ್ 1",
+   "from": "sarvam-105b"
+  },
+  "Poster 2": {
+   "kn": "ಪೋಸ್ಟರ್ 2",
+   "from": "sarvam-105b"
+  },
+  "Next: The temple": {
+   "kn": "ಮುಂದಿನದು: ದೇವಾಲಯ",
+   "from": "sarvam-105b"
+  },
+  "The full invitation (PDF, 23 pages)": {
+   "kn": "ಪೂರ್ಣ ಆಮಂತ್ರಣ (PDF, 23 ಪುಟಗಳು)",
+   "from": "sarvam-105b"
+  },
+  "Next: Committees and supporters": {
+   "kn": "ಮುಂದೆ: ಸಮಿತಿಗಳು ಮತ್ತು ಬೆಂಬಲಿಗರು",
+   "from": "sarvam-105b"
+  },
+  "THE CAVE TEMPLE": {
+   "kn": "ಗುಹಾಲಯ",
+   "from": "sarvam-105b"
+  },
+  "The cave as it is today. This picture was made with AI from a video frame of the cave.": {
+   "kn": "ಇಂದು ಗುಹೆ ಹೇಗಿದೆ. ಗುಹೆಯ ವಿಡಿಯೋ ಫ್ರೇಮ್‌ನಿಂದ AI ಮೂಲಕ ಈ ಚಿತ್ರವನ್ನು ರಚಿಸಲಾಗಿದೆ.",
+   "from": "sarvam-105b"
+  },
+  "Inside the cave": {
+   "kn": "ಗುಹೆಯ ಒಳಗೆ",
+   "from": "sarvam-105b"
+  },
+  "The main attraction of the temple is the cave. Situated right at the entrance of the temple towards the left of the main door, this huge cave is one of nature’s wonders. Unspoilt by human indulgence, the cave is a nature lover’s delight. A visit to the inside of the cave is considered a sacred and spiritual experience by devotees. The entrance to the cave is huge and wide. Within a few feet, the trail narrows down and one is forced to bend and crawl forward. Subsequently, one has to fall flat on the tummy and crawl ahead. Finally, after about 300 to 400 metres, the cave widens again and we find a huge lake in there. There is a natural Shiva Lingam in front of the lake and devotees pray and worship the lingam.": {
+   "kn": "ದೇವಾಲಯದ ಮುಖ್ಯ ಆಕರ್ಷಣೆ ಗುಹೆ. ಮುಖ್ಯ ದ್ವಾರದ ಎಡಭಾಗದಲ್ಲಿರುವ ಗುಹೆಯು ಪ್ರಕೃತಿಯ ಅದ್ಭುತಗಳಲ್ಲಿ ಒಂದಾಗಿದೆ. ಮಾನವನ ಹಸ್ತಕ್ಷೇಪವಿಲ್ಲದೆ ಹಾಗೆಯೇ ಉಳಿದಿರುವ ಈ ಗುಹೆಯು ಪ್ರಕೃತಿ ಪ್ರೇಮಿಗಳ ಪಾಲಿಗೆ ಹೇಳಿ ಮಾಡಿಸಿದಂತಿದೆ. ಗುಹೆಯ ಒಳಭಾಗಕ್ಕೆ ಭೇಟಿ ನೀಡುವುದು ಭಕ್ತರಿಗೆ ಪವಿತ್ರ ಮತ್ತು ಆಧ್ಯಾತ್ಮಿಕ ಅನುಭವವಾಗಿದೆ. ಗುಹೆಯ ಪ್ರವೇಶದ್ವಾರವು ತುಂಬಾ ದೊಡ್ಡದಾಗಿದೆ ಮತ್ತು ಅಗಲವಾಗಿದೆ. ಕೆಲವು ಅಡಿಗಳ ಒಳಗೆ, ದಾರಿಯು ಕಿರಿದಾಗುತ್ತದೆ ಮತ್ತು ಬಗ್ಗಿ ತೆವಳಿಕೊಂಡು ಹೋಗಬೇಕಾಗುತ್ತದೆ. ತರುವಾಯ, ಹೊಟ್ಟೆಯ ಮೇಲೆ ಮಲಗಿ ತೆವಳಿಕೊಂಡು ಮುಂದೆ ಹೋಗಬೇಕು. ಅಂತಿಮವಾಗಿ, ಸುಮಾರು 300 ರಿಂದ 400 ಮೀಟರ್ ನಂತರ, ಗುಹೆಯು ಮತ್ತೆ ಅಗಲವಾಗುತ್ತದೆ ಮತ್ತು ಅಲ್ಲಿ ಒಂದು ದೊಡ್ಡ ಸರೋವರವನ್ನು ನಾವು ಕಾಣುತ್ತೇವೆ. ಸರೋವರದ ಮುಂದೆ ನೈಸರ್ಗಿಕ ಶಿವಲಿಂಗವಿದೆ ಮತ್ತು ಭಕ್ತರು ಲಿಂಗವನ್ನು ಪೂಜಿಸುತ್ತಾರೆ.",
+   "from": "sarvam-105b"
+  },
+  "The most amazing part of the cave is the fine quality of the mud available inside. It is said that the mud here has healing powers and is treated as prasadam by devotees. Right behind the Shiva Lingam, a second cave starts off. Not many people have ventured into this second cave till date. A few who have gone ahead vouch for the extreme terrain they have encountered. It surely will be challenging for the adventure lovers.": {
+   "kn": "ಗುಹೆಯ ಅತ್ಯಂತ ಅದ್ಭುತವಾದ ಭಾಗವೆಂದರೆ ಒಳಗಿರುವ ಉತ್ತಮ ಗುಣಮಟ್ಟದ ಮಣ್ಣು. ಇಲ್ಲಿನ ಮಣ್ಣು ಗುಣಪಡಿಸುವ ಶಕ್ತಿಯನ್ನು ಹೊಂದಿದೆ ಎಂದು ಹೇಳಲಾಗುತ್ತದೆ ಮತ್ತು ಭಕ್ತರು ಇದನ್ನು ಪ್ರಸಾದವಾಗಿ ಪರಿಗಣಿಸುತ್ತಾರೆ. ಶಿವಲಿಂಗದ ಹಿಂದೆಯೇ, ಎರಡನೇ ಗುಹೆ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ. ಇಲ್ಲಿಯವರೆಗೆ ಹೆಚ್ಚಿನ ಜನರು ಈ ಎರಡನೇ ಗುಹೆಯೊಳಗೆ ಹೋಗಿಲ್ಲ. ಒಳಗೆ ಹೋದ ಕೆಲವರು ತಾವು ಎದುರಿಸಿದ ಅತ್ಯಂತ ಕಠಿಣವಾದ ಹಾದಿಯ ಬಗ್ಗೆ ಹೇಳುತ್ತಾರೆ. ಸಾಹಸ ಪ್ರಿಯರಿಗೆ ಇದು ಖಂಡಿತವಾಗಿಯೂ ಸವಾಲಾಗಿರುತ್ತದೆ.",
+   "from": "sarvam-105b"
+  },
+  "The name": {
+   "kn": "ಹೆಸರು",
+   "from": "sarvam-105b"
+  },
+  "The name Nellitheertha also has its etymological roots in the cave. Inside of the cave, drops of water, in the shape of amla (gooseberries) constantly keep dripping down. In fact, the lake is made up of these drops of water. Hence the name Nelli (Amla) Theertha (holy water).": {
+   "kn": "ನೆಲ್ಲಿತೀರ್ಥ ಎಂಬ ಹೆಸರಿಗೂ ಈ ಗುಹೆಯೊಂದಿಗೆ ವ್ಯುತ್ಪತ್ತಿಯ ಸಂಬಂಧವಿದೆ. ಗುಹೆಯ ಒಳಗೆ, ನೆಲ್ಲಿಕಾಯಿ (ಆಮ್ಲ) ಆಕಾರದಲ್ಲಿ ನೀರು ಹನಿಗಳು ನಿರಂತರವಾಗಿ ತೊಟ್ಟಿಕ್ಕುತ್ತಿರುತ್ತವೆ. ವಾಸ್ತವವಾಗಿ, ಈ ನೀರಿನ ಹನಿಗಳಿಂದಲೇ ಈ ಕೆರೆ ನಿರ್ಮಾಣವಾಗಿದೆ. ಆದ್ದರಿಂದಲೇ ಇದಕ್ಕೆ ನೆಲ್ಲಿ (ನೆಲ್ಲಿಕಾಯಿ) ತೀರ್ಥ (ಪವಿತ್ರ ಜಲ) ಎಂಬ ಹೆಸರು ಬಂದಿದೆ.",
+   "from": "sarvam-105b"
+  },
+  "October to April": {
+   "kn": "ಅಕ್ಟೋಬರ್‌ನಿಂದ ಏಪ್ರಿಲ್",
+   "from": "sarvam-105b"
+  },
+  "Another unique aspect of the cave is that it is closed for nearly 6 months a year. The cave is open only between October and April. Though there are religious reasons associated with this (it is said that the cave is open 6 months a year for humans and is meant for Gods and Rishis the remaining 6 months), the point is that the 6 month break each year helps the cave to “rejuvenate”. The water freshens up and the animals inside enjoy the lack of disturbance. Yes, there are plenty of animals inside the cave. Most common among them are snakes (of all varieties), scorpions, porcupines and thousands of bats. These are considered sacred and troubling or hurting the animals in any manner is strictly forbidden.": {
+   "kn": "ಗುಹೆಯ ಮತ್ತೊಂದು ವಿಶಿಷ್ಟ ಅಂಶವೆಂದರೆ ಅದು ವರ್ಷದಲ್ಲಿ ಸುಮಾರು 6 ತಿಂಗಳು ಮುಚ್ಚಲ್ಪಡುತ್ತದೆ. ಗುಹೆಯು ಅಕ್ಟೋಬರ್ ಮತ್ತು ಏಪ್ರಿಲ್ ನಡುವೆ ಮಾತ್ರ ತೆರೆದಿರುತ್ತದೆ. ಇದಕ್ಕೆ ಧಾರ್ಮಿಕ ಕಾರಣಗಳಿವೆ (ಗುಹೆಯು ವರ್ಷದಲ್ಲಿ 6 ತಿಂಗಳು ಮನುಷ್ಯರಿಗೆ ತೆರೆದಿರುತ್ತದೆ ಮತ್ತು ಉಳಿದ 6 ತಿಂಗಳು ದೇವರುಗಳು ಮತ್ತು ಋಷಿಗಳಿಗೆ ಮೀಸಲಾಗಿರುತ್ತದೆ ಎಂದು ಹೇಳಲಾಗುತ್ತದೆ), ಆದರೆ ಪ್ರತಿ ವರ್ಷ 6 ತಿಂಗಳ ವಿರಾಮವು ಗುಹೆಗೆ \"ಪುನಶ್ಚೇತನ\" ಮಾಡಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ ಎಂಬುದು ಮುಖ್ಯ ವಿಷಯ. ನೀರು ಶುದ್ಧವಾಗುತ್ತದೆ ಮತ್ತು ಒಳಗಿರುವ ಪ್ರಾಣಿಗಳು ತೊಂದರೆಯಿಲ್ಲದಿರುವುದನ್ನು ಆನಂದಿಸುತ್ತವೆ. ಹೌದು, ಗುಹೆಯೊಳಗೆ ಸಾಕಷ್ಟು ಪ್ರಾಣಿಗಳಿವೆ. ಅವುಗಳಲ್ಲಿ ಸಾಮಾನ್ಯವಾದವು ಹಾವುಗಳು (ಎಲ್ಲಾ ವಿಧಗಳು), ಚೇಳುಗಳು, ಮುಳ್ಳುಹಂದಿಗಳು ಮತ್ತು ಸಾವಿರಾರು ಬಾವಲಿಗಳು. ಇವುಗಳನ್ನು ಪವಿತ್ರವೆಂದು ಪರಿಗಣಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ತೊಂದರೆ ಉಂಟುಮಾಡುವುದು ಅಥವಾ ಯಾವುದೇ ರೀತಿಯಲ್ಲಿ ಪ್ರಾಣಿಗಳಿಗೆ ನೋವುಂಟು ಮಾಡುವುದು ಕಟ್ಟುನಿಟ್ಟಾಗಿ ನಿಷೇಧಿಸಲಾಗಿದೆ.",
+   "from": "sarvam-translate:v1"
+  },
+  "Legend also has it that Maharshi (Saint) Jabali used this cave as his abode. It is believed that Maharshi Jabali performed Tapas (penance) here to Lord Durgaparameshwari to request her to kill Arunasura (a demon). It is said that Sri Durga acceded to Jabali’s request and destroyed Arunasura at Kateel (another fabulous and famous temple town, very close to Nellitheertha). There is a spot inside the cave which is widely believed to be where Maharshi Jabali performed his Tapas.": {
+   "kn": "ಮಹರ್ಷಿ ಜಾಬಾಲಿಗಳು ಈ ಗುಹೆಯನ್ನು ತಮ್ಮ ವಾಸಸ್ಥಾನವಾಗಿ ಬಳಸುತ್ತಿದ್ದರು ಎಂಬ ಪ್ರತೀತಿಯೂ ಇದೆ. ಅರುಣಾಸುರ ಎಂಬ ರಾಕ್ಷಸನನ್ನು ಕೊಲ್ಲುವಂತೆ ದುರ್ಗಾ ಪರಮೇಶ್ವರಿಯನ್ನು ಬೇಡಿಕೊಳ್ಳಲು ಮಹರ್ಷಿ ಜಾಬಾಲಿಗಳು ಇಲ್ಲಿ ತಪಸ್ಸು ಮಾಡಿದರು ಎಂದು ನಂಬಲಾಗಿದೆ. ಶ್ರೀ ದುರ್ಗಾ ಜಾಬಾಲಿಗಳ ಕೋರಿಕೆಯನ್ನು ಮನ್ನಿಸಿ, ನೆಲ್ಲಿತೀರ್ಥಕ್ಕೆ ಬಹಳ ಹತ್ತಿರವಿರುವ ಮತ್ತೊಂದು ಅದ್ಭುತ ಮತ್ತು ಪ್ರಸಿದ್ಧ ದೇವಾಲಯದ ಪಟ್ಟಣವಾದ ಕಟೀಲುವಿನಲ್ಲಿ ಅರುಣಾಸುರನನ್ನು ಸಂಹರಿಸಿದರು ಎಂದು ಹೇಳಲಾಗುತ್ತದೆ. ಗುಹೆಯ ಒಳಗೆ ಮಹರ್ಷಿ ಜಾಬಾಲಿಗಳು ತಪಸ್ಸು ಮಾಡಿದ ಸ್ಥಳ ಎಂದು ವ್ಯಾಪಕವಾಗಿ ನಂಬಲಾದ ಒಂದು ತಾಣವಿದೆ.",
+   "from": "sarvam-105b"
+  },
+  "All devotees who want to enter the cave have to bathe in <a href=\"/temple/#nagappa-kere\">Nagappa Kere</a> first. <a href=\"/gallery/\">Photographs</a> of the temple are in the gallery.": {
+   "kn": "ಗುಹೆಯನ್ನು ಪ್ರವೇಶಿಸಲು ಬಯಸುವ ಎಲ್ಲಾ ಭಕ್ತರು ಮೊದಲು <a href=\"/temple/#nagappa-kere\">ನಾಗಪ್ಪ ಕೆರೆ</a> ದಲ್ಲಿ ಸ್ನಾನ ಮಾಡಬೇಕು. ದೇವಾಲಯದ <a href=\"/gallery/\">ಛಾಯಾಚಿತ್ರಗಳು</a> ಗ್ಯಾಲರಿಯಲ್ಲಿವೆ.",
+   "from": "sarvam-105b"
+  },
+  "Next: Sevas": {
+   "kn": "ಮುಂದಿನದು: ಸೇವೆಗಳು",
+   "from": "sarvam-105b"
+  },
+  "PHOTOGRAPHS": {
+   "kn": "ಛಾಯಾಚಿತ್ರಗಳು",
+   "from": "sarvam-105b"
+  },
+  "From the temple, 2023": {
+   "kn": "ದೇವಾಲಯದಿಂದ, 2023",
+   "from": "sarvam-105b"
+  },
+  "Alankara, January 2023": {
+   "kn": "ಅಲಂಕಾರ, ಜನವರಿ 2023",
+   "from": "sarvam-105b"
+  },
+  "Procession, January 2023": {
+   "kn": "ರಥೋತ್ಸವ, ಜನವರಿ 2023",
+   "from": "sarvam-105b"
+  },
+  "Pooja, December 2023": {
+   "kn": "ಪೂಜೆ, ಡಿಸೆಂಬರ್ 2023",
+   "from": "sarvam-105b"
+  },
+  "December 2023": {
+   "kn": "ಡಿಸೆಂಬರ್ 2023",
+   "from": "sarvam-105b"
+  },
+  "Bhoota Kola, January 2023": {
+   "kn": "ಭೂತಕೋಲ, ಜನವರಿ 2023",
+   "from": "sarvam-105b"
+  },
+  "Bhoota Kola, December 2023": {
+   "kn": "ಭೂತಕೋಲ, ಡಿಸೆಂಬರ್ 2023",
+   "from": "sarvam-105b"
+  },
+  "From the earlier website": {
+   "kn": "ಹಿಂದಿನ ವೆಬ್‌ಸೈಟ್‌ನಿಂದ",
+   "from": "sarvam-105b"
+  },
+  "These photographs were on the first nellitheertha.com website. Some are marked © K.B. Mallya.": {
+   "kn": "ಈ ಛಾಯಾಚಿತ್ರಗಳು ಮೊದಲ nellitheertha.com ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿದ್ದವು. ಕೆಲವಕ್ಕೆ © K.B. ಮಲ್ಯ ಎಂದು ಗುರುತಿಸಲಾಗಿದೆ.",
+   "from": "sarvam-105b"
+  },
+  "Next: How to reach": {
+   "kn": "ಮುಂದೆ: ತಲುಪುವುದು ಹೇಗೆ",
+   "from": "sarvam-105b"
+  },
+  "History and origin": {
+   "kn": "ಇತಿಹಾಸ ಮತ್ತು ಮೂಲ",
+   "from": "sarvam-105b"
+  },
+  "The holy place Nellitheertha and the temple have a long and glorious history. Although the first recorded material mentioning Nellitheertha dates back to 1487 AD, there is ample evidence available at the place to suggest that the temple existed much before that. At its glorious peak, there used to be daily festivities performed under the aegis of the ruler of Nellitheertha. From that grand state, the temple gradually declined and its existence itself was threatened towards the later part of the twentieth century. Since then, devotees and well wishers have got together to restore the temple to its previous grandeur.": {
+   "kn": "ಪವಿತ್ರ ಸ್ಥಳ ನೆಲ್ಲಿತೀರ್ಥ ಮತ್ತು ದೇವಾಲಯವು ಸುದೀರ್ಘ ಹಾಗೂ ಭವ್ಯ ಇತಿಹಾಸವನ್ನು ಹೊಂದಿದೆ. ನೆಲ್ಲಿತೀರ್ಥವನ್ನು ಉಲ್ಲೇಖಿಸುವ ಮೊದಲ ದಾಖಲಿತ ಆಧಾರವು ಕ್ರಿ.ಶ. 1487 ರದ್ದಾಗಿದ್ದರೂ, ಅದಕ್ಕಿಂತ ಮುಂಚೆಯೇ ಈ ದೇವಾಲಯವು ಅಸ್ತಿತ್ವದಲ್ಲಿತ್ತು ಎಂದು ಸೂಚಿಸಲು ಅಲ್ಲಿ ಸಾಕಷ್ಟು ಪುರಾವೆಗಳು ಲಭ್ಯವಿವೆ. ಇದರ ಭವ್ಯವಾದ ಉತ್ತುಂಗದ ಕಾಲದಲ್ಲಿ, ನೆಲ್ಲಿತೀರ್ಥದ ಆಡಳಿತಗಾರರ ಆಶ್ರಯದಲ್ಲಿ ಪ್ರತಿದಿನ ಉತ್ಸವಗಳು ನಡೆಯುತ್ತಿದ್ದವು. ಆ ಭವ್ಯವಾದ ಸ್ಥಿತಿಯಿಂದ, ದೇವಾಲಯವು ಕ್ರಮೇಣ ಕುಸಿಯಿತು ಮತ್ತು ಇಪ್ಪತ್ತನೇ ಶತಮಾನದ ಉತ್ತರಾರ್ಧದಲ್ಲಿ ಅದರ ಅಸ್ತಿತ್ವವೇ ಅಪಾಯಕ್ಕೆ ಸಿಲುಕಿತ್ತು. ಅಂದಿನಿಂದ, ಭಕ್ತರು ಮತ್ತು ಹಿತೈಷಿಗಳು ಒಟ್ಟಾಗಿ ಸೇರಿ ದೇವಾಲಯವನ್ನು ಅದರ ಹಿಂದಿನ ವೈಭವಕ್ಕೆ ಮರುಸ್ಥಾಪಿಸಿದ್ದಾರೆ.",
+   "from": "sarvam-105b"
+  },
+  "In the state of Karnataka and indeed in entire India, the South Kanara district occupies a unique place. The evergreen forests, amazing flora and fauna, the numerous temples and places of worship and monuments all make this district a huge attraction. The lifestyle of the people here exemplifies the concept of unity in diversity. For the people of Dakshina Kannada, art worship is a means of reaching the God and enriching the culture of the land. Naturally, therefore, one can observe the people seeing God in everything they do. Throughout the land, beautiful caves and lakes have become centers of spiritual and religious significance. Also, this land has given a multitude of scholars, artists, kings and other great contributors to the nation.": {
+   "kn": "ಕರ್ನಾಟಕ ರಾಜ್ಯದಲ್ಲಿ ಮತ್ತು ಇಡೀ ಭಾರತದಲ್ಲಿ ದಕ್ಷಿಣ ಕನ್ನಡ ಜಿಲ್ಲೆಯು ಒಂದು ವಿಶಿಷ್ಟ ಸ್ಥಾನವನ್ನು ಹೊಂದಿದೆ. ನಿತ್ಯಹರಿದ್ವರ್ಣ ಕಾಡುಗಳು, ಅದ್ಭುತವಾದ ಸಸ್ಯ ಮತ್ತು ಪ್ರಾಣಿ ಸಂಕುಲ, ಹಲವಾರು ದೇವಾಲಯಗಳು, ಪೂಜಾ ಸ್ಥಳಗಳು ಮತ್ತು ಸ್ಮಾರಕಗಳು ಈ ಜಿಲ್ಲೆಯನ್ನು ಒಂದು ದೊಡ್ಡ ಆಕರ್ಷಣೆಯನ್ನಾಗಿ ಮಾಡಿವೆ. ಇಲ್ಲಿನ ಜನರ ಜೀವನಶೈಲಿಯು 'ವೈವಿಧ್ಯತೆಯಲ್ಲಿ ಏಕತೆ' ಎಂಬ ಪರಿಕಲ್ಪನೆಗೆ ಸಾಕ್ಷಿಯಾಗಿದೆ. ದಕ್ಷಿಣ ಕನ್ನಡದ ಜನರಿಗೆ, ಕಲೆಯ ಆರಾಧನೆಯು ದೇವರನ್ನು ತಲುಪುವ ಮತ್ತು ನಾಡಿನ ಸಂಸ್ಕೃತಿಯನ್ನು ಶ್ರೀಮಂತಗೊಳಿಸುವ ಒಂದು ಸಾಧನವಾಗಿದೆ. ಸ್ವಾಭಾವಿಕವಾಗಿ, ಜನರು ತಾವು ಮಾಡುವ ಪ್ರತಿಯೊಂದು ಕೆಲಸದಲ್ಲೂ ದೇವರನ್ನು ಕಾಣುವುದನ್ನು ಇಲ್ಲಿ ಗಮನಿಸಬಹುದು. ಈ ನಾಡಿನಾದ್ಯಂತ, ಸುಂದರವಾದ ಗುಹೆಗಳು ಮತ್ತು ಕೆರೆಗಳು ಆಧ್ಯಾತ್ಮಿಕ ಮತ್ತು ಧಾರ್ಮಿಕ ಪ್ರಾಮುಖ್ಯತೆಯ ಕೇಂದ್ರಗಳಾಗಿವೆ. ಅಲ್ಲದೆ, ಈ ನಾಡು ದೇಶಕ್ಕೆ ಅನೇಕ ವಿದ್ವಾಂಸರು, ಕಲಾವಿದರು, ರಾಜರು ಮತ್ತು ಇತರ ಶ್ರೇಷ್ಠ ಸಾಧಕರನ್ನು ನೀಡಿದೆ.",
+   "from": "sarvam-105b"
+  },
+  "The Chowta family": {
+   "kn": "ಚೌಟ ಮನೆತನ",
+   "from": "sarvam-105b"
+  },
+  "Historically, the Nellitheertha region was under the administration of the Chowta family. The Chowtas are a famous name in Tulu Naadu and it is said that the temple flourished under their administration and was a major center for religious and cultural activities under their reign. Even today, the descendants of the Chowta clan take an active interest in the maintenance and development of the temple.": {
+   "kn": "ಐತಿಹಾಸಿಕವಾಗಿ, ನೆಲ್ಲಿತೀರ್ಥ ಪ್ರದೇಶವು ಚೌಟ ಮನೆತನದ ಆಡಳಿತಕ್ಕೆ ಒಳಪಟ್ಟಿತ್ತು. ಚೌಟರು ತುಳುನಾಡಿನಲ್ಲಿ ಒಂದು ಪ್ರಸಿದ್ಧ ಹೆಸರು. ಈ ದೇವಾಲಯವು ಅವರ ಆಡಳಿತದಲ್ಲಿ ಪ್ರವರ್ಧಮಾನಕ್ಕೆ ಬಂದಿತು ಮತ್ತು ಅವರ ಆಳ್ವಿಕೆಯಲ್ಲಿ ಧಾರ್ಮಿಕ ಮತ್ತು ಸಾಂಸ್ಕೃತಿಕ ಚಟುವಟಿಕೆಗಳ ಪ್ರಮುಖ ಕೇಂದ್ರವಾಗಿತ್ತು ಎಂದು ಹೇಳಲಾಗುತ್ತದೆ. ಇಂದಿಗೂ, ಚೌಟ ವಂಶಸ್ಥರು ದೇವಾಲಯದ ನಿರ್ವಹಣೆ ಮತ್ತು ಅಭಿವೃದ್ಧಿಯಲ್ಲಿ ಸಕ್ರಿಯ ಆಸಕ್ತಿಯನ್ನು ವಹಿಸುತ್ತಾರೆ.",
+   "from": "sarvam-105b"
+  },
+  "Jain influence": {
+   "kn": "ಜೈನ ಪ್ರಭಾವ",
+   "from": "sarvam-105b"
+  },
+  "There are some artifacts and archeological evidence available at the temple which point to a Jain interest and influence at the temple. These are evidence to suggest that the temple and the region was probably under the administration of Jain kings of the region.": {
+   "kn": "ದೇವಾಲಯದಲ್ಲಿ ಕೆಲವು ಕಲಾಕೃತಿಗಳು ಮತ್ತು ಪುರಾತತ್ವ ಆಧಾರಗಳು ಲಭ್ಯವಿದ್ದು, ಇವು ದೇವಾಲಯದಲ್ಲಿ ಜೈನರ ಆಸಕ್ತಿ ಮತ್ತು ಪ್ರಭಾವವನ್ನು ಸೂಚಿಸುತ್ತವೆ. ದೇವಾಲಯ ಮತ್ತು ಈ ಪ್ರದೇಶವು ಬಹುಶಃ ಆ ಭಾಗದ ಜೈನ ರಾಜರ ಆಡಳಿತದಲ್ಲಿತ್ತು ಎಂಬುದನ್ನು ಈ ಆಧಾರಗಳು ಸೂಚಿಸುತ್ತವೆ.",
+   "from": "sarvam-105b"
+  },
+  "<a href=\"/story/\">The birth of Nellitheertha</a>, the story of how the place came to be.": {
+   "kn": "<a href=\"/story/\">ನೆಲ್ಲಿತೀರ್ಥದ ಉಗಮ</a>, ಈ ಸ್ಥಳವು ಹೇಗೆ ರೂಪುಗೊಂಡಿತು ಎಂಬ ಕಥೆ.",
+   "from": "sarvam-105b"
+  },
+  "Next: The birth of Nellitheertha": {
+   "kn": "ಮುಂದಿನದು: ನೆಲ್ಲಿತೀರ್ಥದ ಉಗಮ",
+   "from": "sarvam-105b"
+  },
+  "Skip to the Brahmakalasha": {
+   "kn": "ಬ್ರಹ್ಮಕಲಶಕ್ಕೆ ಹೋಗು",
+   "from": "sarvam-105b"
+  },
+  "to the Brahmakalashabhisheka": {
+   "kn": "ಬ್ರಹ್ಮಕಲಶಾಭಿಷೇಕಕ್ಕೆ",
+   "from": "sarvam-105b"
+  },
+  "<time datetime=\"2026-12-25T10:20:00+05:30\">Friday 25 December 2026, 10:20 AM</time>, in Kumbha Lagna": {
+   "kn": "<time datetime=\"2026-12-25T10:20:00+05:30\">ಶುಕ್ರವಾರ 25 ಡಿಸೆಂಬರ್ 2026, ಬೆಳಗ್ಗೆ 10:20</time>, ಕುಂಭ ಲಗ್ನದಲ್ಲಿ",
+   "from": "sarvam-105b"
+  },
+  "Now": {
+   "kn": "ಈಗ",
+   "from": "sarvam-105b"
+  },
+  "Directions": {
+   "kn": "ದಾರಿಗಳು",
+   "from": "sarvam-105b"
+  },
+  "Call": {
+   "kn": "ಕರೆ ಮಾಡಿ",
+   "from": "sarvam-105b"
+  },
+  "THE CAVE IS OPEN": {
+   "kn": "ಗುಹೆಯು ತೆರೆದಿರುತ್ತದೆ",
+   "from": "sarvam-105b"
+  },
+  "The cave is open from October to April.": {
+   "kn": "ಅಕ್ಟೋಬರ್‌ನಿಂದ ಏಪ್ರಿಲ್‌ವರೆಗೆ ಗುಹೆಯು ತೆರೆದಿರುತ್ತದೆ.",
+   "from": "sarvam-105b"
+  },
+  "It opens on Tula Sankramana. It is said that the remaining months are meant for the gods and rishis.": {
+   "kn": "ಇದು ತುಲಾ ಸಂಕ್ರಮಣದಂದು ತೆರೆಯುತ್ತದೆ. ಉಳಿದ ತಿಂಗಳುಗಳು ದೇವರುಗಳು ಮತ್ತು ಋಷಿಗಳಿಗಾಗಿ ಮೀಸಲಾಗಿವೆ ಎಂದು ಹೇಳಲಾಗುತ್ತದೆ.",
+   "from": "sarvam-105b"
+  },
+  "Brahmakalasha 2026: 20 to 30 December": {
+   "kn": "ಬ್ರಹ್ಮಕಲಶ 2026: 20 ರಿಂದ 30 ಡಿಸೆಂಬರ್",
+   "from": "sarvam-105b"
+  },
+  "All days, 20 to 30 December": {
+   "kn": "ಎಲ್ಲಾ ದಿನಗಳು, 20 ರಿಂದ 30 ಡಿಸೆಂಬರ್",
+   "from": "sarvam-105b"
+  },
+  "The main deity is Sri Somanatheshwara (Shiva).": {
+   "kn": "ಮುಖ್ಯ ದೇವರು ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರ (ಶಿವ).",
+   "from": "sarvam-105b"
+  },
+  "The temple also has Mahaganapati and Jabali Maharshi as deities. The first record mentioning Nellitheertha dates back to 1487 AD.": {
+   "kn": "ಈ ಗುಹಾಲಯದಲ್ಲಿ ಮಹಾಗಣಪತಿ ಮತ್ತು ಜಾಬಾಲಿ ಮಹರ್ಷಿಯವರೂ ದೇವತೆಗಳಾಗಿ ನೆಲೆಸಿದ್ದಾರೆ. ನೆಲ್ಲಿತೀರ್ಥದ ಪ್ರಸ್ತಾಪವಿರುವ ಮೊಟ್ಟಮೊದಲ ದಾಖಲೆಯು ಕ್ರಿ.ಶ. 1487 ರದ್ದಾಗಿದೆ.",
+   "from": "sarvam-105b"
+  },
+  "01 · NAGAVANA": {
+   "kn": "01 · ನಾಗವನ",
+   "from": "sarvam-105b"
+  },
+  "In the temple’s story, this place was Nagavana, the snake forest.": {
+   "kn": "ಗುಹಾಲಯದ ಕಥೆಯ ಪ್ರಕಾರ, ಈ ಸ್ಥಳವು ನಾಗವನ, ಅಂದರೆ ಹಾವುಗಳ ಅರಣ್ಯವಾಗಿತ್ತು.",
+   "from": "sarvam-105b"
+  },
+  "Nellitheertha is about 8 km from Kateel.": {
+   "kn": "ನೆಲ್ಲಿತೀರ್ಥವು ಕಟೀಲಿನಿಂದ ಸುಮಾರು 8 ಕಿ.ಮೀ ದೂರದಲ್ಲಿದೆ.",
+   "from": "sarvam-105b"
+  },
+  "02 · NAGAPPA KERE": {
+   "kn": "02 · ನಾಗಪ್ಪ ಕೆರೆ",
+   "from": "sarvam-105b"
+  },
+  "Devotees bathe in Nagappa Kere before entering the cave.": {
+   "kn": "ಭಕ್ತರು ಗುಹಾಲಯವನ್ನು ಪ್ರವೇಶಿಸುವ ಮೊದಲು ನಾಗಪ್ಪ ಕೆರೆಯಲ್ಲಿ ಸ್ನಾನ ಮಾಡುತ್ತಾರೆ.",
+   "from": "sarvam-105b"
+  },
+  "A small natural pond to the north of the temple. Its water is at its best just after the monsoon, from October to December.": {
+   "kn": "ಗುಹಾಲಯದ ಉತ್ತರಕ್ಕೆ ಇರುವ ಒಂದು ಸಣ್ಣ ನೈಸರ್ಗಿಕ ಕೆರೆ. ಅಕ್ಟೋಬರ್‌ನಿಂದ ಡಿಸೆಂಬರ್‌ವರೆಗೆ, ಅಂದರೆ ಮುಂಗಾರಿನ ನಂತರ ಇದರ ನೀರು ಅತ್ಯುತ್ತಮವಾಗಿರುತ್ತದೆ.",
+   "from": "sarvam-105b"
+  },
+  "03 · THE CAVE": {
+   "kn": "03 · ಗುಹೆ",
+   "from": "sarvam-105b"
+  },
+  "The cave is to the left of the temple’s main door.": {
+   "kn": "ಗುಹೆಯು ಗುಹಾಲಯದ ಮುಖ್ಯ ಬಾಗಿಲಿನ ಎಡಭಾಗದಲ್ಲಿದೆ.",
+   "from": "sarvam-105b"
+  },
+  "Within a few feet the trail narrows. You bend and crawl, then crawl flat on your stomach.": {
+   "kn": "ಕೆಲವು ಅಡಿಗಳ ಅಂತರದಲ್ಲೇ ದಾರಿ ಕಿರಿದಾಗುತ್ತದೆ. ನೀವು ಬಗ್ಗಿ ತೆವಳಬೇಕು, ನಂತರ ಹೊಟ್ಟೆಯ ಮೇಲೆ ಮಲಗಿಕೊಂಡು ತೆವಳಬೇಕು.",
+   "from": "sarvam-105b"
+  },
+  "After about 300 to 400 metres the cave widens again, and there is a lake inside.": {
+   "kn": "ಸುಮಾರು 300 ರಿಂದ 400 ಮೀಟರ್ ನಂತರ ಗುಹೆಯು ಮತ್ತೆ ವಿಸ್ತಾರವಾಗುತ್ತದೆ, ಮತ್ತು ಒಳಗೆ ಒಂದು ಕೆರೆ ಇದೆ.",
+   "from": "sarvam-105b"
+  },
+  "04 · ANTAR GANGA": {
+   "kn": "04 · ಅಂತರ್ಗಂಗೆ",
+   "from": "sarvam-105b"
+  },
+  "Antar Ganga": {
+   "kn": "ಅಂತರ್ಗಂಗೆ",
+   "from": "sarvam-105b"
+  },
+  "Ganga, appearing from underground.": {
+   "kn": "ಭೂಗರ್ಭದಿಂದ ಹೊರಹೊಮ್ಮುವ ಗಂಗೆ.",
+   "from": "sarvam-105b"
+  },
+  "In the temple’s story, Ganga told Sage Jabali that South India could not handle the severity of her flow. She promised to appear here as Antar Ganga.": {
+   "kn": "ದೇವಾಲಯದ ಕಥೆಯ ಪ್ರಕಾರ, ತನ್ನ ಪ್ರವಾಹದ ತೀವ್ರತೆಯನ್ನು ದಕ್ಷಿಣ ಭಾರತವು ತಡೆದುಕೊಳ್ಳಲಾರದು ಎಂದು ಗಂಗೆ ಜಾಬಾಲಿ ಮಹರ್ಷಿಗಳಿಗೆ ತಿಳಿಸಿದಳು. ತಾನು ಇಲ್ಲಿ ಅಂತರ್ಗಂಗೆಯಾಗಿ ಕಾಣಿಸಿಕೊಳ್ಳುವುದಾಗಿ ಆಕೆ ಮಾತು ಕೊಟ್ಟಳು.",
+   "from": "sarvam-105b"
+  },
+  "Drops of water in the shape of nelli (amla) fall from the roof of the cave, and the lake is made up of these drops. Hence the name: Nelli Theertha.<br><a class=\"more\" href=\"story/\">The birth of Nellitheertha</a>": {
+   "kn": "ಗುಹೆಯ ಮೇಲ್ಛಾವಣಿಯಿಂದ ನೆಲ್ಲಿಯ (ಆಮಲಕ್ಕಿ) ಆಕಾರದಲ್ಲಿ ನೀರಿನ ಹನಿಗಳು ಬೀಳುತ್ತವೆ, ಮತ್ತು ಈ ಹನಿಗಳಿಂದಲೇ ಕೆರೆಯು ರೂಪುಗೊಂಡಿದೆ. ಆದ್ದರಿಂದಲೇ ಈ ಹೆಸರು: ನೆಲ್ಲಿತೀರ್ಥ.<br><a class=\"more\" href=\"story/\">ನೆಲ್ಲಿತೀರ್ಥದ ಉಗಮ</a>",
+   "from": "sarvam-105b"
+  },
+  "The sanctum, lit by oil lamps": {
+   "kn": "ಎಣ್ಣೆ ದೀಪಗಳಿಂದ ಬೆಳಗುತ್ತಿರುವ ಗರ್ಭಗುಡಿ",
+   "from": "sarvam-105b"
+  },
+  "05 · THE SANCTUM": {
+   "kn": "05 · ಗರ್ಭಗುಡಿ",
+   "from": "sarvam-105b"
+  },
+  "Sri Somanatheshwara": {
+   "kn": "ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರ",
+   "from": "sarvam-105b"
+  },
+  "The Linga is made of pure Saligrama, in the form of Ardhanareeshwara.": {
+   "kn": "ಲಿಂಗವು ಶುದ್ಧ ಸಾಲಿಗ್ರಾಮದಿಂದ ಮಾಡಲ್ಪಟ್ಟಿದ್ದು, ಅರ್ಧನಾರೀಶ್ವರ ರೂಪದಲ್ಲಿದೆ.",
+   "from": "sarvam-105b"
+  },
+  "The moon over the jaatre ground, December 2023": {
+   "kn": "ಜಾತ್ರಾ ಮೈದಾನದ ಮೇಲಿನ ಚಂದ್ರ, ಡಿಸೆಂಬರ್ 2023",
+   "from": "sarvam-105b"
+  },
+  "06 · THE BHOOTAS": {
+   "kn": "06 · ದೈವಗಳು",
+   "from": "sarvam-105b"
+  },
+  "Bhoota Kola": {
+   "kn": "ಭೂತಕೋಲ",
+   "from": "sarvam-105b"
+  },
+  "Bhootas are the ganas of Shiva; they administer the temple and the village. The main bhootas of Nellitheertha are <span class=\"ink-line\">Pili-Chamundi, Kshetrapala, Raktheshwari and Doomavathy</span>. The kola is held the day after the jaatre, from evening until dawn. The grandest is Pili-Chamundi’s.": {
+   "kn": "ದೈವಗಳು ಶಿವನ ಗಣಗಳಾಗಿವೆ; ಅವು ದೇವಾಲಯ ಮತ್ತು ಗ್ರಾಮವನ್ನು ನಿರ್ವಹಿಸುತ್ತವೆ. ನೆಲ್ಲಿತೀರ್ಥದ ಮುಖ್ಯ ದೈವಗಳೆಂದರೆ <span class=\"ink-line\">ಪಿಲಿಚಾಮುಂಡಿ, ಕ್ಷೇತ್ರಪಾಲ, ರಕ್ತೇಶ್ವರಿ ಮತ್ತು ಧೂಮಾವತಿ</span>. ಜಾತ್ರೆಯ ಮರುದಿನ ಸಂಜೆಯಿಂದ ಮುಂಜಾನೆಯವರೆಗೆ ಕೋಲ ನಡೆಯುತ್ತದೆ. ಇದರಲ್ಲಿ ಪಿಲಿಚಾಮುಂಡಿಯ ಕೋಲವು ಅತ್ಯಂತ ವಿಜೃಂಭಣೆಯಿಂದ ನಡೆಯುತ್ತದೆ.",
+   "from": "sarvam-105b"
+  },
+  "Pili-Chamundi": {
+   "kn": "ಪಿಲಿಚಾಮುಂಡಿ",
+   "from": "sarvam-105b"
+  },
+  "Photographs from the kola at Nellitheertha, December 2023.": {
+   "kn": "ನೆಲ್ಲಿತೀರ್ಥದಲ್ಲಿ ನಡೆದ ಕೋಲದ ಛಾಯಾಚಿತ್ರಗಳು, ಡಿಸೆಂಬರ್ 2023.",
+   "from": "sarvam-105b"
+  },
+  "Visiting Nellitheertha": {
+   "kn": "ನೆಲ್ಲಿತೀರ್ಥಕ್ಕೆ ಭೇಟಿ",
+   "from": "sarvam-105b"
+  },
+  "Sri Somanatheshwara Guhalaya, Neerude Post, Kompadavu Village, Mangaluru Taluk, D.K. District, Karnataka 574144": {
+   "kn": "ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರ ಗುಹಾಲಯ, ನೀರುಡೆ ಪೋಸ್ಟ್, ಕೊಂಪದವು ಗ್ರಾಮ, ಮಂಗಳೂರು ತಾಲೂಕು, ದಕ್ಷಿಣ ಕನ್ನಡ ಜಿಲ್ಲೆ, ಕರ್ನಾಟಕ 574144",
+   "from": "sarvam-105b"
+  },
+  "How to reach: four routes": {
+   "kn": "ಹೋಗುವ ದಾರಿ: ನಾಲ್ಕು ಮಾರ್ಗಗಳು",
+   "from": "sarvam-105b"
+  },
+  "<strong>October to April</strong>The cave is open to people during these months.": {
+   "kn": "<strong>ಅಕ್ಟೋಬರ್‌ನಿಂದ ಏಪ್ರಿಲ್‌ವರೆಗೆ</strong>ಈ ತಿಂಗಳುಗಳಲ್ಲಿ ಗುಹೆಯು ಭಕ್ತರಿಗೆ ತೆರೆದಿರುತ್ತದೆ.",
+   "from": "sarvam-105b"
+  },
+  "<strong>Bathe first</strong>Use Nagappa Kere before entering the cave.": {
+   "kn": "<strong>ಮೊದಲು ಸ್ನಾನ ಮಾಡಿ</strong>ಗುಹೆಯನ್ನು ಪ್ರವೇಶಿಸುವ ಮೊದಲು ನಾಗಪ್ಪ ಕೆರೆಯಲ್ಲಿ ಸ್ನಾನ ಮಾಡಿ.",
+   "from": "sarvam-105b"
+  },
+  "<strong>Open to all</strong>Anyone over five, of any caste, faith or gender, may enter.": {
+   "kn": "<strong>ಎಲ್ಲರಿಗೂ ಮುಕ್ತ</strong>ಐದಕ್ಕಿಂತ ಮೇಲ್ಪಟ್ಟ ಯಾರೇ ಆಗಲಿ, ಯಾವುದೇ ಜಾತಿ, ಧರ್ಮ ಅಥವಾ ಲಿಂಗದವರೇ ಆಗಲಿ, ಇಲ್ಲಿಗೆ ಬರಬಹುದು.",
+   "from": "sarvam-105b"
+  },
+  "<strong>A narrow passage</strong>Expect to bend and crawl on your stomach.": {
+   "kn": "<strong>ಕಿರಿದಾದ ದಾರಿ</strong>ನೀವು ಬಗ್ಗಿ, ಹೊಟ್ಟೆಯ ಮೇಲೆ ತೆವಳಿಕೊಂಡು ಹೋಗಬೇಕಾಗುತ್ತದೆ.",
+   "from": "sarvam-105b"
+  },
+  "CONTRIBUTE": {
+   "kn": "ದೇಣಿಗೆ ನೀಡಿ",
+   "from": "sarvam-105b"
+  },
+  "Donations for the Brahmakalasha can be deposited into this bank account, or paid by UPI.": {
+   "kn": "ಬ್ರಹ್ಮಕಲಶಕ್ಕಾಗಿ ದೇಣಿಗೆಗಳನ್ನು ಈ ಬ್ಯಾಂಕ್ ಖಾತೆಗೆ ಜಮೆ ಮಾಡಬಹುದು, ಅಥವಾ UPI ಮೂಲಕ ಪಾವತಿಸಬಹುದು.",
+   "from": "sarvam-105b"
+  },
+  "The UPI QR code": {
+   "kn": "UPI ಕ್ಯೂಆರ್ ಕೋಡ್",
+   "from": "sarvam-105b"
+  },
+  "The completed renovation (2024 appeal)": {
+   "kn": "ಪೂರ್ಣಗೊಂಡ ಜೀರ್ಣೋದ್ಧಾರ (2024ರ ಮನವಿ)",
+   "from": "sarvam-105b"
+  },
+  "Copy account number": {
+   "kn": "ಖಾತೆ ಸಂಖ್ಯೆಯನ್ನು ನಕಲಿಸಿ",
+   "from": "sarvam-105b"
+  },
+  "Please inform the details of your contribution by email to <a href=\"mailto:vbnellitheertha@yahoo.com\">vbnellitheertha@yahoo.com</a> or on WhatsApp to <a href=\"https://wa.me/918088708914\">+91 80887 08914</a>.": {
+   "kn": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಕೊಡುಗೆಯ ವಿವರಗಳನ್ನು <a href=\"mailto:vbnellitheertha@yahoo.com\">vbnellitheertha@yahoo.com</a> ಇಮೇಲ್ ಐ.ಡಿ ಗೆ ಅಥವಾ <a href=\"https://wa.me/918088708914\">+91 80887 08914</a> ವಾಟ್ಸಾಪ್ ಮೂಲಕ ತಿಳಿಸಿ.",
+   "from": "sarvam-105b"
+  },
+  "ABOUT NELLITHEERTHA": {
+   "kn": "ನೆಲ್ಲಿತೀರ್ಥದ ಬಗ್ಗೆ",
+   "from": "sarvam-105b"
+  },
+  "More about the temple": {
+   "kn": "ದೇವಾಲಯದ ಬಗ್ಗೆ ಹೆಚ್ಚಿನ ಮಾಹಿತಿ",
+   "from": "sarvam-105b"
+  },
+  "The programme for 20 to 30 December 2026, day by day": {
+   "kn": "2026ರ ಡಿಸೆಂಬರ್ 20 ರಿಂದ 30ರವರೆಗಿನ ಕಾರ್ಯಕ್ರಮ, ದಿನದಿಂದ ದಿನಕ್ಕೆ",
+   "from": "sarvam-105b"
+  },
+  "Deities, the bhootas and the places around the temple": {
+   "kn": "ದೇವತೆಗಳು, ದೈವಗಳು ಮತ್ತು ದೇವಾಲಯದ ಸುತ್ತಮುತ್ತಲಿನ ಸ್ಥಳಗಳು",
+   "from": "sarvam-105b"
+  },
+  "Recorded since 1487 AD, under the Chowta family": {
+   "kn": "ಚೌಟ ಮನೆತನದ ಆಳ್ವಿಕೆಯಲ್ಲಿ 1487ರಷ್ಟು ಹಿಂದಿನ ದಾಖಲೆಗಳು",
+   "from": "sarvam-105b"
+  },
+  "The story that led to the creation of the temple": {
+   "kn": "ದೇವಾಲಯದ ಸೃಷ್ಟಿಗೆ ಕಾರಣವಾದ ಕಥೆ",
+   "from": "sarvam-105b"
+  },
+  "The passage, the lake inside, and the months it is open": {
+   "kn": "ಮಾರ್ಗ, ಒಳಗಿನ ಕೆರೆ, ಮತ್ತು ಇದು ತೆರೆದಿರುವ ತಿಂಗಳುಗಳು",
+   "from": "sarvam-105b"
+  },
+  "The poojas and offerings made at the temple": {
+   "kn": "ದೇವಾಲಯದಲ್ಲಿ ಮಾಡುವ ಪೂಜೆಗಳು ಮತ್ತು ನೈವೇದ್ಯಗಳು",
+   "from": "sarvam-105b"
+  },
+  "The festival in Dhanur Masa, the Bhoota Kola and the temple calendar": {
+   "kn": "ಧನುರ್ಮಾಸದ ಉತ್ಸವ, ಭೂತಕೋಲ ಮತ್ತು ದೇವಾಲಯದ ಕ್ಯಾಲೆಂಡರ್",
+   "from": "sarvam-105b"
+  },
+  "Mantras of Lord Shiva, in Kannada": {
+   "kn": "ಶಿವನ ಮಂತ್ರಗಳು, ಕನ್ನಡದಲ್ಲಿ",
+   "from": "sarvam-105b"
+  },
+  "Photographs from the temple": {
+   "kn": "ದೇವಾಲಯದ ಛಾಯಾಚಿತ್ರಗಳು",
+   "from": "sarvam-105b"
+  },
+  "Four routes, the address and contact numbers": {
+   "kn": "ನಾಲ್ಕು ಮಾರ್ಗಗಳು, ವಿಳಾಸ ಮತ್ತು ಸಂಪರ್ಕ ಸಂಖ್ಯೆಗಳು",
+   "from": "sarvam-105b"
+  },
+  "The works are complete. The appeal, the estimates and the committees": {
+   "kn": "ಕೆಲಸಗಳು ಪೂರ್ಣಗೊಂಡಿವೆ. ಮನವಿ, ಅಂದಾಜುಗಳು ಮತ್ತು ಸಮಿತಿಗಳು",
+   "from": "sarvam-105b"
+  },
+  "Back to top ↑": {
+   "kn": "ಮೇಲಕ್ಕೆ ಹಿಂತಿರುಗಿ ↑",
+   "from": "sarvam-105b"
+  },
+  "FESTIVALS": {
+   "kn": "ಹಬ್ಬಗಳು",
+   "from": "sarvam-105b"
+  },
+  "Every year, around the last week of December, the Nellitheertha temple conducts its annual Jaatre (festival).": {
+   "kn": "ಪ್ರತಿ ವರ್ಷ, ಡಿಸೆಂಬರ್ ಕೊನೆಯ ವಾರದ ಸುಮಾರಿಗೆ, ನೆಲ್ಲಿತೀರ್ಥ ದೇವಾಲಯವು ತನ್ನ ವಾರ್ಷಿಕ ಜಾತ್ರೆಯನ್ನು (ಹಬ್ಬವನ್ನು) ನಡೆಸುತ್ತದೆ.",
+   "from": "sarvam-105b"
+  },
+  "In 2026 the temple holds the Brahmakalasha, 20 to 30 December. <a href=\"/#programme\">See the programme</a>.": {
+   "kn": "2026 ರಲ್ಲಿ ದೇವಾಲಯವು ಡಿಸೆಂಬರ್ 20 ರಿಂದ 30 ರವರೆಗೆ ಬ್ರಹ್ಮಕಲಶವನ್ನು ನಡೆಸಲಿದೆ. <a href=\"/#programme\">ಕಾರ್ಯಕ್ರಮವನ್ನು ನೋಡಿ</a>.",
+   "from": "sarvam-105b"
+  },
+  "January 2023": {
+   "kn": "ಜನವರಿ 2023",
+   "from": "sarvam-105b"
+  },
+  "The festival starts on the 14th day of the Shukla Paksha in Dhanur Maasa. Typically, this falls on the last week of December or the first week of January. The festival begins with a silver flag being hoisted to indicate the beginning of the Jaatre. This is called “Kodi” or “Dhwajaarohana” ceremony.": {
+   "kn": "“ನಂಬಿಕೆಯಿಲ್ಲದವರಿಗೆ” ಇದು ಮೂಢನಂಬಿಕೆಯಂತೆ ಕಾಣಿಸಬಹುದಾದರೂ, ಇದೊಂದು ಆಕರ್ಷಕ ಅನುಭವ. ಸರಳವಾಗಿ ಹೇಳಬೇಕೆಂದರೆ, ದೇವರುಗಳು ಮತ್ತು ಭೂತಗಳಿಗೆ ತಮ್ಮ ಕೃತಜ್ಞತೆ ಮತ್ತು ಗೌರವವನ್ನು ವ್ಯಕ್ತಪಡಿಸಲು ಗ್ರಾಮಸ್ಥರು ಜಾತ್ರೆಯನ್ನು ಒಂದು ಮಾಧ್ಯಮವಾಗಿ ಬಳಸುತ್ತಾರೆ. ಅವರು ದೇವರುಗಳು ಮತ್ತು ಭೂತಗಳಿಗೆ ತಮ್ಮ ಪ್ರಾರ್ಥನೆಗಳನ್ನು ಸಲ್ಲಿಸುತ್ತಾರೆ ಮತ್ತು ಅವರ ನಿರಂತರ ರಕ್ಷಣೆಗಾಗಿ ಬೇಡಿಕೊಳ್ಳುತ್ತಾರೆ ಹಾಗೂ ವರ್ಷದಿಂದ ವರ್ಷಕ್ಕೆ ಉತ್ತಮ ಮಳೆ ಮತ್ತು ಬೆಳೆಗಳಿಗಾಗಿ ಪ್ರಾರ್ಥಿಸುತ್ತಾರೆ.",
+   "from": "sarvam-105b"
+  },
+  "Each of the four days has separate ceremonies like the “Balis” where the idol of the presiding deity is carried around the temple for a procession accompanied by music, the “Rudrabhishekas” where the Shiva Lingam is given a grand shower with 101 vessels of water and the “Rathotsava” where the deity is taken on a procession on the chariot.": {
+   "kn": "ನಾಲ್ಕು ದಿನಗಳಲ್ಲಿ ಪ್ರತಿಯೊಂದಕ್ಕೂ ಪ್ರತ್ಯೇಕ ವಿಧಿವಿಧಾನಗಳಿವೆ. ಸಂಗೀತದೊಂದಿಗೆ ದೇವಾಲಯದ ಸುತ್ತಲೂ ಮೆರವಣಿಗೆಯಲ್ಲಿ ಕೊಂಡೊಯ್ಯುವ “ಬಲಿ”ಗಳು, 101 ಕಳಶಗಳ ನೀರಿನಿಂದ ಶಿವಲಿಂಗಕ್ಕೆ ಅಭಿಷೇಕ ಮಾಡುವ “ರುದ್ರಾಭಿಷೇಕ”ಗಳು ಮತ್ತು ರಥದಲ್ಲಿ ದೇವರನ್ನು ಮೆರವಣಿಗೆಯಲ್ಲಿ ಕೊಂಡೊಯ್ಯುವ “ರಥೋತ್ಸವ”ಗಳು ಇದರಲ್ಲಿ ಸೇರಿವೆ.",
+   "from": "sarvam-105b"
+  },
+  "The fourth day: Aarat": {
+   "kn": "ನಾಲ್ಕನೇ ದಿನ: ಆರತ್",
+   "from": "sarvam-105b"
+  },
+  "The climax of the festival is on the fourth day. Called the “Aarat” in local language, the ceremonies on this day mark the end of the festival. During the day, the presiding deity is taken on a procession in the Ratha or the chariot. Villagers offer their prayers during the procession. There is also an event called as the Pilchandi Bheti (meeting of Pili-Chamundi with the Lord) where the Bhoota offers its prayers to the Lord during the procession and seeks his blessings and vows to carry on the role of protecting Dharma in the region. The rituals are followed by a grand lunch for one and all. The food on this day is considered as God’s prasadam and no one leaves without having some.": {
+   "kn": "ಹಬ್ಬದ ಅಂತಿಮ ಘಟ್ಟ ನಾಲ್ಕನೇ ದಿನ ನಡೆಯುತ್ತದೆ. ಸ್ಥಳೀಯ ಭಾಷೆಯಲ್ಲಿ ಇದನ್ನು “ಆರತ್” ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ, ಈ ದಿನದ ವಿಧಿವಿಧಾನಗಳು ಹಬ್ಬದ ಮುಕ್ತಾಯವನ್ನು ಸೂಚಿಸುತ್ತವೆ. ಹಗಲಿನಲ್ಲಿ, ಪ್ರಧಾನ ದೇವತೆಯನ್ನು ರಥದಲ್ಲಿ ಮೆರವಣಿಗೆಯಲ್ಲಿ ಕೊಂಡೊಯ್ಯಲಾಗುತ್ತದೆ. ಮೆರವಣಿಗೆಯ ಸಮಯದಲ್ಲಿ ಗ್ರಾಮಸ್ಥರು ತಮ್ಮ ಪ್ರಾರ್ಥನೆಗಳನ್ನು ಸಲ್ಲಿಸುತ್ತಾರೆ. ಪಿಲಿಚಾಮುಂಡಿಯು ಭಗವಂತನನ್ನು ಭೇಟಿಯಾಗುವ “ಪಿಲ್ಚಂಡಿ ಭೇಟಿ” ಎಂಬ ಕಾರ್ಯಕ್ರಮವೂ ಇದೆ, ಇದರಲ್ಲಿ ಭೂತವು ಮೆರವಣಿಗೆಯ ಸಮಯದಲ್ಲಿ ಭಗವಂತನಿಗೆ ಪ್ರಾರ್ಥನೆ ಸಲ್ಲಿಸುತ್ತದೆ ಮತ್ತು ಆತನ ಆಶೀರ್ವಾದವನ್ನು ಪಡೆಯುತ್ತದೆ ಮತ್ತು ಈ ಪ್ರದೇಶದಲ್ಲಿ ಧರ್ಮವನ್ನು ರಕ್ಷಿಸುವ ಪಾತ್ರವನ್ನು ಮುಂದುವರಿಸುವುದಾಗಿ ಹರಕೆ ಹೊರುತ್ತದೆ. ಈ ವಿಧಿವಿಧಾನಗಳ ನಂತರ ಎಲ್ಲರಿಗೂ ಭವ್ಯವಾದ ಮಧ್ಯಾಹ್ನದ ಊಟದ ವ್ಯವಸ್ಥೆ ಇರುತ್ತದೆ. ಈ ದಿನದ ಆಹಾರವನ್ನು ದೇವರ ಪ್ರಸಾದವೆಂದು ಪರಿಗಣಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ತಿನ್ನದೆ ಯಾರೂ ಅಲ್ಲಿಂದ ಹೋಗುವುದಿಲ್ಲ.",
+   "from": "sarvam-105b"
+  },
+  "The rest of the ceremonies start late in the evening and go on till dawn next day. The deity is taken on a procession and villagers offer “Katte Pooje” or “Platform Pooja” to the deity as it passes their residence. The deity is taken to the temple pond and is given a bath there. Devotees also take bath along with the deity as it’s considered extremely sacred to do so. On the return journey to the temple, again, several Katte Poojes are offered. Finally, the flag is brought down to indicate the closure of the festival.": {
+   "kn": "ಉಳಿದ ಆಚರಣೆಗಳು ರಾತ್ರಿ ತಡವಾಗಿ ಪ್ರಾರಂಭವಾಗುತ್ತವೆ ಮತ್ತು ಮರುದಿನ ಬೆಳಗಿನ ಜಾವದವರೆಗೆ ಮುಂದುವರಿಯುತ್ತವೆ. ದೇವರನ್ನು ಮೆರವಣಿಗೆಯಲ್ಲಿ ಕೊಂಡೊಯ್ಯಲಾಗುತ್ತದೆ ಮತ್ತು ದೇವರು ತಮ್ಮ ಮನೆಯ ಬಳಿ ಹಾದುಹೋಗುವಾಗ ಗ್ರಾಮಸ್ಥರು ದೇವರಿಗೆ “ಕಟ್ಟೆ ಪೂಜೆ” ಅಥವಾ “ವೇದಿಕೆ ಪೂಜೆ” ಸಲ್ಲಿಸುತ್ತಾರೆ. ದೇವರನ್ನು ದೇವಸ್ಥಾನದ ಕೆರೆಗೆ ಕರೆದೊಯ್ದು ಅಲ್ಲಿ ಸ್ನಾನ ಮಾಡಿಸಲಾಗುತ್ತದೆ. ದೇವರೊಂದಿಗೆ ಸ್ನಾನ ಮಾಡುವುದು ಅತ್ಯಂತ ಪವಿತ್ರವೆಂದು ಪರಿಗಣಿಸಲಾಗಿರುವುದರಿಂದ ಭಕ್ತರು ಸಹ ದೇವರೊಂದಿಗೆ ಸ್ನಾನ ಮಾಡುತ್ತಾರೆ. ದೇವಾಲಯಕ್ಕೆ ಹಿಂದಿರುಗುವಾಗ, ಮತ್ತೆ ಹಲವಾರು ಕಟ್ಟೆ ಪೂಜೆಗಳನ್ನು ಸಲ್ಲಿಸಲಾಗುತ್ತದೆ. ಅಂತಿಮವಾಗಿ, ಹಬ್ಬದ ಮುಕ್ತಾಯವನ್ನು ಸೂಚಿಸಲು ಧ್ವಜವನ್ನು ಇಳಿಸಲಾಗುತ್ತದೆ.",
+   "from": "sarvam-105b"
+  },
+  "The Bhoota Kola": {
+   "kn": "ಭೂತ ಕೋಲ",
+   "from": "sarvam-105b"
+  },
+  "Pili-Chamundi, December 2023": {
+   "kn": "ಪಿಲಿ-ಚಾಮುಂಡಿ, ಡಿಸೆಂಬರ್ 2023",
+   "from": "sarvam-105b"
+  },
+  "The next day, respect is offered to the Bhootas in the form of the Bhoota Kola. This is a dance ritual where a man assumes the role of a Bhoota and performs a set of rituals. It is believed that the Bhoota enters the body of the person during the Kola. Locals revere the ceremony a lot and the word of the person, performing the dance, during the kola is considered law. Even today, local disputes are settled during the Kola. The grandest of all Bhoota kolas is that of the “Pili Chamundi” Bhoota. It is a treat to the eyes what with the variety of colors on display. The kolas start early in the evening and continue till dawn the next day.": {
+   "kn": "ಮರುದಿನ, ಭೂತಕೋಲದ ರೂಪದಲ್ಲಿ ಭೂತಗಳಿಗೆ ಗೌರವ ಸಲ್ಲಿಸಲಾಗುತ್ತದೆ. ಇದು ಒಬ್ಬ ವ್ಯಕ್ತಿಯು ಭೂತದ ಪಾತ್ರವನ್ನು ವಹಿಸಿ ಕೆಲವು ಆಚರಣೆಗಳನ್ನು ಮಾಡುವ ನೃತ್ಯ ವಿಧಿಯಾಗಿದೆ. ಕೋಲದ ಸಮಯದಲ್ಲಿ ಭೂತವು ಆ ವ್ಯಕ್ತಿಯ ದೇಹವನ್ನು ಪ್ರವೇಶಿಸುತ್ತದೆ ಎಂದು ನಂಬಲಾಗಿದೆ. ಸ್ಥಳೀಯರು ಈ ಸಮಾರಂಭವನ್ನು ಬಹಳವಾಗಿ ಗೌರವಿಸುತ್ತಾರೆ ಮತ್ತು ಕೋಲದ ಸಮಯದಲ್ಲಿ ನೃತ್ಯ ಮಾಡುವ ವ್ಯಕ್ತಿಯ ಮಾತನ್ನು ಕಾನೂನು ಎಂದು ಪರಿಗಣಿಸಲಾಗುತ್ತದೆ. ಇಂದಿಗೂ, ಕೋಲದ ಸಮಯದಲ್ಲಿ ಸ್ಥಳೀಯ ವಿವಾದಗಳನ್ನು ಬಗೆಹರಿಸಲಾಗುತ್ತದೆ. ಎಲ್ಲಾ ಭೂತ ಕೋಲಗಳಲ್ಲಿ ಅತ್ಯಂತ ಭವ್ಯವಾದದ್ದು “ಪಿಲಿ ಚಾಮುಂಡಿ” ಭೂತದ ಕೋಲ. ಪ್ರದರ್ಶಿಸಲಾದ ವಿವಿಧ ಬಣ್ಣಗಳಿಂದಾಗಿ ಇದು ಕಣ್ಣಿಗೆ ಹಬ್ಬವಾಗಿದೆ. ಕೋಲಗಳು ಸಂಜೆಯ ಆರಂಭದಲ್ಲಿ ಪ್ರಾರಂಭವಾಗುತ್ತವೆ ಮತ್ತು ಮರುದಿನ ಮುಂಜಾನೆಯವರೆಗೆ ಮುಂದುವರಿಯುತ್ತವೆ.",
+   "from": "sarvam-105b"
+  },
+  "<a href=\"/gallery/\">More photographs of the kola</a> are in the gallery.": {
+   "kn": "<a href=\"/gallery/\">ಕೋಲದ ಹೆಚ್ಚಿನ ಛಾಯಾಚಿತ್ರಗಳು</a> ಗ್ಯಾಲರಿಯಲ್ಲಿವೆ.",
+   "from": "sarvam-105b"
+  },
+  "Temple calendar": {
+   "kn": "ದೇವಾಲಯದ ಕ್ಯಾಲೆಂಡರ್",
+   "from": "sarvam-105b"
+  },
+  "When": {
+   "kn": "ಯಾವಾಗ",
+   "from": "sarvam-105b"
+  },
+  "What": {
+   "kn": "ಏನು",
+   "from": "sarvam-105b"
+  },
+  "Tula Sankramana": {
+   "kn": "ತುಲಾ ಸಂಕ್ರಮಣ",
+   "from": "sarvam-105b"
+  },
+  "Cave opens": {
+   "kn": "ಗುಹೆ ತೆರೆಯುತ್ತದೆ",
+   "from": "sarvam-105b"
+  },
+  "Chathurdashi before Hunnime in Dhanur Masa (December to January)": {
+   "kn": "ಧನುರ್ಮಾಸದಲ್ಲಿ ಹುಣ್ಣಿಮೆಯ ಹಿಂದಿನ ಚತುರ್ದಶಿ (ಡಿಸೆಂಬರ್‌ನಿಂದ ಜನವರಿವರೆಗೆ)",
+   "from": "sarvam-105b"
+  },
+  "5 day annual festival": {
+   "kn": "5 ದಿನಗಳ ವಾರ್ಷಿಕ ಉತ್ಸವ",
+   "from": "sarvam-105b"
+  },
+  "Shivarathri": {
+   "kn": "ಶಿವರಾತ್ರಿ",
+   "from": "sarvam-105b"
+  },
+  "Shivarathri Utsava": {
+   "kn": "ಶಿವರಾತ್ರಿ ಉತ್ಸವ",
+   "from": "sarvam-105b"
+  },
+  "Ganesha Chathurthi": {
+   "kn": "ಗಣೇಶ ಚತುರ್ಥಿ",
+   "from": "sarvam-105b"
+  },
+  "Ganesha Utsava, Daiva Parva": {
+   "kn": "ಗಣೇಶ ಉತ್ಸವ, ದೈವ ಪರ್ವ",
+   "from": "sarvam-105b"
+  },
+  "Deepavali": {
+   "kn": "ದೀಪಾವಳಿ",
+   "from": "sarvam-105b"
+  },
+  "Daiva Parva, Ranga Pooje": {
+   "kn": "ದೈವ ಪರ್ವ, ರಂಗ ಪೂಜೆ",
+   "from": "sarvam-105b"
+  },
+  "Next: Mantras": {
+   "kn": "ಮುಂದೆ: ಮಂತ್ರಗಳು",
+   "from": "sarvam-105b"
+  },
+  "OFFERINGS AT THE LORD’S FEET": {
+   "kn": "ಭಗವಂತನ ಪಾದಗಳಿಗೆ ಮಾಡುವ ನೈವೇದ್ಯಗಳು",
+   "from": "sarvam-105b"
+  },
+  "There are many forms of offerings that can be made to Lord Sri Somanatheshwara at Nellitheertha.": {
+   "kn": "ನೆಲ್ಲಿತೀರ್ಥದಲ್ಲಿ ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರನಿಗೆ ಅನೇಕ ರೀತಿಯ ನೈವೇದ್ಯಗಳನ್ನು ಮಾಡಬಹುದು.",
+   "from": "sarvam-105b"
+  },
+  "A pooja at the temple, December 2023": {
+   "kn": "ದೇವಸ್ಥಾನದಲ್ಲಿ ಪೂಜೆ, ಡಿಸೆಂಬರ್ 2023",
+   "from": "sarvam-105b"
+  },
+  "The sevas can be in the form of Pooja (worship), Yagna (fire ritual), Bhajane (singing devotional songs) or even just a visit and prayer. The most often conducted sevas and their descriptions are here below.": {
+   "kn": "ಈ ಸೇವೆಗಳು ಪೂಜೆ, ಯಜ್ಞ, ಭಜನೆ ಅಥವಾ ದೇವಸ್ಥಾನಕ್ಕೆ ಭೇಟಿ ನೀಡಿ ಪ್ರಾರ್ಥನೆ ಸಲ್ಲಿಸುವ ರೂಪದಲ್ಲಿರಬಹುದು. ಹೆಚ್ಚಾಗಿ ನಡೆಯುವ ಸೇವೆಗಳು ಮತ್ತು ಅವುಗಳ ವಿವರಗಳನ್ನು ಕೆಳಗೆ ನೀಡಲಾಗಿದೆ.",
+   "from": "sarvam-105b"
+  },
+  "Shatha Rudrabhisheka": {
+   "kn": "ಶತ ರುದ್ರಾಭಿಷೇಕ",
+   "from": "sarvam-105b"
+  },
+  "This literally means a bath involving 100 pots of water. Our scriptures suggest that Lord Shiva is fond of water. It is because of this fondness that we find river Ganga flowing from Lord Shiva’s head. It is said that the easiest way to please Lord Somanatha is to shower him with water. Shatha Rudrabhisheka involves a mix of 100 pot-shower and Mangalarathis amidst the chanting of Rudra Suktha by 11 purohits. At the end, there is a grand Mangalarathi for the Lord.": {
+   "kn": "ಇದರರ್ಥ 100 ಕೊಡಗಳಷ್ಟು ನೀರಿನಿಂದ ಮಾಡುವ ಅಭಿಷೇಕ. ಶಿವನಿಗೆ ನೀರಿನ ಮೇಲೆ ಬಹಳ ಪ್ರೀತಿ ಇದೆ ಎಂದು ನಮ್ಮ ಶಾಸ್ತ್ರಗಳು ಹೇಳುತ್ತವೆ. ಈ ಪ್ರೀತಿಯಿಂದಾಗಿಯೇ ಗಂಗೆಯು ಶಿವನ ಜಟೆಯಿಂದ ಹರಿಯುತ್ತಾಳೆ. ಸೋಮನಾಥನನ್ನು ಮೆಚ್ಚಿಸಲು ಅತ್ಯಂತ ಸುಲಭವಾದ ಮಾರ್ಗವೆಂದರೆ ಆತನ ಮೇಲೆ ನೀರನ್ನು ಸುರಿಯುವುದು ಎಂದು ಹೇಳಲಾಗುತ್ತದೆ. 11 ಪುರೋಹಿತರು ರುದ್ರ ಸೂಕ್ತವನ್ನು ಪಠಿಸುತ್ತಾ 100 ಕೊಡಗಳ ಅಭಿಷೇಕ ಮತ್ತು ಮಂಗಳಾರತಿಗಳನ್ನು ಮಾಡುವ ಮೂಲಕ ಶತ ರುದ್ರಾಭಿಷೇಕವನ್ನು ಮಾಡಲಾಗುತ್ತದೆ. ಕೊನೆಯಲ್ಲಿ, ಭಗವಂತನಿಗೆ ಒಂದು ಭವ್ಯವಾದ ಮಂಗಳಾರತಿಯನ್ನು ಮಾಡಲಾಗುತ್ತದೆ.",
+   "from": "sarvam-105b"
+  },
+  "Ekadasha Rudrabhisheka": {
+   "kn": "ಏಕದಶ ರುದ್ರಾಭಿಷೇಕ",
+   "from": "sarvam-105b"
+  },
+  "This is a smaller scale version of the Shatha Rudrabhisheka where 11 pots of water are offered to Lord Shiva followed by a grand Mangalarathi.": {
+   "kn": "ಇದು ಶತ ರುದ್ರಾಭಿಷೇಕದ ಸಣ್ಣ ಆವೃತ್ತಿಯಾಗಿದೆ. ಇದರಲ್ಲಿ ಶಿವನಿಗೆ 11 ಕೊಡಗಳಷ್ಟು ನೀರನ್ನು ಅರ್ಪಿಸಿ, ನಂತರ ಒಂದು ಭವ್ಯವಾದ ಮಂಗಳಾರತಿಯನ್ನು ಮಾಡಲಾಗುತ್ತದೆ.",
+   "from": "sarvam-105b"
+  },
+  "Ganapati Homa": {
+   "kn": "ಗಣಪತಿ ಹೋಮ",
+   "from": "sarvam-105b"
+  },
+  "This is a very famous yagna performed to please Lord Ganapati. The rituals include offering all the favorite eateries of Lord Ganapati consisting of a dish made of sugarcane, jaggery, bananas, black til and ghee. The offerings are placed in the fire itself and are routed through Agni Deva, the God of fire (according to the Vedas, all offerings made through Yagnas are routed through Agni Deva).": {
+   "kn": "ಇದು ಶ್ರೀ ಗಣಪತಿಯನ್ನು ಒಲಿಸಿಕೊಳ್ಳಲು ಮಾಡುವ ಅತ್ಯಂತ ಪ್ರಸಿದ್ಧ ಯಜ್ಞವಾಗಿದೆ. ಈ ವಿಧಿವಿಧಾನಗಳಲ್ಲಿ ಕಬ್ಬು, ಬೆಲ್ಲ, ಬಾಳೆಹಣ್ಣು, ಕಪ್ಪು ಎಳ್ಳು ಮತ್ತು ತುಪ್ಪದಿಂದ ಮಾಡಿದ ಭಗವಾನ್ ಗಣಪತಿಯ ನೆಚ್ಚಿನ ಎಲ್ಲಾ ತಿಂಡಿಗಳನ್ನು ನೈವೇದ್ಯವಾಗಿ ಅರ್ಪಿಸುವುದು ಸೇರಿದೆ. ಈ ನೈವೇದ್ಯಗಳನ್ನು ನೇರವಾಗಿ ಅಗ್ನಿ ದೇವರ ಮೂಲಕ (ವೇದಗಳ ಪ್ರಕಾರ, ಯಜ್ಞಗಳ ಮೂಲಕ ಮಾಡುವ ಎಲ್ಲಾ ನೈವೇದ್ಯಗಳನ್ನು ಅಗ್ನಿ ದೇವರ ಮೂಲಕವೇ ತಲುಪಿಸಲಾಗುತ್ತದೆ) ಅಗ್ನಿ ದೇವರಿಗೆ ತಲುಪಿಸಲಾಗುತ್ತದೆ.",
+   "from": "sarvam-105b"
+  },
+  "Ranga Pooja": {
+   "kn": "ರಂಗ ಪೂಜೆ",
+   "from": "sarvam-105b"
+  },
+  "This is a very special and colorful pooja offered to the Lord. Offerings are placed on wooden racks in front of the Lord and lamps are lit throughout the temple. This is also one of the most ritualistic poojas offered at Nellitheertha.": {
+   "kn": "ಇದು ದೇವರಿಗೆ ಮಾಡುವ ಅತ್ಯಂತ ವಿಶೇಷವಾದ ಮತ್ತು ವರ್ಣರಂಜಿತ ಪೂಜೆಯಾಗಿದೆ. ದೇವರ ಮುಂದೆ ಮರದ ಮಣೆಗಳ ಮೇಲೆ ನೈವೇದ್ಯಗಳನ್ನು ಇಡಲಾಗುತ್ತದೆ ಮತ್ತು ದೇವಾಲಯದ ಉದ್ದಕ್ಕೂ ದೀಪಗಳನ್ನು ಬೆಳಗಿಸಲಾಗುತ್ತದೆ. ನೆಲ್ಲಿತೀರ್ಥದಲ್ಲಿ ನಡೆಯುವ ಅತ್ಯಂತ ವಿಧಿವಿಧಾನದ ಪೂಜೆಗಳಲ್ಲಿ ಇದೂ ಒಂದಾಗಿದೆ.",
+   "from": "sarvam-105b"
+  },
+  "Satyanarayana Pooja": {
+   "kn": "ಸತ್ಯನಾರಾಯಣ ಪೂಜೆ",
+   "from": "sarvam-105b"
+  },
+  "Once every month, on the full moon day, people from the village gather and perform a community Satyanarayana Pooja. This is also a social occasion which lets people get together.": {
+   "kn": "ತಿಂಗಳಿಗೊಮ್ಮೆ, ಹುಣ್ಣಿಮೆಯ ದಿನದಂದು, ಹಳ್ಳಿಯ ಜನರು ಸೇರಿ ಸಾಮೂಹಿಕ ಸತ್ಯನಾರಾಯಣ ಪೂಜೆಯನ್ನು ಮಾಡುತ್ತಾರೆ. ಇದು ಜನರು ಒಂದಾಗಲು ಅವಕಾಶ ನೀಡುವ ಒಂದು ಸಾಮಾಜಿಕ ಸಂದರ್ಭವೂ ಹೌದು.",
+   "from": "sarvam-105b"
+  },
+  "Durga Namaskara Pooja": {
+   "kn": "ದುರ್ಗಾ ನಮಸ್ಕಾರ ಪೂಜೆ",
+   "from": "sarvam-105b"
+  },
+  "This pooja is very unique to South Kanara and involves worshipping Lord Sri Durga Parameshwari in the form of light. A lamp is placed in the midst of a colorful Rangoli and is decorated with flowers and jewellery. It is a treat to the eyes and is performed often at the temple.": {
+   "kn": "ಈ ಪೂಜೆಯು ದಕ್ಷಿಣ ಕೆನರಾ ಭಾಗಕ್ಕೆ ಅತ್ಯಂತ ವಿಶಿಷ್ಟವಾಗಿದೆ ಮತ್ತು ಇದರಲ್ಲಿ ಭಗವಾನ್ ಶ್ರೀ ದುರ್ಗಾ ಪರಮೇಶ್ವರಿಯನ್ನು ಬೆಳಕಿನ ರೂಪದಲ್ಲಿ ಪೂಜಿಸಲಾಗುತ್ತದೆ. ವರ್ಣರಂಜಿತ ರಂಗೋಲಿಯ ಮಧ್ಯದಲ್ಲಿ ದೀಪವನ್ನು ಇಟ್ಟು, ಹೂವುಗಳು ಮತ್ತು ಆಭರಣಗಳಿಂದ ಅಲಂಕರಿಸಲಾಗುತ್ತದೆ. ಇದು ಕಣ್ಮನ ಸೆಳೆಯುವಂತಿದ್ದು, ದೇವಾಲಯದಲ್ಲಿ ಆಗಾಗ್ಗೆ ನಡೆಯುತ್ತದೆ.",
+   "from": "sarvam-105b"
+  },
+  "Bhoota Nemas": {
+   "kn": "ಭೂತ ನೇಮಗಳು",
+   "from": "sarvam-105b"
+  },
+  "This is also popularly known as Bhoota Kola. It is a dance ritual offered to the Bhootas where a person assumes the role of a particular Bhoota and dances throughout the night trying to please the Bhoota. This is also a very ritualistic seva and is revered throughout South Kanara. Kolas are unique to South Kanara and every temple with either Lord Shiva or Lord Shakti as the deity has this ritual.": {
+   "kn": "ಇದನ್ನು ಜನಪ್ರಿಯವಾಗಿ ಭೂತ ಕೋಲ ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ. ಇದು ಭೂತಗಳಿಗೆ ಸಲ್ಲಿಸುವ ಒಂದು ನೃತ್ಯ ಆಚರಣೆಯಾಗಿದೆ. ಇದರಲ್ಲಿ ಒಬ್ಬ ವ್ಯಕ್ತಿಯು ನಿರ್ದಿಷ್ಟ ಭೂತದ ಪಾತ್ರವನ್ನು ವಹಿಸಿ, ಆ ಭೂತವನ್ನು ಮೆಚ್ಚಿಸಲು ರಾತ್ರಿಯಿಡೀ ನೃತ್ಯ ಮಾಡುತ್ತಾನೆ. ಇದು ಅತ್ಯಂತ ಧಾರ್ಮಿಕವಾದ ಸೇವೆಯಾಗಿದ್ದು, ದಕ್ಷಿಣ ಕನ್ನಡದಾದ್ಯಂತ ಇದನ್ನು ಗೌರವದಿಂದ ಕಾಣಲಾಗುತ್ತದೆ. ಕೋಲಗಳು ದಕ್ಷಿಣ ಕನ್ನಡಕ್ಕೆ ಮಾತ್ರ ಸೀಮಿತವಾದ ವಿಶಿಷ್ಟ ಆಚರಣೆಗಳಾಗಿವೆ. ಶಿವ ಅಥವಾ ಶಕ್ತಿ ದೇವರನ್ನು ಪೂಜಿಸುವ ಪ್ರತಿಯೊಂದು ದೇವಾಲಯದಲ್ಲೂ ಈ ಆಚರಣೆ ಇರುತ್ತದೆ.",
+   "from": "sarvam-105b"
+  },
+  "Contact the temple": {
+   "kn": "ದೇವಾಲಯವನ್ನು ಸಂಪರ್ಕಿಸಿ",
+   "from": "sarvam-105b"
+  },
+  "Next: The annual jaatre": {
+   "kn": "ಮುಂದಿನದು: ವಾರ್ಷಿಕ ಜಾತ್ರೆ",
+   "from": "sarvam-105b"
+  },
+  "THE STHALA PURANA": {
+   "kn": "ಸ್ಥಳ ಪುರಾಣ",
+   "from": "sarvam-105b"
+  },
+  "The following is a narration of the story that led to the creation of the temple at Nellitheertha. Many of the incidents here can be linked to the rituals and customs being followed in the temple even to this day.": {
+   "kn": "ನೆಲ್ಲಿತೀರ್ಥದಲ್ಲಿ ದೇವಾಲಯದ ನಿರ್ಮಾಣಕ್ಕೆ ಕಾರಣವಾದ ಕಥೆಯ ನಿರೂಪಣೆ ಈ ಕೆಳಗಿನಂತಿದೆ. ಇಲ್ಲಿನ ಅನೇಕ ಘಟನೆಗಳನ್ನು ಇಂದಿಗೂ ದೇವಾಲಯದಲ್ಲಿ ಆಚರಿಸುತ್ತಿರುವ ಆಚರಣೆಗಳು ಮತ್ತು ಸಂಪ್ರದಾಯಗಳಿಗೆ ಜೋಡಿಸಬಹುದು.",
+   "from": "sarvam-105b"
+  },
+  "When Adharma Reared Its Ugly Head": {
+   "kn": "ಅಧರ್ಮವು ತನ್ನ ವಿಕಾರ ರೂಪವನ್ನು ತೋರಿಸಿದಾಗ",
+   "from": "sarvam-105b"
+  },
+  "Jabali prays to Ganga and Lord Shiva": {
+   "kn": "ಜಾಬಾಲಿ ಗಂಗೆ ಮತ್ತು ಶಿವನನ್ನು ಪ್ರಾರ್ಥಿಸುತ್ತಾರೆ",
+   "from": "sarvam-105b"
+  },
+  "Jabali reaches Nagavana": {
+   "kn": "ಜಾಬಾಲಿ ನಾಗವನವನ್ನು ತಲುಪುತ್ತಾರೆ",
+   "from": "sarvam-105b"
+  },
+  "Developments at Ekaveeradripura": {
+   "kn": "ಏಕವೀರದ್ವೀಪುರದಲ್ಲಿ ಬೆಳವಣಿಗೆಗಳು",
+   "from": "sarvam-105b"
+  },
+  "Adi Shakti Obliges!": {
+   "kn": "ಆದಿಶಕ್ತಿಯ ಕೃಪೆ!",
+   "from": "sarvam-105b"
+  },
+  "In the early part of Kali-Yuga, according to the rules of time, Adharma (evil) started to show its ugly head all over the world. This became especially rampant in “Parashurama Kshetra” where lawlessness, murder, robbery, disregard for God became the order of the day and the lives of ordinary people became miserable. Just when things were getting completely out of control, Sage Narada, who is always working for world peace, decided it was time for some divine intervention and met Lord Sri Maha Vishnu, the proliferator of Dharma on this land. Lord Maha Vishnu consulted Lord Parameshwara (Shiva) and came to a conclusion on the action plan for restoration of Dharma on earth. Accordingly, under the stewardship of Lord Vishnu’s vehicle Vasuki (Nagaraj or Snake God), Lord Shiva’s ganas (assistants) or Bhootas namely Raktheshwari, Kshetrapala, Nandigona, Varahi, Barbaraka and Paashaanamurthy were sent to earth to operate from Parashurama Kshetra which stretched from the north of River Phalguni to the east of River Nandini.": {
+   "kn": "ಕಲಿಯುಗದ ಆರಂಭಿಕ ಭಾಗದಲ್ಲಿ, ಕಾಲದ ನಿಯಮದಂತೆ, ಅಧರ್ಮ (ಕೆಡುಕು) ಪ್ರಪಂಚದಾದ್ಯಂತ ತನ್ನ ವಿಕಾರ ರೂಪವನ್ನು ತೋರಿಸಲು ಪ್ರಾರಂಭಿಸಿತು. ಇದು “ಪರಶುರಾಮ ಕ್ಷೇತ್ರ”ದಲ್ಲಿ ವಿಶೇಷವಾಗಿ ಮಿತಿಮೀರಿತು, ಅಲ್ಲಿ ಕಾನೂನುಬಾಹಿರತೆ, ಕೊಲೆ, ದರೋಡೆ, ದೇವರ ಮೇಲಿನ ಅಗೌರವ ಸಾಮಾನ್ಯವಾಯಿತು ಮತ್ತು ಸಾಮಾನ್ಯ ಜನರ ಜೀವನವು ದುಸ್ತರವಾಯಿತು. ಪರಿಸ್ಥಿತಿ ಸಂಪೂರ್ಣವಾಗಿ ಕೈಮೀರಿ ಹೋಗುತ್ತಿದ್ದಾಗ, ಯಾವಾಗಲೂ ವಿಶ್ವಶಾಂತಿಗಾಗಿ ಶ್ರಮಿಸುವ ನಾರದ ಮಹರ್ಷಿಗಳು, ಕೆಲವು ದೈವಿಕ ಹಸ್ತಕ್ಷೇಪದ ಸಮಯ ಬಂದಿದೆ ಎಂದು ನಿರ್ಧರಿಸಿದರು ಮತ್ತು ಈ ನಾಡಿನಲ್ಲಿ ಧರ್ಮವನ್ನು ಬೆಳೆಸುವ ಶ್ರೀ ಮಹಾ ವಿಷ್ಣುವನ್ನು ಭೇಟಿಯಾದರು. ಶ್ರೀ ಮಹಾ ವಿಷ್ಣುವು ಪರಮೇಶ್ವರ (ಶಿವ) ರೊಂದಿಗೆ ಸಮಾಲೋಚಿಸಿ, ಭೂಮಿಯ ಮೇಲಿನ ಧರ್ಮದ ಮರುಸ್ಥಾಪನೆಗಾಗಿ ಕ್ರಿಯಾ ಯೋಜನೆಯ ಬಗ್ಗೆ ಒಂದು ತೀರ್ಮಾನಕ್ಕೆ ಬಂದರು. ಅದರಂತೆ, ಶ್ರೀ ವಿಷ್ಣುವಿನ ವಾಹನವಾದ ವಾಸುಕಿ (ನಾಗರಾಜ ಅಥವಾ ಸರ್ಪ ದೇವ) ಯ ಉಸ್ತುವಾರಿಯಲ್ಲಿ, ಶ್ರೀ ಶಿವನ ಗಣಗಳು (ಸಹಾಯಕರು) ಅಥವಾ ದೈವಗಳಾದ ರಕ್ತೇಶ್ವರಿ, ಕ್ಷೇತ್ರಪಾಲ, ನಂದಿಗೋಣ, ವಾರಾಹಿ, ಬರ್ಬರಕ ಮತ್ತು ಪಾಷಾಣಮೂರ್ತಿಯವರನ್ನು ಫಲ್ಗುಣಿ ನದಿಯ ಉತ್ತರದ ಭಾಗದಿಂದ ನಂದಿನಿ ನದಿಯ ಪೂರ್ವದವರೆಗೆ ಹರಡಿದ್ದ ಪರಶುರಾಮ ಕ್ಷೇತ್ರದಿಂದ ಕಾರ್ಯನಿರ್ವಹಿಸಲು ಭೂಮಿಗೆ ಕಳುಹಿಸಲಾಯಿತು.",
+   "from": "sarvam-105b"
+  },
+  "Vasuki and the Ganas came to Parashurama Kshetra and settled down in a beautiful place called as Nagavana (snake forest). Here they tried to promulgate Dharma and Bhakti among the people for some time. But whether it was the influence of time or the effect of the land, the Ganas gradually changed and became arrogant and egoistic. They came under the false belief that they were mightier than Eshwara (God) himself and this reflected upon their activities which ventured off the path of Dharma. Adharma started to rise again.": {
+   "kn": "ವಾಸುಕಿ ಮತ್ತು ಗಣಗಳು ಪರಶುರಾಮ ಕ್ಷೇತ್ರಕ್ಕೆ ಬಂದು ನಾಗವನ (ಸರ್ಪಗಳ ಅರಣ್ಯ) ಎಂಬ ಸುಂದರವಾದ ಸ್ಥಳದಲ್ಲಿ ನೆಲೆಸಿದರು. ಇಲ್ಲಿ ಅವರು ಸ್ವಲ್ಪ ಕಾಲದವರೆಗೆ ಜನರಲ್ಲಿ ಧರ್ಮ ಮತ್ತು ಭಕ್ತಿಯನ್ನು ಪ್ರಚಾರ ಮಾಡಲು ಪ್ರಯತ್ನಿಸಿದರು. ಆದರೆ ಅದು ಕಾಲದ ಪ್ರಭಾವವೋ ಅಥವಾ ಆ ನೆಲದ ಪ್ರಭಾವವೋ, ಗಣಗಳು ಕ್ರಮೇಣ ಬದಲಾಗಿ ಅಹಂಕಾರಿ ಹಾಗೂ ದುರಹಂಕಾರಿಗಳಾದರು. ತಾವು ಈಶ್ವರನಿಗಿಂತ (ದೇವರು) ಬಲಶಾಲಿಗಳು ಎಂಬ ತಪ್ಪು ನಂಬಿಕೆಗೆ ಒಳಗಾದರು ಮತ್ತು ಇದು ಅವರ ಚಟುವಟಿಕೆಗಳಲ್ಲಿ ಪ್ರತಿಫಲಿಸಿತು, ಇದು ಧರ್ಮದ ಹಾದಿಯಿಂದ ವಿಮುಖವಾಯಿತು. ಅಧರ್ಮವು ಮತ್ತೆ ಬೆಳೆಯತೊಡಗಿತು.",
+   "from": "sarvam-105b"
+  },
+  "The great Sage Jabali was performing penance for world peace on the banks of the river Bhagirathi near a place called Thataaka. One day, Sage Narada approached him and asked him thus “O Sage Jabali! What is the purpose of this penance? What do you want to achieve? On the one hand, you have been responsible for the proliferation of evil forces and here on the other hand, you are performing penance for world peace. This dual strategy of yours really perplexes me”. Sage Jabali was surprised at the comments of Sage Narada and asked him “O Great Sage Narada! You work for world peace day and night and are aware of everything. What then is the reason for such comments from you? Since both our intentions are the same, wouldn’t straight talk be more appropriate here?” Sage Narada replied thus “That demon Arunasura upon whom you so kindly bestowed your blessings and advised the Gayathri Mantra (the most sacred mantra for Hindus, which carries the essence of the Vedas), is now using the same for the destruction of Dharma on earth. Evil forces are gaining ground on earth and Bhakti is coming down.": {
+   "kn": "ಮಹಾ ಮುನಿ ಜಾಬಾಲಿ ಅವರು ತಾಟಾಕ ಎಂಬ ಸ್ಥಳದ ಬಳಿ ಭಗೀರಥಿ ನದಿಯ ದಡದಲ್ಲಿ ಲೋಕಕಲ್ಯಾಣಕ್ಕಾಗಿ ತಪಸ್ಸು ಮಾಡುತ್ತಿದ್ದರು. ಒಂದು ದಿನ, ಮುನಿ ನಾರದರು ಅವರ ಬಳಿ ಬಂದು ಹೀಗೆ ಕೇಳಿದರು “ಹೇ ಮುನಿ ಜಾಬಾಲಿ! ಈ ತಪಸ್ಸಿನ ಉದ್ದೇಶವೇನು? ನೀವು ಏನನ್ನು ಸಾಧಿಸಲು ಬಯಸುತ್ತೀರಿ? ಒಂದೆಡೆ ನೀವು ದುಷ್ಟಶಕ್ತಿಗಳ ಪ್ರಸರಣಕ್ಕೆ ಕಾರಣರಾಗಿದ್ದೀರಿ ಮತ್ತು ಇನ್ನೊಂದೆಡೆ, ನೀವು ಲೋಕಕಲ್ಯಾಣಕ್ಕಾಗಿ ತಪಸ್ಸು ಮಾಡುತ್ತಿದ್ದೀರಿ. ನಿಮ್ಮ ಈ ದ್ವಂದ್ವ ತಂತ್ರವು ನನ್ನನ್ನು ನಿಜವಾಗಿಯೂ ಗೊಂದಲಕ್ಕೀಡುಮಾಡಿದೆ”. ಮುನಿ ಜಾಬಾಲಿ ಅವರು ಮುನಿ ನಾರದರ ಮಾತುಗಳಿಗೆ ಆಶ್ಚರ್ಯಚಕಿತರಾಗಿ, “ಹೇ ಮಹಾಮುನಿಯ ನಾರದರೇ! ನೀವು ಹಗಲಿರುಳು ಲೋಕಕಲ್ಯಾಣಕ್ಕಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತೀರಿ ಮತ್ತು ಎಲ್ಲವನ್ನೂ ಬಲ್ಲವರಾಗಿದ್ದೀರಿ. ಹಾಗಾದರೆ ನಿಮ್ಮ ಕಡೆಯಿಂದ ಇಂತಹ ಮಾತುಗಳಿಗೆ ಕಾರಣವೇನು? ನಮ್ಮಿಬ್ಬರ ಉದ್ದೇಶಗಳೂ ಒಂದೇ ಆಗಿರುವುದರಿಂದ, ಇಲ್ಲಿ ನೇರವಾಗಿ ಮಾತನಾಡುವುದು ಹೆಚ್ಚು ಸೂಕ್ತವಲ್ಲವೇ?” ಎಂದು ಕೇಳಿದರು. ಅದಕ್ಕೆ ಮುನಿ ನಾರದರು ಹೀಗೆ ಉತ್ತರಿಸಿದರು “ನೀವು ಆ ಅಸುರ ಅರ್ಜುನಸೂರನಿಗೆ ನಿಮ್ಮ ಆಶೀರ್ವಾದವನ್ನು ನೀಡಿ ಮತ್ತು ಗಯಾತ್ರಿ ಮಂತ್ರವನ್ನು (ಹಿಂದೂಗಳಿಗೆ ಅತ್ಯಂತ ಪವಿತ್ರವಾದ ಮಂತ್ರ, ಇದು ವೇದಗಳ ಸಾರವನ್ನು ಹೊಂದಿದೆ) ಉಪದೇಶಿಸಿದಿರಿ. ಈಗ ಅದೇ ಮಂತ್ರವನ್ನು ಆತ ಭೂಮಿಯ ಮೇಲಿನ ಧರ್ಮದ ನಾಶಕ್ಕಾಗಿ ಬಳಸುತ್ತಿದ್ದಾನೆ. ಭೂಮಿಯ ಮೇಲೆ ದುಷ್ಟಶಕ್ತಿಗಳು ಮೇಲುಗೈ ಸಾಧಿಸುತ್ತಿವೆ ಮತ್ತು ಭಕ್ತಿ ಕಡಿಮೆಯಾಗುತ್ತಿದೆ.",
+   "from": "sarvam-105b"
+  },
+  "Unethical and immoral activities are increasing day by day. Because of the power of the Gayathri Mantra, even the Trimurtis (the holy trinity of the Hindus: Brahma, Vishnu and Shiva) are also powerless to destroy him”. This update from Sage Narada put Sage Jabali in a worry. He said “Sage Narada! Please advise me on a way to end this menace”. To this, Sage Narada replied “O Maharshi! Just as you were responsible for the rise of Arunasura, so you shall also be responsible for his downfall. Though this may sound paradoxical, it is Bhagavat-Sankalpa (divine-decision). Therefore, you please proceed to Parashurama Kshetra and perform penance for pleasing Lord Shakti on the banks of the river Nandini. Lord Shakti alone can destroy Arunasura. There is a place called Nagavana near river Nandini which is ideally suited for your mission”. Sage Jabali agreed to this and also indicated that he would take along river Ganga along with him for this purpose. Having triggered the destruction of evil, Sage Narada wished that all ends well and proceeded.": {
+   "kn": "ಅನೈತಿಕ ಮತ್ತು ಅಧರ್ಮದ ಕೆಲಸಗಳು ದಿನೇ ದಿನೇ ಹೆಚ್ಚಾಗುತ್ತಿವೆ. ಗಾಯತ್ರಿ ಮಂತ್ರದ ಶಕ್ತಿಯಿಂದಾಗಿ, ತ್ರಿಮೂರ್ತಿಗಳು (ಹಿಂದೂಗಳ ಪವಿತ್ರ ತ್ರಿಮೂರ್ತಿಗಳು: ಬ್ರಹ್ಮ, ವಿಷ್ಣು ಮತ್ತು ಶಿವ) ಸಹ ಅವನನ್ನು ನಾಶಮಾಡಲು ಅಸಮರ್ಥರಾಗಿದ್ದಾರೆ”. ನಾರದ ಮುನಿಗಳ ಈ ಮಾತು ಜಾಬಾಲಿ ಮುನಿಗಳಿಗೆ ಆತಂಕವನ್ನುಂಟುಮಾಡಿತು. ಅವರು, “ನಾರದ ಮುನಿಗಳೇ! ಈ ಉಪದ್ರವವನ್ನು ಕೊನೆಗೊಳಿಸಲು ದಾರಿ ತೋರಿಸಿ” ಎಂದರು. ಇದಕ್ಕೆ ನಾರದ ಮುನಿಗಳು, “ಓ ಮಹರ್ಷಿಗಳೇ! ಅರುಣಾಸುರನ ಉದಯಕ್ಕೆ ನೀವು ಹೇಗೆ ಕಾರಣರೋ, ಹಾಗೆಯೇ ಅವನ ಪತನಕ್ಕೂ ನೀವೇ ಕಾರಣರಾಗಬೇಕು. ಇದು ವಿಚಿತ್ರವೆನಿಸಿದರೂ, ಇದು ಭಗವತ್-ಸಂಕಲ್ಪ (ದೈವಿಕ ನಿರ್ಧಾರ). ಆದ್ದರಿಂದ, ನೀವು ಪರಶುರಾಮ ಕ್ಷೇತ್ರಕ್ಕೆ ಹೋಗಿ ನಂದಿನಿ ನದಿಯ ದಡದಲ್ಲಿ ಶಕ್ತಿ ದೇವಿಯನ್ನು ಒಲಿಸಿಕೊಳ್ಳಲು ತಪಸ್ಸು ಮಾಡಿ. ಶಕ್ತಿ ದೇವಿ ಮಾತ್ರ ಅರುಣಾಸುರನನ್ನು ನಾಶಮಾಡಬಲ್ಲಳು. ನಂದಿನಿ ನದಿಯ ಬಳಿ ನಾಗವನ ಎಂಬ ಸ್ಥಳವಿದೆ, ಅದು ನಿಮ್ಮ ಕಾರ್ಯಕ್ಕೆ ಹೇಳಿಮಾಡಿಸಿದಂತಿದೆ” ಎಂದು ಉತ್ತರಿಸಿದರು. ಜಾಬಾಲಿ ಮುನಿಗಳು ಇದಕ್ಕೆ ಒಪ್ಪಿಕೊಂಡರು ಮತ್ತು ಈ ಉದ್ದೇಶಕ್ಕಾಗಿ ಗಂಗೆಯನ್ನು ತಮ್ಮೊಂದಿಗೆ ಕರೆದೊಯ್ಯುವುದಾಗಿ ತಿಳಿಸಿದರು. ದುಷ್ಟಶಕ್ತಿಯ ನಾಶಕ್ಕೆ ಕಾರಣರಾದ ನಂತರ, ನಾರದ ಮುನಿಗಳು ಎಲ್ಲವೂ ಒಳ್ಳೆಯದಾಗಲಿ ಎಂದು ಹಾರೈಸಿ ಹೊರಟುಹೋದರು.",
+   "from": "sarvam-105b"
+  },
+  "Sage Jabali performed penance and Mother Ganga appeared before him fully pleased with his penance. Sage Jabali explained his mission of having to go to Parashurama Kshetra and requested Ganga to join him in this holy mission. Having listened to Sage Jabali’s plea, Ganga replied thus “O Noble Sage! I fully admire your concern for societal health and well being. But I am helpless. I have certain problems because of which I will not be able to accompany you right away. Are you aware of them? Earlier, when Vasundhara was unable to handle my flow, Lord Shiva had to provide shelter to me in his locks. In the same way, South India cannot handle the severity of my flow. But I cannot disappoint devotees like you. Therefore, I will suggest a way out of this. If you sit down and perform penance to please Lord Shiva for your activities, I promise that I shall appear there as Antar-Ganga (appearing from underground). Thus I shall make the land holy”.": {
+   "kn": "ಜಾಬಾಲಿ ಮಹರ್ಷಿಗಳು ತಪಸ್ಸು ಮಾಡಿದರು ಮತ್ತು ಅವರ ತಪಸ್ಸಿಗೆ ಮೆಚ್ಚಿ ಗಂಗೆಯು ಅವರ ಮುಂದೆ ಪ್ರತ್ಯಕ್ಷಳಾದಳು. ಜಾಬಾಲಿ ಮಹರ್ಷಿಗಳು ತಾನು ಪರಾಶರ ಕ್ಷೇತ್ರಕ್ಕೆ ಹೋಗಬೇಕಾದ ಉದ್ದೇಶವನ್ನು ವಿವರಿಸಿದರು ಮತ್ತು ಈ ಪವಿತ್ರ ಕಾರ್ಯದಲ್ಲಿ ತಮ್ಮೊಂದಿಗೆ ಬರುವಂತೆ ಗಂಗೆಯನ್ನು ವಿನಂತಿಸಿದರು. ಜಾಬಾಲಿ ಮಹರ್ಷಿಗಳ ಕೋರಿಕೆಯನ್ನು ಕೇಳಿ ಗಂಗೆಯು ಹೀಗೆ ಉತ್ತರಿಸಿದಳು “ಓ ಮಹರ್ಷಿ! ಸಮಾಜದ ಆರೋಗ್ಯ ಮತ್ತು ಯೋಗಕ್ಷೇಮದ ಬಗ್ಗೆ ನಿಮಗಿರುವ ಕಾಳಜಿಯನ್ನು ನಾನು ಸಂಪೂರ್ಣವಾಗಿ ಮೆಚ್ಚುತ್ತೇನೆ. ಆದರೆ ನಾನು ಅಸಹಾಯಕಳು. ನನಗೆ ಕೆಲವು ಸಮಸ್ಯೆಗಳಿವೆ, ಇದರಿಂದಾಗಿ ನಾನು ತಕ್ಷಣವೇ ನಿಮ್ಮೊಂದಿಗೆ ಬರಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ. ಅವುಗಳ ಬಗ್ಗೆ ನಿಮಗೆ ತಿಳಿದಿದೆಯೇ? ಹಿಂದೆ, ವಸುಂಧರೆಗೆ ನನ್ನ ಪ್ರವಾಹವನ್ನು ನಿಭಾಯಿಸಲು ಸಾಧ್ಯವಾಗದಿದ್ದಾಗ, ಶಿವನು ತನ್ನ ಜಟಾಜೂಟದಲ್ಲಿ ನನಗೆ ಆಶ್ರಯ ನೀಡಬೇಕಾಯಿತು. ಅದೇ ರೀತಿ, ದಕ್ಷಿಣ ಭಾರತವು ನನ್ನ ಪ್ರವಾಹದ ತೀವ್ರತೆಯನ್ನು ನಿಭಾಯಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ಆದರೆ ನಿಮ್ಮಂತಹ ಭಕ್ತರನ್ನು ನಾನು ನಿರಾಶೆಗೊಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ಆದ್ದರಿಂದ, ನಾನು ಇದಕ್ಕೆ ಒಂದು ಪರಿಹಾರವನ್ನು ಸೂಚಿಸುತ್ತೇನೆ. ನೀವು ಕುಳಿತು ನಿಮ್ಮ ಕಾರ್ಯಗಳಿಗಾಗಿ ಶಿವನನ್ನು ಒಲಿಸಿಕೊಳ್ಳಲು ತಪಸ್ಸು ಮಾಡಿದರೆ, ನಾನು ಅಲ್ಲಿ ಅಂತರ್ಗಂಗೆಯಾಗಿ (ಭೂಮಿಯಡಿಯಿಂದ ಪ್ರತ್ಯಕ್ಷಳಾಗಿ) ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತೇನೆ ಎಂದು ಭರವಸೆ ನೀಡುತ್ತೇನೆ. ಹೀಗೆ ನಾನು ಈ ಭೂಮಿಯನ್ನು ಪವಿತ್ರಗೊಳಿಸುತ್ತೇನೆ”.",
+   "from": "sarvam-105b"
+  },
+  "Sage Jabali was immensely pleased and performed penance to please Lord Shiva. Lord Shiva was very pleased and appeared before the Sage. He said “O Maharshi! Though it is a well established fact that Adharma abounds in Kali-Yuga, it sometimes gets out of hand. It is our duty to destroy such evil and protect Dharma. The destruction of those evil forces which is not possible either through the power of boons or through the power of mantras is possible through strategy and planning alone. Arunasura has pleased Lord Shakti through the power of the Gayathri Mantra thus making his destruction an impossible task for us”. Hearing this, Sage Jabali was shaken a bit. He pleaded thus “Lord! What is the way out of this maze? There is no way that peace can be established on earth if Arunasura is not destroyed”. Lord Shiva took mercy and spoke thus “Jabali! If you are ready to lead this effort, I am ready to help you in this. Listen. You, along with Ganga, proceed immediately to Nagavana in Parashurama Kshetra. There is a beautiful cave at that place. Perform severe penance in the cave and please Lord Shakti. If she is pleased with you, your wishes will come true. In order to protect you and to ensure that your penance is not disturbed, I shall send along two of my Ganas with you. Vyaghra Chamundi and Doomavathy shall accompany you”.": {
+   "kn": "ಜಾಬಾಲಿ ಮಹರ್ಷಿಗಳು ತುಂಬಾ ಸಂತೋಷಗೊಂಡು ಶಿವನನ್ನು ಮೆಚ್ಚಿಸಲು ತಪಸ್ಸು ಮಾಡಿದರು. ಶಿವನು ತುಂಬಾ ಪ್ರಸನ್ನನಾಗಿ ಮಹರ್ಷಿಗಳ ಮುಂದೆ ಪ್ರತ್ಯಕ್ಷನಾದನು. ಅವನು ಹೇಳಿದನು “ಓ ಮಹರ್ಷಿಯೇ! ಕಲಿಯುಗದಲ್ಲಿ ಅಧರ್ಮ ಹೆಚ್ಚಾಗುವುದು ಸಹಜವಾದರೂ, ಕೆಲವೊಮ್ಮೆ ಅದು ಮಿತಿಮೀರುತ್ತದೆ. ಅಂತಹ ದುಷ್ಟಶಕ್ತಿಗಳನ್ನು ನಾಶಪಡಿಸಿ ಧರ್ಮವನ್ನು ರಕ್ಷಿಸುವುದು ನಮ್ಮ ಕರ್ತವ್ಯ. ವರಗಳ ಶಕ್ತಿಯಿಂದಾಗಲಿ ಅಥವಾ ಮಂತ್ರಗಳ ಶಕ್ತಿಯಿಂದಾಗಲಿ ನಾಶಮಾಡಲಾಗದ ಅಂತಹ ದುಷ್ಟ ಶಕ್ತಿಗಳನ್ನು ಕೇವಲ ತಂತ್ರ ಮತ್ತು ಯೋಜನೆಯಿಂದ ಮಾತ್ರ ನಾಶಮಾಡಲು ಸಾಧ್ಯ. ಅರುಣಾಸುರನು ಗಾಯತ್ರಿ ಮಂತ್ರದ ಶಕ್ತಿಯಿಂದ ಶಕ್ತಿ ದೇವಿಯನ್ನು ಮೆಚ್ಚಿಸಿರುವುದರಿಂದ ಅವನನ್ನು ನಾಶಮಾಡುವುದು ನಮಗೆ ಅಸಾಧ್ಯವಾದ ಕೆಲಸವಾಗಿದೆ”. ಇದನ್ನು ಕೇಳಿ ಜಾಬಾಲಿ ಮಹರ್ಷಿಗಳು ಸ್ವಲ್ಪ ವಿಚಲಿತರಾದರು. ಅವರು ಹೀಗೆ ಬೇಡಿಕೊಂಡರು “ಪ್ರಭು! ಈ ಗೊಂದಲದಿಂದ ಹೊರಬರಲು ದಾರಿಯೇನು? ಅರುಣಾಸುರನನ್ನು ನಾಶಪಡಿಸದಿದ್ದರೆ ಭೂಮಿಯ ಮೇಲೆ ಶಾಂತಿ ನೆಲೆಸಲು ಸಾಧ್ಯವಿಲ್ಲ”. ಶಿವನು ಕರುಣೆಯಿಂದ ಹೀಗೆ ಹೇಳಿದನು “ಜಾಬಾಲಿ! ನೀನು ಈ ಪ್ರಯತ್ನವನ್ನು ಮುನ್ನಡೆಸಲು ಸಿದ್ಧನಿದ್ದರೆ, ನಾನು ನಿನಗೆ ಸಹಾಯ ಮಾಡಲು ಸಿದ್ಧನಿದ್ದೇನೆ. ಕೇಳು. ನೀನು ಗಂಗೆಯೊಂದಿಗೆ ತಕ್ಷಣ ಪರಶುರಾಮ ಕ್ಷೇತ್ರದಲ್ಲಿರುವ ನಾಗವನಕ್ಕೆ ಹೋಗು. ಆ ಸ್ಥಳದಲ್ಲಿ ಒಂದು ಸುಂದರವಾದ ಗುಹೆಯಿದೆ. ಆ ಗುಹೆಯಲ್ಲಿ ಕಠಿಣ ತಪಸ್ಸು ಮಾಡಿ ಶಕ್ತಿ ದೇವಿಯನ್ನು ಮೆಚ್ಚಿಸು. ಅವಳು ನಿನ್ನಿಂದ ಪ್ರಸನ್ನಳಾದರೆ, ನಿನ್ನ ಇಷ್ಟಾರ್ಥಗಳು ಈಡೇರುತ್ತವೆ. ನಿನ್ನನ್ನು ರಕ್ಷಿಸಲು ಮತ್ತು ನಿನ್ನ ತಪಸ್ಸಿಗೆ ಯಾವುದೇ ಭಂಗ ಬಾರದಂತೆ ನೋಡಿಕೊಳ್ಳಲು, ನಾನು ನನ್ನ ಇಬ್ಬರು ಗಣಗಳನ್ನು ನಿನ್ನೊಂದಿಗೆ ಕಳುಹಿಸುತ್ತೇನೆ. ವ್ಯಗ್ರ ಚಾಮುಂಡಿ ಮತ್ತು ಧೂಮಾವತಿ ನಿನ್ನೊಂದಿಗೆ ಬರುತ್ತಾರೆ”.",
+   "from": "sarvam-105b"
+  },
+  "Upon receiving Sage Narada’s advice and Lord Shiva’s order and having realized that both of them had suggested that Sri Shakti is alone the way out for this problem, it dawned upon Sage Jabali that the time for appeasement of Shakti had arrived. He traveled southward along with Shiva’s ganas and reached a forest which was full of Bilva trees.": {
+   "kn": "ಮುನಿ ನಾರದರ ಸಲಹೆ ಮತ್ತು ಶಿವನ ಆಜ್ಞೆಯನ್ನು ಪಡೆದ ನಂತರ, ಈ ಸಮಸ್ಯೆಗೆ ಶ್ರೀ ಶಕ್ತಿಯೇ ಏಕೈಕ ಪರಿಹಾರ ಎಂದು ಅವರಿಬ್ಬರೂ ಸೂಚಿಸಿದ್ದಾರೆ ಎಂದು ಅರಿತು, ಶಕ್ತಿ ಪೂಜೆಯ ಸಮಯ ಬಂದಿದೆ ಎಂದು ಜಾಬಾಲಿ ಮುನಿಗಳಿಗೆ ಹೊಳೆಯಿತು. ಅವರು ಶಿವನ ಗಣಗಳೊಂದಿಗೆ ದಕ್ಷಿಣದ ಕಡೆಗೆ ಪ್ರಯಾಣಿಸಿ, ಬಿಲ್ವ ಮರಗಳಿಂದ ತುಂಬಿದ ಕಾಡೊಂದನ್ನು ತಲುಪಿದರು.",
+   "from": "sarvam-105b"
+  },
+  "Sage Jabali was amazed at what he saw. He was astounded at the marvelous sight of the cave. Beautiful trees, creepers and flowers adorned the entire area. The sweet voices of the birds, the peaceful co-existence of animals and the aroma of the forest immensely pleased the Sage. He found great spiritual solace at the place. His determination to succeed in the cause as also the devotion in his heart for the Lord increased manifold. Sage Jabali quickly realized that this was the place suggested by the Lord and decided to perform severe penance at this very spot.": {
+   "kn": "ಮುನಿ ಜಾಬಾಲಿ ಅಲ್ಲಿ ಕಂಡ ದೃಶ್ಯವನ್ನು ಕಂಡು ಬೆರಗಾದರು. ಗುಹೆಯ ಅದ್ಭುತ ನೋಟವು ಅವರನ್ನು ಆಶ್ಚರ್ಯಗೊಳಿಸಿತು. ಸುಂದರವಾದ ಮರಗಳು, ಬಳ್ಳಿಗಳು ಮತ್ತು ಹೂವುಗಳು ಇಡೀ ಪ್ರದೇಶವನ್ನು ಅಲಂಕರಿಸಿದ್ದವು. ಹಕ್ಕಿಗಳ ಇಂಪಾದ ನಾದ, ಪ್ರಾಣಿಗಳ ಶಾಂತಿಯುತ ಸಹಬಾಳ್ವೆ ಮತ್ತು ಕಾಡಿನ ಪರಿಮಳವು ಮುನಿಗಳನ್ನು ಅಪಾರವಾಗಿ ರಂಜಿಸಿತು. ಆ ಸ್ಥಳದಲ್ಲಿ ಅವರು ಉತ್ತಮ ಆಧ್ಯಾತ್ಮಿಕ ನೆಮ್ಮದಿಯನ್ನು ಕಂಡುಕೊಂಡರು. ಈ ಕಾರ್ಯದಲ್ಲಿ ಯಶಸ್ವಿಯಾಗುವ ಅವರ ದೃಢನಿಶ್ಚಯ ಮತ್ತು ಭಗವಂತನ ಮೇಲಿನ ಅವರ ಭಕ್ತಿಯೂ ಅನೇಕ ಪಟ್ಟು ಹೆಚ್ಚಾಯಿತು. ಇದು ಭಗವಂತ ಸೂಚಿಸಿದ ಸ್ಥಳವೆಂದು ಮುನಿ ಜಾಬಾಲಿ ಬೇಗನೆ ಅರಿತುಕೊಂಡರು ಮತ್ತು ಇದೇ ಸ್ಥಳದಲ್ಲಿ ಕಠಿಣ ತಪಸ್ಸು ಮಾಡಲು ನಿರ್ಧರಿಸಿದರು.",
+   "from": "sarvam-105b"
+  },
+  "At the same spot, Vasuki and the other ganas of Shiva had been residing since a long time. Kshetrapala, who saw these strangers occupying the place, fell suspicious and immediately reported the matter to Vasuki. The arrogant Vasuki did not think over the matter and immediately ordered his assistants Raktheshwari, Varahi, Nandigona, Barbaraka and Paashanamurthy to interrogate the strangers on the matter.": {
+   "kn": "ಅದೇ ಸ್ಥಳದಲ್ಲಿ, ವಾಸುಕಿ ಮತ್ತು ಶಿವನ ಇತರ ಗಣಗಳು ಬಹಳ ಹಿಂದಿನಿಂದಲೂ ನೆಲೆಸಿದ್ದರು. ಆ ಜಾಗವನ್ನು ಈ ಅಪರಿಚಿತರು ಆಕ್ರಮಿಸಿಕೊಂಡಿರುವುದನ್ನು ಕಂಡು ಕ್ಷೇತ್ರಪಾಲನಿಗೆ ಅನುಮಾನ ಬಂದು, ತಕ್ಷಣವೇ ಈ ವಿಷಯವನ್ನು ವಾಸುಕಿಗೆ ತಿಳಿಸಿದನು. ಅಹಂಕಾರಿ ವಾಸುಕಿ ಈ ಬಗ್ಗೆ ಹೆಚ್ಚು ಯೋಚಿಸದೆ, ಆ ಅಪರಿಚಿತರನ್ನು ವಿಚಾರಣೆ ಮಾಡಲು ತನ್ನ ಸಹಾಯಕರಾದ ರಕ್ತೇಶ್ವರಿ, ವರಾಹಿ, ನಂದಿಗೋಣ, ಬರ್ಭರಕ ಮತ್ತು ಪಾಷಾಣಮೂರ್ತಿಯವರಿಗೆ ತಕ್ಷಣವೇ ಆದೇಶಿಸಿದನು.",
+   "from": "sarvam-105b"
+  },
+  "Vyaghra Chamundi (also known as Pili-Chamundi in Tulu language) saw the Bhootas approaching them. He smelt a craving for war in their intentions. He stopped them midway and said “O Bhootas! We are no different from you people. Our intentions are quite similar to yours. We have also been sent by Lord Shiva to establish Dharma on this land. Since you are also residing here with the same intentions, what is the need for an altercation between us. You have forgotten your duty and become arrogant under the influence of power. Get over the veil of ego that has engulfed and join hands with us in restoring truth on this land”. Upon listening to this request from Pili-Chamundi, reality dawned upon Raktheshwari and Kshetrapala and they immediately became assistants to the Sage. (Even to this day, services are offered to Raktheshwari and Kshetrapala in the form of Nemas and Parvas).": {
+   "kn": "ವ್ಯಾಘ್ರ ಚಾಮುಂಡಿ (ತುಳು ಭಾಷೆಯಲ್ಲಿ ಪಿಲಿ-ಚಾಮುಂಡಿ ಎಂದೂ ಕರೆಯುತ್ತಾರೆ) ದೈವಗಳು ತಮ್ಮತ್ತ ಬರುತ್ತಿರುವುದನ್ನು ನೋಡಿದನು. ಅವರ ಉದ್ದೇಶದಲ್ಲಿ ಯುದ್ಧದ ಹಂಬಲವನ್ನು ಅವನು ಗ್ರಹಿಸಿದನು. ಅವನು ಅವರನ್ನು ಅರ್ಧ ದಾರಿಯಲ್ಲೇ ತಡೆದು, “ಓ ದೈವಗಳೇ! ನಾವು ನಿಮ್ಮಿಂದ ಭಿನ್ನವಾಗಿಲ್ಲ. ನಮ್ಮ ಉದ್ದೇಶಗಳೂ ನಿಮ್ಮಂತೆಯೇ ಇವೆ. ಈ ನಾಡಿನಲ್ಲಿ ಧರ್ಮವನ್ನು ಸ್ಥಾಪಿಸಲು ನಮ್ಮನ್ನೂ ಶಿವಭಗವಂತನೇ ಕಳುಹಿಸಿದ್ದಾನೆ. ನೀವು ಕೂಡ ಅದೇ ಉದ್ದೇಶದಿಂದ ಇಲ್ಲಿ ವಾಸಿಸುತ್ತಿರುವುದರಿಂದ, ನಮ್ಮ ನಡುವೆ ಜಗಳವೇಕೆ. ಅಧಿಕಾರದ ದರ್ಪದಿಂದ ನೀವು ನಿಮ್ಮ ಕರ್ತವ್ಯವನ್ನು ಮರೆತು ಅಹಂಕಾರಿಗಳಾಗಿದ್ದೀರಿ. ನಿಮ್ಮನ್ನು ಆವರಿಸಿರುವ ಅಹಂಕಾರದ ಪರದೆಯನ್ನು ತೆಗೆದುಹಾಕಿ, ಈ ನಾಡಿನಲ್ಲಿ ಸತ್ಯವನ್ನು ಮರುಸ್ಥಾಪಿಸಲು ನಮ್ಮೊಂದಿಗೆ ಕೈಜೋಡಿಸಿ” ಎಂದು ಹೇಳಿದನು. ಪಿಲಿ-ಚಾಮುಂಡಿಯ ಈ ಮಾತುಗಳನ್ನು ಕೇಳಿ, ರಕ್ತೇಶ್ವರಿ ಮತ್ತು ಕ್ಷೇತ್ರಪಾಲರಿಗೆ ವಾಸ್ತವದ ಅರಿವಾಯಿತು ಮತ್ತು ಅವರು ತಕ್ಷಣವೇ ಮುನಿಗೆ ಸಹಾಯಕರಾದರು. (ಇಂದಿಗೂ ರಕ್ತೇಶ್ವರಿ ಮತ್ತು ಕ್ಷೇತ್ರಪಾಲರಿಗೆ ನೇಮ ಮತ್ತು ಪರ್ವಗಳ ರೂಪದಲ್ಲಿ ಸೇವೆಗಳನ್ನು ಸಲ್ಲಿಸಲಾಗುತ್ತದೆ).",
+   "from": "sarvam-105b"
+  },
+  "But no such changes took place in Varahi, Nandigona, Barbaraka and Paashanamurthy. They attacked Doomavathy and Vyaghra Chamundi. A fierce war ensued and Doomavathy and Pili-Chamundi reached the brink of defeat. At this stage, Sage Jabali himself stepped in. The Bhootas were no match for the divine power of the Sage. They were defeated and they ran back to Vasuki. The arrogant Vasuki himself came to war with Jabali. He had lost his sense of reason and was incapable of judging the greatness of the Sage. He spoke ill of the Sage and disrespected him. This enraged Sage Jabali and he said “O Nagaraj! You forget the divinity of Hari and Hara. You are discounting us and our intentions of world peace. I hereby curse you that you shall have no existence on earth”.": {
+   "kn": "ಆದರೆ ವರಾಹಿ, ನಂದಿಗೋಣ, ಬರ್ಬರಕ ಮತ್ತು ಪಾಷಾಣಮೂರ್ತಿಯವರಲ್ಲಿ ಅಂತಹ ಯಾವುದೇ ಬದಲಾವಣೆಗಳಾಗಲಿಲ್ಲ. ಅವರು ಧೂಮಾವತಿ ಮತ್ತು ವ್ಯಗ್ರ ಚಾಮುಂಡಿಯ ಮೇಲೆ ದಾಳಿ ಮಾಡಿದರು. ಭೀಕರ ಯುದ್ಧ ನಡೆಯಿತು ಮತ್ತು ಧೂಮಾವತಿ ಹಾಗೂ ಪಿಲಿಚಾಮುಂಡಿ ಸೋಲಿನ ಅಂಚಿಗೆ ತಲುಪಿದರು. ಈ ಹಂತದಲ್ಲಿ, ಜಾಬಾಲಿ ಮಹರ್ಷಿಗಳೇ ಖುದ್ದಾಗಿ ಮಧ್ಯಪ್ರವೇಶಿಸಿದರು. ಋಷಿಗಳ ದೈವಿಕ ಶಕ್ತಿಗೆ ಭೂತಗಳು ಸಾಟಿಯಾಗಲಿಲ್ಲ. ಅವರು ಸೋತು ವಾಪಸ್ ವಾಸುಕಿಯ ಬಳಿಗೆ ಓಡಿಹೋದರು. ಅಹಂಕಾರಿಯಾದ ವಾಸುಕಿಯೇ ಜಾಬಾಲಿಗಳ ಜೊತೆ ಯುದ್ಧಕ್ಕೆ ಬಂದನು. ಅವನಿಗೆ ವಿವೇಚನೆ ತಪ್ಪಿತ್ತು ಮತ್ತು ಋಷಿಗಳ ಮಹತ್ವವನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವ ಶಕ್ತಿ ಅವನಲ್ಲಿರಲಿಲ್ಲ. ಅವನು ಋಷಿಗಳನ್ನು ನಿಂದಿಸಿದನು ಮತ್ತು ಅವಮಾನಿಸಿದನು. ಇದು ಜಾಬಾಲಿ ಮಹರ್ಷಿಗಳಿಗೆ ಕೋಪ ತರಿಸಿತು ಮತ್ತು ಅವರು, “ಹೇ ನಾಗರಾಜ! ನೀನು ಹರಿ ಮತ್ತು ಹರರ ದೈವತ್ವವನ್ನು ಮರೆಯುತ್ತಿದ್ದೀಯಾ. ನಮ್ಮನ್ನು ಮತ್ತು ಜಗತ್ತಿನ ಶಾಂತಿಯ ನಮ್ಮ ಉದ್ದೇಶಗಳನ್ನು ನೀನು ಕಡೆಗಣಿಸುತ್ತಿರುವೆ. ಈ ಭೂಮಿಯ ಮೇಲೆ ನಿನಗೆ ಅಸ್ತಿತ್ವವಿರುವುದಿಲ್ಲ ಎಂದು ನಾನು ನಿನಗೆ ಶಪಿಸುತ್ತೇನೆ” ಎಂದು ಹೇಳಿದರು.",
+   "from": "sarvam-105b"
+  },
+  "Vasuki was shocked at the curse. The cloud of ignorance that had blocked his senses waned off. Reality dawned upon him. He prostrated before the Sage and begged for forgiveness for himself and the other ganas. Seeing Vasuki realize his mistake and purify himself in the fire of repentance, the Sage’s anger vanished and he took mercy on him. Sage Jabali said “O Vasuki! What can I do. A Sage’s curse can never be revoked. But it can definitely be altered. Your existence has been destroyed by a Brahmin’s anger. But in due time, Lord Parameshwara will make this place his abode and will appear here in the form of a Lingam. Further, devotees will build a beautiful temple for him here. When poojas, yagnas and other practices as prescribed by Dharma start happening here again, you shall gain your existence back again”. Vasuki and the other ganas felt happy at this and joined hands with the rest of them to aid in establishing Dharma.": {
+   "kn": "ವಾಸುಕಿಗೆ ಶಾಪದಿಂದ ಆಘಾತವಾಯಿತು. ಅವನ ಇಂದ್ರಿಯಗಳನ್ನು ಆವರಿಸಿದ್ದ ಅಜ್ಞಾನದ ಮೋಡ ಕರಗಿಹೋಯಿತು. ಅವನಿಗೆ ವಾಸ್ತವದ ಅರಿವಾಯಿತು. ಅವನು ಮಹರ್ಷಿಗಳ ಮುಂದೆ ನಮಸ್ಕರಿಸಿ, ತನ್ನ ಮತ್ತು ಇತರ ಗಣಗಳ ಪರವಾಗಿ ಕ್ಷಮೆ ಬೇಡಿಕೊಂಡನು. ವಾಸುಕಿ ತನ್ನ ತಪ್ಪನ್ನು ಅರಿತು ಪಶ್ಚಾತ್ತಾಪದ ಬೆಂಕಿಯಲ್ಲಿ ಶುದ್ಧನಾಗುವುದನ್ನು ಕಂಡು, ಮುನಿಯ ಕೋಪವು ಮಾಯವಾಯಿತು ಮತ್ತು ಅವರು ಅವನ ಮೇಲೆ ಕರುಣೆ ತೋರಿದರು. ಜಾಬಾಲಿ ಮಹರ್ಷಿಗಳು ಹೇಳಿದರು “ಓ ವಾಸುಕಿ! ನಾನು ಏನು ಮಾಡಲಿ. ಒಬ್ಬ ಋಷಿಯ ಶಾಪವನ್ನು ಎಂದಿಗೂ ಹಿಂಪಡೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ. ಆದರೆ ಅದನ್ನು ಖಂಡಿತವಾಗಿಯೂ ಬದಲಾಯಿಸಬಹುದು. ಬ್ರಾಹ್ಮಣನ ಕೋಪದಿಂದ ನಿನ್ನ ಅಸ್ತಿತ್ವ ನಾಶವಾಗಿದೆ. ಆದರೆ ಕಾಲಕ್ರಮೇಣ, ಪರಮೇಶ್ವರನು ಈ ಸ್ಥಳವನ್ನು ತನ್ನ ವಾಸಸ್ಥಾನವನ್ನಾಗಿ ಮಾಡಿಕೊಳ್ಳುತ್ತಾನೆ ಮತ್ತು ಇಲ್ಲಿ ಲಿಂಗದ ರೂಪದಲ್ಲಿ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತಾನೆ. ಇದಲ್ಲದೆ, ಭಕ್ತರು ನನಗಾಗಿ ಇಲ್ಲಿ ಒಂದು ಸುಂದರವಾದ ದೇವಾಲಯವನ್ನು ನಿರ್ಮಿಸುತ್ತಾರೆ. ಧರ್ಮವು ಸೂಚಿಸಿದಂತೆ ಪೂಜೆಗಳು, ಯಜ್ಞಗಳು ಮತ್ತು ಇತರ ಆಚರಣೆಗಳು ಇಲ್ಲಿ ಮತ್ತೆ ಪ್ರಾರಂಭವಾದಾಗ, ನೀನು ಮತ್ತೆ ನಿನ್ನ ಅಸ್ತಿತ್ವವನ್ನು ಮರಳಿ ಪಡೆಯುತ್ತೀಯ”. ಇದನ್ನು ಕೇಳಿ ವಾಸುಕಿ ಮತ್ತು ಇತರ ಗಣಗಳು ಸಂತೋಷಪಟ್ಟರು ಮತ್ತು ಧರ್ಮವನ್ನು ಸ್ಥಾಪಿಸಲು ಉಳಿದವರೊಂದಿಗೆ ಕೈಜೋಡಿಸಿದರು.",
+   "from": "sarvam-105b"
+  },
+  "Sage Jabali entered the cave and was astounded by its beauty. He proceeded towards the inside of the temple fully enjoying the natural beauty of the landscape. As promised, River Ganga appeared there from within and started flowing. Sage Jabali said “Ganga flows from Lord Shiva’s head. Ganga flows from Kashi. And now, Ganga flows in Nagavana. O Lord! No one can predict your divine intentions”. At that moment, Lord Shiva appeared inside the cave in the form of a Lingam. Seeing all this happen, Sage Jabali felt a great energy flow within him and he sat down to perform penance to please Lord Adi Shakti.": {
+   "kn": "ಮುನಿ ಜಾಬಾಲಿ ಗುಹೆಯೊಳಗೆ ಪ್ರವೇಶಿಸಿದಾಗ ಅದರ ಸೌಂದರ್ಯವನ್ನು ಕಂಡು ಬೆರಗಾದರು. ಪ್ರಕೃತಿಯ ಸೌಂದರ್ಯವನ್ನು ಸಂಪೂರ್ಣವಾಗಿ ಆನಂದಿಸುತ್ತಾ ಅವರು ದೇವಾಲಯದ ಒಳಭಾಗದತ್ತ ಸಾಗಿದರು. ಮಾತಿನಂತೆ, ಗಂಗೆಯು ಅಲ್ಲಿ ಒಳಗಿನಿಂದ ಪ್ರತ್ಯಕ್ಷಳಾಗಿ ಹರಿಯಲು ಪ್ರಾರಂಭಿಸಿದಳು. ಮುನಿ ಜಾಬಾಲಿ, “ಗಂಗೆಯು ಶಿವನ ತಲೆಯಿಂದ ಹರಿಯುತ್ತಾಳೆ. ಗಂಗೆಯು ಕಾವಿಯಿಂದ ಹರಿಯುತ್ತಾಳೆ. ಈಗ, ಗಂಗೆಯು ನಾಗವನದಲ್ಲಿ ಹರಿಯುತ್ತಿದ್ದಾಳೆ. ಎಲೈ ದೇವರೇ! ನಿನ್ನ ದೈವಿಕ ಇಚ್ಛೆಗಳನ್ನು ಯಾರೂ ಊಹಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ” ಎಂದು ಹೇಳಿದರು. ಆ ಕ್ಷಣದಲ್ಲಿ, ಶಿವನು ಗುಹೆಯೊಳಗೆ ಲಿಂಗ ರೂಪದಲ್ಲಿ ಪ್ರತ್ಯಕ್ಷನಾದನು. ಇದೆಲ್ಲವನ್ನೂ ಕಂಡು, ಮುನಿ ಜಾಬಾಲಿ ತಮ್ಮೊಳಗೆ ಒಂದು ದೊಡ್ಡ ಶಕ್ತಿಯು ಹರಿಯುತ್ತಿರುವುದನ್ನು ಅನುಭವಿಸಿದರು ಮತ್ತು ಆದಿಶಕ್ತಿಯನ್ನು ಮೆಚ್ಚಿಸಲು ತಪಸ್ಸು ಮಾಡಲು ಕುಳಿತುಕೊಂಡರು.",
+   "from": "sarvam-105b"
+  },
+  "At Ekaveeradripura, Arunasura was ruling the land according to his Rakshasa Dharma. His rule was evil and he was a terror for his citizens. Earlier, he had obtained the Gayathri Mantra from Sage Jabali and had used it to please Lord Adi Shakti. He had obtained a boon from Lord Adi Shakti that he cannot be killed even by the Trimurtis. Using that boon, he had conquered Swarga, Martya and Patala lokas (Heaven, Earth and the Nether lands).": {
+   "kn": "ಏಕವೀರದ್ವಿಪುರದಲ್ಲಿ, ಅರುಣಾಸುರನು ತನ್ನ ರಾಕ್ಷಸ ಧರ್ಮದ ಪ್ರಕಾರ ಆಳ್ವಿಕೆ ನಡೆಸುತ್ತಿದ್ದನು. ಅವನ ಆಡಳಿತವು ಕ್ರೂರವಾಗಿತ್ತು ಮತ್ತು ಅವನು ತನ್ನ ಪ್ರಜೆಗಳಿಗೆ ಭಯವನ್ನು ಹುಟ್ಟಿಸಿದ್ದನು. ಈ ಹಿಂದೆ, ಅವನು ಮುನಿ ಜಾಬಾಲಿ ಅವರಿಂದ ಗಾಯತ್ರಿ ಮಂತ್ರವನ್ನು ಪಡೆದು, ಅದನ್ನು ಆದಿಶಕ್ತಿಯನ್ನು ಮೆಚ್ಚಿಸಲು ಬಳಸಿದ್ದನು. ತ್ರಿಮೂರ್ತಿಗಳು ಕೂಡ ತನ್ನನ್ನು ಕೊಲ್ಲಲು ಸಾಧ್ಯವಿಲ್ಲ ಎಂಬ ವರವನ್ನು ಅವನು ಆದಿಶಕ್ತಿಯಿಂದ ಪಡೆದಿದ್ದನು. ಆ ವರವನ್ನು ಬಳಸಿಕೊಂಡು, ಅವನು ಸ್ವರ್ಗ, ಮರ್ತ್ಯ ಮತ್ತು ಪಾತಾಳ ಲೋಕಗಳನ್ನು ಗೆದ್ದಿದ್ದನು.",
+   "from": "sarvam-105b"
+  },
+  "As per the wishes of the divine, Sage Narada, who is constantly working towards establishment of Dharma, realized that the time to put an end to Arunasura had arrived and that he had a role to play in it. He approached Arunasura’s palace. The demon welcomed Sage Narada. The demon asked the Sage thus “O Maharshi! I am blessed by your arrival. Please do let me know the reason for your visit”. Sage Narada laughed and said “Arunasura! I took pity upon seeing your ignorance and decided to visit you. I am sure I can call you a fool going by your actions”. This made Arunasura angry and he said “O Narada! Instead of pricking me with your skeptical statements, please come straight to the point and help me clarify the doubts in my mind”. Sage Narada said “O King of the Rakshasas! There is a fire burning in your palace and you are still unaware of it. That very person who advised you on the Gayathri Mantra is now working overtime to ensure your destruction. Sage Jabali is performing a severe penance at Nagavana and he is trying to please Lord Shakti. Do not delay even a little. Proceed immediately to stop his penance. Else, your end is guaranteed”.": {
+   "kn": "ದೇವರ ಇಚ್ಛೆಯಂತೆ, ಧರ್ಮ ಸ್ಥಾಪನೆಗಾಗಿ ನಿರಂತರವಾಗಿ ಶ್ರಮಿಸುತ್ತಿರುವ ನಾರದ ಮುನಿಗಳು, ಅರುಣಾಸುರನಿಗೆ ಅಂತ್ಯ ಹಾಡುವ ಸಮಯ ಬಂದಿದೆ ಮತ್ತು ಅದರಲ್ಲಿ ತನ್ನದೇ ಪಾತ್ರವಿದೆ ಎಂದು ಅರಿತುಕೊಂಡರು. ಅವರು ಅರುಣಾಸುರನ ಅರಮನೆಯನ್ನು ತಲುಪಿದರು. ರಾಕ್ಷಸನು ನಾರದ ಮುನಿಗಳನ್ನು ಸ್ವಾಗತಿಸಿದನು. ರಾಕ್ಷಸನು ಮುನಿಗಳನ್ನು ಹೀಗೆ ಕೇಳಿದನು “ಓ ಮಹರ್ಷಿ! ನಿಮ್ಮ ಆಗಮನದಿಂದ ನಾನು ಧನ್ಯನಾದೆ. ದಯವಿಟ್ಟು ನಿಮ್ಮ ಭೇಟಿಯ ಕಾರಣವನ್ನು ತಿಳಿಸಿ”. ನಾರದ ಮುನಿಗಳು ನಕ್ಕು, “ಅರುಣಾಸುರ! ನಿನ್ನ ಅಜ್ಞಾನವನ್ನು ನೋಡಿ ನನಗೆ ಕನಿಕರ ಬಂದು ನಿನ್ನನ್ನು ಭೇಟಿಯಾಗಲು ನಿರ್ಧರಿಸಿದೆ. ನಿನ್ನ ಕೃತ್ಯಗಳನ್ನು ನೋಡಿದರೆ ನಿನ್ನನ್ನು ಮೂರ್ಖ ಎಂದು ಕರೆಯಬಹುದು ಎಂದು ನನಗೆ ಖಾತ್ರಿಯಿದೆ” ಎಂದರು. ಇದರಿಂದ ಅರುಣಾಸುರನಿಗೆ ಕೋಪ ಬಂದು, “ಓ ನಾರದ! ನಿನ್ನ ಅನುಮಾನಾಸ್ಪದ ಮಾತುಗಳಿಂದ ನನ್ನನ್ನು ಚುಚ್ಚುವ ಬದಲು, ದಯವಿಟ್ಟು ನೇರವಾಗಿ ವಿಷಯಕ್ಕೆ ಬಾ ಮತ್ತು ನನ್ನ ಮನಸ್ಸಿನಲ್ಲಿರುವ ಅನುಮಾನಗಳನ್ನು ಬಗೆಹರಿಸಲು ಸಹಾಯ ಮಾಡು” ಎಂದನು. ನಾರದ ಮುನಿಗಳು ಹೇಳಿದರು “ಓ ರಾಕ್ಷಸರ ರಾಜನೇ! ನಿನ್ನ ಅರಮನೆಯಲ್ಲಿ ಬೆಂಕಿ ಉರಿಯುತ್ತಿದೆ ಮತ್ತು ನಿನಗೆ ಇನ್ನೂ ಅದರ ಅರಿವಿಲ್ಲ. ಗಾಯತ್ರಿ ಮಂತ್ರದ ಬಗ್ಗೆ ನಿನಗೆ ಸಲಹೆ ನೀಡಿದ ಅದೇ ವ್ಯಕ್ತಿಯೇ ಈಗ ನಿನ್ನ ವಿನಾಶವನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಲು ಹಗಲಿರುಳು ಶ್ರಮಿಸುತ್ತಿದ್ದಾನೆ. ಜಾಬಾಲಿ ಮಹರ್ಷಿಗಳು ನಾಗವನದಲ್ಲಿ ಕಠಿಣ ತಪಸ್ಸು ಮಾಡುತ್ತಿದ್ದಾರೆ ಮತ್ತು ಅವರು ಶಕ್ತಿ ದೇವಿಯನ್ನು ಒಲಿಸಿಕೊಳ್ಳಲು ಪ್ರಯತ್ನಿಸುತ್ತಿದ್ದಾರೆ. ಸ್ವಲ್ಪವೂ ತಡ ಮಾಡಬೇಡ. ಅವರ ತಪಸ್ಸನ್ನು ತಡೆಯಲು ತಕ್ಷಣ ಹೊರಡು. ಇಲ್ಲದಿದ್ದರೆ, ನಿನ್ನ ಅಂತ್ಯ ಖಂಡಿತ”.",
+   "from": "sarvam-105b"
+  },
+  "Arunasura was outraged listening to this story and he immediately ordered two of his trusted lieutenants, Chanda and Prachanda, to proceed towards Nagavana and spoil Sage Jabali’s penance. Chanda and Prachanda took along a huge army with them and attacked Nagavana. A fierce battle ensued between the Rakshasas and the Bhootas. The Rakshasas reached the brink of defeat and retreated. But soon, they came back like waves of the ocean. This time they were under the leadership of Arunasura himself. They completely surrounded Nagavana. This alerted Kshetrapala and he realized the gravity of the situation. He immediately entered the cave and spoke to Sage Jabali: “O Lord! A fierce war is happening between us and Arunasura’s army. At any time now, the Rakshasas may enter the cave and put an end to your penance. Therefore, you please proceed towards the east using the secret exit in the cave. There you please perform the Chandika Yagna (the biggest and grandest yagna for Lord Shakti) and appease Lord Shakti”.": {
+   "kn": "ಈ ಕಥೆಯನ್ನು ಕೇಳಿ ಅರುಣಾಸುರನಿಗೆ ವಿಪರೀತ ಕೋಪ ಬಂತು. ಕೂಡಲೇ ತನ್ನ ಇಬ್ಬರು ನಂಬಿಕಸ್ಥ ಸೇನಾಪತಿಗಳಾದ ಚಂಡ ಮತ್ತು ಪ್ರಚಂಡರಿಗೆ ನಾಗವನದ ಕಡೆಗೆ ಹೋಗಿ ಜಾಬಾಲಿ ಮಹರ್ಷಿಗಳ ತಪಸ್ಸಿಗೆ ಭಂಗ ತರಲು ಆದೇಶಿಸಿದನು. ಚಂಡ ಮತ್ತು ಪ್ರಚಂಡರು ಒಂದು ದೊಡ್ಡ ಸೈನ್ಯವನ್ನು ಕರೆದುಕೊಂಡು ನಾಗವನದ ಮೇಲೆ ದಾಳಿ ಮಾಡಿದರು. ರಾಕ್ಷಸರು ಮತ್ತು ದೈವಗಳ ನಡುವೆ ಭೀಕರ ಯುದ್ಧ ನಡೆಯಿತು. ರಾಕ್ಷಸರು ಸೋಲಿನ ಅಂಚಿಗೆ ತಲುಪಿ ಹಿಂದೆಗೆದರು. ಆದರೆ ಸ್ವಲ್ಪ ಸಮಯದಲ್ಲೇ, ಅವರು ಸಮುದ್ರದ ಅಲೆಗಳಂತೆ ಮತ್ತೆ ಹಿಂದಿರುಗಿ ಬಂದರು. ಈ ಬಾರಿ ಅವರ ನೇತೃತ್ವವನ್ನು ಸ್ವತಃ ಅರುಣಾಸುರನೇ ವಹಿಸಿದ್ದನು. ಅವರು ನಾಗವನವನ್ನು ಸಂಪೂರ್ಣವಾಗಿ ಸುತ್ತುವರೆದರು. ಇದರಿಂದ ಕ್ಷೇತ್ರಪಾಲನಿಗೆ ಎಚ್ಚರವಾಯಿತು ಮತ್ತು ಪರಿಸ್ಥಿತಿಯ ಗಂಭೀರತೆ ಅವನಿಗೆ ಅರ್ಥವಾಯಿತು. ಅವನು ತಕ್ಷಣವೇ ಗುಹೆಯನ್ನು ಪ್ರವೇಶಿಸಿ ಜಾಬಾಲಿ ಮಹರ್ಷಿಗಳೊಂದಿಗೆ ಹೀಗೆ ಹೇಳಿದನು: “ಹೇ ಪ್ರಭುವೇ! ನಮ್ಮ ಮತ್ತು ಅರುಣಾಸುರನ ಸೈನ್ಯದ ನಡುವೆ ಭೀಕರ ಯುದ್ಧ ನಡೆಯುತ್ತಿದೆ. ಈಗ ಯಾವುದೇ ಕ್ಷಣದಲ್ಲಿ, ರಾಕ್ಷಸರು ಗುಹೆಯನ್ನು ಪ್ರವೇಶಿಸಿ ನಿಮ್ಮ ತಪಸ್ಸಿಗೆ ಅಂತ್ಯ ಹಾಡಬಹುದು. ಆದ್ದರಿಂದ, ದಯವಿಟ್ಟು ಗುಹೆಯಲ್ಲಿರುವ ರಹಸ್ಯ ದಾರಿಯ ಮೂಲಕ ಪೂರ್ವ ದಿಕ್ಕಿನ ಕಡೆಗೆ ಹೋಗಿ. ಅಲ್ಲಿ ದಯವಿಟ್ಟು ಚಂಡಿಕಾ ಯಾಗವನ್ನು (ಶಕ್ತಿ ದೇವಿಯ ಅತಿ ದೊಡ್ಡ ಮತ್ತು ಭವ್ಯವಾದ ಯಾಗ) ಮಾಡಿ ಮತ್ತು ಶಕ್ತಿ ದೇವಿಯನ್ನು ಒಲಿಸಿಕೊಳ್ಳಿ”.",
+   "from": "sarvam-105b"
+  },
+  "Sage Jabali’s mind was at the crossroads. On one side was the impending trouble from the Rakshasas, on the other hand Lord Adi Shakti had not yet appeared. And then there was the suggestion from Kshetrapala. Under pressure, Sage Jabali meditated and thought for a while. It dawned upon the Sage that if Lord Adi Shakti wished to appear only through the Chandika Yagna, then that has to be the adopted route. So, as per directions from Kshetrapala, Sage Jabali exits the cave and reaches a place called Mallikavana. Finding it an equally beautiful place, Sage Jabali decides to perform the Yagna there. The Trimurtis, the Devas and the Bhootas stand as guards for the Yagna.": {
+   "kn": "ಜಾಬಾಲಿ ಮಹರ್ಷಿಗಳ ಮನಸ್ಸು ಗೊಂದಲದಲ್ಲಿತ್ತು. ಒಂದೆಡೆ ರಾಕ್ಷಸರಿಂದ ಎದುರಾಗಿದ್ದ ತೊಂದರೆ, ಮತ್ತೊಂದೆಡೆ ಆದೀಶಕ್ತಿಯು ಇನ್ನೂ ಪ್ರತ್ಯಕ್ಷವಾಗದಿರುವುದು. ಇದರ ಜೊತೆಗೆ ಕ್ಷೇತ್ರಪಾಲನ ಸಲಹೆಯೂ ಇತ್ತು. ಒತ್ತಡಕ್ಕೆ ಸಿಲುಕಿದ ಜಾಬಾಲಿ ಮಹರ್ಷಿಗಳು ಸ್ವಲ್ಪ ಹೊತ್ತು ಧ್ಯಾನ ಮಾಡಿದರು. ಆದೀಶಕ್ತಿಯು ಚಂಡಿಕಾ ಯಾಗದ ಮೂಲಕವೇ ಪ್ರತ್ಯಕ್ಷವಾಗಲು ಬಯಸಿದರೆ, ಅದೇ ಮಾರ್ಗವನ್ನು ಅನುಸರಿಸಬೇಕು ಎಂಬುದು ಅವರಿಗೆ ಹೊಳೆಯಿತು. ಆದ್ದರಿಂದ, ಕ್ಷೇತ್ರಪಾಲನ ಸೂಚನೆಯಂತೆ, ಜಾಬಾಲಿ ಮಹರ್ಷಿಗಳು ಗುಹೆಯಿಂದ ಹೊರಬಂದು ಮಲ್ಲಿಕಾವನ ಎಂಬ ಸ್ಥಳವನ್ನು ತಲುಪಿದರು. ಅದು ಕೂಡ ಅಷ್ಟೇ ಸುಂದರವಾದ ಸ್ಥಳವೆಂದು ತಿಳಿದು, ಜಾಬಾಲಿ ಮಹರ್ಷಿಗಳು ಅಲ್ಲಿಯೇ ಯಾಗವನ್ನು ಮಾಡಲು ನಿರ್ಧರಿಸಿದರು. ತ್ರಿಮೂರ್ತಿಗಳು, ದೇವತೆಗಳು ಮತ್ತು ಭೂತಗಣಗಳು ಯಾಗಕ್ಕೆ ಕಾವಲಾಗಿ ನಿಂತಿದ್ದವು.",
+   "from": "sarvam-105b"
+  },
+  "Upon not finding Sage Jabali inside the cave, Arunasura is very agitated and thinks he has been cheated by Sage Narada. He starts indiscriminately killing Rishis and Sages as revenge. His end is nearing!!": {
+   "kn": "ಗುಹೆಯೊಳಗೆ ಜಾಬಾಲಿ ಮಹರ್ಷಿಗಳು ಕಾಣಿಸದೆ ಇದ್ದಾಗ, ಅರುಣಾಸುರನಿಗೆ ತುಂಬಾ ಕೋಪ ಬರುತ್ತದೆ ಮತ್ತು ನಾರದ ಮುನಿಗಳು ತನಗೆ ಮೋಸ ಮಾಡಿದ್ದಾರೆ ಎಂದು ಭಾವಿಸುತ್ತಾನೆ. ಸೇಡು ತೀರಿಸಿಕೊಳ್ಳಲು ಆತ ಮುನಿಗಳನ್ನು ಮತ್ತು ಋಷಿಗಳನ್ನು ವಿವೇಚನೆಯಿಲ್ಲದೆ ಕೊಲ್ಲಲು ಪ್ರಾರಂಭಿಸುತ್ತಾನೆ. ಅವನ ಅಂತ್ಯವು ಹತ್ತಿರವಾಗುತ್ತಿದೆ!!",
+   "from": "sarvam-105b"
+  },
+  "The yagna being performed at Mallikavana had no match in history. It was a litmus test for the devotion of Sage Jabali. It was a yagna being performed for world peace. Right at the time of the Poornahuti (the offering towards the completion of the yagna), Lord Adi Shakti appeared right at the middle of the fire with a pleasant smile on her face. When asked the reason for the yagna, Sage Jabali narrated the entire story and pleaded for her intervention. Lord Adi Shakti said “O Devotees! Let there be no fear. This day has come upon us because of the mistake of advising a Rakshasa with the Gayathri Mantra without giving a thought to the gravity of the consequence of such an action. But he has acted according to his birth qualities. Even then, he is my true devotee. He has been worshipping me every day with complete devotion. Hence I shall create a separate environment where he will reach the brink of his bad deeds. Near a place called Kati on the banks of the river Nandini, I shall take the form of a Brahmari (bee) and kill him. (This sacred place is now called Kateel where Lord Adi Shakti took the form of a bee and killed Arunasura. The God is worshipped as Lord Durgaparameshwari here. It is one of the most sacred places of South India)”.": {
+   "kn": "ಮಲ್ಲಿಕಾವನದಲ್ಲಿ ನಡೆಯುತ್ತಿದ್ದ ಯಾಗಕ್ಕೆ ಇತಿಹಾಸದಲ್ಲಿ ಸಾಟಿಯಿರಲಿಲ್ಲ. ಇದು ಜಾಬಾಲಿ ಮಹರ್ಷಿಗಳ ಭಕ್ತಿಗೆ ಒಂದು ಲಿಟ್ಮಸ್ ಟೆಸ್ಟ್ ಆಗಿತ್ತು. ಇದು ವಿಶ್ವಶಾಂತಿಗಾಗಿ ನಡೆಯುತ್ತಿದ್ದ ಯಾಗವಾಗಿತ್ತು. ಯಾಗದ ಪೂರ್ಣಾಹುತಿಯ (ಯಾಗವನ್ನು ಪೂರ್ಣಗೊಳಿಸುವ ಅರ್ಪಣೆ) ಸಮಯದಲ್ಲೇ, ಭಗವಾನ್ ಆದೀಶಕ್ತಿ ತಮ್ಮ ಮುಖದಲ್ಲಿ ಮಧುರವಾದ ನಗುವಿನೊಂದಿಗೆ ಅಗ್ನಿಶಕ್ತಿಯ ಮಧ್ಯದಲ್ಲಿ ಪ್ರತ್ಯಕ್ಷರಾದರು. ಯಾಗದ ಕಾರಣವನ್ನು ಕೇಳಿದಾಗ, ಜಾಬಾಲಿ ಮಹರ್ಷಿಗಳು ಇಡೀ ಕಥೆಯನ್ನು ವಿವರಿಸಿದರು ಮತ್ತು ತಮ್ಮ ಹಸ್ತಕ್ಷೇಪಕ್ಕಾಗಿ ಬೇಡಿಕೊಂಡರು. ಭಗವಾನ್ ಆದೀಶಕ್ತಿ ಹೇಳಿದರು “ಓ ಭಕ್ತರೇ! ಭಯಪಡಬೇಡಿ. ಇಂತಹ ಕ್ರಿಯೆಯ ಪರಿಣಾಮದ ಗಂಭೀರತೆಯನ್ನು ಯೋಚಿಸದೆ ರಾಕ್ಷಸನಿಗೆ ಗಾಯತ್ರಿ ಮಂತ್ರವನ್ನು ಉಪದೇಶ ಮಾಡಿದ ತಪ್ಪಿನಿಂದ ಈ ದಿನ ಬಂದಿದೆ. ಆದರೆ ಅವನು ತನ್ನ ಜನ್ಮ ಗುಣಗಳಿಗೆ ಅನುಗುಣವಾಗಿ ನಡೆದುಕೊಂಡಿದ್ದಾನೆ. ಆದರೂ, ಅವನು ನನ್ನ ನಿಜವಾದ ಭಕ್ತ. ಅವನು ಪ್ರತಿದಿನ ಸಂಪೂರ್ಣ ಭಕ್ತಿಯಿಂದ ನನ್ನನ್ನು ಪೂಜಿಸುತ್ತಿದ್ದಾನೆ. ಆದ್ದರಿಂದ ಅವನು ತನ್ನ ಕೆಟ್ಟ ಕಾರ್ಯಗಳ ಅಂಚನ್ನು ತಲುಪುವಂತಹ ಪ್ರತ್ಯೇಕ ವಾತಾವರಣವನ್ನು ನಾನು ಸೃಷ್ಟಿಸುತ್ತೇನೆ. ನಂದಿನಿ ನದಿಯ ದಡದಲ್ಲಿರುವ ಕಾಟಿ ಎಂಬ ಸ್ಥಳದ ಬಳಿ, ನಾನು ಬ್ರಹ್ಮಾರಿ (ಜೇನುನೊಣ) ರೂಪವನ್ನು ತಾಳಿ ಅವನನ್ನು ಕೊಲ್ಲುತ್ತೇನೆ. (ಈ ಪವಿತ್ರ ಸ್ಥಳವನ್ನು ಈಗ ಕಟೀಲು ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ, ಅಲ್ಲಿ ಭಗವಾನ್ ಆದೀಶಕ್ತಿ ಜೇನುನೊಣದ ರೂಪವನ್ನು ತಾಳಿ ಅರುಣಾಸುರನನ್ನು ಕೊಂದರು. ಇಲ್ಲಿ ದೇವರನ್ನು ದುರ್ಗಾಪರಮೇಶ್ವರಿ ಎಂದು ಪೂಜಿಸಲಾಗುತ್ತದೆ. ಇದು ದಕ್ಷಿಣ ಭಾರತದ ಅತ್ಯಂತ ಪವಿತ್ರ ಸ್ಥಳಗಳಲ್ಲಿ ಒಂದಾಗಿದೆ).",
+   "from": "sarvam-105b"
+  },
+  "Lord Shakti continued addressing her devotees “O Parameshwara! You may reside at the place where Sage Jabali performed penance. Appear there in the form of a Lingam and bless the devotees with their wishes (This place is Nagavana or Nellitheertha where Lord Shiva resides as Lord Sri Somanatheshwara). O Ganga! You may flow in the cave for six months a year and help people get rid of their sins. You may get back to Kashi for the other six months. Let this place be called as Dakshina Kashi (Kashi of the South). O Vishnu! You may appear in the nearby place called Kovalapura and bless the devotees (This place, called Kompadavu, is close to Nellitheertha and has a beautiful Vishnu temple). Since the holy Chandika Yagna was performed at Mallikavana, I shall appear there in the form of Mahakali, Mahalakshmi and Mahasaraswathi and shall bless all those who pray to me (This place, called Mucchur, is adjoining Nellitheertha)”.": {
+   "kn": "ಶ್ರೀ ದೇವಿಯು ತನ್ನ ಭಕ್ತರನ್ನು ಕುರಿತು ಹೀಗೆ ಹೇಳಿದರು “ಓ ಪರಮೇಶ್ವರ! ಜಾಬಾಲಿ ಮಹರ್ಷಿಗಳು ತಪಸ್ಸು ಮಾಡಿದ ಸ್ಥಳದಲ್ಲಿ ನೀವು ನೆಲೆಸಿರಿ. ಅಲ್ಲಿ ಲಿಂಗದ ರೂಪದಲ್ಲಿ ಪ್ರತ್ಯಕ್ಷರಾಗಿ ಭಕ್ತರಿಗೆ ಅವರು ಬಯಸಿದ ವರಗಳನ್ನು ಕರುಣಿಸಿ (ಈ ಸ್ಥಳವು ನಾಗವನ ಅಥವಾ ನೆಲ್ಲಿತೀರ್ಥವಾಗಿದ್ದು, ಇಲ್ಲಿ ಶಿವನು ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರನ ರೂಪದಲ್ಲಿ ನೆಲೆಸಿದ್ದಾನೆ). ಓ ಗಂಗೆ! ವರ್ಷದಲ್ಲಿ ಆರು ತಿಂಗಳು ಗುಹೆಯೊಳಗೆ ಹರಿದು ಜನರಿಗೆ ಪಾಪಗಳಿಂದ ಮುಕ್ತಿ ನೀಡಲಿ. ಉಳಿದ ಆರು ತಿಂಗಳು ಕಾಶಿಗೆ ಹಿಂತಿರುಗಲಿ. ಈ ಸ್ಥಳವು ದಕ್ಷಿಣ ಕಾಶಿ ಎಂದು ಕರೆಯಲ್ಪಡಲಿ. ಓ ವಿಷ್ಣು! ಕೋವಲಪುರ ಎಂಬ ಹತ್ತಿರದ ಸ್ಥಳದಲ್ಲಿ ಪ್ರತ್ಯಕ್ಷರಾಗಿ ಭಕ್ತರನ್ನು ಕರುಣಿಸಲಿ (ಕೊಂಪದವು ಎಂದು ಕರೆಯಲ್ಪಡುವ ಈ ಸ್ಥಳವು ನೆಲ್ಲಿತೀರ್ಥದ ಸಮೀಪದಲ್ಲಿದ್ದು, ಸುಂದರವಾದ ವಿಷ್ಣು ದೇವಾಲಯವನ್ನು ಹೊಂದಿದೆ). ಮಲ್ಲಿಕಾವನದಲ್ಲಿ ಪವಿತ್ರ ಚಂಡಿಕಾ ಯಜ್ಞ ನಡೆದಿದ್ದರಿಂದ, ನಾನು ಅಲ್ಲಿ ಮಹಾಕಾಳಿ, ಮಹಾಲಕ್ಷ್ಮಿ ಮತ್ತು ಮಹಾಸರಸ್ವತಿಯ ರೂಪದಲ್ಲಿ ಪ್ರತ್ಯಕ್ಷಳಾಗಿ ನನ್ನನ್ನು ಪ್ರಾರ್ಥಿಸುವ ಎಲ್ಲರಿಗೂ ಕರುಣಿಸುತ್ತೇನೆ (ಮುಚ್ಚೂರ್ ಎಂದು ಕರೆಯಲ್ಪಡುವ ಈ ಸ್ಥಳವು ನೆಲ್ಲಿತೀರ್ಥದ ಪಕ್ಕದಲ್ಲಿದೆ)”.",
+   "from": "sarvam-105b"
+  },
+  "This same place Nagavana, due to the gooseberry shaped water drops falling from the roof of the cave, came to be known as Nelli-Theertha (Gooseberry-Holy water). It is believed that Sages and gods occupy the cave for six months and hence, even to this day, humans are allowed to enter the cave only six months a year (from October to April).": {
+   "kn": "ಇದೇ ನಾಗವನದಲ್ಲಿ, ಗುಹೆಯ ಛಾವಣಿಯಿಂದ ಬೀಳುವ ನೆಲ್ಲಿಕಾಯಿ ಆಕಾರದ ನೀರಿನ ಹನಿಗಳಿಂದಾಗಿ, ಇದು ನೆಲ್ಲಿ-ತೀರ್ಥ (ನೆಲ್ಲಿಕಾಯಿ-ಪವಿತ್ರ ಜಲ) ಎಂದು ಹೆಸರಾಯಿತು. ಋಷಿಗಳು ಮತ್ತು ದೇವರುಗಳು ಆರು ತಿಂಗಳ ಕಾಲ ಗುಹೆಯಲ್ಲಿ ನೆಲೆಸುತ್ತಾರೆ ಎಂದು ನಂಬಲಾಗಿದೆ. ಆದ್ದರಿಂದ, ಇಂದಿಗೂ ಸಹ ಮನುಷ್ಯರಿಗೆ ವರ್ಷದ ಆರು ತಿಂಗಳ ಕಾಲ ಮಾತ್ರ (ಅಕ್ಟೋಬರ್‌ನಿಂದ ಏಪ್ರಿಲ್‌ವರೆಗೆ) ಗುಹೆಯನ್ನು ಪ್ರವೇಶಿಸಲು ಅವಕಾಶವಿದೆ.",
+   "from": "sarvam-105b"
+  },
+  "Subsequently, there is historical evidence to suggest that the Chowta rulers of Moodabidri handled the administration of the temple during the times of the Vijayanagara Empire and it is they who built the beautiful Sri Somanatheshwara Temple at Nellitheertha.": {
+   "kn": "ನಂತರ, ವಿಜಯನಗರ ಸಾಮ್ರಾಜ್ಯದ ಕಾಲದಲ್ಲಿ ಮೂಡುಬಿದಿರೆಯ ಚೌಟ ರಾಜರು ಈ ದೇವಾಲಯದ ಆಡಳಿತವನ್ನು ನೋಡಿಕೊಳ್ಳುತ್ತಿದ್ದರು ಎಂಬುದಕ್ಕೆ ಐತಿಹಾಸಿಕ ಪುರಾವೆಗಳಿವೆ. ಅವರೇ ನೆಲ್ಲಿತೀರ್ಥದಲ್ಲಿ ಸುಂದರವಾದ ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರ ದೇವಾಲಯವನ್ನು ನಿರ್ಮಿಸಿದರು.",
+   "from": "sarvam-105b"
+  },
+  "Sri Somanatheshwaraya Prasanna": {
+   "kn": "ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರಾಯ ಪ್ರಸನ್ನ",
+   "from": "sarvam-105b"
+  },
+  "Next: The cave": {
+   "kn": "ಮುಂದೆ: ಗುಹೆ",
+   "from": "sarvam-105b"
+  },
+  "Sri Somanatheshwara Guhalaya in Nellitheertha, Karnataka, is dedicated to Sri Somanatheshwara (Shiva).": {
+   "kn": "ಕರ್ನಾಟಕದ ನೆಲ್ಲಿತೀರ್ಥದಲ್ಲಿರುವ ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರ ಗುಹಾಲಯವು ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರ (ಶಿವ) ಅವರಿಗೆ ಸಮರ್ಪಿತವಾಗಿದೆ.",
+   "from": "sarvam-105b"
+  },
+  "The main deity of the temple is Sri Somanatheshwara (Shiva). The temple also has Mahaganapati (the elephant-headed God) and Jabali Maharshi as deities here. In fact, the Jabali Maharshi Brindavana was recently constructed.": {
+   "kn": "ದೇವಾಲಯದ ಮುಖ್ಯ ದೇವತೆ ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರ (ಶಿವ). ಈ ದೇವಾಲಯದಲ್ಲಿ ಮಹಾಗಣಪತಿ (ಆನೆ ಮುಖದ ದೇವರು) ಮತ್ತು ಜಾಬಾಲಿ ಮಹರ್ಷಿಯವರೂ ದೇವತೆಗಳಾಗಿ ನೆಲೆಸಿದ್ದಾರೆ. ವಾಸ್ತವವಾಗಿ, ಜಾಬಾಲಿ ಮಹರ್ಷಿಯವರ ಬೃಂದಾವನವನ್ನು ಇತ್ತೀಚೆಗಷ್ಟೇ ನಿರ್ಮಿಸಲಾಗಿದೆ.",
+   "from": "sarvam-105b"
+  },
+  "The Lingam of Sri Somanatheshwara has been made out of pure Saligrama and is considered very sacred. The Lingam has been built as Ardhanareeshwara.": {
+   "kn": "ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರರ ಲಿಂಗವನ್ನು ಶುದ್ಧ ಸಾಲಿಗ್ರಾಮದಿಂದ ಮಾಡಲಾಗಿದ್ದು, ಇದು ಅತ್ಯಂತ ಪವಿತ್ರವೆಂದು ಪರಿಗಣಿಸಲಾಗಿದೆ. ಈ ಲಿಂಗವನ್ನು ಅರ್ಧನಾರೀಶ್ವರನ ರೂಪದಲ್ಲಿ ನಿರ್ಮಿಸಲಾಗಿದೆ.",
+   "from": "sarvam-105b"
+  },
+  "The temple of Sri Mahaganapati has been rebuilt recently and is splendid in itself.": {
+   "kn": "ಶ್ರೀ ಮಹಾಗಣಪತಿಯ ದೇವಾಲಯವನ್ನು ಇತ್ತೀಚೆಗಷ್ಟೇ ಮರುನಿರ್ಮಾಣ ಮಾಡಲಾಗಿದ್ದು, ಇದು ನೋಡಲು ಅತ್ಯಂತ ಸುಂದರವಾಗಿದೆ.",
+   "from": "sarvam-105b"
+  },
+  "The bhootas": {
+   "kn": "ದೈವಗಳು",
+   "from": "sarvam-105b"
+  },
+  "In typical Tulu-naadu (Tulu is the native language in this part of the woods) tradition, the temple also has its set of “Bhootas”. Bhootas are considered as the “Ganas” or warrior-assistants of the Gods. According to mythology, bhootas are appointees of Shiva and they administer the temple/village. The main bhootas of the Nellitheertha temple are Pili-Chamundi (Pili means Tiger in Tulu), Kshetrapala, Raktheshwari and Doomavathy.": {
+   "kn": "ವಿಶಿಷ್ಟವಾದ ತುಳುನಾಡು (ತುಳು ಈ ಭಾಗದ ಸ್ಥಳೀಯ ಭಾಷೆ) ಸಂಪ್ರದಾಯದಂತೆ, ಈ ದೇವಾಲಯವು ತನ್ನದೇ ಆದ “ದೈವಗಳ” ಗುಂಪನ್ನು ಹೊಂದಿದೆ. ದೈವಗಳನ್ನು ದೇವರುಗಳ “ಗಣ” ಅಥವಾ ಯುದ್ಧದಲ್ಲಿ ಸಹಾಯ ಮಾಡುವವರೆಂದು ಪರಿಗಣಿಸಲಾಗುತ್ತದೆ. ಪುರಾಣಗಳ ಪ್ರಕಾರ, ದೈವಗಳು ಶಿವನ ನೇಮಕಗೊಂಡವರಾಗಿದ್ದು, ಅವರು ದೇವಾಲಯ/ಗ್ರಾಮವನ್ನು ನಿರ್ವಹಿಸುತ್ತಾರೆ. ನೆಲ್ಲಿತೀರ್ಥ ದೇವಾಲಯದ ಮುಖ್ಯ ದೈವಗಳೆಂದರೆ ಪಿಲಿ-ಚಾಮುಂಡಿ (ತುಳುವಿನಲ್ಲಿ ಪಿಲಿ ಎಂದರೆ ಹುಲಿ), ಕ್ಷೇತ್ರಪಾಲ, ರಕ್ತೇಶ್ವರಿ ಮತ್ತು ಧೂಮಾವತಿ.",
+   "from": "sarvam-105b"
+  },
+  "The Bhoota Kola at the annual jaatre": {
+   "kn": "ವಾರ್ಷಿಕ ಜಾತ್ರೆಯಲ್ಲಿ ನಡೆಯುವ ದೈವಕೋಲ",
+   "from": "sarvam-105b"
+  },
+  "There are other artifacts in and around the temple which are pointers to the past glory of this place. Among them are the “Arasule Mancha” (King’s seat), “Arasule Mantapa” (King’s abode) and the “Jina Vigraha” (Jain statue).": {
+   "kn": "ದೇವಾಲಯದ ಒಳಗೆ ಮತ್ತು ಸುತ್ತಮುತ್ತಲಿನ ಇತರ ಕಲಾಕೃತಿಗಳೂ ಇವೆ, ಇವು ಈ ಸ್ಥಳದ ಹಿಂದಿನ ವೈಭವವನ್ನು ಸೂಚಿಸುತ್ತವೆ. ಅವುಗಳಲ್ಲಿ “ಅರಸುಲೆ ಮಂಚ” (ರಾಜನ ಆಸನ), “ಅರಸುಲೆ ಮಂಟಪ” (ರಾಜನ ವಾಸಸ್ಥಳ) ಮತ್ತು “ಜಿನ ವಿಗ್ರಹ” (ಜೈನ ಪ್ರತಿಮೆ) ಸೇರಿವೆ.",
+   "from": "sarvam-105b"
+  },
+  "Arasule Mancha": {
+   "kn": "ಅರಸುಲೆ ಮಂಚ",
+   "from": "sarvam-105b"
+  },
+  "The “Arasule Mancha” or King’s seat is situated near the main entrance of the temple towards the north. Historical evidence suggests that this seat was where the king of the land used to be seated when he visited the temple. It is believed that even today, the spirits of the former rulers visit the place at night and so it is prohibited to sit on the seat after dusk.": {
+   "kn": "“ಅರಸುಲೆ ಮಂಚ” ಅಥವಾ ರಾಜನ ಆಸನವು ದೇವಾಲಯದ ಮುಖ್ಯ ದ್ವಾರಕ್ಕೆ ಉತ್ತರ ದಿಕ್ಕಿನಲ್ಲಿ ಇದೆ. ರಾಜನು ದೇವಾಲಯಕ್ಕೆ ಭೇಟಿ ನೀಡಿದಾಗ ಈ ಆಸನದಲ್ಲಿಯೇ ಕುಳಿತುಕೊಳ್ಳುತ್ತಿದ್ದನು ಎಂದು ಐತಿಹಾಸಿಕ ಪುರಾವೆಗಳು ಸೂಚಿಸುತ್ತವೆ. ಇಂದಿಗೂ ಹಿಂದಿನ ಆಡಳಿತಗಾರರ ಆತ್ಮಗಳು ರಾತ್ರಿಯ ವೇಳೆ ಈ ಸ್ಥಳಕ್ಕೆ ಭೇಟಿ ನೀಡುತ್ತವೆ ಎಂದು ನಂಬಲಾಗಿದೆ, ಹಾಗಾಗಿ ಮುಸ್ಸಂಜೆಯ ನಂತರ ಈ ಆಸನದ ಮೇಲೆ ಕೂರಬಾರದು.",
+   "from": "sarvam-105b"
+  },
+  "Nagappa Kere": {
+   "kn": "ನಾಗಪ್ಪ ಕೆರೆ",
+   "from": "sarvam-105b"
+  },
+  "The “Nagappa Kere” (Snake Pond) is a small pond situated to the north of the temple. This natural pond, along with its religious significance, is also a scenic spot. All devotees who want to enter the cave temple have to clean themselves by taking bath in this pond and only then are they allowed into the cave. The lake is at its best immediately after the monsoons (October to December) when its crystal clear water is a swimmer’s delight.": {
+   "kn": "“ನಾಗಪ್ಪ ಕೆರೆ” (ಹಾವಿನ ಕೆರೆ) ದೇವಾಲಯದ ಉತ್ತರಕ್ಕೆ ಇರುವ ಒಂದು ಸಣ್ಣ ಕೆರೆಯಾಗಿದೆ. ಈ ನೈಸರ್ಗಿಕ ಕೆರೆಯು ತನ್ನ ಧಾರ್ಮಿಕ ಮಹತ್ವದ ಜೊತೆಗೆ, ಒಂದು ಸುಂದರವಾದ ತಾಣವೂ ಹೌದು. ಗುಹಾಲಯವನ್ನು ಪ್ರವೇಶಿಸಲು ಬಯಸುವ ಎಲ್ಲಾ ಭಕ್ತರು ಈ ಕೆರೆಯಲ್ಲಿ ಸ್ನಾನ ಮಾಡಿ ಶುದ್ಧರಾದ ನಂತರವೇ ಗುಹೆಯೊಳಗೆ ಹೋಗಲು ಅವಕಾಶವಿದೆ. ಮಳೆಗಾಲದ (ಅಕ್ಟೋಬರ್‌ನಿಂದ ಡಿಸೆಂಬರ್‌ವರೆಗೆ) ನಂತರ ಈ ಕೆರೆಯು ಅತ್ಯಂತ ಸುಂದರವಾಗಿರುತ್ತದೆ, ಆಗ ಅದರ ಸ್ಫಟಿಕದಷ್ಟು ಶುದ್ಧವಾದ ನೀರು ಈಜುವವರಿಗೆ ಮುದ ನೀಡುತ್ತದೆ.",
+   "from": "sarvam-105b"
+  },
+  "Amblattapadavu": {
+   "kn": "ಅಂಬಲಟ್ಟಪದವು",
+   "from": "sarvam-105b"
+  },
+  "To the east of the temple’s entrance is the Amblattapadavu hillock. This hillock is about 300 to 500 feet high and offers a splendid scenery from the top. One can spot places such as the Bajpe Airport, Mangalore, Panambur, the MRPL refinery and Surathkal. On a day with clear skies, one can even spot the Arabian Sea. Amblattapadavu offers a wonderful view of sunrise and sunset every day.": {
+   "kn": "ದೇವಾಲಯದ ಪ್ರವೇಶದ್ವಾರದ ಪೂರ್ವಕ್ಕೆ ಅಂಬ್ಲಾಟ್ಟಪದವು ಬೆಟ್ಟವಿದೆ. ಈ ಬೆಟ್ಟವು ಸುಮಾರು 300 ರಿಂದ 500 ಅಡಿ ಎತ್ತರವಿದ್ದು, ಮೇಲಿಂದ ಅದ್ಭುತವಾದ ದೃಶ್ಯವನ್ನು ನೀಡುತ್ತದೆ. ಬಜಪೆ ವಿಮಾನ ನಿಲ್ದಾಣ, ಮಂಗಳೂರು, ಪಣಂಬೂರು, MRPL ರಿಫೈನರಿ ಮತ್ತು ಸುರತ್ಕಲ್‌ನಂತಹ ಸ್ಥಳಗಳನ್ನು ಇಲ್ಲಿಂದ ನೋಡಬಹುದು. ಆಕಾಶವು ಸ್ವಚ್ಛವಾಗಿರುವ ದಿನದಂದು, ಅರಬ್ಬಿ ಸಮುದ್ರವನ್ನೂ ಸಹ ನೋಡಬಹುದು. ಅಂಬ್ಲಾಟ್ಟಪದವು ಪ್ರತಿದಿನ ಸೂರ್ಯೋದಯ ಮತ್ತು ಸೂರ್ಯಾಸ್ತದ ಸುಂದರ ನೋಟವನ್ನು ನೀಡುತ್ತದೆ.",
+   "from": "sarvam-105b"
+  },
+  "Open to all": {
+   "kn": "ಎಲ್ಲರಿಗೂ ಮುಕ್ತವಾಗಿದೆ",
+   "from": "sarvam-105b"
+  },
+  "The Nellitheertha temple is a symbol of secularism. The temple and the cave is open to members of all beliefs and castes. Any person, above the age of 5, is allowed to enter the cave irrespective of gender. Truly, Nellitheertha is a special and model place.": {
+   "kn": "ನೆಲ್ಲಿತೀರ್ಥ ದೇವಾಲಯವು ಸರ್ವಧರ್ಮ ಸಮಭಾವದ ಸಂಕೇತವಾಗಿದೆ. ದೇವಾಲಯ ಮತ್ತು ಗುಹೆಯು ಎಲ್ಲಾ ನಂಬಿಕೆಗಳು ಮತ್ತು ಜಾತಿಗಳ ಜನರಿಗೆ ಮುಕ್ತವಾಗಿದೆ. 5 ವರ್ಷ ಮೇಲ್ಪಟ್ಟ ಯಾವುದೇ ವ್ಯಕ್ತಿಯು, ಲಿಂಗಭೇದವಿಲ್ಲದೆ ಗುಹೆಯನ್ನು ಪ್ರವೇಶಿಸಲು ಅನುಮತಿಯಿದೆ. ನಿಜಕ್ಕೂ, ನೆಲ್ಲಿತೀರ್ಥವು ಒಂದು ವಿಶೇಷವಾದ ಮತ್ತು ಮಾದರಿ ಸ್ಥಳವಾಗಿದೆ.",
+   "from": "sarvam-105b"
+  },
+  "Next: History": {
+   "kn": "ಮುಂದಿನದು: ಇತಿಹಾಸ",
+   "from": "sarvam-105b"
+  },
+  "There are four routes available to reach Nellitheertha.": {
+   "kn": "ನೆಲ್ಲಿತೀರ್ಥವನ್ನು ತಲುಪಲು ನಾಲ್ಕು ಮಾರ್ಗಗಳಿವೆ.",
+   "from": "sarvam-105b"
+  },
+  "<strong>From Mangalore, by the Moodabidri road</strong>The nearest city to Nellitheertha is Mangalore (about 360 km from Bangalore). You can find a direct bus to Nellitheertha from the Mangalore Central Bus Stand. Get on to the Moodabidri road and pass through Gurupura, Kaikamba and approach Yedapadavu. Just before you reach Yedapadavu, you need to deviate to the left and travel about 8 km to reach the temple.": {
+   "kn": "<strong>ಮಂಗಳೂರಿನಿಂದ, ಮೂಡುಬಿದಿರೆ ರಸ್ತೆಯ ಮೂಲಕ</strong>ನೆಲ್ಲಿತೀರ್ಥಕ್ಕೆ ಹತ್ತಿರದ ನಗರ ಮಂಗಳೂರು (ಬೆಂಗಳೂರಿನಿಂದ ಸುಮಾರು 360 ಕಿ.ಮೀ). ಮಂಗಳೂರು ಸೆಂಟ್ರಲ್ ಬಸ್ ನಿಲ್ದಾಣದಿಂದ ನೀವು ನೆಲ್ಲಿತೀರ್ಥಕ್ಕೆ ನೇರ ಬಸ್ ಅನ್ನು ಕಾಣಬಹುದು. ಮೂಡುಬಿದಿರೆ ರಸ್ತೆಗೆ ಹತ್ತಿ ಗುರುಪುರ, ಕೈಕಂಬ ಮೂಲಕ ಹಾದು ಯಡಪದವು ತಲುಪಬೇಕು. ಯಡಪದವು ತಲುಪುವ ಸ್ವಲ್ಪ ಮೊದಲು, ನೀವು ಎಡಕ್ಕೆ ತಿರುಗಿ ಸುಮಾರು 8 ಕಿ.ಮೀ ಪ್ರಯಾಣಿಸಿ ದೇವಾಲಯವನ್ನು ತಲುಪಬೇಕು.",
+   "from": "sarvam-105b"
+  },
+  "<strong>By the Mangalore to Udupi highway, through Mulki</strong>Take the Mangalore to Udupi highway and take a deviation to the right at Mulki. On that road, reach Kinnigoli and continue until you hit a V-intersection. Take the road to the left and travel 13 km to reach Nellitheertha (through Mucchur town).": {
+   "kn": "<strong>ಮಂಗಳೂರಿನಿಂದ ಉಡುಪಿ ಹೆದ್ದಾರಿಯ ಮೂಲಕ, ಮುಲ್ಕಿಯ ಮೂಲಕ</strong>ಮಂಗಳೂರಿನಿಂದ ಉಡುಪಿ ಹೆದ್ದಾರಿಯನ್ನು ತೆಗೆದುಕೊಂಡು ಮುಲ್ಕಿಯಲ್ಲಿ ಬಲಕ್ಕೆ ತಿರುಗಿ. ಆ ರಸ್ತೆಯಲ್ಲಿ, ಕಿನ್ನಿಗೋಳಿ ತಲುಪಬೇಕು ಮತ್ತು V-ಆಕಾರದ ಜಂಕ್ಷನ್ ಸಿಗುವವರೆಗೆ ಮುಂದುವರಿಯಬೇಕು. ಎಡಭಾಗದ ರಸ್ತೆಯನ್ನು ತೆಗೆದುಕೊಂಡು 13 ಕಿ.ಮೀ ಪ್ರಯಾಣಿಸಿ ನೆಲ್ಲಿತೀರ್ಥವನ್ನು ತಲುಪಬೇಕು (ಮುಚ್ಚೂರ್ ಪಟ್ಟಣದ ಮೂಲಕ).",
+   "from": "sarvam-105b"
+  },
+  "<strong>From Bajpe, through Kathelsaar</strong>You can also reach Nellitheertha from Bajpe via Kathelsaar. This would mean you need to take the Mangalore, Bajpe, Kathelsaar, Nellitheertha road. This is actually the shortest route to Nellitheertha from Mangalore and is about 14 km shorter than the Moodabidri route.": {
+   "kn": "<strong>ಬಜಪೆ, ಕಟೀಲುಸಾರ್ ಮೂಲಕ</strong>ನೀವು ಬಜಪೆಯಿಂದ ಕಟೀಲುಸಾರ್ ಮೂಲಕವೂ ನೆಲ್ಲಿತೀರ್ಥವನ್ನು ತಲುಪಬಹುದು. ಇದರರ್ಥ ನೀವು ಮಂಗಳೂರು, ಬಜಪೆ, ಕಟೀಲುಸಾರ್, ನೆಲ್ಲಿತೀರ್ಥ ರಸ್ತೆಯನ್ನು ತೆಗೆದುಕೊಳ್ಳಬೇಕಾಗುತ್ತದೆ. ಇದು ಮಂಗಳೂರಿನಿಂದ ನೆಲ್ಲಿತೀರ್ಥಕ್ಕೆ ಇರುವ ಅತಿ ಕಡಿಮೆ ದೂರದ ಮಾರ್ಗವಾಗಿದೆ ಮತ್ತು ಮೂಡುಬಿದಿರೆ ಮಾರ್ಗಕ್ಕಿಂತ ಸುಮಾರು 14 ಕಿ.ಮೀ ಕಡಿಮೆ ದೂರವನ್ನು ಹೊಂದಿದೆ.",
+   "from": "sarvam-105b"
+  },
+  "<strong>From Kateel</strong>Nellitheertha is extremely close to Kateel, which is one of the most famous temples in South India. It is about 8 km from Kateel and can be reached via Ekkaru and Neerude.": {
+   "kn": "<strong>ಕಟೀಲಿನಿಂದ</strong>ನೆಲ್ಲಿತೀರ್ಥವು ದಕ್ಷಿಣ ಭಾರತದ ಅತ್ಯಂತ ಪ್ರಸಿದ್ಧ ದೇವಾಲಯಗಳಲ್ಲಿ ಒಂದಾದ ಕಟೀಲು ದೇವಸ್ಥಾನಕ್ಕೆ ತೀರಾ ಹತ್ತಿರದಲ್ಲಿದೆ. ಇದು ಕಟೀಲಿನಿಂದ ಸುಮಾರು 8 ಕಿ.ಮೀ. ದೂರದಲ್ಲಿದ್ದು, ಏಕಾರು ಮತ್ತು ನೀರುಡೆಯ ಮೂಲಕ ಇಲ್ಲಿಗೆ ತಲುಪಬಹುದು.",
+   "from": "sarvam-105b"
+  },
+  "Before you visit": {
+   "kn": "ಭೇಟಿ ನೀಡುವ ಮೊದಲು",
+   "from": "sarvam-105b"
+  },
+  "All devotees who want to enter the cave bathe in <a href=\"/temple/#nagappa-kere\">Nagappa Kere</a> first.": {
+   "kn": "ಗುಹೆಯನ್ನು ಪ್ರವೇಶಿಸಲು ಬಯಸುವ ಎಲ್ಲಾ ಭಕ್ತರು ಮೊದಲು <a href=\"/temple/#nagappa-kere\">ನಾಗಪ್ಪ ಕೆರೆಯಲ್ಲಿ</a> ಸ್ನಾನ ಮಾಡಬೇಕು.",
+   "from": "sarvam-105b"
+  },
+  "Any person above the age of 5 is allowed to enter the cave, irrespective of gender, belief or caste.": {
+   "kn": "ಲಿಂಗ, ನಂಬಿಕೆ ಅಥವಾ ಜಾತಿ ಭೇದವಿಲ್ಲದೆ 5 ವರ್ಷ ಮೇಲ್ಪಟ್ಟ ಯಾವುದೇ ವ್ಯಕ್ತಿ ಗುಹೆಯನ್ನು ಪ್ರವೇಶಿಸಲು ಅನುಮತಿಸಲಾಗಿದೆ.",
+   "from": "sarvam-105b"
+  },
+  "Inside, the trail narrows: one has to bend, then crawl flat on the tummy.": {
+   "kn": "ಒಳಗೆ ಹೋದಂತೆ, ದಾರಿ ಕಿರಿದಾಗುತ್ತದೆ: ಬಗ್ಗಬೇಕು, ನಂತರ ಹೊಟ್ಟೆಯ ಮೇಲೆ ತೆವಳಿಕೊಂಡು ಹೋಗಬೇಕು.",
+   "from": "sarvam-105b"
+  },
+  "Contact": {
+   "kn": "ಸಂಪರ್ಕಿಸಿ",
+   "from": "sarvam-105b"
+  },
+  "Sri Somanatheshwara Guhalaya (Sri Kshetra Nellitheertha)<br>Neerude Post, Kompadavu Village, Mangaluru Taluk, D.K. District<br>Karnataka, India 574144": {
+   "kn": "ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರ ಗುಹಾಲಯ (ಶ್ರೀ ಕ್ಷೇತ್ರ ನೆಲ್ಲಿತೀರ್ಥ)<br>ನೀರುಡೆ ಪೋಸ್ಟ್, ಕೊಂಪದವು ಗ್ರಾಮ, ಮಂಗಳೂರು ತಾಲೂಕು, ದಕ್ಷಿಣ ಕನ್ನಡ ಜಿಲ್ಲೆ<br>ಕರ್ನಾಟಕ, ಭಾರತ 574144",
+   "from": "sarvam-105b"
+  },
+  "Mobile: <a href=\"tel:+918088708914\">+91 80887 08914</a><br>Telephone: <a href=\"tel:+918242299142\">0824 2299142</a><br>Email: <a href=\"mailto:vbnellitheertha@yahoo.com\">vbnellitheertha@yahoo.com</a>": {
+   "kn": "ಮೊಬೈಲ್: <a href=\"tel:+918088708914\">+91 80887 08914</a><br>ದೂರವಾಣಿ: <a href=\"tel:+918242299142\">0824 2299142</a><br>ಇಮೇಲ್: <a href=\"mailto:vbnellitheertha@yahoo.com\">vbnellitheertha@yahoo.com</a>",
+   "from": "sarvam-105b"
+  },
+  "Next: Renovation appeal, 2024": {
+   "kn": "ಮುಂದಿನದು: ಜೀರ್ಣೋದ್ಧಾರ ಮನವಿ, 2024",
+   "from": "sarvam-105b"
+  },
+  "Swagata of Acharyadi Ritvijas, Samoohika Devata Prarthana, Torana Muhurta, Ugrana Muhurta, Acharyadi Ritvigvarana, Horekanike Samarpana, Start of Chaturveda Parayana.": {
+   "kn": "ಆಚಾರ್ಯಾದಿ ಋತ್ವಿಜರ ಸ್ವಾಗತ, ಸಾಮೂಹಿಕ ದೇವತಾ ಪ್ರಾರ್ಥನೆ, ತೋರಣ ಮುಹೂರ್ತ, ಉಗ್ರಾಣ ಮುಹೂರ್ತ, ಆಚಾರ್ಯಾದಿ ಋತ್ವಿಗ್ವರಣ, ಹೊರೆಕಾಣಿಕೆ ಸಮರ್ಪಣೆ, ಚತುರ್ವೇದ ಪಾರಾಯಣ ಆರಂಭ.",
+   "from": "sarvam-105b"
+  },
+  "Swagata of Acharyadi Ritvijas": {
+   "kn": "ಆಚಾರ್ಯಾದಿ ಋತ್ವಿಜರ ಸ್ವಾಗತ",
+   "from": "sarvam-105b"
+  },
+  "Ugrana Muhurta Inauguration: Vedamurti Sri Vasudeva Asranna, Hereditary Moktesara and Archaka, Sri Kshetra Kateel; Vedamurti Sri Ananthapadmanabha Asranna, Hereditary Archaka, Sri Kshetra Kateel": {
+   "kn": "ಉಗ್ರಾಣ ಮುಹೂರ್ತ ಉದ್ಘಾಟನೆ : ವೇದಮೂರ್ತಿ ಶ್ರೀ ವಾಸುದೇವ ಆಸ್ರಣ್ಣ ಆನುವಂಶಿಕ ಮೊಕ್ತೇಸರರು ಮತ್ತು ಅರ್ಚಕರು, ಶ್ರೀ ಕ್ಷೇತ್ರ ಕಟೀಲು ವೇದಮೂರ್ತಿ ಶ್ರೀ ಅನಂತಪದ್ಮನಾಭ ಆಸ್ರಣ್ಣ ಆನುವಂಶಿಕ ಅರ್ಚಕರು, ಶ್ರೀ ಕ್ಷೇತ್ರ ಕಟೀಲು",
+   "from": "sarvam-105b"
+  },
+  "Bhoo Shuddhi, Ankuraropana": {
+   "kn": "ಭೂ ಶುದ್ಧಿ, ಅಂಕುರಾರೋಪಣ",
+   "from": "sarvam-105b"
+  },
+  "“Om Namah Shivaya”": {
+   "kn": "ಓಂ ನಮಃ ಶಿವಾಯ",
+   "from": "sarvam-105b"
+  },
+  "Yakshagana Bayalata presented by Sri Ganesha Yaksha Chiguru, Neerude": {
+   "kn": "ಶ್ರೀ ಗಣೇಶ ಯಕ್ಷ ಚಿಗುರು, ನೀರುಡೆ - ಇವರು ಪ್ರಸ್ತುತ ಪಡಿಸುವ ಯಕ್ಷಗಾನ ಬಯಲಾಟ ಪ್ರಾಯೋಜಕರು ಶಿವಶಕ್ತಿ ಬಳಗ ನೆಲ್ಲಿತೀರ್ಥ, ಶಿವಶಕ್ತಿ ಸ್ವಸಹಾಯ ಸಂಘ ನೆಲ್ಲಿತೀರ್ಥ",
+   "from": "sarvam-105b"
+  },
+  "This day’s Annadana and Sarvaseva Vishesha Sankalpa: Smt. Vanaja Sanjeeva Suvarna and Children, Nellitheertha Barankila": {
+   "kn": "ಈ ದಿನದ ಅನ್ನದಾನ ಮತ್ತು ಸರ್ವಸೇವಾ ವಿಶೇಷ ಸಂಕಲ್ಪ ಶ್ರೀಮತಿ ವನಜಾ ಸಂಜೀವ ಸುವರ್ಣ ಮತ್ತು ಮಕ್ಕಳು, ನೆಲ್ಲಿತೀರ್ಥ ಬರಂಕಿಲ",
+   "from": "sarvam-105b"
+  },
+  "Nandimukha Punyahavachana, Brahmakurcha Homa, Arani Mathana, Adya Ganayaga, Navagraha Shanti": {
+   "kn": "ನಾಂದಿಮುಖ ಪುಣ್ಯಾಹವಾಚನ, ಬ್ರಹ್ಮಕೂರ್ಚ ಹೋಮ, ಅರಣಿ ಮಥನ, ಆದ್ಯ ಗಣಯಾಗ, ನವಗ್ರಹ ಶಾಂತಿ",
+   "from": "sarvam-105b"
+  },
+  "Nandimukha Punyahavachana": {
+   "kn": "ನಾಂದಿಮುಖ ಪುಣ್ಯಾಹವಾಚನ",
+   "from": "sarvam-105b"
+  },
+  "Carnatic Classical Music Concert": {
+   "kn": "ಕರ್ನಾಟಕ ಶಾಸ್ತ್ರೀಯ ಸಂಗೀತ ಕಚೇರಿ",
+   "from": "sarvam-105b"
+  },
+  "Dr. Vidushi Suchitra Holla Puttur": {
+   "kn": "ಡಾ. ವಿದುಷಿ ಸುಚಿತ್ರಾ ಹೊಳ್ಳ ಪುತ್ತೂರು",
+   "from": "sarvam-105b"
+  },
+  "Prasada Shuddhi, Rakshoghna Homa, Vastu Pooja, Vastu Bali, Vastu Homa, Prakara Bali": {
+   "kn": "ಪ್ರಾಸಾದ ಶುದ್ಧಿ, ರಾಕ್ಷೋಘ್ನ ಹೋಮ, ವಾಸ್ತು ಪೂಜೆ, ವಾಸ್ತು ಬಲಿ, ವಾಸ್ತು ಹೋಮ, ಪ್ರಾಕಾರ ಬಲಿ",
+   "from": "sarvam-105b"
+  },
+  "Prasada Shuddhi": {
+   "kn": "ಪ್ರಾಸಾದ ಶುದ್ಧಿ",
+   "from": "sarvam-105b"
+  },
+  "“Bittilda Ullaldi Appe Bhagavathi”": {
+   "kn": "“ಬಿತ್ತ್‌ಲ್ದ ಉಳ್ಳಾಲ್ದಿ ಅಪ್ಪೆ ಭಗವತಿ”",
+   "from": "sarvam-105b"
+  },
+  "Sri Durga Kalavidaru, Hoyige Gudde Sasihithlu": {
+   "kn": "ಶ್ರೀ ದುರ್ಗಾ ಕಲಾವಿದರು, ಹೊಯಿಗೆಗುಡ್ಡೆ ಸಸಿಹಿತ್ಲು",
+   "from": "sarvam-105b"
+  },
+  "This day’s Annadana and Sarvaseva Vishesha Sankalpa: Smt. Sumitra and Sri Purandara Shetty, Santrabail, and Smt. Pratima Rai and children": {
+   "kn": "ಈ ದಿನದ ಅನ್ನದಾನ ಮತ್ತು ಸರ್ವಸೇವಾ ವಿಶೇಷ ಸಂಕಲ್ಪ: ಶ್ರೀಮತಿ ಸುಮಿತ್ರ, ಶ್ರೀ ಪುರಂದರ ಶೆಟ್ಟಿ, ಸಾಂತ್ರಬೈಲು ಮತ್ತು ಶ್ರೀಮತಿ ಪ್ರತಿಮಾ ರೈ ಹಾಗೂ ಮಕ್ಕಳು",
+   "from": "sarvam-105b"
+  },
+  "Rigveda Samhita Parayana Purassara Bimbashuddhi Samanya Prayaschitta Homa, Shankaraaprokta Prayaschitta Homa, Mrityunjaya Homa.": {
+   "kn": "ಋಗ್ವೇದ ಸಂಹಿತಾ ಪಾರಾಯಣ ಪುರಸ್ಸರ ಬಿಂಬಶುದ್ಧಿ, ಸಾಮಾನ್ಯ ಪ್ರಾಯಶ್ಚಿತ್ತ ಹೋಮ, ಶಂಕರಪ್ರೋಕ್ತ ಪ್ರಾಯಶ್ಚಿತ್ತ ಹೋಮ, ಮೃತ್ಯುಂಜಯ ಹೋಮ.",
+   "from": "sarvam-105b"
+  },
+  "Rigveda Samhita Parayana Purassara Bimbashuddhi Samanya Prayaschitta Homa": {
+   "kn": "ಋಗ್ವೇದ ಸಂಹಿತಾ ಪಾರಾಯಣ ಪುರಸ್ಸರ ಬಿಂಬಶುದ್ಧಿ, ಸಾಮಾನ್ಯ ಪ್ರಾಯಶ್ಚಿತ್ತ ಹೋಮ",
+   "from": "sarvam-105b"
+  },
+  "Bharatanatyam Dance Performance": {
+   "kn": "ಭರತನಾಟ್ಯ ನೃತ್ಯ ಪ್ರದರ್ಶನ",
+   "from": "sarvam-105b"
+  },
+  "By Kumari Sathvi Shastri, Konchady, Derebail, Mangaluru": {
+   "kn": "ಕುಮಾರಿ ಸಾಧ್ವೀ ಶಾಸ್ತ್ರಿ, ಕೊಂಚಾಡಿ, ದೇರೇಬೈಲ್, ಮಂಗಳೂರು ಅವರಿಂದ",
+   "from": "sarvam-105b"
+  },
+  "Shakti Homa, Nalashodhane, Prayaschitta Homa for Lord Ganapati, Shanti Homa, Mantapa Samskara.": {
+   "kn": "ಶಕ್ತಿ ಹೋಮ, ನಾಳಶೋಧನೆ, ಗಣಪತಿ ದೇವರಿಗೆ ಪ್ರಾಯಶ್ಚಿತ್ತ ಹೋಮ, ಶಾಂತಿ ಹೋಮ, ಮಂಟಪ ಸಂಸ್ಕಾರ.",
+   "from": "sarvam-105b"
+  },
+  "Shakti Homa": {
+   "kn": "ಶಕ್ತಿ ಹೋಮ",
+   "from": "sarvam-105b"
+  },
+  "“Yanori Baroliya”": {
+   "kn": "“ಯಾನೊರಿ ಬರೊಲಿಯಾ”",
+   "from": "sarvam-105b"
+  },
+  "Super hit Tulu comedy drama written, acted, and directed by Dr. Lion Devadas Kapikad, which created history and saw record-breaking performances in the theater, performed by Chaparka Kalavidaru": {
+   "kn": "ರಂಗಭೂಮಿಯಲ್ಲಿ ಇತಿಹಾಸ ಸೃಷ್ಟಿಸಿ ದಾಖಲೆ ಪ್ರದರ್ಶನ ಕಂಡ ಡಾ. ಲಯನ್ ದೇವದಾಸ್ ಕಾಪಿಕಾಡ್ ರಚಿಸಿ, ನಟಿಸಿ, ನಿರ್ದೇಶಿಸಿರುವ ಸೂಪರ್ ಹಿಟ್ ತುಳು ಹಾಸ್ಯಮಯ ನಾಟಕವನ್ನು ಚಾಪರ್ಕ ಕಲಾವಿದರು ಅಭಿನಯಿಸುತ್ತಿದ್ದಾರೆ",
+   "from": "sarvam-105b"
+  },
+  "This day’s Annadana and Sarvaseva Visesha Sankalpa: Sri Shekhar Shetty and relatives, Dubai": {
+   "kn": "ಈ ದಿನದ ಅನ್ನದಾನ ಮತ್ತು ಸರ್ವಸೇವಾ ವಿಶೇಷ ಸಂಕಲ್ಪ: ಶ್ರೀ ಶೇಖರ ಶೆಟ್ಟಿ ಮತ್ತು ಬಂಧುಗಳು, ದುಬೈ",
+   "from": "sarvam-105b"
+  },
+  "Shiva Shanti, Chora Shanti, Dagdha Shanti, Adbhuta Shanti Homas": {
+   "kn": "ಶಿವ ಶಾಂತಿ, ಚೋರ ಶಾಂತಿ, ದಗ್ಧ ಶಾಂತಿ, ಅದ್ಭುತ ಶಾಂತಿ ಹೋಮಗಳು",
+   "from": "sarvam-105b"
+  },
+  "Ashtabondha Lepana to Sri Devaru, Pratishanga Bali, Ashlesha Bali and Kalashabhisheka to Nagadevaru, Pavamana Homa, Mahapooja to Sri Devaru.": {
+   "kn": "ಶ್ರೀ ದೇವರಿಗೆ ಅಷ್ಟಬಂಧ ಲೇಪನ, ಪ್ರತಿಷ್ಠಾಂಗ ಬಲಿ, ನಾಗದೇವರಿಗೆ ಆಶ್ಲೇಷ ಬಲಿ ಮತ್ತು ಕಲಶಾಭಿಷೇಕ, ಪವಮಾನ ಹೋಮ, ಶ್ರೀ ದೇವರಿಗೆ ಮಹಾಪೂಜೆ.",
+   "from": "sarvam-105b"
+  },
+  "Ashtabondha Lepana to Sri Devaru": {
+   "kn": "ಶ್ರೀ ದೇವರಿಗೆ ಅಷ್ಟಬಂಧ ಲೇಪನ",
+   "from": "sarvam-105b"
+  },
+  "Kumbha Lagna Sumuhurtha": {
+   "kn": "ಕುಂಭ ಲಗ್ನ ಸುಮುಹೂರ್ತ",
+   "from": "sarvam-105b"
+  },
+  "Yakshagana Talamaddale.": {
+   "kn": "ಯಕ್ಷಗಾನ ತಾಳಮದ್ದಳೆ.",
+   "from": "sarvam-105b"
+  },
+  "Yakshagana Talamaddale": {
+   "kn": "ಯಕ್ಷಗಾನ ತಾಳಮದ್ದಳೆ",
+   "from": "sarvam-105b"
+  },
+  "By Vishala Yakshakala Balaga Nandalike, Karkala Taluk, Udupi District": {
+   "kn": "ವಿಶಾಲ ಯಕ್ಷಕಲಾ ಬಳಗ ನಂದಳಿಕೆ ಕಾರ್ಕಳ ತಾಲೂಕು, ಉಡುಪಿ ಜಿಲ್ಲೆ - ಇವರಿಂದ",
+   "from": "sarvam-105b"
+  },
+  "Disha Homa, Mahabalipeetha Pratishte, Bhadraka Mandala Pooja, Kalashabhisheka to Daivas, Kalashadhivasa with 108 Kalashas to Ganapati Devaru.": {
+   "kn": "ದಿಶಾ ಹೋಮ, ಮಹಾಬಲಿಪೀಠ ಪ್ರತಿಷ್ಠೆ, ಭದ್ರಕ ಮಂಡಲ ಪೂಜೆ, ದೈವಗಳಿಗೆ ಕಲಶಾಭಿಷೇಕ, ಗಣಪತಿ ದೇವರಿಗೆ 108 ಕಲಶ ಸಹಿತ ಕಲಶಾಧಿವಾಸ.",
+   "from": "sarvam-105b"
+  },
+  "Disha Homa": {
+   "kn": "ದಿಶಾ ಹೋಮ",
+   "from": "sarvam-105b"
+  },
+  "Panchavadya Musical Program by Panchavadyam, Rajatapeethapuram, Udupi": {
+   "kn": "ಪಂಚವಾದ್ಯಂ ರಜತಪೀಠಪುರಂ ಉಡುಪಿ ತಂಡದವರಿಂದ",
+   "from": "sarvam-105b"
+  },
+  "Sponsors: In memory of Late Jalajakshi Subraya Bhat by Prasanna Bhat Nellitheertha": {
+   "kn": "ಪ್ರಾಯೋಜಕರು ದಿ। ಜಲಜಾಕ್ಷಿ ಸುಬ್ರಾಯ ಭಟ್ ಇವರ ಸ್ಮರಣಾರ್ಥ ಪ್ರಸನ್ನ ಭಟ್ ನೆಲ್ಲಿತೀರ್ಥ",
+   "from": "sarvam-105b"
+  },
+  "This day’s Annadana and Sarvaseva Visesha Sankalpa: Sri Abhishek Bhandari and family, Boodigadu Ekkaru, Neerude": {
+   "kn": "ಈ ದಿನದ ಅನ್ನದಾನ ಮತ್ತು ಸರ್ವಸೇವಾ ವಿಶೇಷ ಸಂಕಲ್ಪ ಶ್ರೀ ಅಭಿಷೇಕ್ ಭಂಡಾರಿ ಮತ್ತು ಕುಟುಂಬದವರು, ಬುಡಿಗಾಡು ಎಕ್ಕಾರು, ನೀರುಡೆ",
+   "from": "sarvam-105b"
+  },
+  "Tattva Homa, Tattva Kalashabhisheka, Rudra Homa, Creation of Kalasha Mandala, Kalashabhisheka to Sri Jabali Maharshi, Brahmakalashabhisheka with 108 Kalashas to Lord Ganapati.": {
+   "kn": "ತತ್ತ್ವ ಹೋಮ, ತತ್ತ್ವ ಕಲಶಾಭಿಷೇಕ, ರುದ್ರ ಹೋಮ, ಕಲಶ ಮಂಡಲ ರಚನೆ, ಶ್ರೀ ಜಾಬಾಲಿ ಮಹರ್ಷಿಗಳಿಗೆ ಕಲಶಾಭಿಷೇಕ, ಗಣಪತಿ ದೇವರಿಗೆ 108 ಕಲಶ ಸಹಿತ ಬ್ರಹ್ಮಕಲಶಾಭಿಷೇಕ.",
+   "from": "sarvam-105b"
+  },
+  "Tattva Homa": {
+   "kn": "ತತ್ತ್ವ ಹೋಮ",
+   "from": "sarvam-105b"
+  },
+  "Sabha Karyakrama (Stage Program)": {
+   "kn": "ಸಭಾ ಕಾರ್ಯಕ್ರಮ (ವೇದಿಕೆ ಕಾರ್ಯಕ್ರಮ)",
+   "from": "sarvam-105b"
+  },
+  "Brahmakalashadhivasa with 504 Parikalashas combined with 85 Dravyas to Lord Sri Somanatheshwara, Adhivasa Homas.": {
+   "kn": "ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರ ದೇವರಿಗೆ 85 ದ್ರವ್ಯ ಮೀಳಿತ 504 ಪರಿಕಲಶ ಸಹಿತ ಬ್ರಹ್ಮಕಲಶಾಧಿವಾಸ ಅಧಿವಾಸ ಹೋಮಗಳು.",
+   "from": "sarvam-105b"
+  },
+  "Brahmakalashadhivasa": {
+   "kn": "ಬ್ರಹ್ಮಕಲಶಾಧಿವಾಸ",
+   "from": "sarvam-105b"
+  },
+  "Dasavani Program": {
+   "kn": "ದಾಸವಾಣಿ ಕಾರ್ಯಕ್ರಮ",
+   "from": "sarvam-105b"
+  },
+  "By Vidwan Mysore Ramachandra Achar": {
+   "kn": "ವಿದ್ವಾನ್ ಮೈಸೂರ್ ರಾಮಚಂದ್ರ ಆಚಾರ್ ಅವರಿಂದ",
+   "from": "sarvam-105b"
+  },
+  "Annadana and Sarvaseva Vishesha Sankalpa for this day: Smt. Sujaya and Sri Divakara Suvarna, Ekkaru": {
+   "kn": "ಈ ದಿನದ ಅನ್ನದಾನ ಮತ್ತು ಸರ್ವಸೇವಾ ವಿಶೇಷ ಸಂಕಲ್ಪ: ಶ್ರೀಮತಿ ಸುಜಯ ಮತ್ತು ಶ್ರೀ ದಿವಾಕರ ಸುವರ್ಣ, ಎಕ್ಕಾರು",
+   "from": "sarvam-105b"
+  },
+  "Tailabhyanjana to Sri Devaru": {
+   "kn": "ಶ್ರೀ ದೇವರಿಗೆ ತೈಲಾಭ್ಯಂಜನ",
+   "from": "sarvam-105b"
+  },
+  "Brahmakalashabhisheka to Sri Somanatheshwara Devaru with 504 Parikalasha mixed with 85 Dravyas, Nyasa Pooje, Avasrutha Bali, Dhwajarohana, Mahapooje, Pallapooje, Maha Annasantarpane.": {
+   "kn": "85 ದ್ರವ್ಯ ಮೀಳಿತ 504 ಪರಿಕಲಶ ಸಹಿತ ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರ ದೇವರಿಗೆ ಬ್ರಹ್ಮಕಲಶಾಭಿಷೇಕ, ನ್ಯಾಸ ಪೂಜೆ, ಅವಸೃತ ಬಲಿ, ಧ್ವಜಾರೋಹಣ, ಮಹಾಪೂಜೆ, ಪಲ್ಲಪೂಜೆ, ಮಹಾಅನ್ನಸಂತರ್ಪಣೆ.",
+   "from": "sarvam-105b"
+  },
+  "Brahmakalashabhisheka to Sri Somanatheshwara Devaru": {
+   "kn": "ಶ್ರೀ ಸೋಮನಾಥೇಶ್ವರ ದೇವರಿಗೆ ಬ್ರಹ್ಮಕಲಶಾಭಿಷೇಕ",
+   "from": "sarvam-105b"
+  },
+  "“Yaksharasa Pugartada Kalavider” performing “Baravuda Bile”": {
+   "kn": "‘ಯಕ್ಷರಸ ಪುಗಾರ್ತೆದ ಕಲಾವಿದೆರ್’ ಅಭಿನಯದ ‘ಬರವುದ ಬಿಲೆ’",
+   "from": "sarvam-105b"
+  },
+  "Yakshagana Hasya Vaibhava": {
+   "kn": "ಯಕ್ಷಗಾನ ಹಾಸ್ಯ ವೈಭವ",
+   "from": "sarvam-105b"
+  },
+  "Bali Horatu Utsava, Kattepooje, Inauguration of Pejathaya Mantapa, Mahapooje": {
+   "kn": "ಬಲಿ ಹೊರಟು ಉತ್ಸವ, ಕಟ್ಟೆ ಪೂಜೆ, ಪೆಜತ್ತಾಯ ಮಂಟಪ ಉದ್ಘಾಟನೆ, ಮಹಾಪೂಜೆ",
+   "from": "sarvam-105b"
+  },
+  "Bali Horatu Utsava": {
+   "kn": "ಬಲಿ ಹೊರಟು ಉತ್ಸವ",
+   "from": "sarvam-105b"
+  },
+  "“Ganamrutha Nellitheertha”": {
+   "kn": "‘ಗಾನಾಮೃತ ನೆಲ್ಲಿತೀರ್ಥ’",
+   "from": "sarvam-105b"
+  },
+  "By Sandhya Prasanna Bhat, Vaishnavi P Bhat": {
+   "kn": "ಸಂಧ್ಯಾ ಪ್ರಸನ್ನ ಭಟ್, ವೈಷ್ಣವಿ ಪಿ. ಭಟ್ ಅವರಿಂದ",
+   "from": "sarvam-105b"
+  },
+  "Halittu Seve at the Nagabana of Nagappa Kere": {
+   "kn": "ನಾಗಪ್ಪ ಕೆರೆಯ ನಾಗಬನದಲ್ಲಿ ಹಾಲಿಟ್ಟು ಸೇವೆ",
+   "from": "sarvam-105b"
+  },
+  "Nagabrahma Mandala Seve, Prasada Distribution.": {
+   "kn": "ನಾಗಬ್ರಹ್ಮ ಮಂಡಲ ಸೇವೆ, ಪ್ರಸಾದ ವಿತರಣೆ.",
+   "from": "sarvam-105b"
+  },
+  "Nagabrahma Mandala Seve, Prasada Distribution": {
+   "kn": "ನಾಗಬ್ರಹ್ಮ ಮಂಡಲ ಸೇವೆ, ಪ್ರಸಾದ ವಿತರಣೆ",
+   "from": "sarvam-105b"
+  },
+  "Special assistance for Annadana of this day: Sri Ananda Kava and brothers, Santrabailu": {
+   "kn": "ಈ ದಿನದ ಅನ್ನದಾನ ಸೇವಾ ಸಹಯೋಗ: ಶ್ರೀ ಆನಂದ ಕಾವ ಮತ್ತು ಸಹೋದರರು, ಸಾಂತ್ರಬೈಲು",
+   "from": "sarvam-105b"
+  },
+  "Sakrutpavitra Nagabrahma Mandala Seva Special Sankalpa: Sri Yadava Kotian, Kannika Nilaya, Permude": {
+   "kn": "ಸಕೃತ್ಪವಿತ್ರ ನಾಗಬ್ರಹ್ಮಮಂಡಲ ಸೇವಾ ವಿಶೇಷ ಸಂಕಲ್ಪ: ಶ್ರೀ ಯಾದವ ಕೋಟ್ಯಾನ್, ‘ಕನ್ನಿಕಾ ನಿಲಯ’, ಪೆರ್ಮುದೆ",
+   "from": "sarvam-105b"
+  },
+  "Mahapooja, Nitya Bali": {
+   "kn": "ಮಹಾಪೂಜೆ, ನಿತ್ಯ ಬಲಿ",
+   "from": "sarvam-105b"
+  },
+  "Utsava Bali, Katte Pooja": {
+   "kn": "ಉತ್ಸವ ಬಲಿ, ಕಟ್ಟೆ ಪೂಜೆಗಳು",
+   "from": "sarvam-105b"
+  },
+  "“Nritya Vaibhava”": {
+   "kn": "“ನೃತ್ಯ ವೈಭವ”",
+   "from": "sarvam-105b"
+  },
+  "Dance programme by local talents and by the Nandagokula artists of Arehole Pratishtana Mangaluru": {
+   "kn": "ಊರ ಪ್ರತಿಭೆಗಳಿಂದ ನೃತ್ಯ ಕಾರ್ಯಕ್ರಮ ಹಾಗೂ ಹಾಸ್ಯ ವೈಭವ",
+   "from": "sarvam-105b"
+  },
+  "This day’s Annadana Sevakartas: Sri Daksha Kotian, Bandasale, Kompadavu": {
+   "kn": "ಈ ದಿನದ ಅನ್ನದಾನ ಸೇವಾಕರ್ತರು: ಶ್ರೀ ದಕ್ಷ ಕೋಟ್ಯಾನ್, ಬಂಡಸಾಲೆ, ಕೊಂಪದವು",
+   "from": "sarvam-105b"
+  },
+  "Mahaganapati Homa Sevakarta: Sri Gopikrishnan, MD, Fortious Infra, Bengaluru": {
+   "kn": "ಮಹಾಗಣಪತಿ ಹೋಮದ ಸೇವಾಕರ್ತರು: ಶ್ರೀ ಗೋಪಿಕೃಷ್ಣನ್, ಆಡಳಿತ ನಿರ್ದೇಶಕರು, Fortious Infra, ಬೆಂಗಳೂರು",
+   "from": "sarvam-105b"
+  },
+  "24 Coconut Gana Homa, Apoopa Muhurtha for Moodappa Seva, Mahapooja, Afternoon Rathotsava.": {
+   "kn": "24 ಕಾಯಿ ಗಣಹೋಮ, ಗಣಪತಿ ಹೋಮ, ಮೂಡಪ್ಪ ಸೇವೆಗೆ ಅಪೂಪ ಮುಹೂರ್ತ, ಮಹಾಪೂಜೆ, ಹಗಲು ರಥೋತ್ಸವ",
+   "from": "sarvam-105b"
+  },
+  "24 Coconut Gana Homa": {
+   "kn": "24 ಕಾಯಿ ಗಣಹೋಮ",
+   "from": "sarvam-105b"
+  },
+  "Utsava Bali, Apoopa Poorana for Moodappa Seva to Lord Ganapati, Mahapooja, Bhoota Bali, Shayana, Kavata Bandhana.": {
+   "kn": "ಉತ್ಸವ ಬಲಿ, ಗಣಪತಿ ದೇವರಿಗೆ ಮೂಡಪ್ಪ ಸೇವೆಗೆ ಅಪೂಪ ಪೂರಣ, ಪಲ್ಲಕ್ಕಿ ಉತ್ಸವ ಮಹಾಪೂಜೆ, ಭೂತಬಲಿ, ಶಯನ, ಕವಾಟ ಬಂಧನ",
+   "from": "sarvam-105b"
+  },
+  "Utsava Bali": {
+   "kn": "ಉತ್ಸವ ಬಲಿ",
+   "from": "sarvam-105b"
+  },
+  "Bharatanatya by Vidushi Smt Rashmi Naveen, Bengaluru": {
+   "kn": "ಭರತನಾಟ್ಯ ವಿದುಷಿ ಶ್ರೀಮತಿ ರಶ್ಮಿ ನವೀನ್, ಬೆಂಗಳೂರು",
+   "from": "sarvam-105b"
+  },
+  "(Student of Vidushi Smt Rupashri Madhusudan)": {
+   "kn": "(ವಿದುಷಿ ಶ್ರೀಮತಿ ರೂಪಶ್ರೀ ಮಧುಸೂದನ್‌ರವರ ಶಿಷ್ಯೆ)",
+   "from": "sarvam-105b"
+  },
+  "“Sunnada Bottu”": {
+   "kn": "ಸುಣ್ಣದ ಬೊಟ್ಟು",
+   "from": "sarvam-105b"
+  },
+  "By Chaparka Kalavidaru, Mangaluru": {
+   "kn": "ಚಾಪರ್ಕ ಕಲಾವಿದರು ಮಂಗಳೂರು",
+   "from": "sarvam-105b"
+  },
+  "Vishesha Seva Sankalpa for Moodappa Seva: Sri Deep Kiran Salian and family, Karambaru": {
+   "kn": "ಮೂಡಪ್ಪ ಸೇವೆಯ ವಿಶೇಷ ಸೇವಾ ಸಂಕಲ್ಪ : ಶ್ರೀ ದೀಪ್ ಕಿರಣ್ ಸಾಲಿಯಾನ್ ಮತ್ತು ಕುಟುಂಬದವರು, ಕರಂಬಾರು",
+   "from": "sarvam-105b"
+  },
+  "Ganapati Homa Sevakarta: Sri Sameesh Abraham and Smt Sridevi, Symetrics Development Pvt Ltd, Bengaluru": {
+   "kn": "ಗಣಪತಿ ಹೋಮದ ಸೇವಾಕರ್ತರು : ಶ್ರೀ ಸಮೀರ್ ಅಬ್ರಾಹಂ ಮತ್ತು ಶ್ರೀಮತಿ ಶ್ರೀದೇವಿ, Symetrics Development Pvt. Ltd., ಬೆಂಗಳೂರು",
+   "from": "sarvam-105b"
+  },
+  "Pallakki Utsava Sevakarta: Smt and Sri Dr Shivananda Nodu, Kasaragodu": {
+   "kn": "ಪಲ್ಲಕ್ಕಿ ಉತ್ಸವದ ಸೇವಾಕರ್ತರು ಶ್ರೀಮತಿ ಮತ್ತು ಶ್ರೀ ಡಾ. ಶಿವಾನಂದ ನೋಡು, ಕಾಸರಗೋಡು",
+   "from": "sarvam-105b"
+  },
+  "Annadana Sevakartaru for this day: Sri Ramaprasad, Bengaluru": {
+   "kn": "ಈ ದಿನದ ಅನ್ನದಾನ ಸೇವಾಕರ್ತರು : ಶ್ರೀ ರಾಮಪ್ರಸಾದ್ ಬೆಂಗಳೂರು",
+   "from": "sarvam-105b"
+  },
+  "Kavatodghatane, Mukhadarshana of Lord Ganapati in Apoopa Madhya, Mahapooje, Prasada Distribution.": {
+   "kn": "ಕವಾಟೋದ್ಘಾಟನೆ, ಅಪೂಪ ಮಧ್ಯದಲ್ಲಿ ಗಣಪತಿ ದೇವರ ಮುಖದರ್ಶನ, ಮಹಾಪೂಜೆ, ಪ್ರಸಾದ ವಿತರಣೆ.",
+   "from": "sarvam-105b"
+  },
+  "Kavatodghatane": {
+   "kn": "ಕವಾಟೋದ್ಘಾಟನೆ",
+   "from": "sarvam-105b"
+  },
+  "Tulabhara Sevas": {
+   "kn": "ತುಲಾಭಾರ ಸೇವೆಗಳು",
+   "from": "sarvam-105b"
+  },
+  "Choornotsava Bali, Daiva Devara Bheti, Battalu Kanike, Palla Pooje, Maha Annasantarpane.": {
+   "kn": "ಚೂರ್ಣೋತ್ಸವ ಬಲಿ, ದೈವ ದೇವರ ಭೇಟಿ, ಬಟ್ಟಲು ಕಾಣಿಕೆ, ಪಲ್ಲ ಪೂಜೆ, ಮಹಾಅನ್ನಸಂತರ್ಪಣೆ.",
+   "from": "sarvam-105b"
+  },
+  "Choornotsava Bali": {
+   "kn": "ಚೂರ್ಣೋತ್ಸವ ಬಲಿ",
+   "from": "sarvam-105b"
+  },
+  "Goshti Gayana": {
+   "kn": "ಗೋಷ್ಠಿ ಗಾಯನ",
+   "from": "sarvam-105b"
+  },
+  "By Students of Sadhana Sangeeta Vidyalaya, Putturu": {
+   "kn": "ಸಾಧನಾ ಸಂಗೀತ ವಿದ್ಯಾಲಯ ಪುತ್ತೂರು ಇದರ ವಿದ್ಯಾರ್ಥಿಗಳಿಂದ",
+   "from": "sarvam-105b"
+  },
+  "Utsava Bali, Ashtavadhana Seve, Okuli, Maharathotsava, Gaggara of Kshetrapala Daiva, Avabhrutha Snana, Kshetrapala Daiva Bheti, Dhvajavarohana.": {
+   "kn": "ಉತ್ಸವ ಬಲಿ, ಅಷ್ಟಾವಧಾನ ಸೇವೆ, ಓಕುಳಿ, ಮಹಾರಥೋತ್ಸವ ಕ್ಷೇತ್ರಪಾಲ ದೈವದ ಗಗ್ಗರ, ಅವಭೃತ ಸ್ನಾನ, ಕ್ಷೇತ್ರಪಾಲ ದೈವ ಭೇಟಿ, ಧ್ವಜಾವರೋಹಣ.",
+   "from": "sarvam-105b"
+  },
+  "This day’s Annadana Seva Sponsors: Sri Ravindra S Shetty and family, Sri Shashvathayya Hospitality, Mumbai": {
+   "kn": "ಈ ದಿನದ ಅನ್ನದಾನ ಸೇವಾಕರ್ತರು : ಶ್ರೀ ರವೀಂದ್ರ ಸಂಕಪ್ಪ ಶೆಟ್ಟಿ ಮತ್ತು ಕುಟುಂಬದವರು, ಶಾಶ್ವತ್ತಾಯ ಹಾಸ್ಪಿಟಾಲಿಟಿ ಪ್ರೈ. ಲಿ., ಮುಂಬೈ",
+   "from": "sarvam-105b"
+  },
+  "Samprokshane, Mantrakshate": {
+   "kn": "ಸಂಪ್ರೋಕ್ಷಣೆ, ಮಂತ್ರಾಕ್ಷತೆ",
+   "from": "sarvam-105b"
+  },
+  "This day’s Annasantarpane Seva: Family members of Muchur Kaidumaruguthu": {
+   "kn": "ಈ ದಿನದ ಅನ್ನಸಂತರ್ಪಣೆ ಸೇವಾದಾರರು : ಮುಚ್ಚೂರು ಕೈದುಮಾರುಗುತ್ತು ಕುಟುಂಬಸ್ಥರು",
+   "from": "sarvam-105b"
+  },
+  "Chandika Homa": {
+   "kn": "ಚಂಡಿಕಾ ಹೋಮ",
+   "from": "sarvam-105b"
+  },
+  "Ranga Pooja for Sri Devaru, Nemotsava for Rakteshwari, Sarala Jumadi and Kanteru Jumadi Banta Daivas, Nemotsava for Vyaghra Chamundi-Banta Daivas.": {
+   "kn": "ಶ್ರೀ ದೇವರಿಗೆ ರಂಗಪೂಜೆ, ರಕ್ತೇಶ್ವರಿ, ಸರಳ ಜುಮಾದಿ ಮತ್ತು ಕಾಂತೇರಿ ಜುಮಾದಿ-ಬಂಟ ದೈವಗಳಿಗೆ ನೇಮೋತ್ಸವ, ವ್ಯಾಘ್ರಚಾಮುಂಡಿ-ಬಂಟ ದೈವಗಳಿಗೆ ನೇಮೋತ್ಸವ.",
+   "from": "sarvam-105b"
+  },
+  "Ranga Pooja for Sri Devaru": {
+   "kn": "ಶ್ರೀ ದೇವರಿಗೆ ರಂಗಪೂಜೆ",
+   "from": "sarvam-105b"
+  },
+  "Ranga Pooja Seva: Smt. Prajna and Sri Darshan Bopaiah, Madikeri": {
+   "kn": "ರಂಗ ಪೂಜೆ ಸೇವಾದಾರರು ಶ್ರೀಮತಿ ಪ್ರಜ್ಞಾ ಮತ್ತು ಶ್ರೀ ದರ್ಶನ್ ಬೋಪಯ್ಯ, ಮಡಿಕೇರಿ",
+   "from": "sarvam-105b"
+  },
+  "Annadana Seva for this day: Sri N. Venkataraja Bhat and all family members, Nellitheertha": {
+   "kn": "ಈ ದಿನದ ಅನ್ನದಾನ ಸೇವಾಕರ್ತರು : ಶ್ರೀ ಎನ್. ವೆಂಕಟರಾಜ ಭಟ್ ಮತ್ತು ಸಮಸ್ತ ಕುಟುಂಬದವರು, ನೆಲ್ಲಿತೀರ್ಥ",
+   "from": "sarvam-105b"
+  },
+  "One thing that strikes a visitor to the Jaatre is the sheer number of rituals and ceremonies associated with this event. Though it may appear superstitious to the “non-believer”, it is a fascinating experience. Simply put, the Jaatre is the instrument the villagers use to express their gratitude and respect to the Gods and Bhootas. They offer their prayers to the Gods and Bhootas and seek their continued protection and pray for good rains and harvests year after year.": {
+   "kn": "ಜಾತ್ರೆಗೆ ಭೇಟಿ ನೀಡುವವರಿಗೆ ಹೊಳೆಯುವ ಒಂದು ವಿಷಯವೆಂದರೆ ಈ ಕಾರ್ಯಕ್ರಮಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ಆಚರಣೆಗಳು ಮತ್ತು ಸಮಾರಂಭಗಳ ಸಂಖ್ಯೆ. \"ನಂಬಿಕೆಯಿಲ್ಲದವರಿಗೆ\" ಇದು ಮೂಢನಂಬಿಕೆಯಂತೆ ಕಂಡರೂ, ಇದು ಒಂದು ಆಕರ್ಷಕ ಅನುಭವ. ಸರಳವಾಗಿ ಹೇಳುವುದಾದರೆ, ಜಾತ್ರೆ ಎಂದರೆ ಗ್ರಾಮಸ್ಥರು ದೇವರು ಮತ್ತು ಭೂತಗಳಿಗೆ ತಮ್ಮ ಕೃತಜ್ಞತೆ ಮತ್ತು ಗೌರವವನ್ನು ವ್ಯಕ್ತಪಡಿಸಲು ಬಳಸುವ ಸಾಧನ. ಅವರು ದೇವರು ಮತ್ತು ಭೂತಗಳಿಗೆ ತಮ್ಮ ಪ್ರಾರ್ಥನೆಗಳನ್ನು ಸಲ್ಲಿಸುತ್ತಾರೆ ಮತ್ತು ಅವರ ನಿರಂತರ ರಕ್ಷಣೆಗಾಗಿ ಮತ್ತು ವರ್ಷದಿಂದ ವರ್ಷಕ್ಕೆ ಉತ್ತಮ ಮಳೆ ಮತ್ತು ಬೆಳೆಗಳಿಗಾಗಿ ಪ್ರಾರ್ಥಿಸುತ್ತಾರೆ.",
+   "from": "sarvam-translate:v1"
+  }
+ }
+}

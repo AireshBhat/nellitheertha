@@ -581,6 +581,9 @@ body:not([data-language="kn"]) .kn-only{display:none!important}
 body[data-language="kn"] .en-only{display:none!important}
 .kn-only ol.prog,.prog[lang="kn"] .x{line-height:1.7}
 [lang="kn"] .verse,.verse:lang(kn){font-style:normal} /* Kannada has no italic; a slanted Kannada is a fake */
+/* The small spaced capitals of the labels: Kannada has no capitals, and spacing pulls its letters apart. */
+:is(.eyebrow,.chapter,.time-label,.festival-days small,.day-nav .wd) [lang="kn"]{letter-spacing:0}
+:is(.eyebrow,.chapter,.time-label) [lang="kn"]{font-size:1.1em}
 /* The home page's script never ran (layout's inline script): show every word that would have faded in. */
 .reveal-all .hero-copy>*,.reveal-all .scroll-cue,.reveal-all [data-reveal]>*,.reveal-all .ganga h2,.reveal-all .ganga-line,.reveal-all .ganga-story,.reveal-all .withheld,.reveal-all [data-spread] .kola-photo{opacity:1!important;filter:none!important;transform:none!important}
 .reveal-all .canopy{opacity:.92!important;translate:0 0!important}

@@ -1,6 +1,15 @@
 // Sri Kshetra Nellitheertha: the home page's behaviour.
 import 'number-flow';
 import { continuous } from 'number-flow/plugins';
+import { KN, clockKn, dateKn, timeKn } from '../lib/kn-words';
+
+// English and Kannada side by side; the language switch shows one (styles: .en-only, .kn-only).
+function both(el, en, kn) {
+  if (!kn) { el.textContent = en; return; }
+  const e = document.createElement('span'); e.className = 'en-only'; e.textContent = en;
+  const k = document.createElement('span'); k.className = 'kn-only'; k.lang = 'kn'; k.textContent = kn;
+  el.replaceChildren(e, k);
+}
 
 (() => {
   const body = document.body;
@@ -131,7 +140,7 @@ import { continuous } from 'number-flow/plugins';
     const programme = dataNode ? JSON.parse(dataNode.textContent) : { days: [] };
     const days = programme.days;
     const live = (name) => document.querySelector(`[data-live="${name}"]`);
-    const put = (name, text) => { const el = live(name); if (el) el.textContent = text; };
+    const put = (name, text, kn = null) => { const el = live(name); if (el) both(el, text, kn); };
     const longDate = (date, weekday) => `${weekday} ${Number(date.slice(8))} December`;
     const clock12 = (m) => { const h = Math.floor(m / 60), mm = String(m % 60).padStart(2, '0'); return [`${(h % 12) || 12}:${mm}`, h < 12 ? 'AM' : 'PM']; };
     const plural = (n, word) => `${n} ${word}${n === 1 ? '' : 's'}`;
@@ -150,7 +159,7 @@ import { continuous } from 'number-flow/plugins';
     if (phase === 'before' && days.length) {
       const toKey = daysFrom(today, KEY.date), toStart = daysFrom(today, days[0].date);
       put('count', String(toKey));
-      put('unit', toKey === 1 ? 'day' : 'days');
+      put('unit', toKey === 1 ? 'day' : 'days', toKey === 1 ? KN.day : KN.days);
       // The number rolls down to the days left, once, when it comes into view (NumberFlow).
       // The rolling digits are only for the eye: screen readers read the plain number beside them.
       const flow = document.createElement('number-flow');
@@ -170,7 +179,8 @@ import { continuous } from 'number-flow/plugins';
       }
       live('count').parentElement.classList.add('ready');
       put('line', toStart === 1 ? 'The programme begins tomorrow, Sunday 20 December.'
-        : `The programme begins on Sunday 20 December, in ${plural(toStart, 'day')}.`);
+        : `The programme begins on Sunday 20 December, in ${plural(toStart, 'day')}.`,
+        toStart === 1 ? KN.beginsTomorrow : KN.beginsIn(toStart));
     }
 
     if (phase === 'during') {
@@ -180,50 +190,60 @@ import { continuous } from 'number-flow/plugins';
       // "Morning" items have no clock time: they can be next, never now.
       const at = (it) => (it.m !== null ? it.m : it.t === 'Morning' ? 360 : null);
       const upcoming = (list) => list.filter((it) => at(it) !== null);
-      put('eyebrow', `BRAHMAKALASHA 2026 · DAY ${index + 1} OF ${days.length}`);
-      put('title', `Today, ${longDate(day.date, day.weekday)}`);
+      put('eyebrow', `BRAHMAKALASHA 2026 · DAY ${index + 1} OF ${days.length}`, KN.dayOf(index + 1, days.length));
+      put('title', `Today, ${longDate(day.date, day.weekday)}`, KN.today(dateKn(day.date, day.weekday)));
       const current = [...items].reverse().find((it) => it.m <= minute && minute - it.m < 6 * 60);
       let next = upcoming(day.items).find((it) => at(it) > minute), nextDay = day;
       if (!next && days[index + 1]) { nextDay = days[index + 1]; next = upcoming(nextDay.items)[0]; }
       const nowBox = live('now').parentElement;
       if (current) {
-        put('now', current.s);
-        put('since', `Since ${clock12(current.m).join(' ')}`);
+        put('now', current.s, current.sk);
+        put('since', `Since ${clock12(current.m).join(' ')}`, KN.since(clockKn(current.m).join(' ')));
       } else nowBox.hidden = true;
       const nextBox = live('next').parentElement;
       if (next) {
         const timeNode = live('next-time');
-        if (next.m === null) { timeNode.textContent = next.t; timeNode.setAttribute('datetime', nextDay.date); }
+        if (next.m === null) { both(timeNode, next.t, timeKn(null, next.t)); timeNode.setAttribute('datetime', nextDay.date); }
         else {
-          const [time, ampm] = clock12(next.m);
-          timeNode.innerHTML = `${time} <small>${ampm}</small>`;
+          // English "10:20 AM", Kannada "ಬೆಳಗ್ಗೆ 10:20": the clock large, the part of the day small.
+          const [time, ampm] = clock12(next.m), [part, clockK] = clockKn(next.m);
+          timeNode.innerHTML = `<span class="en-only">${time} <small>${ampm}</small></span><span class="kn-only" lang="kn"><small>${part}</small> ${clockK}</span>`;
           timeNode.setAttribute('datetime', `${nextDay.date}T${String(Math.floor(next.m / 60)).padStart(2, '0')}:${String(next.m % 60).padStart(2, '0')}:00+05:30`);
         }
-        put('next-label', nextDay === day ? 'Next' : `Tomorrow, ${longDate(nextDay.date, nextDay.weekday)}`);
-        put('next', next.s);
-        put('next-detail', next.d || '');
+        put('next-label', nextDay === day ? 'Next' : `Tomorrow, ${longDate(nextDay.date, nextDay.weekday)}`,
+          nextDay === day ? KN.next : KN.tomorrow(dateKn(nextDay.date, nextDay.weekday)));
+        put('next', next.s, next.sk);
+        put('next-detail', next.d || '', next.d ? next.dk : null);
       } else nextBox.hidden = true;
       const toKey = daysFrom(today, KEY.date);
       put('line', toKey > 1 ? `Brahmakalashabhisheka: Friday 25 December, 10:20 AM, in ${plural(toKey, 'day')}.`
         : toKey === 1 ? 'Brahmakalashabhisheka: tomorrow, Friday 25 December, at 10:20 AM, in Kumbha Lagna.'
-        : 'The Varshavadhi Jatre is from 25 to 30 December.');
+        : 'The Varshavadhi Jatre is from 25 to 30 December.',
+        toKey > 1 ? KN.keyIn(toKey) : toKey === 1 ? KN.keyTomorrow : KN.jatre);
       live('programme-link').href = `brahmakalasha/#dec-${Number(day.date.slice(8))}`;
 
       // Today's programme, below the panel.
-      put('day-eyebrow', `TODAY · ${longDate(day.date, day.weekday).toUpperCase()}`);
+      put('day-eyebrow', `TODAY · ${longDate(day.date, day.weekday).toUpperCase()}`, KN.todayEyebrow(dateKn(day.date, day.weekday)));
       const list = live('timeline');
       list.replaceChildren(...day.items.map((it) => {
         const li = document.createElement('li');
         if (it.k) li.className = 'featured';
-        const t = document.createElement('time'); t.textContent = it.t;
-        const p = document.createElement('p'); p.textContent = it.x;
-        if (it.d) { const d = document.createElement('small'); d.textContent = it.d; p.append(d); }
+        const t = document.createElement('time'); both(t, it.t, timeKn(it.m, it.t));
+        const p = document.createElement('p');
+        const x = document.createElement('span'); both(x, it.x, it.xk); p.append(x);
+        if (it.d) { const d = document.createElement('small'); both(d, it.d, it.dk); p.append(d); }
         li.append(t, p);
         return li;
       }));
       const poster = live('poster');
       if (day.posters.length) poster.href = `/assets/posters/${day.posters[0]}`; else poster.hidden = true;
-      live('notes').replaceChildren(...day.notes.map((n) => { const p = document.createElement('p'); p.textContent = n; return p; }));
+      // The day's notes: in Kannada, the patrike's own lines (they split and join differently from the English).
+      const note = (text, kn) => {
+        const p = document.createElement('p'); p.textContent = text;
+        if (day.nk?.length) { p.className = kn ? 'kn-only' : 'en-only'; if (kn) p.lang = 'kn'; }
+        return p;
+      };
+      live('notes').replaceChildren(...day.notes.map((n) => note(n, false)), ...(day.nk ?? []).map((n) => note(n, true)));
     }
 
     const section = params.get('section');
@@ -330,7 +350,7 @@ import { continuous } from 'number-flow/plugins';
   const copyButton = document.getElementById('copy-account');
   copyButton.addEventListener('click', async () => {
     const label = copyButton.querySelector('.label') || copyButton;
-    try { await navigator.clipboard.writeText('0122500100786201'); label.textContent = 'Account number copied'; copyButton.classList.add('copied'); }
-    catch { label.textContent = 'Select and copy: 0122500100786201'; }
+    try { await navigator.clipboard.writeText('0122500100786201'); both(label, 'Account number copied', KN.copied); copyButton.classList.add('copied'); }
+    catch { both(label, 'Select and copy: 0122500100786201', KN.selectAndCopy('0122500100786201')); }
   });
 })();

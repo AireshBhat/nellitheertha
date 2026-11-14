@@ -31,14 +31,14 @@ for (const [label, now, clock, tz] of MOMENTS) {
   out[label] = await p.evaluate(() => {
     const vis = (el) => !!el && el.offsetParent !== null && !el.hidden && !el.closest('[hidden]');
     const q = (n) => document.querySelector(`[data-live="${n}"]`);
-    const t = (n) => (vis(q(n)) ? q(n).textContent.replace(/\s+/g, ' ').trim() : '-');
+    const t = (n) => (vis(q(n)) ? q(n).innerText.replace(/\s+/g, ' ').trim() : '-');
     return {
       phase: document.body.dataset.phase, tide: document.body.dataset.tide, eyebrow: t('eyebrow'), title: t('title'),
-      count: vis(q('count')) ? `${q('count').textContent} ${q('unit').textContent}` : '-',
+      count: vis(q('count')) ? `${q("count").innerText} ${q("unit").innerText}` : '-',
       now: t('now'), since: t('since'), nextLabel: t('next-label'), nextTime: t('next-time'), next: t('next'), nextDetail: t('next-detail'),
       line: t('line'), today: document.querySelector('.festival-days .today')?.dataset.date || '-',
       past: document.querySelectorAll('.festival-days .past').length, dayEyebrow: t('day-eyebrow'),
-      timeline: [...(q('timeline')?.children || [])].map((li) => li.textContent.replace(/\s+/g, ' ').trim()),
+      timeline: vis(q('timeline')) ? [...q('timeline').children].map((li) => li.innerText.replace(/\s+/g, ' ').trim()) : [],
       notes: t('notes'), poster: q('poster')?.getAttribute('href')?.split('/').pop() || '-', link: q('programme-link')?.getAttribute('href') || '-',
     };
   });

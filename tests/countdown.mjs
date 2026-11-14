@@ -15,7 +15,7 @@ const state = (p) => p.evaluate(() => {
   const count = document.querySelector('.count'), flow = count?.querySelector('number-flow');
   const box = count?.getBoundingClientRect();
   return {
-    text: count ? count.textContent.replace(/\s+/g, ' ').trim() : null,
+    text: count ? count.innerText.replace(/\s+/g, ' ').trim() : null,
     flow: !!flow,
     hidden: flow?.getAttribute('aria-hidden') ?? null,
     value: flow?.value ?? null,
