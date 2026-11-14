@@ -8,7 +8,10 @@ const query = process.env.QUERY || '';
 fs.mkdirSync(new URL('./out/', import.meta.url), { recursive: true });
 const b = await launch();
 let failures = 0;
+// Same words in the same order. Spaces are not compared: where two links touch, Chrome's innerText puts a space between
+// them once a link holds the English and Kannada spans, though nothing moves on the page (checked box by box, 2026-11-14).
 const norm = (s) => s.replace(/\s+/g, ' ').trim();
+const bare = (s) => s.replace(/\s+/g, '');
 for (const vp of [{ width: 390, height: 844, m: true }, { width: 1440, height: 900, m: false }]) {
   for (const path of pages) {
     const shot = {}, text = {}, info = {};
@@ -27,7 +30,7 @@ for (const vp of [{ width: 390, height: 844, m: true }, { width: 1440, height: 9
       await p.screenshot({ path: shot[name] });
       await ctx.close();
     }
-    const same = text.a === text.b;
+    const same = bare(text.a) === bare(text.b);
     const ib = info.b, ok = same && ib.status === 200 && ib.overflow === 0 && !ib.broken.length && !ib.errors.length;
     if (!ok) failures++;
     let diff = '';

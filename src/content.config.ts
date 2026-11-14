@@ -57,7 +57,7 @@ const committees = z.object({
   })),
   kn: z.object({
     source: text,
-    groups: z.array(z.object({ title: text, members: z.array(knMember) })),
+    groups: z.array(z.object({ title: text, parent: maybe(z.string()), members: z.array(knMember) })),
     mahadanis_heading: text, mahadanis: z.array(knMember),
     supporters_heading: text, supporters: z.array(knMember),
   }).optional(),

@@ -17,6 +17,14 @@ const blocks = groups.map((g) => {
   return { parent, level: g.parent ? 'h3' : 'h2', group: g };
 });
 const sub = (m: { role?: string | null; place?: string | null }) => [m.role, m.place].filter(Boolean).join(', ');
+// The patrike's band heading appears once, over the committees printed under it (h3), as the English parents do.
+const knShown = new Set<string>();
+const knBlocks = (kn?.groups ?? []).map((g) => {
+  const parent = g.parent && !knShown.has(g.parent) ? g.parent : null;
+  if (g.parent) knShown.add(g.parent);
+  knShown.add(g.title);
+  return { parent, level: g.parent ? 'h3' : 'h2', group: g };
+});
 ---
 <Page article slug="brahmakalasha/committees" eyebrow="BRAHMAKALASHA 2026" title="Committees and supporters"
   description="The committees, Mahadanis and supporters of the Brahmakalasha at Sri Kshetra Nellitheertha."
@@ -30,11 +38,12 @@ const sub = (m: { role?: string | null; place?: string | null }) => [m.role, m.p
       </ul>
     </>
   ))}
-  {kn?.groups.map((g) => (
+  {knBlocks.map(({ parent, level, group }) => (
     <>
-      <h2 class="kn-only" lang="kn">{g.title}</h2>
+      {parent && <h2 class="kn-only" lang="kn">{parent}</h2>}
+      {level === 'h3' ? <h3 class="kn-only" lang="kn">{group.title}</h3> : <h2 class="kn-only" lang="kn">{group.title}</h2>}
       <ul class="names kn-only" lang="kn">
-        {g.members.map((m) => <li>{m.name}{sub(m) && <small>{sub(m)}</small>}</li>)}
+        {group.members.map((m) => <li>{m.name}{sub(m) && <small>{sub(m)}</small>}</li>)}
       </ul>
     </>
   ))}

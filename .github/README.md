@@ -10,6 +10,7 @@ It is built with [Astro](https://astro.build) as a static site. Vercel builds an
 - `src/content/`: the Brahmakalasha data.
   - `programme.json` is the day-by-day programme; `invitation.json` holds the instructions, bank details, letter, Mahadanis and supporters; `committees.json` holds the committees.
   - The English comes from the English invitation. The `kn` fields hold the Kannada from the printed patrike, shown when ಕನ್ನಡ is chosen.
+  - `kn-site.json` holds the Kannada for the rest of the site's English. It is Sarvam AI's machine translation, given the temple's own spellings, and is being checked by a Kannada reader; each entry says where it came from. `src/middleware.ts` (with `src/lib/kn.ts`) puts it beside the English on every page.
   - `src/content.config.ts` checks this data when the site builds, and `src/lib/brahmakalasha.ts` checks the programme as a whole. A bad edit stops the build, so the live site stays on its last good version.
 - `src/components/`, `src/layouts/`: the shared header, footer and page layout.
 - `src/scripts/home.ts`: the home page's live panel (a countdown to the Brahmakalasha whose number rolls in with [NumberFlow](https://github.com/barvian/number-flow), then today's programme with now and next, in Indian time) and the forest walk. `src/scripts/site.ts`: the language switch and the arrow back to the top.
@@ -17,6 +18,8 @@ It is built with [Astro](https://astro.build) as a static site. Vercel builds an
 - `scripts/`: the tools that made some files.
   - `fonts.py` cuts the fonts.
   - `merge-kannada.py` brings the verified Kannada into `src/content/`.
+  - `merge-names.py` brings the patrike's Kannada committees, Mahadanis and supporters into `committees.json`.
+  - `kn-missing.ts` lists the English with no Kannada after a build; `kn-translate.ts` translates it with Sarvam AI (`SARVAM_API_KEY` from the environment).
 - `tests/`: checks run in Chrome against a built copy.
 
 ## Changing the site
@@ -29,6 +32,8 @@ pnpm preview    # serve dist/ at http://localhost:4321
 ```
 
 To change the programme, edit `src/content/programme.json` and run `pnpm build`. If the build fails, the message names the entry and the field.
+
+After changing any English text, run `node scripts/kn-missing.ts out.json` on the build: the changed text has no Kannada until it is translated or written in `src/content/kn-site.json`. Until then it shows in English on the Kannada pages.
 
 To see the home page's live panel as it will be at a given moment in Indian time, add `?now=2026-12-25T09:00` to the address.
 
@@ -45,7 +50,7 @@ Build, run `pnpm preview`, then run the checks you need. Most compare against th
 | `tests/countdown.mjs BASE` | The countdown's number rolls down once, when it comes into view, never with reduced motion; screen readers read the true number |
 | `tests/urls.mjs BASE_OLD BASE` | Every earlier address still answers |
 | `tests/nojs.mjs BASE`, `tests/failed-script.mjs BASE` | Every page reads without JavaScript, or when a script fails to arrive |
-| `tests/kannada.mjs BASE`, `tests/glyphs.mjs BASE_OLD BASE` | The Kannada versions, and that Kannada renders the same as before |
+| `tests/kannada.mjs BASE`, `tests/kannada-site.mjs BASE`, `tests/glyphs.mjs BASE_OLD BASE` | The Kannada versions: every page in ಕನ್ನಡ with no English left, and no stray Kannada in English; Kannada renders the same as before |
 | `tests/weight.mjs BASE`, `tests/slow.mjs BASE`, `tests/anchor.mjs BASE`, `tests/frames.mjs BASE_OLD BASE` | What a phone downloads, the forest walk on a slow link, and cached frames |
 | `tests/walk-parity.mjs BASE_OLD BASE` | The forest walk and every home-page picture look as on the earlier site |
 | `tests/hero.mjs BASE` | The Brahmakalasha picture at the top of the home page shows whole, with nothing over it, on phones, tablets and desktops; its living light moves on the background only, deepens after sunset, rests off screen and is absent with reduced motion; on desktops the picture, the temple's name and today's panel are one dark scene with no hard edge |

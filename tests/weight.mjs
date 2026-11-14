@@ -7,7 +7,8 @@ const MB = 1024 * 1024;
 // on 2026-11-11). The saving is in when things load: the walk frames wait until the visitor scrolls towards the walk.
 // Home: the live site's own weight, plus the Brahmakalasha deity picture (2026-11-13), kept near-lossless so the Linga and
 // the idol stay within 2 levels of the approved file; it weighs 0.55 MB more than the forest picture it replaced.
-const LIMITS = { '': [1.5, 9.5], 'gallery/': [2.8, 2.8], 'brahmakalasha/': [0.25, 0.25], 'temple/': [0.8, 0.8] };
+// Home, 2026-11-14: plus the Kannada beside the English text (the page's own HTML went from 12 to 18 KB); pictures unchanged.
+const LIMITS = { '': [1.5, 9.55], 'gallery/': [2.8, 2.8], 'brahmakalasha/': [0.25, 0.25], 'temple/': [0.8, 0.8] };
 const b = await launch();
 let over = 0;
 for (const [path, [first, full]] of Object.entries(LIMITS)) {

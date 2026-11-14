@@ -1,923 +1,2186 @@
 {
-  "source": "invitation-digital-english-23pp.pdf pages 15-18",
-  "notes": [
-    "Names and places are copied exactly as printed, including inconsistent spellings across groups (e.g. Kambaru/Karambaru, Sathyaprasad/Satyaprasad, Angaramajalu/Angaramajal, Bankila Kodi/Barankila Kodi, Santrabailu/Santra Bailu).",
-    "place is null where the printed row has no place.",
-    "Page 15 Temple Management Committee item 2 prints 'Nellitheertha (Archaka)'; the note is stored as role 'Archaka'.",
-    "Group order: pages 16-17 are 2x2 grids, read row by row (top-left, top-right, bottom-left, bottom-right); page 18 has a 4-box left column and a 2-box right column, read left column then right column. See each group's position field.",
-    "numbered=false means the printed list carries no numbers (Treasurer/Secretary box)."
-  ],
-  "groups": [
+ "source": "invitation-digital-english-23pp.pdf pages 15-18",
+ "notes": [
+  "Names and places are copied exactly as printed, including inconsistent spellings across groups (e.g. Kambaru/Karambaru, Sathyaprasad/Satyaprasad, Angaramajalu/Angaramajal, Bankila Kodi/Barankila Kodi, Santrabailu/Santra Bailu).",
+  "place is null where the printed row has no place.",
+  "Page 15 Temple Management Committee item 2 prints 'Nellitheertha (Archaka)'; the note is stored as role 'Archaka'.",
+  "Group order: pages 16-17 are 2x2 grids, read row by row (top-left, top-right, bottom-left, bottom-right); page 18 has a 4-box left column and a 2-box right column, read left column then right column. See each group's position field.",
+  "numbered=false means the printed list carries no numbers (Treasurer/Secretary box)."
+ ],
+ "groups": [
+  {
+   "page": 15,
+   "title": "Jeernoddhara Samiti",
+   "position": "left column, top box",
+   "numbered": false,
+   "members": [
     {
-      "page": 15,
-      "title": "Jeernoddhara Samiti",
-      "position": "left column, top box",
-      "numbered": false,
-      "members": [
-        {
-          "name": "Sri N Venkataraja Bhat",
-          "place": "Nellitheertha",
-          "role": "Treasurer"
-        },
-        {
-          "name": "Sri Yashawanth K",
-          "place": "Kapikadu",
-          "role": "Secretary"
-        }
-      ]
+     "name": "Sri N Venkataraja Bhat",
+     "place": "Nellitheertha",
+     "role": "Treasurer"
     },
     {
-      "page": 15,
-      "title": "Committee Members",
-      "parent": "Jeernoddhara Samiti",
-      "position": "left column, lower box",
-      "numbered": true,
-      "members": [
-        {
-          "name": "Sri Prasanna Bhat",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Smt Lathamma",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Santhosh Salian",
-          "place": "Neerude",
-          "role": null
-        },
-        {
-          "name": "Deep Kiran Salian",
-          "place": "Kambaru",
-          "role": null
-        },
-        {
-          "name": "Hariprasad Bhat",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Sathyaprasad Shibaraya",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Janardhana Gowda",
-          "place": "Kompadavu",
-          "role": null
-        },
-        {
-          "name": "Hariprakash",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Bhoja Karkera",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Ananda Kava",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "N V Gopala Krishna Bhat",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Jayasheela Kotian",
-          "place": "Barankila",
-          "role": null
-        },
-        {
-          "name": "Purandara Shetty",
-          "place": "Santrabailu",
-          "role": null
-        }
-      ]
-    },
-    {
-      "page": 15,
-      "title": "Temple Management Committee",
-      "position": "right column",
-      "numbered": true,
-      "members": [
-        {
-          "name": "N Venkataraja Bhat",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Ganapathi Bhat",
-          "place": "Nellitheertha",
-          "role": "Archaka"
-        },
-        {
-          "name": "Srimathi Meenakshi",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Santhosh Salian",
-          "place": "Neerude",
-          "role": null
-        },
-        {
-          "name": "Prasanna Bhat",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Ananda Kava",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Srimathi Prema",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Krishnappa Poojary",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Sundara Poojary",
-          "place": "Barankila",
-          "role": null
-        }
-      ]
-    },
-    {
-      "page": 16,
-      "title": "Vaidika Samiti",
-      "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
-      "position": "top-left",
-      "numbered": true,
-      "members": [
-        {
-          "name": "Chaturvedi Vasantha Bhat",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Vedamoorthi Prashanth Aithal",
-          "place": "Kompadavu",
-          "role": null
-        },
-        {
-          "name": "Girish Pejatthaya",
-          "place": "Permude",
-          "role": null
-        },
-        {
-          "name": "Vadish Bhat",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Venkatesh Bhat",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "P Shripati Bhat",
-          "place": "Nandibettu",
-          "role": null
-        },
-        {
-          "name": "Guruprasad Bhat",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Hemanth Bhat",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Vasudeva Bhat",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Arunkumar Bhat",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Airesh Bhat",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Vishwaprasad Bhat",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Krishnaprasad Bhat",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Kiran Bhat",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Pramod Bhat",
-          "place": "Seemanturu",
-          "role": null
-        }
-      ]
-    },
-    {
-      "page": 16,
-      "title": "Annadana",
-      "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
-      "position": "top-right",
-      "numbered": true,
-      "members": [
-        {
-          "name": "Bhoja Karkera",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Balakrishna Devadiga",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Durgaprasad Amtata",
-          "place": "Padavu",
-          "role": null
-        },
-        {
-          "name": "Durgaprasad",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Manjunatha",
-          "place": "Amanakodi",
-          "role": null
-        },
-        {
-          "name": "Shankara Kotian",
-          "place": "Ananthaguri",
-          "role": null
-        },
-        {
-          "name": "Gagan",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Atheesh",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Anith",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Umesh Poojary",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Yadava Shetty",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Ramesh Shetty",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Ravi Kiran",
-          "place": "Neerude",
-          "role": null
-        },
-        {
-          "name": "Prakhyath Shetty",
-          "place": "Santrabailu",
-          "role": null
-        }
-      ]
-    },
-    {
-      "page": 16,
-      "title": "VIP Reception and Arrangement",
-      "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
-      "position": "bottom-left",
-      "numbered": true,
-      "members": [
-        {
-          "name": "N V G K Bhat",
-          "place": "Bengaluru",
-          "role": null
-        },
-        {
-          "name": "Ramachandra Kava",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Balakrishna Shibaraya",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Deep Kiran Salian",
-          "place": "Karambaru",
-          "role": null
-        }
-      ]
-    },
-    {
-      "page": 16,
-      "title": "Hore Kanike",
-      "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
-      "position": "bottom-right",
-      "numbered": true,
-      "members": [
-        {
-          "name": "Hariprakash",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Purandara Shetty",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Pushpanatha Poojary",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Ananda Poojary",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Dharmanna Poojary",
-          "place": "Amanakodi",
-          "role": null
-        },
-        {
-          "name": "Ramakrishna Gowda",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Vamana Poojary",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Sanjeeva Suvarna",
-          "place": "Bankila Kodi",
-          "role": null
-        },
-        {
-          "name": "Krishnappa Salian",
-          "place": "Angaramajalu",
-          "role": null
-        },
-        {
-          "name": "Monappa Poojary",
-          "place": "Amanakodi",
-          "role": null
-        }
-      ]
-    },
-    {
-      "page": 17,
-      "title": "Mahila Samiti",
-      "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
-      "position": "top-left",
-      "numbered": true,
-      "members": [
-        {
-          "name": "Meenakshi",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Sandhya Bhat",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Vanitha Bhat",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Ranjana Bhat",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Anuradha",
-          "place": null,
-          "role": null
-        },
-        {
-          "name": "Sharada",
-          "place": null,
-          "role": null
-        },
-        {
-          "name": "Shruthi",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Leela",
-          "place": "Amanakodi",
-          "role": null
-        },
-        {
-          "name": "Shashikala",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Nalinakshi",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Harshitha",
-          "place": "Barankila",
-          "role": null
-        },
-        {
-          "name": "Anitha",
-          "place": "Neerude",
-          "role": null
-        },
-        {
-          "name": "Premalatha",
-          "place": null,
-          "role": null
-        },
-        {
-          "name": "Prathibha",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Deeksha",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Deepika",
-          "place": "Nellitheertha",
-          "role": null
-        }
-      ]
-    },
-    {
-      "page": 17,
-      "title": "Karyalaya Prabandhaka Samiti",
-      "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
-      "position": "top-right",
-      "numbered": true,
-      "members": [
-        {
-          "name": "G Rajendra",
-          "place": "Madikeri",
-          "role": null
-        },
-        {
-          "name": "Shreepathi Bhat",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Ramesh Bhat",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Umesh Bhat",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Krishna Bhat",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Ranganatha Rao",
-          "place": "Bengaluru",
-          "role": null
-        },
-        {
-          "name": "Ganapathi Bhat",
-          "place": "Kattalar",
-          "role": null
-        },
-        {
-          "name": "Swathi Prabhu",
-          "place": "Niddodi",
-          "role": null
-        },
-        {
-          "name": "Gangadhara Shetty",
-          "place": "Santrabailu",
-          "role": null
-        }
-      ]
-    },
-    {
-      "page": 17,
-      "title": "Cultural Programme",
-      "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
-      "position": "bottom-left",
-      "numbered": true,
-      "members": [
-        {
-          "name": "Shashidhara Devadiga",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Vaishnavi P Bhat",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Jayasheela Kotian",
-          "place": "Barankila",
-          "role": null
-        },
-        {
-          "name": "Sathvik",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Shashikanth Devadiga",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Akshath Poojary",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Shivaprasad",
-          "place": "Amanakodi",
-          "role": null
-        },
-        {
-          "name": "Kishan",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Vinith",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Bhoomika",
-          "place": "Barankila",
-          "role": null
-        },
-        {
-          "name": "Shreya",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Deeksha",
-          "place": "Barankila",
-          "role": null
-        }
-      ]
-    },
-    {
-      "page": 17,
-      "title": "Invitation",
-      "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
-      "position": "bottom-right",
-      "numbered": true,
-      "members": [
-        {
-          "name": "Krishnappa Poojary",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Sundara Poojary",
-          "place": "Barankila",
-          "role": null
-        },
-        {
-          "name": "Somanatha Poojary",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Vamana Poojary",
-          "place": "Barankila Kodi",
-          "role": null
-        },
-        {
-          "name": "Sanjeeva Suvarna",
-          "place": "Barankila Kodi",
-          "role": null
-        },
-        {
-          "name": "Krishnappa Salian",
-          "place": "Angaramajal",
-          "role": null
-        },
-        {
-          "name": "Monappa Poojary",
-          "place": "Amanakodi",
-          "role": null
-        }
-      ]
-    },
-    {
-      "page": 18,
-      "title": "Volunteer Supervision",
-      "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
-      "position": "left column, box 1 of 4",
-      "numbered": true,
-      "members": [
-        {
-          "name": "Yashavantha Kompadavu",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Janardhana Gowda",
-          "place": "Kompadavu",
-          "role": null
-        },
-        {
-          "name": "Vamana Kotian",
-          "place": "Barankila",
-          "role": null
-        }
-      ]
-    },
-    {
-      "page": 18,
-      "title": "Parking Arrangement",
-      "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
-      "position": "left column, box 2 of 4",
-      "numbered": true,
-      "members": [
-        {
-          "name": "Rajendra Pinto",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Dombayya Gowda",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Lokesh",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Veerendra",
-          "place": "Angaramajal",
-          "role": null
-        },
-        {
-          "name": "Puttanna",
-          "place": "Amlatapadavu",
-          "role": null
-        }
-      ]
-    },
-    {
-      "page": 18,
-      "title": "Publicity",
-      "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
-      "position": "left column, box 3 of 4",
-      "numbered": true,
-      "members": [
-        {
-          "name": "Poornaprakash Shibaraya",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Satyaprasad Shibaraya",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Deepak",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Krishnaprasad",
-          "place": "Omkarakatte",
-          "role": null
-        },
-        {
-          "name": "Chidananda",
-          "place": "Neerude",
-          "role": null
-        },
-        {
-          "name": "Hitesh",
-          "place": "Nellitheertha",
-          "role": null
-        }
-      ]
-    },
-    {
-      "page": 18,
-      "title": "Water Arrangement",
-      "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
-      "position": "left column, box 4 of 4",
-      "numbered": true,
-      "members": [
-        {
-          "name": "Rajendra Pinto",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Kumara Gowda",
-          "place": "Kompadavu",
-          "role": null
-        },
-        {
-          "name": "Manoja",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Charan",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Yashavantha",
-          "place": "Amanakodi",
-          "role": null
-        }
-      ]
-    },
-    {
-      "page": 18,
-      "title": "Deepalankara",
-      "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
-      "position": "right column, box 1 of 2",
-      "numbered": true,
-      "members": [
-        {
-          "name": "Dinesh Poojary",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Shankara Gowda",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Nithyananda Poojary",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Ramesh Suvarna",
-          "place": "Santrabailu",
-          "role": null
-        },
-        {
-          "name": "Nishank",
-          "place": "Santrabailu",
-          "role": null
-        }
-      ]
-    },
-    {
-      "page": 18,
-      "title": "Cleanliness",
-      "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
-      "position": "right column, box 2 of 2",
-      "numbered": true,
-      "members": [
-        {
-          "name": "Yashavantha Kompadavu",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Yashavantha Poojary",
-          "place": "Angaramajalu",
-          "role": null
-        },
-        {
-          "name": "Ananda Suvarna",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Vasantha Poojary",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Ashwini",
-          "place": null,
-          "role": null
-        },
-        {
-          "name": "Shanthi",
-          "place": "Santra Bailu",
-          "role": null
-        },
-        {
-          "name": "Yashodha",
-          "place": null,
-          "role": null
-        },
-        {
-          "name": "Shobha",
-          "place": "Nellitheertha",
-          "role": null
-        },
-        {
-          "name": "Poornima",
-          "place": null,
-          "role": null
-        },
-        {
-          "name": "Mamatha",
-          "place": null,
-          "role": null
-        },
-        {
-          "name": "Vanitha Kotian",
-          "place": "Barankila",
-          "role": null
-        },
-        {
-          "name": "Pushpa",
-          "place": "Barankila",
-          "role": null
-        },
-        {
-          "name": "Sundari",
-          "place": "Barankila",
-          "role": null
-        },
-        {
-          "name": "Nethravathi",
-          "place": "Barankila",
-          "role": null
-        },
-        {
-          "name": "Deeksha",
-          "place": "Barankila",
-          "role": null
-        },
-        {
-          "name": "Bhoomika",
-          "place": "Barankila",
-          "role": null
-        },
-        {
-          "name": "Vanitha",
-          "place": "Barankila",
-          "role": null
-        }
-      ]
+     "name": "Sri Yashawanth K",
+     "place": "Kapikadu",
+     "role": "Secretary"
     }
+   ]
+  },
+  {
+   "page": 15,
+   "title": "Committee Members",
+   "parent": "Jeernoddhara Samiti",
+   "position": "left column, lower box",
+   "numbered": true,
+   "members": [
+    {
+     "name": "Sri Prasanna Bhat",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Smt Lathamma",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Santhosh Salian",
+     "place": "Neerude",
+     "role": null
+    },
+    {
+     "name": "Deep Kiran Salian",
+     "place": "Kambaru",
+     "role": null
+    },
+    {
+     "name": "Hariprasad Bhat",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Sathyaprasad Shibaraya",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Janardhana Gowda",
+     "place": "Kompadavu",
+     "role": null
+    },
+    {
+     "name": "Hariprakash",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Bhoja Karkera",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Ananda Kava",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "N V Gopala Krishna Bhat",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Jayasheela Kotian",
+     "place": "Barankila",
+     "role": null
+    },
+    {
+     "name": "Purandara Shetty",
+     "place": "Santrabailu",
+     "role": null
+    }
+   ]
+  },
+  {
+   "page": 15,
+   "title": "Temple Management Committee",
+   "position": "right column",
+   "numbered": true,
+   "members": [
+    {
+     "name": "N Venkataraja Bhat",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Ganapathi Bhat",
+     "place": "Nellitheertha",
+     "role": "Archaka"
+    },
+    {
+     "name": "Srimathi Meenakshi",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Santhosh Salian",
+     "place": "Neerude",
+     "role": null
+    },
+    {
+     "name": "Prasanna Bhat",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Ananda Kava",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Srimathi Prema",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Krishnappa Poojary",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Sundara Poojary",
+     "place": "Barankila",
+     "role": null
+    }
+   ]
+  },
+  {
+   "page": 16,
+   "title": "Vaidika Samiti",
+   "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
+   "position": "top-left",
+   "numbered": true,
+   "members": [
+    {
+     "name": "Chaturvedi Vasantha Bhat",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Vedamoorthi Prashanth Aithal",
+     "place": "Kompadavu",
+     "role": null
+    },
+    {
+     "name": "Girish Pejatthaya",
+     "place": "Permude",
+     "role": null
+    },
+    {
+     "name": "Vadish Bhat",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Venkatesh Bhat",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "P Shripati Bhat",
+     "place": "Nandibettu",
+     "role": null
+    },
+    {
+     "name": "Guruprasad Bhat",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Hemanth Bhat",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Vasudeva Bhat",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Arunkumar Bhat",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Airesh Bhat",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Vishwaprasad Bhat",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Krishnaprasad Bhat",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Kiran Bhat",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Pramod Bhat",
+     "place": "Seemanturu",
+     "role": null
+    }
+   ]
+  },
+  {
+   "page": 16,
+   "title": "Annadana",
+   "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
+   "position": "top-right",
+   "numbered": true,
+   "members": [
+    {
+     "name": "Bhoja Karkera",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Balakrishna Devadiga",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Durgaprasad Amtata",
+     "place": "Padavu",
+     "role": null
+    },
+    {
+     "name": "Durgaprasad",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Manjunatha",
+     "place": "Amanakodi",
+     "role": null
+    },
+    {
+     "name": "Shankara Kotian",
+     "place": "Ananthaguri",
+     "role": null
+    },
+    {
+     "name": "Gagan",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Atheesh",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Anith",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Umesh Poojary",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Yadava Shetty",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Ramesh Shetty",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Ravi Kiran",
+     "place": "Neerude",
+     "role": null
+    },
+    {
+     "name": "Prakhyath Shetty",
+     "place": "Santrabailu",
+     "role": null
+    }
+   ]
+  },
+  {
+   "page": 16,
+   "title": "VIP Reception and Arrangement",
+   "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
+   "position": "bottom-left",
+   "numbered": true,
+   "members": [
+    {
+     "name": "N V G K Bhat",
+     "place": "Bengaluru",
+     "role": null
+    },
+    {
+     "name": "Ramachandra Kava",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Balakrishna Shibaraya",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Deep Kiran Salian",
+     "place": "Karambaru",
+     "role": null
+    }
+   ]
+  },
+  {
+   "page": 16,
+   "title": "Hore Kanike",
+   "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
+   "position": "bottom-right",
+   "numbered": true,
+   "members": [
+    {
+     "name": "Hariprakash",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Purandara Shetty",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Pushpanatha Poojary",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Ananda Poojary",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Dharmanna Poojary",
+     "place": "Amanakodi",
+     "role": null
+    },
+    {
+     "name": "Ramakrishna Gowda",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Vamana Poojary",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Sanjeeva Suvarna",
+     "place": "Bankila Kodi",
+     "role": null
+    },
+    {
+     "name": "Krishnappa Salian",
+     "place": "Angaramajalu",
+     "role": null
+    },
+    {
+     "name": "Monappa Poojary",
+     "place": "Amanakodi",
+     "role": null
+    }
+   ]
+  },
+  {
+   "page": 17,
+   "title": "Mahila Samiti",
+   "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
+   "position": "top-left",
+   "numbered": true,
+   "members": [
+    {
+     "name": "Meenakshi",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Sandhya Bhat",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Vanitha Bhat",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Ranjana Bhat",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Anuradha",
+     "place": null,
+     "role": null
+    },
+    {
+     "name": "Sharada",
+     "place": null,
+     "role": null
+    },
+    {
+     "name": "Shruthi",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Leela",
+     "place": "Amanakodi",
+     "role": null
+    },
+    {
+     "name": "Shashikala",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Nalinakshi",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Harshitha",
+     "place": "Barankila",
+     "role": null
+    },
+    {
+     "name": "Anitha",
+     "place": "Neerude",
+     "role": null
+    },
+    {
+     "name": "Premalatha",
+     "place": null,
+     "role": null
+    },
+    {
+     "name": "Prathibha",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Deeksha",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Deepika",
+     "place": "Nellitheertha",
+     "role": null
+    }
+   ]
+  },
+  {
+   "page": 17,
+   "title": "Karyalaya Prabandhaka Samiti",
+   "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
+   "position": "top-right",
+   "numbered": true,
+   "members": [
+    {
+     "name": "G Rajendra",
+     "place": "Madikeri",
+     "role": null
+    },
+    {
+     "name": "Shreepathi Bhat",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Ramesh Bhat",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Umesh Bhat",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Krishna Bhat",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Ranganatha Rao",
+     "place": "Bengaluru",
+     "role": null
+    },
+    {
+     "name": "Ganapathi Bhat",
+     "place": "Kattalar",
+     "role": null
+    },
+    {
+     "name": "Swathi Prabhu",
+     "place": "Niddodi",
+     "role": null
+    },
+    {
+     "name": "Gangadhara Shetty",
+     "place": "Santrabailu",
+     "role": null
+    }
+   ]
+  },
+  {
+   "page": 17,
+   "title": "Cultural Programme",
+   "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
+   "position": "bottom-left",
+   "numbered": true,
+   "members": [
+    {
+     "name": "Shashidhara Devadiga",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Vaishnavi P Bhat",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Jayasheela Kotian",
+     "place": "Barankila",
+     "role": null
+    },
+    {
+     "name": "Sathvik",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Shashikanth Devadiga",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Akshath Poojary",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Shivaprasad",
+     "place": "Amanakodi",
+     "role": null
+    },
+    {
+     "name": "Kishan",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Vinith",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Bhoomika",
+     "place": "Barankila",
+     "role": null
+    },
+    {
+     "name": "Shreya",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Deeksha",
+     "place": "Barankila",
+     "role": null
+    }
+   ]
+  },
+  {
+   "page": 17,
+   "title": "Invitation",
+   "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
+   "position": "bottom-right",
+   "numbered": true,
+   "members": [
+    {
+     "name": "Krishnappa Poojary",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Sundara Poojary",
+     "place": "Barankila",
+     "role": null
+    },
+    {
+     "name": "Somanatha Poojary",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Vamana Poojary",
+     "place": "Barankila Kodi",
+     "role": null
+    },
+    {
+     "name": "Sanjeeva Suvarna",
+     "place": "Barankila Kodi",
+     "role": null
+    },
+    {
+     "name": "Krishnappa Salian",
+     "place": "Angaramajal",
+     "role": null
+    },
+    {
+     "name": "Monappa Poojary",
+     "place": "Amanakodi",
+     "role": null
+    }
+   ]
+  },
+  {
+   "page": 18,
+   "title": "Volunteer Supervision",
+   "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
+   "position": "left column, box 1 of 4",
+   "numbered": true,
+   "members": [
+    {
+     "name": "Yashavantha Kompadavu",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Janardhana Gowda",
+     "place": "Kompadavu",
+     "role": null
+    },
+    {
+     "name": "Vamana Kotian",
+     "place": "Barankila",
+     "role": null
+    }
+   ]
+  },
+  {
+   "page": 18,
+   "title": "Parking Arrangement",
+   "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
+   "position": "left column, box 2 of 4",
+   "numbered": true,
+   "members": [
+    {
+     "name": "Rajendra Pinto",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Dombayya Gowda",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Lokesh",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Veerendra",
+     "place": "Angaramajal",
+     "role": null
+    },
+    {
+     "name": "Puttanna",
+     "place": "Amlatapadavu",
+     "role": null
+    }
+   ]
+  },
+  {
+   "page": 18,
+   "title": "Publicity",
+   "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
+   "position": "left column, box 3 of 4",
+   "numbered": true,
+   "members": [
+    {
+     "name": "Poornaprakash Shibaraya",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Satyaprasad Shibaraya",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Deepak",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Krishnaprasad",
+     "place": "Omkarakatte",
+     "role": null
+    },
+    {
+     "name": "Chidananda",
+     "place": "Neerude",
+     "role": null
+    },
+    {
+     "name": "Hitesh",
+     "place": "Nellitheertha",
+     "role": null
+    }
+   ]
+  },
+  {
+   "page": 18,
+   "title": "Water Arrangement",
+   "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
+   "position": "left column, box 4 of 4",
+   "numbered": true,
+   "members": [
+    {
+     "name": "Rajendra Pinto",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Kumara Gowda",
+     "place": "Kompadavu",
+     "role": null
+    },
+    {
+     "name": "Manoja",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Charan",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Yashavantha",
+     "place": "Amanakodi",
+     "role": null
+    }
+   ]
+  },
+  {
+   "page": 18,
+   "title": "Deepalankara",
+   "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
+   "position": "right column, box 1 of 2",
+   "numbered": true,
+   "members": [
+    {
+     "name": "Dinesh Poojary",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Shankara Gowda",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Nithyananda Poojary",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Ramesh Suvarna",
+     "place": "Santrabailu",
+     "role": null
+    },
+    {
+     "name": "Nishank",
+     "place": "Santrabailu",
+     "role": null
+    }
+   ]
+  },
+  {
+   "page": 18,
+   "title": "Cleanliness",
+   "parent": "Members of the Brahmakalasha and Nagabrahma Mandalotsava Management Committees",
+   "position": "right column, box 2 of 2",
+   "numbered": true,
+   "members": [
+    {
+     "name": "Yashavantha Kompadavu",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Yashavantha Poojary",
+     "place": "Angaramajalu",
+     "role": null
+    },
+    {
+     "name": "Ananda Suvarna",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Vasantha Poojary",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Ashwini",
+     "place": null,
+     "role": null
+    },
+    {
+     "name": "Shanthi",
+     "place": "Santra Bailu",
+     "role": null
+    },
+    {
+     "name": "Yashodha",
+     "place": null,
+     "role": null
+    },
+    {
+     "name": "Shobha",
+     "place": "Nellitheertha",
+     "role": null
+    },
+    {
+     "name": "Poornima",
+     "place": null,
+     "role": null
+    },
+    {
+     "name": "Mamatha",
+     "place": null,
+     "role": null
+    },
+    {
+     "name": "Vanitha Kotian",
+     "place": "Barankila",
+     "role": null
+    },
+    {
+     "name": "Pushpa",
+     "place": "Barankila",
+     "role": null
+    },
+    {
+     "name": "Sundari",
+     "place": "Barankila",
+     "role": null
+    },
+    {
+     "name": "Nethravathi",
+     "place": "Barankila",
+     "role": null
+    },
+    {
+     "name": "Deeksha",
+     "place": "Barankila",
+     "role": null
+    },
+    {
+     "name": "Bhoomika",
+     "place": "Barankila",
+     "role": null
+    },
+    {
+     "name": "Vanitha",
+     "place": "Barankila",
+     "role": null
+    }
+   ]
+  }
+ ],
+ "kn": {
+  "source": "patrike-print-kannada-12pp.pdf pages 9 to 12, transcribed and checked glyph by glyph in two passes on 2026-11-14",
+  "groups": [
+   {
+    "title": "ಜೀರ್ಣೋದ್ಧಾರ ಸಮಿತಿ",
+    "parent": null,
+    "members": [
+     {
+      "name": "ಶ್ರೀ ಎನ್ ವೆಂಕಟರಾಜ ಭಟ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": "ಕೋಶಾಧಿಕಾರಿ"
+     },
+     {
+      "name": "ಶ್ರೀ ಯಶವಂತ್ ಕೆ",
+      "place": "ಕಾಪಿಕಾಡು",
+      "role": "ಕಾರ್ಯದರ್ಶಿ"
+     }
+    ]
+   },
+   {
+    "title": "ಸಮಿತಿಯ ಸದಸ್ಯರುಗಳು, ಶ್ರೀಗಳಾದ",
+    "parent": "ಜೀರ್ಣೋದ್ಧಾರ ಸಮಿತಿ",
+    "members": [
+     {
+      "name": "ಪ್ರಸನ್ನ ಭಟ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಸಂತೋಷ್ ಸಾಲ್ಯಾನ್",
+      "place": "ನೀರುಡೆ",
+      "role": null
+     },
+     {
+      "name": "ಆನಂದ ಕಾವ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ಶ್ರೀಮತಿ ಲತಮ್ಮ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ದೀಪ್ ಕಿರಣ್ ಸಾಲಿಯಾನ್",
+      "place": "ಕರಂಬಾರು",
+      "role": null
+     },
+     {
+      "name": "ಎನ್. ವಿ. ಗೋಪಾಲಕೃಷ್ಣ ಭಟ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಹರಿಪ್ರಸಾದ್ ಭಟ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಸತ್ಯಪ್ರಸಾದ್ ಶಿಬರಾಯ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ಜಯಶೀಲ ಕೋಟ್ಯಾನ್",
+      "place": "ಬರಂಕಿಲ",
+      "role": null
+     },
+     {
+      "name": "ಜನಾರ್ದನ ಗೌಡ",
+      "place": "ಕೊಂಪದವು",
+      "role": null
+     },
+     {
+      "name": "ಹರಿಪ್ರಕಾಶ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಪುರಂದರ ಶೆಟ್ಟಿ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ಭೋಜ ಕರ್ಕೇರ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     }
+    ]
+   },
+   {
+    "title": "ದೇವಸ್ಥಾನ ವ್ಯವಸ್ಥಾಪನಾ ಸಮಿತಿ, ಶ್ರೀಗಳಾದ",
+    "parent": null,
+    "members": [
+     {
+      "name": "ಎನ್. ವೆಂಕಟರಾಜ ಭಟ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಪ್ರಸನ್ನ ಭಟ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಗಣಪತಿ ಭಟ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": "ಅರ್ಚಕರು"
+     },
+     {
+      "name": "ಆನಂದ ಕಾವ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ಶ್ರೀಮತಿ ಮೀನಾಕ್ಷಿ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಶ್ರೀಮತಿ ಪ್ರೇಮ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಸಂತೋಷ ಸಾಲ್ಯಾನ್",
+      "place": "ನೀರುಡೆ",
+      "role": null
+     },
+     {
+      "name": "ಕೃಷ್ಣಪ್ಪ ಪೂಜಾರಿ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಸುಂದರ ಪೂಜಾರಿ",
+      "place": "ಬರಂಕಿಲ",
+      "role": null
+     }
+    ]
+   },
+   {
+    "title": "ವೈದಿಕ ನಿರ್ವಹಣಾ ಸಮಿತಿ",
+    "parent": "ಬ್ರಹ್ಮಕಲಶ ಹಾಗೂ ನಾಗಬ್ರಹ್ಮ ಮಂಡಲೋತ್ಸವ ವ್ಯವಸ್ಥಾಪನಾ ಸಮಿತಿಗಳ ಸದಸ್ಯರು, ಶ್ರೀಗಳಾದ",
+    "members": [
+     {
+      "name": "ಚತುರ್ವೇದಿ ವಸಂತ ಭಟ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ವೇದಮೂರ್ತಿ ಪ್ರಶಾಂತ ಐತಾಳ್",
+      "place": "ಕೊಂಪದವು",
+      "role": null
+     },
+     {
+      "name": "ಗಿರೀಶ್ ಪೆಜತ್ತಾಯ",
+      "place": "ಪೆರ್ಮುದೆ",
+      "role": null
+     },
+     {
+      "name": "ವಾದೀಶ್ ಭಟ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ವೆಂಕಟೇಶ್ ಭಟ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಪಿ. ಶ್ರೀಪತಿ ಭಟ್",
+      "place": "ನಂದಿಬೆಟ್ಟು",
+      "role": null
+     },
+     {
+      "name": "ಗುರುಪ್ರಸಾದ್ ಭಟ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಹೇಮಂತ್ ಭಟ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ವಾಸುದೇವ ಭಟ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಅರುಣಕುಮಾರ್ ಭಟ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಐರೇಶ್ ಭಟ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ವಿಶ್ವಪ್ರಸಾದ್ ಭಟ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಕೃಷ್ಣಪ್ರಸಾದ್ ಭಟ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಕಿರಣ್ ಭಟ್",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ಪ್ರಮೋದ್ ಭಟ್",
+      "place": "ಶಿಮಂತೂರು",
+      "role": null
+     }
+    ]
+   },
+   {
+    "title": "ಸ್ವಾಗತ ಮತ್ತು ಅತಿಥಿ ಸತ್ಕಾರ ಸಮಿತಿ",
+    "parent": "ಬ್ರಹ್ಮಕಲಶ ಹಾಗೂ ನಾಗಬ್ರಹ್ಮ ಮಂಡಲೋತ್ಸವ ವ್ಯವಸ್ಥಾಪನಾ ಸಮಿತಿಗಳ ಸದಸ್ಯರು, ಶ್ರೀಗಳಾದ",
+    "members": [
+     {
+      "name": "ಎನ್. ವಿ. ಜಿ. ಕೆ. ಭಟ್",
+      "place": "ಬೆಂಗಳೂರು",
+      "role": null
+     },
+     {
+      "name": "ರಾಮಚಂದ್ರ ಕಾವ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ಬಾಲಕೃಷ್ಣ ಶಿಬರಾಯ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ದೀಪ್ ಕಿರಣ್ ಸಾಲಿಯಾನ್",
+      "place": "ಕರಂಬಾರು",
+      "role": null
+     }
+    ]
+   },
+   {
+    "title": "ಉಗ್ರಾಣ/ಹೊರೆ ಕಾಣಿಕೆ ಸಮಿತಿ",
+    "parent": "ಬ್ರಹ್ಮಕಲಶ ಹಾಗೂ ನಾಗಬ್ರಹ್ಮ ಮಂಡಲೋತ್ಸವ ವ್ಯವಸ್ಥಾಪನಾ ಸಮಿತಿಗಳ ಸದಸ್ಯರು, ಶ್ರೀಗಳಾದ",
+    "members": [
+     {
+      "name": "ಹರಿಪ್ರಕಾಶ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಪುರಂದರ ಶೆಟ್ಟಿ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ಪುಷ್ಪನಾಥ ಪೂಜಾರಿ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಆನಂದ ಪೂಜಾರಿ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ಧರ್ಮಣ್ಣ ಪೂಜಾರಿ",
+      "place": "ಅಮನಕೋಡಿ",
+      "role": null
+     },
+     {
+      "name": "ರಾಮಕೃಷ್ಣ ಗೌಡ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ವಾಮನ ಪೂಜಾರಿ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಕೃಷ್ಣಪ್ಪ ಸಾಲ್ಯಾನ್",
+      "place": "ಅಂಗರಮಜಲು",
+      "role": null
+     },
+     {
+      "name": "ಮೋನಪ್ಪ ಪೂಜಾರಿ",
+      "place": "ಅಮನಕೋಡಿ",
+      "role": null
+     },
+     {
+      "name": "ಪುಷ್ಪರಾಜ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     }
+    ]
+   },
+   {
+    "title": "ಪಾಕಶಾಲ ನಿರ್ವಹಣಾ ಮತ್ತು ಅನ್ನಸಂತರ್ಪಣಾ ಸಮಿತಿ",
+    "parent": "ಬ್ರಹ್ಮಕಲಶ ಹಾಗೂ ನಾಗಬ್ರಹ್ಮ ಮಂಡಲೋತ್ಸವ ವ್ಯವಸ್ಥಾಪನಾ ಸಮಿತಿಗಳ ಸದಸ್ಯರು, ಶ್ರೀಗಳಾದ",
+    "members": [
+     {
+      "name": "ಭೋಜ ಕರ್ಕೇರ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಬಾಲಕೃಷ್ಣ ದೇವಾಡಿಗ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ದುರ್ಗಾಪ್ರಸಾದ್",
+      "place": "ಆಮ್ಲಟಪದವು",
+      "role": null
+     },
+     {
+      "name": "ದುರ್ಗಾಪ್ರಸಾದ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಮಂಜುನಾಥ",
+      "place": "ಅಮನಕೋಡಿ",
+      "role": null
+     },
+     {
+      "name": "ಶಂಕರ ಕೋಟ್ಯಾನ್",
+      "place": "ಅನಂತಗುರಿ",
+      "role": null
+     },
+     {
+      "name": "ಗಗನ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಆತೀಶ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಅನ್ವಿತ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಉಮೇಶ್ ಪೂಜಾರಿ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ಯಾದವ ಶೆಟ್ಟಿ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ರಮೇಶ್ ಶೆಟ್ಟಿ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ರವಿ ಕಿರಣ್",
+      "place": "ನೀರುಡೆ",
+      "role": null
+     },
+     {
+      "name": "ಪ್ರಖ್ಯಾತ್ ಶೆಟ್ಟಿ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     }
+    ]
+   },
+   {
+    "title": "ಕಾರ್ಯಾಲಯ ಸಮಿತಿ",
+    "parent": "ಬ್ರಹ್ಮಕಲಶ ಹಾಗೂ ನಾಗಬ್ರಹ್ಮ ಮಂಡಲೋತ್ಸವ ವ್ಯವಸ್ಥಾಪನಾ ಸಮಿತಿಗಳ ಸದಸ್ಯರು, ಶ್ರೀಗಳಾದ",
+    "members": [
+     {
+      "name": "ಜಿ. ರಾಜೇಂದ್ರ",
+      "place": "ಮಡಿಕೇರಿ",
+      "role": null
+     },
+     {
+      "name": "ಶ್ರೀಪತಿ ಭಟ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ರಮೇಶ್ ಭಟ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಉಮೇಶ್ ಭಟ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಕೃಷ್ಣ ಭಟ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ರಂಗನಾಥ ರಾವ್",
+      "place": "ಬೆಂಗಳೂರು",
+      "role": null
+     },
+     {
+      "name": "ಗಣಪತಿ ಭಟ್",
+      "place": "ಕತ್ತಲ್‌ಸಾರ್",
+      "role": null
+     },
+     {
+      "name": "ಸ್ವಾತಿ ಪ್ರಭು",
+      "place": "ನಿಡ್ಡೋಡಿ",
+      "role": null
+     },
+     {
+      "name": "ಗಂಗಾಧರ ಶೆಟ್ಟಿ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     }
+    ]
+   },
+   {
+    "title": "ಮಾಧ್ಯಮ ಪ್ರಚಾರ ಸಮಿತಿ",
+    "parent": "ಬ್ರಹ್ಮಕಲಶ ಹಾಗೂ ನಾಗಬ್ರಹ್ಮ ಮಂಡಲೋತ್ಸವ ವ್ಯವಸ್ಥಾಪನಾ ಸಮಿತಿಗಳ ಸದಸ್ಯರು, ಶ್ರೀಗಳಾದ",
+    "members": [
+     {
+      "name": "ಪೂರ್ಣಪ್ರಕಾಶ್ ಶಿಬರಾಯ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ಸತ್ಯಪ್ರಸಾದ್ ಶಿಬರಾಯ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ದೀಪಕ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಕೃಷ್ಣಪ್ರಸಾದ್",
+      "place": "ಓಂಕಾರಕಟ್ಟೆ",
+      "role": null
+     },
+     {
+      "name": "ಚಿದಾನಂದ",
+      "place": "ನೀರುಡೆ",
+      "role": null
+     },
+     {
+      "name": "ಹಿತೇಶ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     }
+    ]
+   },
+   {
+    "title": "ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮ ಸಮಿತಿ",
+    "parent": "ಬ್ರಹ್ಮಕಲಶ ಹಾಗೂ ನಾಗಬ್ರಹ್ಮ ಮಂಡಲೋತ್ಸವ ವ್ಯವಸ್ಥಾಪನಾ ಸಮಿತಿಗಳ ಸದಸ್ಯರು, ಶ್ರೀಗಳಾದ",
+    "members": [
+     {
+      "name": "ಶಶಿಧರ ದೇವಾಡಿಗ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ವೈಷ್ಣವಿ ಪಿ. ಭಟ್",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ಜಯಶೀಲ ಕೋಟ್ಯಾನ್",
+      "place": "ಬರಂಕಿಲ",
+      "role": null
+     },
+     {
+      "name": "ಸಾತ್ವಿಕ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಶಶಿಕಾಂತ್ ದೇವಾಡಿಗ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ಅಕ್ಷತ್ ಪೂಜಾರಿ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ಶಿವಪ್ರಸಾದ್",
+      "place": "ಅಮನಕೋಡಿ",
+      "role": null
+     },
+     {
+      "name": "ಕಿಶನ್",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ವಿನೀತ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಭೂಮಿಕಾ",
+      "place": "ಬರಂಕಿಲ",
+      "role": null
+     },
+     {
+      "name": "ಶ್ರೇಯಾ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ದೀಕ್ಷಾ",
+      "place": "ಬರಂಕಿಲ",
+      "role": null
+     }
+    ]
+   },
+   {
+    "title": "ಮಹಿಳಾ ಸಮಿತಿ",
+    "parent": "ಬ್ರಹ್ಮಕಲಶ ಹಾಗೂ ನಾಗಬ್ರಹ್ಮ ಮಂಡಲೋತ್ಸವ ವ್ಯವಸ್ಥಾಪನಾ ಸಮಿತಿಗಳ ಸದಸ್ಯರು, ಶ್ರೀಗಳಾದ",
+    "members": [
+     {
+      "name": "ಮೀನಾಕ್ಷಿ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಸಂಧ್ಯಾ ಭಟ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ವನಿತಾ ಭಟ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ರಂಜನಾ ಭಟ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಅನುರಾಧ",
+      "place": null,
+      "role": null
+     },
+     {
+      "name": "ಶಾರದ",
+      "place": null,
+      "role": null
+     },
+     {
+      "name": "ಶ್ರುತಿ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಲೀಲಾ",
+      "place": "ಅಮನಕೋಡಿ",
+      "role": null
+     },
+     {
+      "name": "ಶಶಿಕಲಾ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ನಳಿನಾಕ್ಷಿ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಹರ್ಷಿತ",
+      "place": "ಬರಂಕಿಲ",
+      "role": null
+     },
+     {
+      "name": "ಅನಿತಾ",
+      "place": "ನೀರುಡೆ",
+      "role": null
+     },
+     {
+      "name": "ಪ್ರೇಮಲತಾ",
+      "place": null,
+      "role": null
+     },
+     {
+      "name": "ಪ್ರತಿಭಾ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ದೀಕ್ಷಾ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ದೀಪಿಕಾ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     }
+    ]
+   },
+   {
+    "title": "ಆಮಂತ್ರಣ ಪತ್ರಿಕೆ ವಿತರಣಾ ಸಮಿತಿ",
+    "parent": "ಬ್ರಹ್ಮಕಲಶ ಹಾಗೂ ನಾಗಬ್ರಹ್ಮ ಮಂಡಲೋತ್ಸವ ವ್ಯವಸ್ಥಾಪನಾ ಸಮಿತಿಗಳ ಸದಸ್ಯರು, ಶ್ರೀಗಳಾದ",
+    "members": [
+     {
+      "name": "ಕೃಷ್ಣಪ್ಪ ಪೂಜಾರಿ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಸುಂದರ ಪೂಜಾರಿ",
+      "place": "ಬರಂಕಿಲ",
+      "role": null
+     },
+     {
+      "name": "ಸೋಮನಾಥ ಪೂಜಾರಿ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ವಾಮನ ಪೂಜಾರಿ",
+      "place": "ಬರಂಕಿಲ ಕೋಡಿ",
+      "role": null
+     },
+     {
+      "name": "ಕೃಷ್ಣಪ್ಪ ಸಾಲ್ಯಾನ್",
+      "place": "ಅಂಗರಮಜಲು",
+      "role": null
+     },
+     {
+      "name": "ಮೋನಪ್ಪ ಪೂಜಾರಿ",
+      "place": "ಅಮನಕೋಡಿ",
+      "role": null
+     }
+    ]
+   },
+   {
+    "title": "ಸ್ವಯಂಸೇವಕ ಮೇಲ್ವಿಚಾರಣೆ",
+    "parent": "ಬ್ರಹ್ಮಕಲಶ ಹಾಗೂ ನಾಗಬ್ರಹ್ಮ ಮಂಡಲೋತ್ಸವ ವ್ಯವಸ್ಥಾಪನಾ ಸಮಿತಿಗಳ ಸದಸ್ಯರು, ಶ್ರೀಗಳಾದ",
+    "members": [
+     {
+      "name": "ಯಶವಂತ, ಕೊಂಪದವು ನೆಲ್ಲಿತೀರ್ಥ",
+      "place": null,
+      "role": null
+     },
+     {
+      "name": "ಜನಾರ್ದನ ಗೌಡ",
+      "place": "ಕೊಂಪದವು",
+      "role": null
+     },
+     {
+      "name": "ವಾಮನ ಕೋಟ್ಯಾನ್",
+      "place": "ಬರಂಕಿಲ",
+      "role": null
+     }
+    ]
+   },
+   {
+    "title": "ಜಲ & ನೈರ್ಮಲ್ಯ ಸಮಿತಿ",
+    "parent": "ಬ್ರಹ್ಮಕಲಶ ಹಾಗೂ ನಾಗಬ್ರಹ್ಮ ಮಂಡಲೋತ್ಸವ ವ್ಯವಸ್ಥಾಪನಾ ಸಮಿತಿಗಳ ಸದಸ್ಯರು, ಶ್ರೀಗಳಾದ",
+    "members": [
+     {
+      "name": "ರಾಜೇಂದ್ರ ಪಿಂಟೋ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಕುಮಾರ ಗೌಡ",
+      "place": "ಕೊಂಪದವು",
+      "role": null
+     },
+     {
+      "name": "ಮನೋಜ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಚರಣ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಯಶವಂತ",
+      "place": "ಅಮನಕೋಡಿ",
+      "role": null
+     }
+    ]
+   },
+   {
+    "title": "ಧ್ವನಿ & ದೀಪಾಲಂಕಾರ ಸಮಿತಿ",
+    "parent": "ಬ್ರಹ್ಮಕಲಶ ಹಾಗೂ ನಾಗಬ್ರಹ್ಮ ಮಂಡಲೋತ್ಸವ ವ್ಯವಸ್ಥಾಪನಾ ಸಮಿತಿಗಳ ಸದಸ್ಯರು, ಶ್ರೀಗಳಾದ",
+    "members": [
+     {
+      "name": "ದಿನೇಶ್ ಪೂಜಾರಿ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ಶಂಕರ ಗೌಡ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ನಿತ್ಯಾನಂದ ಪೂಜಾರಿ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ರಮೇಶ್ ಸುವರ್ಣ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ನಿಶಾಂಕ್",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     }
+    ]
+   },
+   {
+    "title": "ಸ್ವಚ್ಛತಾ ಸಮಿತಿ",
+    "parent": "ಬ್ರಹ್ಮಕಲಶ ಹಾಗೂ ನಾಗಬ್ರಹ್ಮ ಮಂಡಲೋತ್ಸವ ವ್ಯವಸ್ಥಾಪನಾ ಸಮಿತಿಗಳ ಸದಸ್ಯರು, ಶ್ರೀಗಳಾದ",
+    "members": [
+     {
+      "name": "ಯಶವಂತ, ಕೊಂಪದವು ನೆಲ್ಲಿತೀರ್ಥ",
+      "place": null,
+      "role": null
+     },
+     {
+      "name": "ಯಶವಂತ ಪೂಜಾರಿ",
+      "place": "ಅಂಗರಮಜಲು",
+      "role": null
+     },
+     {
+      "name": "ಆನಂದ ಸುವರ್ಣ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ವಸಂತ ಪೂಜಾರಿ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಶಾಂತಿ",
+      "place": "ಸಾಂತ್ರಬೈಲು",
+      "role": null
+     },
+     {
+      "name": "ಅಶ್ವಿನಿ",
+      "place": null,
+      "role": null
+     },
+     {
+      "name": "ಯಶೋಧ",
+      "place": null,
+      "role": null
+     },
+     {
+      "name": "ಶೋಭಾ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಪೂರ್ಣಿಮ",
+      "place": null,
+      "role": null
+     },
+     {
+      "name": "ಮಮತ",
+      "place": null,
+      "role": null
+     },
+     {
+      "name": "ವನಿತಾ ಕೋಟ್ಯಾನ್",
+      "place": "ಬರಂಕಿಲ",
+      "role": null
+     },
+     {
+      "name": "ಪುಷ್ಪ",
+      "place": "ಬರಂಕಿಲ",
+      "role": null
+     },
+     {
+      "name": "ಸುಂದರಿ",
+      "place": "ಬರಂಕಿಲ",
+      "role": null
+     },
+     {
+      "name": "ನೇತ್ರಾವತಿ",
+      "place": "ಬರಂಕಿಲ",
+      "role": null
+     },
+     {
+      "name": "ವನಿತಾ",
+      "place": "ಬರಂಕಿಲ",
+      "role": null
+     }
+    ]
+   },
+   {
+    "title": "ರಕ್ಷಣೆ ಮತ್ತು ವಾಹನ ನಿಲುಗಡೆ ಸಮಿತಿ",
+    "parent": "ಬ್ರಹ್ಮಕಲಶ ಹಾಗೂ ನಾಗಬ್ರಹ್ಮ ಮಂಡಲೋತ್ಸವ ವ್ಯವಸ್ಥಾಪನಾ ಸಮಿತಿಗಳ ಸದಸ್ಯರು, ಶ್ರೀಗಳಾದ",
+    "members": [
+     {
+      "name": "ರಾಜೇಂದ್ರ ಪಿಂಟೋ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಡೊಂಬಯ್ಯ ಗೌಡ",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ಲೋಕೇಶ್",
+      "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+      "role": null
+     },
+     {
+      "name": "ವೀರೇಂದ್ರ",
+      "place": "ಅಂಗರಮಜಲು",
+      "role": null
+     },
+     {
+      "name": "ಪುಟ್ಟಣ್ಣ",
+      "place": "ಆಮ್ಲಟಪದವು",
+      "role": null
+     }
+    ]
+   }
+  ],
+  "mahadanis_heading": "ಜೀರ್ಣೋದ್ಧಾರಕ್ಕೆ ಸಹಕರಿಸಿದ ಮಹಾದಾನಿಗಳು",
+  "mahadanis": [
+   {
+    "name": "ಧರ್ಮದರ್ಶಿ ಶ್ರೀ ವೀರೇಂದ್ರ ಹೆಗ್ಗಡೆ",
+    "place": "ಧರ್ಮಸ್ಥಳ",
+    "role": null
+   },
+   {
+    "name": "ಕರ್ಣಾಟಕ ಬ್ಯಾಂಕ್",
+    "place": "ಪ್ರಧಾನ ಕಚೇರಿ, ಮಂಗಳೂರು",
+    "role": null
+   },
+   {
+    "name": "ಶ್ರೀ ದತ್ತಾತ್ರೇಯ ಗುರು ಮತ್ತು ಕುಟುಂಬದವರು",
+    "place": "ಬೆಂಗಳೂರು",
+    "role": null
+   },
+   {
+    "name": "ಕತ್ತಲ್‌ಸಾರ್ ಪೆಜತ್ತಾಯ ಕುಟುಂಬದವರು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಶ್ರೀ ಕೇಶವ ಶಿಬರಾಯ ಮತ್ತು ಕುಟುಂಬದವರು",
+    "place": "ಸಾಂತ್ರಬೈಲು",
+    "role": null
+   },
+   {
+    "name": "ಶ್ರೀ ಬೇವಿಂಜೆ ಶ್ರೀಧರ ಕಕ್ಕಿಲ್ಲಾಯ ಕುಟುಂಬದವರು",
+    "place": "ಕಾಸರಗೋಡು ಕೇರಳ",
+    "role": null
+   },
+   {
+    "name": "ಶ್ರೀ ರಾಜೇಂದ್ರ ಪಿಂಟೊ ಮತ್ತು ಬಂಧುಗಳು",
+    "place": "ನೆಲ್ಲಿತೀರ್ಥ",
+    "role": null
+   },
+   {
+    "name": "ಶ್ರೀ ರಾಘವೇಂದ್ರ ಆಚಾರ್ಯ ಮತ್ತು ಕುಟುಂಬದವರು",
+    "place": "ಬಜ್ಪೆ",
+    "role": null
+   },
+   {
+    "name": "ಶ್ರೀ ಶೇಖರ ಶೆಟ್ಟಿ ಮತ್ತು ಬಂಧುಗಳು",
+    "place": "ದುಬೈ",
+    "role": null
+   },
+   {
+    "name": "ಶ್ರೀ ನಿರಂಜನ ಪೂಜಾರಿ ಮತ್ತು ಕುಟುಂಬದವರು",
+    "place": "ಕರಂಬಾರು",
+    "role": null
+   },
+   {
+    "name": "ಶ್ರೀ ಪಿ. ವಿ. ಆರ್. ಮೂರ್ತಿ ಮತ್ತು ಕುಟುಂಬದವರು",
+    "place": "ಚೆನ್ನೈ",
+    "role": null
+   },
+   {
+    "name": "ಶ್ರೀ ಪಿ. ರಾಮದಾಸ್ ಮತ್ತು ಕುಟುಂಬದವರು",
+    "place": "ಏಎಮ್ಎಸ್ ಬೆಂಗಳೂರು",
+    "role": null
+   },
+   {
+    "name": "ಎಸ್. ಎಸ್. ಡಿ. ಎಮ್. ಎಮ್. ಟ್ರಸ್ಟ್",
+    "place": "ಜೈಪುರ",
+    "role": null
+   },
+   {
+    "name": "ಮಹಾಗಣಪತಿ ಟ್ರಸ್ಟ್",
+    "place": "ಬೆಂಗಳೂರು",
+    "role": null
+   }
+  ],
+  "supporters_heading": "ಸಹಕಾರ ನೀಡಿರುವ ಮಹನೀಯರು ಮತ್ತು ಸಂಘ ಸಂಸ್ಥೆಗಳು",
+  "supporters": [
+   {
+    "name": "ವೇದಮೂರ್ತಿ ಶ್ರೀ ಕೃಷ್ಣರಾಜ ತಂತ್ರಿಗಳು, ಕುಡುಪು",
+    "place": "(ಮಹನೀಯರು ದೇವಾಲಯದ ಜೀರ್ಣೋದ್ಧಾರ ವಾಸ್ತುಶಾಸ್ತ್ರಾನುಸಾರವಾಗಿ ಹಾಗೂ ಸುಂದರವಾಗಿ ರೂಪುಗೊಳ್ಳಲು ಮಾರ್ಗದರ್ಶನ ನೀಡಿರುತ್ತಾರೆ)",
+    "role": null
+   },
+   {
+    "name": "ಮಾನ್ಯ ಶ್ರೀ ಕೋಟ ಶ್ರೀನಿವಾಸ ಪೂಜಾರಿ",
+    "place": "ಮಾನ್ಯ ಲೋಕಸಭಾ ಸದಸ್ಯರು, ಉಡುಪಿ-ಚಿಕ್ಕಮಗಳೂರು",
+    "role": null
+   },
+   {
+    "name": "ಶ್ರೀ ಎ. ಎಸ್. ಎನ್. ಹೆಬ್ಬಾರ್, ಕುಂದಾಪುರ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಶ್ರೀ ವಸಂತ ಭಟ್, ಮಂಗಳೂರು.",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಶ್ರೀ ಹರೀಶ್ ಕಳತ್ತೂರು, ಆರ್ಕಿಟೆಕ್ಟ್, ಕಿನ್ನಿಗೋಳಿ",
+    "place": "(ಮಹನೀಯರು ದೇವಾಲಯದ ಎಲ್ಲಾ ನಿರ್ಮಾಣ ಕಾರ್ಯದ ವಿಸ್ತೃತ ಪ್ಲಾನ್ ತಯಾರಿಕೆ ಮತ್ತು ತಾಂತ್ರಿಕ ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿರುತ್ತಾರೆ)",
+    "role": null
+   },
+   {
+    "name": "ಸೋಮನಾಥೇಶ್ವರ ಭಜಕ ವೃಂದ, ನೆಲ್ಲಿತೀರ್ಥ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಮಯೂರಿ ಗೆಳೆಯರ ಬಳಗ, ಸಾಂತ್ರಬೈಲು, ನೆಲ್ಲಿತೀರ್ಥ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಪ್ರಜ್ಞಾ ಸ್ತ್ರೀಶಕ್ತಿ, ನೆಲ್ಲಿತೀರ್ಥ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಸರ್ವಶಕ್ತಿ ಯುವಕವೃಂದ, ನೆಲ್ಲಿತೀರ್ಥ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಯುವಶಕ್ತಿ, ನೆಲ್ಲಿತೀರ್ಥ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಶಿವಶಕ್ತಿ ಬಳಗ ಮತ್ತು ಶಿವಶಕ್ತಿ ಸ್ವಸಹಾಯ ಸಂಘ, ನೆಲ್ಲಿತೀರ್ಥ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಕರಂಬಾರು ಗ್ರಾಮಸ್ಥರು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಯುವಶಕ್ತಿ ಮಹಿಳಾ ತಂಡ, ಆಮ್ಲಟಪದವು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಮರಾಠಿ ನಾಯಕ ವೃಂದ, ಕೊಂಪದವು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ನವೋದಯ NK ಫ್ರೆಂಡ್ಸ್, ಕೊಂಪದವು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಬರ್ಕೆ ಫ್ರೆಂಡ್ಸ್, ಕೊಂಪದವು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಓಂಕಾರ್ ಯುವಕ ವೃಂದ, ಕೊಂಪದವು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಓಂಕಾರ್ ಮಾತೃ ಮಂಡಳಿ, ಕೊಂಪದವು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ವಿದ್ಯುತ್ ಸರಬರಾಜು ಕಂಪನಿ ಮೆಸ್ಕಾಂ, ಕೊಂಪದವು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಪ್ರಾಥಮಿಕ ಆರೋಗ್ಯ ಕೇಂದ್ರ, ಕೊಂಪದವು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ವಿಷ್ಣು ಸೋಮನಾಥೇಶ್ವರ ಮಹಿಳಾ ಮಂಡಳಿ, ಕೊಂಪದವು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಸಾರ್ವಜನಿಕ ಶ್ರೀ ಗಣೇಶೋತ್ಸವ ಸಮಿತಿ, ಕೊಂಪದವು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಶ್ರೀಹರಿ ವಿಷ್ಣುಮೂರ್ತಿ ಸ್ಪೋರ್ಟ್ಸ್ ಕ್ಲಬ್ (ರಿ), ಕೊಂಪದವು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಕಾವೇರಿ ಸ್ವಸಹಾಯ ಸಂಘ, ನೀರುಡೆ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಸಾರ್ವಜನಿಕ ಶ್ರೀ ಗಣೇಶೋತ್ಸವ ಸಮಿತಿ, ನೀರುಡೆ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ವಜ್ರಕಾಯ ಭಜನಾ ಮಂಡಳಿ, ನೀರುಡೆ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಯಕ್ಷ ಚಿಗುರು, ನೀರುಡೆ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಯುವಕಮಂಡಲ, ನೀರುಡೆ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ನವಚೇತನ ಫ್ರೆಂಡ್ಸ್, ಬುಡಿಕಾಡು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಪ್ರಗತಿ ಮಹಿಳಾ ಮಂಡಳಿ, ಮುಚ್ಚೂರು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಪ್ರಗತಿ ಯುವಕ ಮಂಡಲ, ಮುಚ್ಚೂರು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಶ್ರೀದೇವಿ ಯುವಜನ ಸೇವಾ ಸಂಘ, ಮುಚ್ಚೂರು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಶಾಶ್ವತ ಸಮಾಜಸೇವಾ ಸಂಘ, ಉದಯಪುರ, ಮುಚ್ಚೂರು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ರಾಮ ಯುವಕ ವೃಂದ, ಮುಚ್ಚೂರು ಕಾನ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ನವಜ್ಯೋತಿ ಫ್ರೆಂಡ್ಸ್ ಸರ್ಕಲ್, ಕತ್ತಲ್‌ಸಾರ್",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಫ್ರೆಂಡ್ಸ್, ಕತ್ತಲ್‌ಸಾರ್, ಬಜಪೆ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ತೃಪ್ತಿ ಫ್ರೆಂಡ್ಸ್, ಗೋಳಿಪಲ್ಕೆ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಬಿರುವೆರ್ ಕುಡ್ಲ, ಬಜ್ಪೆ ಘಟಕ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಕೇಸರಿ ಆಟೋ ಫ್ರೆಂಡ್ಸ್, ಬಜಪೆ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಸತ್ಯಸಾರಮನಿ, ಬಂಗೇರಪದವು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಫ್ರೆಂಡ್ಸ್, ಕಲ್ಲಡ್ಪು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಜೂನಿಯರ್ ಬಾಯ್ಸ್ (ರಿ), ನೀರುಡೆ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಶ್ರದ್ಧಾ ಸ್ತ್ರೀಶಕ್ತಿ, ನೀರುಡೆ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಪೆರಾರ ಸ್ವಯಂಸೇವಕರು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಕಾಯ್ದಂಡ ಯುವಕ ಮಂಡಲ (ರಿ), ಎಕ್ಕಾರು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ವಿಜಯ ಯುವಸಂಗಮ (ರಿ), ಎಕ್ಕಾರು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಭ್ರಾಮರಿ ಹವ್ಯಾಸಿ ಯಕ್ಷಗಾನ ಮಂಡಳಿ, ಎಕ್ಕಾರು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ತ್ರಿನೇತ್ರಿ ಫ್ರೆಂಡ್ಸ್, ಅರ್ಜುನಕೋಡಿ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಕೃಷ್ಣ ಅರ್ಜುನ ಕ್ರಿಕೆಟರ್, ಅರ್ಜುನಕೋಡಿ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಅಯ್ಯಪ್ಪ ಭಜನಾ ಮಂಡಳಿ, ಪಡುಪೆರಾರ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಉತ್ಸಾಹಿ ಫ್ರೆಂಡ್ಸ್ ಸರ್ಕಲ್, ಸ್ವಾಮಿಲಪದವು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಯುವವಾಹಿನಿ, ಬಜಪೆ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಅಯ್ಯಪ್ಪ ಭಕ್ತ ವೃಂದ, ಅಡ್ಕಬಾರೆ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಜಿಲ್ಲಾ ರಾಜ್ಯೋತ್ಸವ ಪ್ರಶಸ್ತಿ ಪುರಸ್ಕೃತ ಶ್ರೀ ನಾಗಬ್ರಹ್ಮ ಯುವಕ ಮಂಡಲ (ರಿ), ಪಡುಪೆರಾರ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಜವನೆರ್ ಪೆರಾರ (ರಿ), ಪಡುಪೆರಾರ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಆಶಾ ಕಾರ್ಯಕರ್ತೆಯರು, ಬಜಪೆ ಪ್ರಾಥಮಿಕ ಆರೋಗ್ಯ ಕೇಂದ್ರ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಗುರುಕುಲ ಬಾಲಸಂಸ್ಕಾರ ಕೇಂದ್ರ ಪೋಷಕವೃಂದ, ಕಿನ್ನಿಪದವು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಆರಕ್ಷಕ ಠಾಣೆ, ಬಜಪೆ, ಮಂಗಳೂರು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಲವ್ಲಿ ಸ್ಪೋರ್ಟ್ಸ್ ಆಂಡ್ ಗೇಮ್ಸ್ ಕ್ಲಬ್, ಕಲ್ಲಕುಮೇರ್, ನಿಡ್ಡೋಡಿ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಶ್ರೀ ಬಾಪೂಜಿ ಸ್ಪೋರ್ಟ್ಸ್ ಕ್ಲಬ್, ಶುಂಠಿಲಪದವು, ನಿಡ್ಡೋಡಿ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಫ್ರೆಂಡ್ಸ್ ನೀರಕಡಿ ಕತ್ತಲ್‌ಸಾರ್",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ದುರ್ಗಾ ಕಲ್ಚರಲ್ ಕ್ರಿಕೆಟ್ ಕ್ಲಬ್ (ರಿ.), ಎಕ್ಕಾರು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಶ್ರೀ ದುರ್ಗಾ ಮಹಿಳಾ ಮಂಡಳಿ, ಎಕ್ಕಾರು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಹಿಂದೂ ಯುವಸೇನೆ, ಶ್ರೀ ದುರ್ಗಾ ಶಾಖೆ, ಎಕ್ಕಾರು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಕುಂಭಕಂಠಿನೀ ಕ್ರಿಕೆಟರ್ಸ್, ಎಕ್ಕಾರು",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಶಾಶ್ವತ ಸ್ತ್ರೀಶಕ್ತಿ ಸಂಘ, ನೀರುಡೆ",
+    "place": null,
+    "role": null
+   },
+   {
+    "name": "ಶ್ರೀ ಕ್ಷೇತ್ರ ಧರ್ಮಸ್ಥಳ ಗ್ರಾಮಾಭಿವೃದ್ಧಿ ಯೋಜನೆ ಬಿ.ಸಿ. ಟ್ರಸ್ಟ್ (ರಿ), ಬಜಪೆ, ಕೊಂಪದವು ಒಕ್ಕೂಟ",
+    "place": null,
+    "role": null
+   }
   ]
+ }
 }
