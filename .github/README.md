@@ -54,7 +54,8 @@ Build, run `pnpm preview`, then run the checks you need. Most compare against th
 | `tests/weight.mjs BASE`, `tests/slow.mjs BASE`, `tests/anchor.mjs BASE`, `tests/frames.mjs BASE_OLD BASE` | What a phone downloads, the forest walk on a slow link, and cached frames |
 | `tests/walk-parity.mjs BASE_OLD BASE` | The forest walk and every home-page picture look as on the earlier site |
 | `tests/hero.mjs BASE` | The Brahmakalasha picture at the top of the home page shows whole, with nothing over it, on phones, tablets and desktops; its living light moves on the background only, deepens after sunset, rests off screen and is absent with reduced motion; on desktops the picture, the temple's name and today's panel are one dark scene with no hard edge |
-| `tests/header.mjs BASE` | On the home page the header floats transparent over the dark picture and turns solid once you scroll; elsewhere, and without the script, it is solid |
+| `tests/header.mjs BASE` | On the home page the header floats transparent over the dark picture and turns solid once you scroll; it is clear again over the forest walk, whose words dissolve under it; elsewhere, and without the script, it is solid |
+| `tests/smooth.mjs BASE` | The forest walk on a phone with a slowed CPU: a slow scroll plays its frames in order and nothing holds up the screen |
 | `tests/copy.mjs BASE` | Copy account number puts the number on the clipboard and draws a check; where copying is refused, the number is shown |
 | `tests/axe.mjs BASE [kn]`, `tests/upi.mjs BASE_OLD BASE`, `tests/public.sh` | Accessibility (every page on a phone, the home page also on a desktop), the UPI link, and no internal notes in this public repository |
 

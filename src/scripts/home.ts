@@ -254,41 +254,85 @@ function both(el, en, kn) {
   try {
     // The forest walk: real frames from clip 51, scrubbed by scroll.
     const forest = document.getElementById('forest');
+    const stage = forest.querySelector('.forest-stage');
     const canvas = forest.querySelector('canvas');
     const context = canvas.getContext('2d');
+    // How far through the walk: the stage stays pinned for the section's height less its own. Both are in svh, so
+    // a phone's address bar sliding away (which changes innerHeight) neither moves the walk nor ends it early.
+    const walked = () => Math.min(1, Math.max(0, -forest.getBoundingClientRect().top / (forest.offsetHeight - stage.offsetHeight)));
     const wide = matchMedia('(min-width: 700px)').matches;
     // The approved frames, unchanged: 60 for phones, 48 for wide screens. A new cut must be approved after a side-by-side look, and needs a new folder,
     // because phones keep cached frames under an old address for weeks.
     const folder = wide ? 'walk-wide' : 'walk-tall';
     const frameCount = wide ? 48 : 60;
-    const frames = new Array(frameCount);
-    let loading = false, scheduled = false, sized = false, lastDrawn = null;
-    const ready = (image) => Boolean(image && image.complete && image.naturalWidth);
+    let loading = false, scheduled = false, sized = false, lastDrawn = null, onStage = false, at = 0;
+    // Each frame's file once it has arrived, and the decoded pictures of the frames near where the walk is. Drawing a
+    // picture that is not decoded yet decodes it there and then, on the main thread: on a phone that stalled the scroll
+    // for two or three screen refreshes at every new frame. So the frames within NEAR of the walk are decoded ahead,
+    // away from the main thread, and the rest are let go and decoded again when the walk comes back to them: a phone
+    // holds about 20 decoded pictures (60 MB) rather than all 60 (175 MB), and none once the walk is off screen.
+    const NEAR = 8, BUSY = 'busy';
+    const files = new Array(frameCount), pictures = new Array(frameCount);
+    // A file is decoded away from the main thread. Frame 000 is the still picture under the walk, already downloaded: a
+    // picture is decoded partly on the main thread, so frame 000 is decoded once and kept. Without createImageBitmap
+    // (Safari before 15), decode() is the nearest thing, and the frame is drawn itself.
+    const still = forest.querySelector('.forest-still');
+    const toPicture = (file) => {
+      if ('createImageBitmap' in window) return createImageBitmap(file);
+      if (!(file instanceof Blob)) return file.decode().then(() => file);
+      const image = new Image(); image.src = URL.createObjectURL(file);
+      return image.decode().then(() => image);
+    };
+    const release = (i) => { const picture = pictures[i]; pictures[i] = undefined; if (picture.close) picture.close(); else if (picture !== still) URL.revokeObjectURL(picture.src); };
+    const drawable = (i) => (pictures[i] && pictures[i] !== BUSY ? pictures[i] : null);
+    // The nearest frame to the walk that has a picture, or a file but no picture yet; null if there is none.
+    const nearest = (has) => { for (let d = 0; d < frameCount; d++) for (const i of [at - d, at + d]) if (i >= 0 && i < frameCount && has(i)) return d; return null; };
+    let decoding = 0;
+    function decodeAhead() {
+      // Let go of pictures far from the walk, keeping the nearest one there is so the walk always has something to show.
+      const keep = onStage ? Math.max(NEAR + 2, nearest(drawable) ?? 0) : -1;
+      for (let i = 0; i < frameCount; i++) if (drawable(i) && Math.abs(i - at) > keep && files[i] !== still) release(i);
+      while (onStage && decoding < 3) {
+        // The nearest frame with no picture: within NEAR, or further while nothing nearer is shown (frames still arriving).
+        const d = nearest((i) => files[i] && !pictures[i]);
+        if (d === null || (d > NEAR && (nearest((i) => pictures[i]) ?? Infinity) <= d)) return;
+        const i = files[at - d] && !pictures[at - d] ? at - d : at + d;
+        pictures[i] = BUSY; decoding++;
+        toPicture(files[i]).then((picture) => {
+          pictures[i] = picture;
+          if (files[i] !== still && (!onStage || Math.abs(i - at) > NEAR + 2 && nearest(drawable) < Math.abs(i - at))) release(i); else requestDraw();
+        }, () => { pictures[i] = undefined; files[i] = undefined; })
+          .finally(() => { decoding--; decodeAhead(); });
+      }
+    }
 
-    const cover = (image) => {
-      const scale = Math.max(canvas.width / image.naturalWidth, canvas.height / image.naturalHeight);
-      const w = image.naturalWidth * scale, h = image.naturalHeight * scale;
+    const cover = (picture) => {
+      const pw = picture.naturalWidth || picture.width, ph = picture.naturalHeight || picture.height;
+      const scale = Math.max(canvas.width / pw, canvas.height / ph);
+      const w = pw * scale, h = ph * scale;
       return [(canvas.width - w) / 2, (canvas.height - h) / 2, w, h];
     };
     function drawForest() {
       scheduled = false;
-      const want = Math.min(frameCount - 1, Math.round(progressOf(forest) * (frameCount - 1)));
-      // The wanted frame, or the nearest one that has arrived, so the walk moves while frames are still downloading.
-      let frame = null;
-      for (let d = 0; d < frameCount && !frame; d++) {
-        if (ready(frames[want - d])) frame = frames[want - d];
-        else if (ready(frames[want + d])) frame = frames[want + d];
-      }
-      if (!frame || frame === lastDrawn) return;
-      lastDrawn = frame;
-      context.drawImage(frame, ...cover(frame));
+      const want = Math.min(frameCount - 1, Math.round(walked() * (frameCount - 1)));
+      if (want !== at) { at = want; decodeAhead(); }
+      // The wanted frame, or the nearest one that is ready, so the walk moves while frames are still arriving.
+      let picture = null;
+      for (let d = 0; d < frameCount && !picture; d++) picture = drawable(want - d) || drawable(want + d);
+      if (!picture || picture === lastDrawn) return;
+      lastDrawn = picture;
+      context.drawImage(picture, ...cover(picture));
     }
     const requestDraw = () => { if (!scheduled) { scheduled = true; requestAnimationFrame(drawForest); } };
     function sizeCanvas() {
       const rect = canvas.getBoundingClientRect();
       const density = Math.min(devicePixelRatio || 1, 2);
-      canvas.width = Math.round(rect.width * density);
-      canvas.height = Math.round(rect.height * density);
+      const width = Math.round(rect.width * density), height = Math.round(rect.height * density);
+      // Setting a canvas's size wipes it, even to the same size, and phones send a resize whenever the address bar
+      // slides; the stage is 100svh, so that changes nothing here and the picture is left alone.
+      if (sized && width === canvas.width && height === canvas.height) return;
+      canvas.width = width;
+      canvas.height = height;
       sized = true;
       lastDrawn = null;
       requestDraw();
@@ -298,25 +342,25 @@ function both(el, en, kn) {
       const loadForest = () => {
         if (loading) return;
         loading = true;
+        const arrived = (i, file) => { files[i] = file; if (!sized) sizeCanvas(); decodeAhead(); };
+        const fetchFrame = (i) => fetch(`/assets/${folder}/${String(i).padStart(3, '0')}.webp`, { priority: 'low' })
+          .then((response) => (response.ok ? response.blob() : Promise.reject(response.status)))
+          .then((file) => arrived(i, file), () => {});
+        // Frame 000 is the still, once it has arrived (the same screen width picks its file and the walk's folder).
+        const take = () => { if (still.naturalWidth && still.currentSrc.endsWith(`/${folder}/000.webp`)) arrived(0, still); else fetchFrame(0); };
+        if (still.complete && still.currentSrc) take(); else still.addEventListener('load', take, { once: true });
         // Coarse to fine: every 16th frame first, then every 8th, and so on, so the whole walk is covered early.
         const order = [];
         for (let step = 16; step >= 1; step /= 2) {
-          for (let i = 0; i < frameCount; i += step) if (!order.includes(i)) order.push(i);
+          for (let i = step; i < frameCount; i += step) if (!order.includes(i)) order.push(i);
         }
         // A few at a time: if all download at once they share the connection and none arrives early.
         let next = 0;
-        const loadNext = () => {
-          if (next >= order.length) return;
-          const i = order[next++];
-          const image = new Image();
-          image.decoding = 'async';
-          image.onload = () => { if (!sized) sizeCanvas(); requestDraw(); loadNext(); };
-          image.onerror = loadNext;
-          image.src = `/assets/${folder}/${String(i).padStart(3, '0')}.webp`;
-          frames[i] = image;
-        };
+        const loadNext = () => { if (next < order.length) fetchFrame(order[next++]).finally(loadNext); };
         for (let k = 0; k < 4; k++) loadNext();
       };
+      // Pictures are decoded only while the walk is on screen or nearly.
+      new IntersectionObserver(([entry]) => { onStage = entry.isIntersecting; decodeAhead(); }, { rootMargin: '50% 0px' }).observe(forest);
       // Frames start downloading when the visitor scrolls towards the walk, or when it is within a screen: nothing
       // is spent on visitors who only read the top, or who arrive further down the page.
       const forestObserver = new IntersectionObserver((entries) => {
@@ -334,6 +378,22 @@ function both(el, en, kn) {
     }
 
   } catch (error) { console.error(error); }
+
+  // The forest's words dissolve as they rise into the header, which is clear over the forest (styles: .forest-copy).
+  const header = document.querySelector('.site-header');
+  const forestWords = [...document.querySelectorAll('.forest-copy')];
+  let wordsQueued = false;
+  function dissolveWords() {
+    wordsQueued = false;
+    const edge = header.getBoundingClientRect().bottom;
+    for (const words of forestWords) {
+      const r = words.getBoundingClientRect();
+      const under = r.top < edge + 48 && r.bottom > 0 ? `${Math.round(edge - r.top)}px` : '';
+      if (words.style.getPropertyValue('--under') !== under) words.style.setProperty('--under', under);
+    }
+  }
+  addEventListener('scroll', () => { if (!wordsQueued) { wordsQueued = true; requestAnimationFrame(dissolveWords); } }, { passive: true });
+  dissolveWords();
 
   // Into the earth: the light recedes as you go in.
   const earth = document.getElementById('earth');

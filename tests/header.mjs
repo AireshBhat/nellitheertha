@@ -1,6 +1,7 @@
 // The header: on the home page it floats over the dark Brahmakalasha picture, transparent with light words, and fades
-// to the page's own colour with dark words once you scroll (the way the Bhojya Kitchen site does). Everywhere else, and
-// whenever the script cannot run, it is solid and dark-on-light.
+// to the page's own colour with dark words once you scroll (the way the Bhojya Kitchen site does); over the forest walk
+// it is clear again, and the walk's words dissolve under it. Everywhere else, and whenever the script cannot run, it is
+// solid and dark-on-light.
 // usage: node tests/header.mjs BASE
 import { launch, base as slash } from './chrome.mjs';
 const base = slash(process.argv[2]);
@@ -35,6 +36,16 @@ for (const [name, device] of [['phone', PHONE], ['desktop', DESKTOP]]) {
   await p.evaluate(() => scrollTo({ top: 0, behavior: 'instant' })); await p.waitForTimeout(700);
   const back = await look(p);
   check(back.alpha === 0 && back.name > 0.75, `${name}, home, back at the top: transparent again (background ${back.alpha})`);
+  // The forest walk: clear again while the forest's dark is behind the header, solid in the light fades at either end.
+  const forestAt = async (f) => { await p.evaluate((f) => { const el = document.getElementById('forest'); scrollTo({ top: el.getBoundingClientRect().top + scrollY + f * innerHeight, behavior: 'instant' }); }, f); await p.waitForTimeout(700); return look(p); };
+  const fade = await forestAt(0.2), mid = await forestAt(1.5), end = await forestAt(2.5);
+  check(fade.alpha >= 0.95 && fade.name < 0.3, `${name}, home, entering the forest walk (light fade behind): solid (background ${fade.alpha})`);
+  check(mid.alpha === 0 && mid.name > 0.75 && mid.lang > 0.75, `${name}, home, in the forest walk: transparent with light words (background ${mid.alpha}, name ${mid.name.toFixed(2)})`);
+  check(end.alpha >= 0.95 && end.name < 0.3, `${name}, home, leaving the forest walk: solid again (background ${end.alpha})`);
+  // Its words dissolve as they rise into the clear header instead of running through the name.
+  const words = await forestAt(1.0);
+  const under = await p.evaluate(() => { const c = document.querySelector('.copy-one'), h = document.querySelector('.site-header').getBoundingClientRect().bottom; return { top: c.getBoundingClientRect().top, edge: h, under: parseFloat(c.style.getPropertyValue('--under')), mask: getComputedStyle(c).maskImage || getComputedStyle(c).webkitMaskImage }; });
+  check(words.alpha === 0 && under.top < under.edge && Math.abs(under.under - (under.edge - under.top)) <= 2 && /gradient/.test(under.mask), `${name}, home, the forest's words dissolve under the clear header (top ${Math.round(under.top)}, header edge ${under.edge}, --under ${under.under})`);
   await p.goto(base + 'temple/', { waitUntil: 'networkidle' });
   const other = await look(p);
   check(other.alpha >= 0.95 && other.name < 0.3, `${name}, another page: solid with dark words (background ${other.alpha}, name ${other.name.toFixed(2)})`);

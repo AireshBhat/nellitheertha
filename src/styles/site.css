@@ -201,6 +201,9 @@ body[data-tide="ordinary"] .first-drop{--drop-y:30svh}
 .copy-one{top:96svh}.copy-two{top:180svh;max-width:540px}
 .forest-copy h2{margin:0;font:400 clamp(38px,8vw,74px)/1.18 var(--serif);text-shadow:0 0 2px oklch(14% .03 150 / .5),0 1px 28px oklch(14% .03 150 / .85)}
 .copy-two p{margin:0;font:400 clamp(26px,5vw,42px)/1.42 var(--serif);text-shadow:0 0 2px oklch(14% .03 150 / .5),0 1px 28px oklch(14% .03 150 / .85)}
+/* The header is clear over the forest (components/Header.astro), so its words dissolve as they rise into it instead of
+   running through the name: --under is how far the header's lower edge reaches into them (scripts/home.ts). */
+.js .forest-copy{-webkit-mask-image:linear-gradient(180deg,transparent var(--under,-200px),#000 calc(var(--under,-200px) + 48px));mask-image:linear-gradient(180deg,transparent var(--under,-200px),#000 calc(var(--under,-200px) + 48px))}
 
 /* ---------- kere ---------- */
 .kere-story{position:relative;background:var(--camphor)}
@@ -406,13 +409,14 @@ footer a{display:inline-flex;min-height:48px;align-items:center;text-underline-o
 }
 
 /* ---------- the home page's header: it floats over the dark picture, transparent with light words, and fades to the
-   page's own colour with dark words once you scroll past 20px, as on the Bhojya Kitchen site. Solid without the script. */
+   page's own colour with dark words once you scroll past 20px, as on the Bhojya Kitchen site. It clears again over the
+   forest walk, while the forest's dark is behind it (components/Header.astro). Solid without the script. */
 .home-header{position:fixed;left:0;right:0;transition:background-color .3s var(--ease-out),border-color .3s var(--ease-out)}
 .home-header a,.home-header .brand svg,.home-header .language button{transition:color .3s var(--ease-out),text-decoration-color .3s var(--ease-out),text-shadow .3s var(--ease-out)}
-.js .home-header:not(.scrolled){background:transparent;border-bottom-color:transparent;color:var(--camphor);text-shadow:0 1px 10px oklch(9% .02 28 / .7)}
-.js .home-header:not(.scrolled) .brand svg{color:var(--camphor)}
-.js .home-header:not(.scrolled) .language,.js .home-header:not(.scrolled) .language button{color:var(--line)}
-.js .home-header:not(.scrolled) .language button[aria-pressed="true"]{color:var(--camphor);text-decoration-color:var(--lamp)}
+.js .home-header:not(.solid){background:transparent;border-bottom-color:transparent;color:var(--camphor);text-shadow:0 1px 10px oklch(9% .02 28 / .7)}
+.js .home-header:not(.solid) .brand svg{color:var(--camphor)}
+.js .home-header:not(.solid) .language,.js .home-header:not(.solid) .language button{color:var(--line)}
+.js .home-header:not(.solid) .language button[aria-pressed="true"]{color:var(--camphor);text-decoration-color:var(--lamp)}
 @media(prefers-reduced-motion:reduce){.home-header,.home-header a,.home-header .brand svg,.home-header .language button{transition:none}}
 
 /* ---------- the living light: rays that bloom, breathe and turn behind the deities, never on them ---------- */

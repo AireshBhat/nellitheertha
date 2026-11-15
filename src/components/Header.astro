@@ -18,7 +18,9 @@ const { home = false } = Astro.props;
   <LanguageSwitch />
 </header>
 {home && (
-  /* On the home page the header floats over the dark picture until you scroll past 20px (tests/header.mjs). It runs
+  /* On the home page the header floats over the dark picture until you scroll past 20px, and again over the forest
+     walk while its dark is behind the header: from 40% of a screen into the walk, where the light fade at its top has
+     passed, until 75% of a screen before its end, where the fade back to the page begins (tests/header.mjs). It runs
      here, before the page is drawn, so the header never flashes; without it the header simply stays solid. */
-  <script is:inline>(function () { var h = document.querySelector('.home-header'); var set = function () { h.classList.toggle('scrolled', scrollY > 20); }; set(); addEventListener('scroll', set, { passive: true }); })();</script>
+  <script is:inline>(function () { var h = document.querySelector('.home-header'), forest; var set = function () { forest = forest || document.getElementById('forest'); var r = forest && forest.getBoundingClientRect(), dark = r && r.top <= -0.4 * innerHeight && r.bottom >= 0.75 * innerHeight; h.classList.toggle('solid', scrollY > 20 && !dark); }; set(); addEventListener('scroll', set, { passive: true }); addEventListener('DOMContentLoaded', set); })();</script>
 )}
