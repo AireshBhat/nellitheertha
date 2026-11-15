@@ -346,9 +346,17 @@ function both(el, en, kn) {
         const fetchFrame = (i) => fetch(`/assets/${folder}/${String(i).padStart(3, '0')}.webp`, { priority: 'low' })
           .then((response) => (response.ok ? response.blob() : Promise.reject(response.status)))
           .then((file) => arrived(i, file), () => {});
-        // Frame 000 is the still, once it has arrived (the same screen width picks its file and the walk's folder).
+        // Frame 000 is the still (the same screen width picks its file and the walk's folder). If it is not here yet it
+        // is asked for now, in the first four with frames 16, 32 and 48, and once it is here its place goes to the next.
         const take = () => { if (still.naturalWidth && still.currentSrc.endsWith(`/${folder}/000.webp`)) arrived(0, still); else fetchFrame(0); };
-        if (still.complete && still.currentSrc) take(); else still.addEventListener('load', take, { once: true });
+        const stillHere = still.complete && still.currentSrc;
+        if (stillHere) take();
+        else {
+          const done = () => { take(); loadNext(); };
+          still.addEventListener('load', done, { once: true });
+          still.addEventListener('error', done, { once: true });
+          still.loading = 'eager';
+        }
         // Coarse to fine: every 16th frame first, then every 8th, and so on, so the whole walk is covered early.
         const order = [];
         for (let step = 16; step >= 1; step /= 2) {
@@ -357,7 +365,7 @@ function both(el, en, kn) {
         // A few at a time: if all download at once they share the connection and none arrives early.
         let next = 0;
         const loadNext = () => { if (next < order.length) fetchFrame(order[next++]).finally(loadNext); };
-        for (let k = 0; k < 4; k++) loadNext();
+        for (let k = stillHere ? 0 : 1; k < 4; k++) loadNext();
       };
       // Pictures are decoded only while the walk is on screen or nearly.
       new IntersectionObserver(([entry]) => { onStage = entry.isIntersecting; decodeAhead(); }, { rootMargin: '50% 0px' }).observe(forest);
