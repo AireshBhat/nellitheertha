@@ -29,7 +29,6 @@ const { title, description, slug, docTitle, ogDescription, ogImageAlt, jsonLd, h
 const SITE = 'https://nellitheertha.in';
 const fullTitle = docTitle ?? `${title} · Sri Kshetra Nellitheertha`;
 const url = slug ? `${SITE}/${slug}/` : `${SITE}/`;
-const ICON = "data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 18 24%27%3E%3Cpath d=%27M9 1C9 1 2 11 2 16a7 7 0 0 0 14 0C16 11 9 1 9 1Z%27 fill=%27%23273c1a%27/%3E%3C/svg%3E";
 const dataAttrs = Object.fromEntries(Object.entries({ language: 'en', ...bodyData }).map(([k, v]) => [`data-${k}`, v]));
 const backLink = back ?? { href: '/#pages', label: 'Home' };
 ---
@@ -53,7 +52,8 @@ const backLink = back ?? { href: '/#pages', label: 'Home' };
   {ogImageAlt && <meta property="og:image:alt" content={ogImageAlt}>}
   <meta property="og:locale" content="en_IN">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href={ICON}>
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
   {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
   <link rel="preload" href={tiroUrl} as="font" type="font/woff2" crossorigin>
